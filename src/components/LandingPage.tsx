@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import newLogo from 'figma:asset/9849fdebf60cdadde6f1fd25b04cc944f5a30323.png';
 import GlassyButton from './GlassyButton';
 import LiquidGlassButton from './LiquidGlassButton';
@@ -9,6 +10,7 @@ interface LandingPageProps {
 }
 
 export default function LandingPage({ onNavigate }: LandingPageProps) {
+  const { t } = useTranslation();
   // Background images list
   const backgroundImages = [
     'https://player.vimeo.com/video/1039858737?h=767ab0b596&autoplay=1&loop=1&muted=1&background=1&controls=0&title=0&byline=0&portrait=0', // Original Vimeo
@@ -82,7 +84,7 @@ export default function LandingPage({ onNavigate }: LandingPageProps) {
               size="xl"
               onClick={handleViewWork}
               logoSrc={newLogo}
-              logoAlt="dietrich.tv studio"
+              logoAlt={t('navigation.logoAlt')}
             />
           </div>
 
@@ -92,7 +94,7 @@ export default function LandingPage({ onNavigate }: LandingPageProps) {
               onClick={handleViewWork}
               className="text-white/80 hover:text-white text-lg border-b border-white/30 hover:border-white pb-1 transition-colors"
             >
-              View Our Work →
+{t('common.viewOurWork')}
             </button>
           </div>
         </div>
@@ -121,7 +123,7 @@ export default function LandingPage({ onNavigate }: LandingPageProps) {
       {/* LogoOverlayPNG Layer - NEW */}
       <LogoOverlay
         logoSrc={newLogo}
-        logoAlt="Dietrich logo"
+        logoAlt={t('navigation.logoAlt')}
         buttonSize="default"
         x={logoPosition.x}
         y={logoPosition.y}

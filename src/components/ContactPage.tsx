@@ -33,34 +33,31 @@ export default function ContactPage() {
 
             {/* AI & INNOVATION */}
             <div className="space-y-6">
-              <div className="text-xs text-gray-500 uppercase tracking-wide">AI & INNOVATION</div>
+              <div className="text-xs text-gray-500 uppercase tracking-wide">{t('contact.sections.aiInnovation.title')}</div>
               <div className="space-y-3">
-                <div className="text-base text-black">AI Cinema</div>
-                <div className="text-base text-black">Media Experiments</div>
-                <div className="text-base text-black">Generative Tools</div>
-                <div className="text-base text-black">New Mediums</div>
+                {(t('contact.sections.aiInnovation.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
+                  <div key={index} className="text-base text-black">{item}</div>
+                ))}
               </div>
             </div>
 
             {/* DESIGN & RESEARCH */}
             <div className="space-y-6">
-              <div className="text-xs text-gray-500 uppercase tracking-wide">DESIGN & RESEARCH</div>
+              <div className="text-xs text-gray-500 uppercase tracking-wide">{t('contact.sections.designResearch.title')}</div>
               <div className="space-y-3">
-                <div className="text-base text-black">Art Direction</div>
-                <div className="text-base text-black">Set Design</div>
-                <div className="text-base text-black">Creative Research</div>
-                <div className="text-base text-black">Visual Concepts</div>
+                {(t('contact.sections.designResearch.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
+                  <div key={index} className="text-base text-black">{item}</div>
+                ))}
               </div>
             </div>
 
-            {/* BRAND & STORYTELLING */}
+            {/* STRATEGY */}
             <div className="space-y-6">
-              <div className="text-xs text-gray-500 uppercase tracking-wide">BRAND & STORYTELLING</div>
+              <div className="text-xs text-gray-500 uppercase tracking-wide">{t('contact.sections.strategy.title')}</div>
               <div className="space-y-3">
-                <div className="text-base text-black">Brand Films</div>
-                <div className="text-base text-black">Cultural Strategy</div>
-                <div className="text-base text-black">Narrative Design</div>
-                <div className="text-base text-black">Content Campaigns</div>
+                {(t('contact.sections.strategy.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
+                  <div key={index} className="text-base text-black">{item}</div>
+                ))}
               </div>
             </div>
           </div>
@@ -108,7 +105,7 @@ export default function ContactPage() {
         <div className="mb-20">
           <div className="mb-12">
             <p className="text-lg text-black">
-              Connect with us to explore your project's potential.
+{t('contact.connectText')}
             </p>
           </div>
           
@@ -116,11 +113,11 @@ export default function ContactPage() {
             {/* Office info */}
             <div className="space-y-6">
               <div>
-                <div className="text-xs text-gray-500 uppercase tracking-wide mb-3">OFFICE</div>
+                <div className="text-xs text-gray-500 uppercase tracking-wide mb-3">{t('contact.office.title')}</div>
                 <div className="space-y-1 text-base text-black">
-                  <div>Rua Lira, 151 - Sala 12 - Vila Madalena</div>
-                  <div>São Paulo - Brazil</div>
-                  <div>05443-060</div>
+                  <div>{t('contact.office.address')}</div>
+                  <div>{t('contact.office.city')}</div>
+                  <div>{t('contact.office.zip')}</div>
                 </div>
               </div>
             </div>
@@ -129,20 +126,20 @@ export default function ContactPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Social */}
               <div>
-                <div className="text-xs text-gray-500 uppercase tracking-wide mb-3">SOCIAL</div>
+                <div className="text-xs text-gray-500 uppercase tracking-wide mb-3">{t('contact.footer.social')}</div>
                 <div className="space-y-1 text-base text-black">
-                  <div className="cursor-pointer hover:text-gray-600 transition-colors">Instagram</div>
-                  <div className="cursor-pointer hover:text-gray-600 transition-colors">Behance</div>
-                  <div className="cursor-pointer hover:text-gray-600 transition-colors">LinkedIn</div>
+                  <div className="cursor-pointer hover:text-gray-600 transition-colors">{t('contact.footer.instagram')}</div>
+                  <div className="cursor-pointer hover:text-gray-600 transition-colors">{t('contact.footer.behance')}</div>
+                  <div className="cursor-pointer hover:text-gray-600 transition-colors">{t('contact.footer.linkedin')}</div>
                 </div>
               </div>
               
               {/* Contact */}
               <div>
-                <div className="text-xs text-gray-500 uppercase tracking-wide mb-3">CONTACT</div>
+                <div className="text-xs text-gray-500 uppercase tracking-wide mb-3">{t('contact.footer.getInTouch')}</div>
                 <div className="space-y-1 text-base text-black">
-                  <div className="cursor-pointer hover:text-gray-600 transition-colors">+55 11 99306 8428</div>
-                  <div className="cursor-pointer hover:text-gray-600 transition-colors">contact@dietrich.tv</div>
+                  <div className="cursor-pointer hover:text-gray-600 transition-colors">{t('contact.footer.phone')}</div>
+                  <div className="cursor-pointer hover:text-gray-600 transition-colors">{t('contact.footer.email')}</div>
                 </div>
               </div>
             </div>
@@ -152,7 +149,7 @@ export default function ContactPage() {
         {/* Large logo */}
         <div className="text-center pt-12">
           <div className="text-5xl md:text-6xl lg:text-8xl text-black font-['Instrument_Sans'] font-semibold">
-            dietrich.tv studio
+{t('contact.footer.studioName')}
           </div>
         </div>
       </div>

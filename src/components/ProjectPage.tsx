@@ -1,5 +1,6 @@
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import VerticalCarousel from './VerticalCarousel';
 import { mockWorks } from './WorkPage';
 
@@ -196,9 +197,11 @@ const mockWorks = [
 
 // Component for rendering multiple videos when there are multiple vimeoIds
 function VimeoPlayer({ vimeoId, title }: { vimeoId: string; title: string }) {
+  const { t } = useTranslation();
+  
   // Safety check for vimeoId
   if (!vimeoId) {
-    return <div className="text-center text-gray-500">No video available</div>;
+    return <div className="text-center text-gray-500">{t('project.noVideoAvailable')}</div>;
   }
   
   const vimeoIds = vimeoId.split(',');
@@ -246,15 +249,47 @@ function getProjectFeaturedVideo(projectId: number): string | null {
   return selectedVideo?.videoUrl || project.videos[0]?.videoUrl || null;
 }
 
-export default function ProjectPage({ projectId, onNavigate }: ProjectPageProps) {
-  const currentProject = mockWorks.find(work => work.id === projectId);
-  
-  if (!currentProject) {
-    return <div className="min-h-screen bg-white flex items-center justify-center">Project not found</div>;
-  }
+// Helper function to get localized project data
+function getLocalizedProject(project: any, t: any) {
+  const projectKey = {
+    1: 'grandSoir',
+    2: 'ernestoNeto', 
+    3: 'threeShortFilms',
+    4: 'elsaSchiaparelli',
+    5: 'giseleCaua',
+    6: 'mothersDay25',
+    7: 'ilNeige',
+    8: 'desejo',
+    9: 'brilhoLamelar',
+    10: 'gracinha',
+    11: 'mothersDayFernandas'
+  }[project.id];
 
-  // Get other projects (exclude current project) and take first 3
-  const otherProjects = mockWorks.filter(work => work.id !== projectId).slice(0, 3);
+  if (!projectKey) return project;
+
+  return {
+    ...project,
+    title: t(`projects.${projectKey}.title`),
+    description: t(`projects.${projectKey}.description`),
+    fullDescription: t(`projects.${projectKey}.fullDescription`),
+    client: t(`projects.${projectKey}.client`),
+    projectType: t(`projects.${projectKey}.projectType`),
+    credits: t(`projects.${projectKey}.credits`)
+  };
+}
+
+export default function ProjectPage({ projectId, onNavigate }: ProjectPageProps) {
+  const { t } = useTranslation();
+  const baseProject = mockWorks.find(work => work.id === projectId);
+  
+  if (!baseProject) {
+    return <div className="min-h-screen bg-white flex items-center justify-center">{t('project.projectNotFound')}</div>;
+  }
+  
+  const currentProject = getLocalizedProject(baseProject, t);
+
+  // Get other projects (exclude current project) and take first 3  
+  const otherProjects = mockWorks.filter(work => work.id !== projectId).slice(0, 3).map(project => getLocalizedProject(project, t));
 
   return (
     <div className="min-h-screen bg-white text-black pt-20">
@@ -319,7 +354,7 @@ export default function ProjectPage({ projectId, onNavigate }: ProjectPageProps)
         <div className="mt-[150px] mb-20">
           {/* Horizontal line 20px above title */}
           <div className="w-full h-px bg-black mb-5"></div>
-          <h2 className="text-4xl md:text-5xl text-black mb-8 font-['Instrument_Sans']">Other Projects</h2>
+          <h2 className="text-4xl md:text-5xl text-black mb-8 font-['Instrument_Sans']">{t('project.otherProjects')}</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {otherProjects.map((project) => {
@@ -343,18 +378,18 @@ export default function ProjectPage({ projectId, onNavigate }: ProjectPageProps)
                         <source src={featuredVideo} type="video/mp4" />
                         {/* Fallback to placeholder if video fails */}
                         <div className="w-full h-full bg-gray-100 flex items-center justify-center">
-                          <span className="text-gray-400 text-sm">Video Loading...</span>
+                          <span className="text-gray-400 text-sm">{t('project.videoLoading')}</span>
                         </div>
                       </video>
                     ) : (
                       <div className="w-full h-full bg-gray-100 flex items-center justify-center">
-                        <span className="text-gray-400 text-sm">No Video</span>
+                        <span className="text-gray-400 text-sm">{t('project.noVideo')}</span>
                       </div>
                     )}
                     <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
                   <div className="mt-3">
-                    <div className="text-sm text-gray-500">Next Project →</div>
+                    <div className="text-sm text-gray-500">{t('project.nextProjectArrow')}</div>
                     <div className="text-base text-black">{project.title}</div>
                   </div>
                 </div>

@@ -7,7 +7,11 @@
     "viewWork": "Veja Nosso Trabalho",
     "nextProject": "Próximo Projeto",
     "otherProjects": "Outros Projetos",
-    "giveUsABuzz": "Fale conosco"
+    "giveUsABuzz": "Fale conosco",
+    "projectNotFound": "Projeto não encontrado",
+    "viewOurWork": "Veja Nosso Trabalho →",
+    "by": "por",
+    "ourWork": "Nossos Trabalhos"
   },
   "navigation": {
     "logoAlt": "dietrich.tv studio"
@@ -26,45 +30,52 @@
   "contact": {
     "mainHeading": "Dietrich TV é um estúdio de produção premiado que impulsiona a criatividade com I.A. 🇧🇷 Fale conosco.",
     "whatWeDo": "O que fazemos",
+    "connectText": "Entre em contato conosco para explorar o potencial do seu projeto.",
     "sections": {
       "filmImage": {
         "title": "FILME & IMAGEM",
         "items": [
-          "Direção",
-          "Fotografia",
-          "Produção Audiovisual",
-          "Pós-Produção"
+          "Comerciais",
+          "Fashion Film",
+          "Projetos de Arte",
+          "16mm / Digital"
         ]
       },
-      "design": {
-        "title": "DESIGN",
+      "aiInnovation": {
+        "title": "I.A. & INOVAÇÃO",
+        "items": [
+          "Cinema com I.A.",
+          "Experimentos Midiáticos",
+          "Ferramentas Generativas",
+          "Novos Meios"
+        ]
+      },
+      "designResearch": {
+        "title": "DESIGN & PESQUISA",
         "items": [
           "Direção de Arte",
-          "Design Gráfico",
-          "Motion Graphics",
-          "VFX"
-        ]
-      },
-      "ai": {
-        "title": "I.A.",
-        "items": [
-          "Geração de Vídeo com I.A.",
-          "Machine Learning",
-          "Engenharia de Prompt",
-          "Integração de I.A."
+          "Design de Cenário",
+          "Pesquisa Criativa",
+          "Desenvolvimento Conceitual"
         ]
       },
       "strategy": {
         "title": "ESTRATÉGIA",
         "items": [
-          "Estratégia Criativa",
-          "Desenvolvimento de Marca",
-          "Planejamento de Campanha",
-          "Estratégia de Conteúdo"
+          "Estratégia de Marca",
+          "Direção Criativa",
+          "Desenvolvimento de Campanha",
+          "Visão Futura"
         ]
       }
     },
     "trustedBy": "Confiado por",
+    "office": {
+      "title": "ESCRITÓRIO",
+      "address": "Rua Lira, 151 - Sala 12 - Vila Madalena",
+      "city": "São Paulo - Brasil",
+      "zip": "05443-060"
+    },
     "footer": {
       "social": "Redes Sociais",
       "instagram": "Instagram",
@@ -86,7 +97,104 @@
     "type": "Tipo",
     "credits": "Créditos",
     "contact": "Contato",
-    "studioName": "dietrich.tv studio"
+    "studioName": "dietrich.tv studio",
+    "projectNotFound": "Projeto não encontrado",
+    "otherProjects": "Outros Projetos",
+    "nextProjectArrow": "Próximo Projeto →"
+  },
+  "projects": {
+    "grandSoir": {
+      "title": "Grand Soir, por Maison Francis Kurkdjian",
+      "description": "Grand Soir, por Maison Francis Kurkdjian. Um filme especulativo criado inteiramente com inteligência artificial. 100% feito com I.A.",
+      "fullDescription": "Perfume é uma ponte entre momentos, um lugar onde passado e futuro respiram juntos. Vivemos em uma época em que a criação se expande para além das mãos, guiada também pela inteligência que imaginamos e construímos. Como o perfume, essa tecnologia dissolve fronteiras, unindo quem fomos com quem ainda seremos, transformando o invisível em emoção. Criamos este filme especulativo de I.A. para Maison Francis Kurkdjian para celebrar o encontro onde inovação e essência dançam juntas.",
+      "client": "Maison Francis Kurkdjian",
+      "projectType": "Estudo de Caso",
+      "credits": "Direção por Dietrich.tv Studio. 100% feito com I.A."
+    },
+    "ernestoNeto": {
+      "title": "Ernesto Neto para Le Bon Marché Rive Gauche",
+      "description": "Capturando o artista antes e depois da exposição. Onde marca e arte se encontram através do cinema.",
+      "fullDescription": "Filmar um artista em seu ateliê é muito diferente de documentar uma exposição. É entrar no espaço onde o trabalho nasce, onde matéria e gesto ainda são incerteza, experimento, descoberta. Na DietrichTV, tivemos o privilégio de acompanhar Ernesto Neto em seu ateliê no Rio de Janeiro, capturando o processo criativo que antecedeu e sucedeu sua exposição no Le Bon Marché em Paris. Nosso filme não mostra simplesmente a obra finalizada. Ele revela a respiração do artista, a intimidade do trabalho manual, a transição do silêncio do ateliê para a monumentalidade de uma instalação em um dos espaços mais icônicos do mundo. Para nós, esse projeto reforça algo essencial: marcas podem verdadeiramente se conectar com arte não apenas mostrando resultados, mas abraçando processos. É aí que se constrói ressonância autêntica, além das fronteiras da publicidade.",
+      "client": "Le Bon Marché Rive Gauche",
+      "projectType": "Estudo de Caso",
+      "credits": "Dirigido por Dietrich.tv Studio. Filmado no Rio de Janeiro para Le Bon Marché Rive Gauche."
+    },
+    "threeShortFilms": {
+      "title": "Três Curtas-Metragens",
+      "description": "Três curtas-metragens com Manu Gavassi, mesclando moda, música e cinema. Uma trilogia que explora imagem como performance e persona.",
+      "fullDescription": "Com Manu Gavassi, Dietrich dirigiu uma trilogia de curtas-metragens que borrou as linhas entre cinema, moda e performance. Cada peça é ao mesmo tempo íntima e teatral, explorando como a imagem pode construir e desconstruir persona. Os filmes foram concebidos como um diálogo com o universo artístico próprio de Manu: irônico mas delicado, pop mas profundamente pessoal. Através de linguagem visual arrojada e narrativa precisa, eles transcendem a estética convencional de videoclipe, abraçando uma forma híbrida que pertence tanto ao cinema quanto à cultura contemporânea. Juntos, os três curtas formam um mosaico de identidade, revelando como narrativa e estilo podem amplificar a voz de um artista através de diferentes plataformas mantendo-se inconfundivelmente autênticos.",
+      "client": "Manu Gavassi",
+      "projectType": "Trilogia",
+      "credits": "Dirigido por Dietrich.tv Studio em colaboração com Manu Gavassi."
+    },
+    "elsaSchiaparelli": {
+      "title": "Álbum Privado de Elsa Schiaparelli",
+      "description": "Elsa Schiaparelli lembrada através de um curta-metragem animado. Um diálogo entre moda, memória e cosmos.",
+      "fullDescription": "Dietrich dirigiu este filme documentário sobre Elsa Schiaparelli construído em torno de memórias pessoais da neta da estilista: a atriz, supermodelo e ícone cultural Marisa Berenson. Narrado pela própria Marisa, o curta-metragem animado apresentou imagens nunca antes vistas da família Schiaparelli, em uma iniciativa criativa especialmente feita para a biblioteca pública mais importante do Brasil, Biblioteca Mário de Andrade, no contexto do centenário do Manifesto Surrealista de André Breton.",
+      "client": "Biblioteca Mário de Andrade",
+      "projectType": "Documentário Animado",
+      "credits": "Dirigido por Dietrich.tv Studio. Narrado por Marisa Berenson."
+    },
+    "giseleCaua": {
+      "title": "Gisele Bündchen e Cauã Reymond",
+      "description": "Um lançamento cinematográfico ao som do clássico 'Lá Vem Ela' de Jorge Ben Jor.",
+      "fullDescription": "Para o filme de lançamento da Democrata, reunimos duas das figuras mais icônicas do Brasil — Gisele Bündchen e Cauã Reymond — em uma história que celebra estilo, presença e ritmo. A trilha sonora, 'Lá Vem Ela' de Jorge Ben Jor, define o tom: atemporal, magnética, inconfundivelmente brasileira. Cada quadro captura um diálogo entre elegância e energia, masculinidade e feminilidade, intimidade e espetáculo. O filme foi concebido como mais do que um comercial. É um encontro cultural, tecendo moda e música em uma narrativa que coloca a marca no coração da herança criativa do Brasil. Filmado com precisão cinematográfica, a peça amplifica a visão da Democrata: sofisticação com alma, clássico com contemporâneo, artesanato com carisma.",
+      "client": "Democrata",
+      "projectType": "Filme de Lançamento",
+      "credits": "Dirigido por Dietrich.tv Studio. Com Gisele Bündchen e Cauã Reymond."
+    },
+    "mothersDay25": {
+      "title": "Dia das Mães '25",
+      "description": "Sasha, Bruna Marquezine, Xuxa e Neide — uma celebração de gerações e amor.",
+      "fullDescription": "Para a campanha de Dia das Mães da Hering, reunimos Sasha Meneghel, Bruna Marquezine, Xuxa e Neide. Mais que um filme, tornou-se um retrato de afeto através de gerações, tecendo laços familiares no tecido de uma das marcas mais icônicas do Brasil. A narrativa é íntima mas universal: mães e filhas, amizade e legado, os gestos simples que definem amor. Cada cena foi elaborada para destacar autenticidade, onde moda se torna secundária à emoção, e presença se torna mais poderosa que performance. Neste projeto, cinema e storytelling de marca convergem para honrar maternidade — não como conceito, mas como experiência vivida.",
+      "client": "Hering",
+      "projectType": "Campanha",
+      "credits": "Dirigido por Dietrich.tv Studio. Com Sasha, Bruna Marquezine, Xuxa e Neide."
+    },
+    "ilNeige": {
+      "title": "Il Neige Rive Gauche",
+      "description": "Um conto animado de inverno para Le Bon Marché, onde Paris se torna poesia.",
+      "fullDescription": "Fomos comissionados pelo Le Bon Marché para criar Il Neige Rive Gauche, um filme animado que transforma o inverno parisiense em uma narrativa poética. O projeto foi concebido não como uma campanha no sentido tradicional, mas como um gesto onírico: neve caindo na Rive Gauche, a cidade se transformando em um palco onde imaginação toma conta da realidade. Animação se tornou a linguagem para capturar o efêmero, mesclando design e storytelling de uma forma que parece ao mesmo tempo atemporal e inesperada. Na interseção de cinema, design e identidade de marca, Il Neige Rive Gauche é mais que um filme sazonal. É um convite sensorial, um lembrete de que uma marca também pode ser curadora de emoções.",
+      "client": "Le Bon Marché Rive Gauche",
+      "projectType": "Filme Animado",
+      "credits": "Dirigido por Dietrich.tv Studio. Comissionado por Le Bon Marché Rive Gauche."
+    },
+    "desejo": {
+      "title": "Desejo",
+      "description": "Um filme sensorial onde intimidade, fragrância e memória se entrelaçam.",
+      "fullDescription": "Para Desejo da Natura, Dietrich (com O2 Filmes) dirigiu um filme que explora a tensão sutil entre intimidade e expressão. Desejo não é mostrado diretamente — é sugerido através de gestos, texturas e o ritmo da fragrância em movimento. A narrativa se desenrola em camadas: close-ups que evocam toque, quadros que borram a linha entre pele e atmosfera, uma abordagem sensorial onde perfume se torna tanto memória quanto antecipação. Ao invés de ilustrar o produto, o filme cria um território emocional, onde a linguagem de beleza da Natura ressoa como algo íntimo, poético e profundamente humano.",
+      "client": "Natura",
+      "projectType": "Campanha",
+      "credits": "Dirigido por Dietrich.tv Studio em colaboração com O2 Filmes."
+    },
+    "brilhoLamelar": {
+      "title": "Brilho Lamelar",
+      "description": "Tecnologia e beleza se encontram em um filme onde cabelo se torna luz.",
+      "fullDescription": "Para o lançamento do TRESemmé Brilho Lamelar, Dietrich dirigiu (na O2 Filmes) um filme que conecta moda e tecnologia. Filmado em produção virtual, a narrativa se move entre espaços reais e virtuais, onde Sabrina Sato incorpora a elegância e energia da marca. A estética é precisa e sofisticada: fundos escuros, iluminação esculpida e movimentos que destacam brilho como performance. Cada transição mergulha no cabelo como se fosse um portal, nos levando a novas cenas com ritmo e precisão.",
+      "client": "TRESemmé",
+      "projectType": "Filme de Lançamento",
+      "credits": "Dirigido por Dietrich.tv Studio na O2 Filmes. Com Sabrina Sato."
+    },
+    "gracinha": {
+      "title": "Gracinha",
+      "description": "Um filme musical que mescla pop, fantasia e cinema. Dirigido por Dietrich com Manu Gavassi.",
+      "fullDescription": "Dirigido por Dietrich e Manu Gavassi, Gracinha é um filme musical que transcende as fronteiras do formato de videoclipe, mesclando sensibilidade pop com estética de moda e narrativa cinematográfica. O projeto se tornou um marco cultural, alcançando mais de 20 milhões de visualizações em 24 horas de lançamento, e ressoou como uma das obras audiovisuais mais marcantes do mercado brasileiro. Dietrich.tv Studio foi responsável pela direção e execução, criando uma jornada visual em camadas que equilibra intimidade e espetáculo — um retrato da arte de Manu Gavassi elevado a escala cinematográfica.",
+      "client": "Manu Gavassi",
+      "projectType": "Filme Musical",
+      "credits": "Dirigido por Dietrich.tv Studio com Manu Gavassi."
+    },
+    "mothersDayFernandas": {
+      "title": "Dia das Mães Fernandas",
+      "description": "Fernanda Torres e Fernanda Montenegro protagonizam um filme íntimo celebrando maternidade e conexão atemporal. Dirigido por Dietrich.",
+      "fullDescription": "Para o Dia das Mães, a Hering reuniu duas das atrizes mais icônicas do Brasil — Fernanda Torres e Fernanda Montenegro — em um filme tocante que celebra laços maternos e conexão atemporal. Dirigido por Dietrich, a peça combina intimidade e elegância, destacando gestos e emoções com simplicidade e verdade, alinhado com a identidade essencial da Hering. Dietrich.tv Studio liderou a direção e produção, criando uma narrativa cinematográfica onde moda, afeto e herança se entrelaçam em uma homenagem que é ao mesmo tempo universal e pessoal.",
+      "client": "Hering",
+      "projectType": "Campanha",
+      "credits": "Dirigido por Dietrich.tv Studio. Com Fernanda Montenegro e Fernanda Torres."
+    }
+  },
+  "clients": {
+    "clientName": "Cliente",
+    "trustedBy": "Confiado por"
   },
   "meta": {
     "title": "Dietrich TV Studio - Veja Nosso Trabalho",

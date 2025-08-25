@@ -574,7 +574,7 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
           
           {/* Our work title */}
           <div className="mb-6">
-            <h2 className="text-black font-['Instrument_Sans'] mb-4 text-[21px] font-normal no-underline">Our Work</h2>
+            <h2 className="text-black font-['Instrument_Sans'] mb-4 text-[21px] font-normal no-underline">{t('common.ourWork')}</h2>
             
             {/* Category Filter */}
             <div className="flex flex-wrap gap-4">

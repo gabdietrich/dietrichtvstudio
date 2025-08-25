@@ -3,6 +3,7 @@ import Navigation from './components/Navigation';
 import WorkPage, { getProjectBySlug, getProjectById } from './components/WorkPage';
 import ContactPage from './components/ContactPage';
 import ProjectPage from './components/ProjectPage';
+import MetaUpdater from './components/MetaUpdater';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('work');
@@ -134,6 +135,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-black relative">
+      <MetaUpdater />
       <Navigation 
         currentPage={currentPage} 
         onPageChange={handleNavigate} 
