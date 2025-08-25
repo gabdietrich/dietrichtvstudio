@@ -196,6 +196,15 @@ export const mockWorks = [
     category: "commercial",
     description: "A cinematic launch set to Jorge Ben Jor's classic Lá Vem Ela.",
     client: "Democrata",
+    fullDescription: "For Democrata's launch film, we brought together two of Brazil's most iconic figures — Gisele Bündchen and Cauã Reymond — in a story that celebrates style, presence, and rhythm. The soundtrack, Jorge Ben Jor's Lá Vem Ela, sets the tone: timeless, magnetic, unmistakably Brazilian. Each frame captures a dialogue between elegance and energy, masculinity and femininity, intimacy and spectacle. The film was conceived as more than a commercial. It is a cultural encounter, weaving fashion and music into a narrative that places the brand in the heart of Brazil's creative heritage. Shot with cinematic precision, the piece amplifies Democrata's vision: sophistication with soul, classic with contemporary, craft with charisma.",
+    projectType: "Launch Film",
+    credits: "Directed by Dietrich.tv Studio. Featuring Gisele Bündchen and Cauã Reymond.",
+    vimeoId: "1006728704",
+    carouselImages: [
+      "/projects/democrata-gisele-caua/gallery/democrata-gisele-caua-gallery1.jpg",
+      "/projects/democrata-gisele-caua/gallery/democrata-gisele-caua-gallery2.jpg",
+      "/projects/democrata-gisele-caua/gallery/democrata-gisele-caua-gallery3.jpg"
+    ],
     videos: [
       { 
         id: 13, 
@@ -227,6 +236,11 @@ export const mockWorks = [
     category: "commercial",
     description: "Sasha, Bruna Marquezine, Xuxa and Neide — a celebration of generations and love.",
     client: "Hering",
+    fullDescription: "For Hering's Mother's Day campaign, we brought together Sasha Meneghel, Bruna Marquezine, Xuxa and Neide. More than a film, it became a portrait of affection across generations, weaving family bonds into the fabric of one of Brazil's most iconic brands. The narrative is intimate yet universal: mothers and daughters, friendship and legacy, the simple gestures that define love. Each scene was crafted to highlight authenticity, where fashion becomes secondary to emotion, and presence becomes more powerful than performance. In this project, cinema and brand storytelling converge to honor motherhood — not as a concept, but as lived experience.",
+    projectType: "Campaign",
+    credits: "Directed by Dietrich.tv Studio. Starring Sasha, Bruna Marquezine, Xuxa and Neide.",
+    vimeoId: "1112761195,1112760986",
+    carouselImages: [],
     videos: [
       { 
         id: 16, 
@@ -290,6 +304,16 @@ export const mockWorks = [
     category: ["beauty", "commercial"],
     description: "A sensorial film where intimacy, fragrance, and memory intertwine.",
     client: "Natura",
+    fullDescription: "For Natura's Desejo, Dietrich (with O2 Filmes) directed a film that explores the subtle tension between intimacy and expression. Desire is not shown directly — it is suggested through gestures, textures, and the rhythm of fragrance in motion. The narrative unfolds in layers: close-ups that evoke touch, frames that blur the line between skin and atmosphere, a sensorial approach where perfume becomes both memory and anticipation. Rather than illustrating the product, the film creates an emotional territory, where Natura's language of beauty resonates as something intimate, poetic, and deeply human.",
+    projectType: "Campaign",
+    credits: "Directed by Dietrich.tv Studio in collaboration with O2 Filmes.",
+    vimeoId: "680559680",
+    carouselImages: [
+      "/projects/desejo-natura/gallery/desejo-natura-gallery1.jpg",
+      "/projects/desejo-natura/gallery/desejo-natura-gallery2.jpg",
+      "/projects/desejo-natura/gallery/desejo-natura-gallery3.jpg",
+      "/projects/desejo-natura/gallery/desejo-natura-gallery4.jpg"
+    ],
     videos: [
       { 
         id: 22, 
@@ -321,6 +345,15 @@ export const mockWorks = [
     category: ["beauty", "commercial"],
     description: "Technology and beauty meet in a film where hair becomes light.",
     client: "TRESemmé",
+    fullDescription: "For the launch of TRESemmé Brilho Lamelar, Dietrich directed (at O2 Filmes) a film that bridges fashion and technology. Shot in virtual production, the narrative moves between real and virtual spaces, where Sabrina Sato embodies the elegance and energy of the brand. The aesthetic is sharp and sophisticated: dark backdrops, sculpted lighting, and movements that highlight shine as performance. Each transition dives into hair as if it were a portal, leading us into new scenes with rhythm and precision.",
+    projectType: "Launch Film",
+    credits: "Directed by Dietrich.tv Studio at O2 Filmes. Featuring Sabrina Sato.",
+    vimeoId: "880317712",
+    carouselImages: [
+      "/projects/tresemme-brilho-lamelar/gallery/tresemme-brilho-lamelar-gallery1.jpg",
+      "/projects/tresemme-brilho-lamelar/gallery/tresemme-brilho-lamelar-gallery2.jpg",
+      "/projects/tresemme-brilho-lamelar/gallery/tresemme-brilho-lamelar-gallery3.jpg"
+    ],
     videos: [
       { 
         id: 25, 
@@ -352,6 +385,15 @@ export const mockWorks = [
     category: "music video",
     description: "A music film that blends pop, fantasy, and cinema. Directed by Dietrich with Manu Gavassi.",
     client: "Manu Gavassi",
+    fullDescription: "Directed by Dietrich and Manu Gavassi, Gracinha is a music film that transcends the boundaries of the music video format, merging pop sensibility with fashion aesthetics and cinematic storytelling. The project became a cultural milestone, reaching over 20 million views within 24 hours of release, and resonated as one of the most striking audiovisual works in the Brazilian market. Dietrich.tv Studio was responsible for the direction and execution, creating a layered visual journey that balances intimacy and spectacle — a portrait of Manu Gavassi's artistry elevated to a cinematic scale.",
+    projectType: "Music Film",
+    credits: "Directed by Dietrich.tv Studio with Manu Gavassi.",
+    vimeoId: "650425603",
+    carouselImages: [
+      "/projects/gracinha-disney/gallery/gracinha-disney-gallery1.jpg",
+      "/projects/gracinha-disney/gallery/gracinha-disney-gallery2.jpg",
+      "/projects/gracinha-disney/gallery/gracinha-disney-gallery3.jpg"
+    ],
     videos: [
       { 
         id: 28, 
@@ -383,6 +425,19 @@ export const mockWorks = [
     category: "commercial",
     description: "Fernanda Torres and Fernanda Montenegro star in an intimate film celebrating motherhood and timeless connection. Directed by Dietrich.",
     client: "Hering",
+    fullDescription: "For Mother's Day, Hering brought together two of Brazil's most iconic actresses — Fernanda Torres and Fernanda Montenegro — in a touching film that celebrates maternal bonds and timeless connection. Directed by Dietrich, the piece combines intimacy and elegance, highlighting gestures and emotions with simplicity and truth, in line with Hering's essential identity. Dietrich.tv Studio led the direction and production, crafting a cinematic narrative where fashion, affection, and heritage intertwine in a tribute that is as universal as it is personal.",
+    projectType: "Campaign",
+    credits: "Directed by Dietrich.tv Studio. Featuring Fernanda Montenegro and Fernanda Torres.",
+    vimeoId: "524394640",
+    carouselImages: [
+      "/projects/mothers-day-hering-fernandas/gallery/mothers-day-hering-fernandas-gallery1.jpg",
+      "/projects/mothers-day-hering-fernandas/gallery/mothers-day-hering-fernandas-gallery2.jpg",
+      "/projects/mothers-day-hering-fernandas/gallery/mothers-day-hering-fernandas-gallery3.jpg",
+      "/projects/mothers-day-hering-fernandas/gallery/mothers-day-hering-fernandas-gallery4.jpg",
+      "/projects/mothers-day-hering-fernandas/gallery/mothers-day-hering-fernandas-gallery5.jpg",
+      "/projects/mothers-day-hering-fernandas/gallery/mothers-day-hering-fernandas-gallery6.jpg",
+      "/projects/mothers-day-hering-fernandas/gallery/mothers-day-hering-fernandas-gallery7.jpg"
+    ],
     videos: [
       { 
         id: 31, 
