@@ -41,7 +41,7 @@ export default function Navigation({ currentPage, onPageChange, isTransitioning 
             }`}
           >
             <img 
-              src="/dietrich-logo.svg" 
+              src="/logo_dietrich_BLACK.svg" 
               alt="dietrich.tv studio" 
               className="h-8 w-auto"
             />
