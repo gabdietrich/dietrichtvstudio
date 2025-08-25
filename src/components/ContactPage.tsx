@@ -7,7 +7,7 @@ export default function ContactPage() {
         {/* Main heading */}
         <div className="mb-20">
           <h2 className="text-4xl md:text-5xl lg:text-6xl text-black leading-tight max-w-4xl font-['Instrument_Sans']">
-            We make films, sometimes with cameras, sometimes with machines.<br />Either way, it's real. Give us a buzz.
+            Dietrich TV is an award-winning production studio pushing creativity with A.I. 🇧🇷 Give us a buzz.
           </h2>
         </div>
 
