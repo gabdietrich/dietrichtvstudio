@@ -6,6 +6,23 @@
   command = "npm run dev"
   port = 3000
 
+# Edge Functions configuration
+[[edge_functions]]
+  function = "locale-redirect"
+  path = "/*"
+
+# Locale-specific redirects (after edge function processing)
+[[redirects]]
+  from = "/pt/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/en/*"
+  to = "/index.html"
+  status = 200
+
+# Fallback for any remaining routes
 [[redirects]]
   from = "/*"
   to = "/index.html"

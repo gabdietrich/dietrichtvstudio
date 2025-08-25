@@ -8,7 +8,32 @@ export default function LanguageSwitcher({ className = '' }: LanguageSwitcherPro
   const { i18n } = useTranslation();
 
   const changeLanguage = (lng: string) => {
+    // Change the language in i18next
     i18n.changeLanguage(lng);
+    
+    // Set cookie to persist language choice
+    document.cookie = `lang=${lng}; path=/; max-age=${365 * 24 * 60 * 60}`; // 1 year
+    
+    // Update URL with new locale
+    const currentPath = window.location.pathname;
+    let newPath = '';
+    
+    // Check if current path has locale prefix
+    const localeMatch = currentPath.match(/^\/(pt|en)(.*)/);
+    if (localeMatch) {
+      // Replace existing locale with new one
+      const remainingPath = localeMatch[2] || '/';
+      newPath = `/${lng}${remainingPath === '/' ? '/' : remainingPath}`;
+    } else {
+      // Add locale prefix to current path
+      newPath = `/${lng}${currentPath === '/' ? '/' : currentPath}`;
+    }
+    
+    // Navigate to new URL
+    window.history.pushState({}, '', newPath);
+    
+    // Trigger a popstate event to update the app state
+    window.dispatchEvent(new PopStateEvent('popstate'));
   };
 
   return (

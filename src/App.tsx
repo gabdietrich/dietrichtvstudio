@@ -14,17 +14,36 @@ export default function App() {
 
   // Parse URL and set initial state
   useEffect(() => {
-    const parseURL = () => {
+    const parseURL = async () => {
       const path = window.location.pathname;
       
-      if (path === '/contact') {
+      // Extract locale from URL path (e.g., /pt/contact or /en/project/slug)
+      const localeMatch = path.match(/^\/(pt|en)(\/.*)?$/);
+      const locale = localeMatch?.[1];
+      const remainingPath = localeMatch?.[2] || '/';
+      
+      // Set language if locale is detected in URL
+      if (locale && (locale === 'pt' || locale === 'en')) {
+        // Dynamically import i18next to avoid circular dependency
+        const { default: i18n } = await import('./i18n');
+        if (i18n.language !== locale) {
+          i18n.changeLanguage(locale);
+          // Set cookie to remember preference
+          document.cookie = `lang=${locale}; path=/; max-age=${365 * 24 * 60 * 60}`; // 1 year
+        }
+      }
+      
+      // Parse the remaining path after locale prefix
+      const basePath = remainingPath === '/' ? '/' : remainingPath;
+      
+      if (basePath === '/contact') {
         setCurrentPage('contact');
         setDisplayedPage('contact');
         setCurrentProjectId(null);
         setDisplayedProjectId(null);
-      } else if (path.startsWith('/') && path !== '/') {
-        // Extract slug from path (remove leading slash)
-        const slug = path.slice(1);
+      } else if (basePath !== '/' && basePath !== '') {
+        // Extract slug from remaining path (remove leading slash)
+        const slug = basePath.slice(1);
         const project = getProjectBySlug(slug);
         
         if (project) {
@@ -63,6 +82,25 @@ export default function App() {
     };
   }, []);
 
+  // Helper function to get current locale from URL or cookie
+  const getCurrentLocale = () => {
+    // First check URL
+    const path = window.location.pathname;
+    const localeMatch = path.match(/^\/(pt|en)/);
+    if (localeMatch) {
+      return localeMatch[1];
+    }
+    
+    // Fallback to cookie
+    const cookieMatch = document.cookie.match(/(?:^|;\s*)lang=(pt|en)(?:;|$)/);
+    if (cookieMatch) {
+      return cookieMatch[1];
+    }
+    
+    // Default to English
+    return 'en';
+  };
+
   const handleNavigate = (page: string, projectId?: number, replaceHistory = false) => {
     // Don't start a new transition if one is already in progress
     if (isTransitioning) return;
@@ -70,19 +108,22 @@ export default function App() {
     // If navigating to the same page, no transition needed
     if (page === currentPage && (!projectId || projectId === currentProjectId)) return;
     
-    // Create URL based on page and projectId
+    // Get current locale for URL construction
+    const currentLocale = getCurrentLocale();
+    
+    // Create URL based on page and projectId with locale prefix
     let url = '';
     if (page === 'contact') {
-      url = '/contact';
+      url = `/${currentLocale}/contact`;
     } else if (page === 'project' && projectId) {
       const project = getProjectById(projectId);
       if (project && project.slug) {
-        url = `/${project.slug}`;
+        url = `/${currentLocale}/${project.slug}`;
       } else {
-        url = '/'; // Fallback to work page if project not found
+        url = `/${currentLocale}/`; // Fallback to work page if project not found
       }
     } else {
-      url = '/'; // Default to work page
+      url = `/${currentLocale}/`; // Default to work page
     }
     
     // Update browser history

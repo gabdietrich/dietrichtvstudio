@@ -23,8 +23,11 @@ i18n
     debug: false,
     
     detection: {
-      order: ['localStorage', 'navigator', 'htmlTag'],
-      caches: ['localStorage']
+      order: ['path', 'cookie', 'localStorage', 'navigator', 'htmlTag'],
+      lookupFromPathIndex: 0,
+      lookupFromSubdomainIndex: 0,
+      lookupCookie: 'lang',
+      caches: ['localStorage', 'cookie']
     },
 
     interpolation: {

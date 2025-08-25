@@ -60,7 +60,39 @@ export default function MetaUpdater() {
       ogImageAltMeta.setAttribute('content', t('meta.imageAlt'));
     }
 
+    // Update/add hreflang tags for SEO
+    updateHreflangTags();
+
   }, [t, i18n.language]);
+
+  const updateHreflangTags = () => {
+    // Remove existing hreflang tags
+    const existingHreflangTags = document.querySelectorAll('link[rel="alternate"][hreflang]');
+    existingHreflangTags.forEach(tag => tag.remove());
+
+    // Get current path without locale prefix
+    const currentPath = window.location.pathname;
+    const localeMatch = currentPath.match(/^\/(pt|en)(.*)/);
+    const basePath = localeMatch ? localeMatch[2] || '/' : currentPath;
+    const baseUrl = window.location.origin;
+
+    // Create hreflang tags for both languages
+    const hreflangTags = [
+      { hreflang: 'pt-BR', href: `${baseUrl}/pt${basePath === '/' ? '/' : basePath}` },
+      { hreflang: 'en', href: `${baseUrl}/en${basePath === '/' ? '/' : basePath}` },
+      { hreflang: 'x-default', href: `${baseUrl}/en${basePath === '/' ? '/' : basePath}` } // Default to English
+    ];
+
+    // Add hreflang tags to head
+    const head = document.head;
+    hreflangTags.forEach(({ hreflang, href }) => {
+      const link = document.createElement('link');
+      link.rel = 'alternate';
+      link.hreflang = hreflang;
+      link.href = href;
+      head.appendChild(link);
+    });
+  };
 
   return null; // This component doesn't render anything
 }
