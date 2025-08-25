@@ -6,6 +6,8 @@ interface Video {
   thumbnail: string;
   title?: string;
   description?: string;
+  videoUrl?: string;
+  mobileVideoUrl?: string; // Separate video for mobile
 }
 
 interface Work {
@@ -27,6 +29,19 @@ interface AutoScrollCarouselProps {
 export default function AutoScrollCarousel({ work, speed = 10, onNavigate }: AutoScrollCarouselProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [videosLoaded, setVideosLoaded] = useState<Set<string>>(new Set());
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect mobile screen size
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkIsMobile();
+    window.addEventListener('resize', checkIsMobile);
+    
+    return () => window.removeEventListener('resize', checkIsMobile);
+  }, []);
 
   const handleVideoLoad = (videoKey: string) => {
     setVideosLoaded(prev => new Set(prev).add(videoKey));
@@ -82,15 +97,39 @@ export default function AutoScrollCarousel({ work, speed = 10, onNavigate }: Aut
               >
                 {/* Square video container - non-interactive with sharp corners */}
                 <div className="relative aspect-square bg-gray-900 overflow-hidden">
-                  <div className={`transition-opacity duration-700 ease-out ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
-                    <ImageWithFallback
-                      src={video.thumbnail}
-                      alt={video.title || work.title}
+                  {video.videoUrl || video.mobileVideoUrl ? (
+                    <video
+                      key={videoKey}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
                       className="w-full h-full object-cover"
-                      onLoad={() => handleVideoLoad(videoKey)}
-                    />
-                    <div className="absolute inset-0 bg-black/10" />
-                  </div>
+                      onLoadedData={() => handleVideoLoad(videoKey)}
+                      poster={video.thumbnail}
+                    >
+                      <source 
+                        src={isMobile && video.mobileVideoUrl ? video.mobileVideoUrl : video.videoUrl} 
+                        type="video/mp4" 
+                      />
+                      {/* Fallback to thumbnail if video fails */}
+                      <ImageWithFallback
+                        src={video.thumbnail}
+                        alt={video.title || work.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </video>
+                  ) : (
+                    <div className={`transition-opacity duration-700 ease-out ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
+                      <ImageWithFallback
+                        src={video.thumbnail}
+                        alt={video.title || work.title}
+                        className="w-full h-full object-cover"
+                        onLoad={() => handleVideoLoad(videoKey)}
+                      />
+                    </div>
+                  )}
+                  <div className="absolute inset-0 bg-black/10" />
                 </div>
               </div>
             );

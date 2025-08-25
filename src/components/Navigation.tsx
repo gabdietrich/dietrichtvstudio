@@ -36,11 +36,17 @@ export default function Navigation({ currentPage, onPageChange, isTransitioning 
           <button
             onClick={handleLogoClick}
             disabled={isTransitioning}
-            className={`text-lg font-medium transition-all duration-200 hover:opacity-80 font-['Instrument_Sans'] ${
-              isWorkPage ? 'text-black' : 'text-black'
-            } ${isTransitioning ? 'opacity-50 pointer-events-none' : 'opacity-100'}`}
+            className={`transition-all duration-200 hover:opacity-80 ${
+              isTransitioning ? 'opacity-50 pointer-events-none' : 'opacity-100'
+            }`}
           >
-            dietrich.tv studio
+            <img 
+              src="/src/assets/dietrich-logo.svg" 
+              alt="dietrich.tv studio" 
+              width="927" 
+              height="31.5"
+              className="h-8"
+            />
           </button>
           <div className="flex gap-8">
             {pages.map((page) => (
