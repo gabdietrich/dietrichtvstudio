@@ -7,7 +7,7 @@ export default function ContactPage() {
         {/* Main heading */}
         <div className="mb-20">
           <h2 className="text-4xl md:text-5xl lg:text-6xl text-black leading-tight max-w-4xl font-['Instrument_Sans']">
-            Merging cinema, design, and artificial intelligence to craft images where art and brand meet.
+            We make films, sometimes with cameras, sometimes with machines.<br />Either way, it's real. Give us a buzz.
           </h2>
         </div>
 
