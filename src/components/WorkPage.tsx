@@ -370,7 +370,7 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
         <div className="max-w-7xl mx-auto px-[15px] mb-16">
           {/* Main statement */}
           <div className="mb-12">
-            <h1 className="text-black max-w-4xl text-[48px] leading-[0.77]">
+            <h1 className="text-black max-w-4xl text-[48px] leading-[0.924]">
               we are a mixed-media production company based in são paulo brazil - working in the intersection of design, film production & post-production.
             </h1>
           </div>
