@@ -1,13 +1,15 @@
+import { useTranslation } from 'react-i18next';
 import ClientsCarousel from './ClientsCarousel';
 
 export default function ContactPage() {
+  const { t } = useTranslation();
   return (
     <div className="min-h-screen bg-white text-black pt-20">
       <div className="max-w-7xl mx-auto px-[15px] py-12">
         {/* Main heading */}
         <div className="mb-20">
           <h2 className="text-4xl md:text-5xl lg:text-6xl text-black leading-tight max-w-4xl font-['Instrument_Sans']">
-            Dietrich TV is an award-winning production studio pushing creativity with A.I. 🇧🇷 Give us a buzz.
+            {t('contact.mainHeading')}
           </h2>
         </div>
 
@@ -16,17 +18,16 @@ export default function ContactPage() {
 
         {/* What we do section */}
         <div className="mb-20">
-          <h3 className="text-3xl md:text-4xl text-black mb-12 font-['Instrument_Sans']">What we do</h3>
+          <h3 className="text-3xl md:text-4xl text-black mb-12 font-['Instrument_Sans']">{t('contact.whatWeDo')}</h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             {/* FILM & IMAGE */}
             <div className="space-y-6">
-              <div className="text-xs text-gray-500 uppercase tracking-wide">FILM & IMAGE</div>
+              <div className="text-xs text-gray-500 uppercase tracking-wide">{t('contact.sections.filmImage.title')}</div>
               <div className="space-y-3">
-                <div className="text-base text-black">Commercials</div>
-                <div className="text-base text-black">Fashion Film</div>
-                <div className="text-base text-black">Art Projects</div>
-                <div className="text-base text-black">16mm / Digital</div>
+                {(t('contact.sections.filmImage.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
+                  <div key={index} className="text-base text-black">{item}</div>
+                ))}
               </div>
             </div>
 

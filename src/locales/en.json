@@ -1,0 +1,98 @@
+{
+  "common": {
+    "contact": "Contact",
+    "home": "Home",
+    "work": "Work",
+    "loading": "Loading...",
+    "viewWork": "View Our Work",
+    "nextProject": "Next Project",
+    "otherProjects": "Other Projects",
+    "giveUsABuzz": "Give us a buzz"
+  },
+  "navigation": {
+    "logoAlt": "dietrich.tv studio"
+  },
+  "homepage": {
+    "mainText": "We are a mixed-media production company based in São Paulo, Brazil - working in the intersection of design, film production & post-production.",
+    "categories": {
+      "all": "All",
+      "commercial": "Commercial",
+      "ai": "A.I.",
+      "beauty": "Beauty",
+      "documentary": "Documentary",
+      "musicVideo": "Music Video"
+    }
+  },
+  "contact": {
+    "mainHeading": "Dietrich TV is an award-winning production studio pushing creativity with A.I. 🇧🇷 Give us a buzz.",
+    "whatWeDo": "What we do",
+    "sections": {
+      "filmImage": {
+        "title": "FILM & IMAGE",
+        "items": [
+          "Direction",
+          "Photography",
+          "Film Production",
+          "Post-Production"
+        ]
+      },
+      "design": {
+        "title": "DESIGN",
+        "items": [
+          "Art Direction",
+          "Graphic Design",
+          "Motion Graphics",
+          "VFX"
+        ]
+      },
+      "ai": {
+        "title": "A.I.",
+        "items": [
+          "A.I. Video Generation",
+          "Machine Learning",
+          "Prompt Engineering",
+          "A.I. Integration"
+        ]
+      },
+      "strategy": {
+        "title": "STRATEGY",
+        "items": [
+          "Creative Strategy",
+          "Brand Development",
+          "Campaign Planning",
+          "Content Strategy"
+        ]
+      }
+    },
+    "trustedBy": "Trusted by",
+    "footer": {
+      "social": "Social",
+      "instagram": "Instagram",
+      "behance": "Behance",
+      "linkedin": "LinkedIn",
+      "vimeo": "Vimeo",
+      "getInTouch": "Get in touch",
+      "phone": "+55 11 99306 8428",
+      "email": "contact@dietrich.tv",
+      "studioName": "dietrich.tv studio"
+    }
+  },
+  "project": {
+    "videoLoading": "Video Loading...",
+    "noVideo": "No Video",
+    "noVideoAvailable": "No video available",
+    "projectDetails": "Project Details",
+    "client": "Client",
+    "type": "Type",
+    "credits": "Credits",
+    "contact": "Contact",
+    "studioName": "dietrich.tv studio"
+  },
+  "meta": {
+    "title": "Dietrich TV Studio - See Our Work",
+    "description": "Dietrich TV is an award-winning production studio pushing creativity with A.I. Based in São Paulo, Brazil.",
+    "keywords": "production studio, A.I., artificial intelligence, film, video, creative, São Paulo, Brazil",
+    "ogDescription": "Dietrich TV is an award-winning production studio pushing creativity with A.I. 🇧🇷",
+    "imageAlt": "Dietrich TV Studio - Creative production with A.I."
+  }
+}

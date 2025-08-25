@@ -1,4 +1,6 @@
 import { Button } from "./ui/button";
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 
 interface NavigationProps {
   currentPage: string;
@@ -7,8 +9,10 @@ interface NavigationProps {
 }
 
 export default function Navigation({ currentPage, onPageChange, isTransitioning = false }: NavigationProps) {
+  const { t } = useTranslation();
+  
   const pages = [
-    { id: 'contact', label: 'Contact' }
+    { id: 'contact', label: t('common.contact') }
   ];
 
   const isWorkPage = currentPage === 'work';
@@ -42,11 +46,12 @@ export default function Navigation({ currentPage, onPageChange, isTransitioning 
           >
             <img 
               src="/logo_dietrich_BLACK.svg" 
-              alt="dietrich.tv studio" 
+              alt={t('navigation.logoAlt')} 
               className="h-8 w-auto"
             />
           </button>
-          <div className="flex gap-8">
+          <div className="flex items-center gap-8">
+            <LanguageSwitcher />
             {pages.map((page) => (
               <Button
                 key={page.id}

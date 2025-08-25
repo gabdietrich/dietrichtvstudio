@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button } from "./ui/button";
 import AutoScrollCarousel from './AutoScrollCarousel';
 
@@ -530,6 +531,7 @@ interface WorkPageProps {
 }
 
 export default function WorkPage({ onNavigate }: WorkPageProps) {
+  const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [displayedCategory, setDisplayedCategory] = useState('all');
@@ -563,7 +565,7 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
           {/* Main statement */}
           <div className="mb-12">
             <h1 className="text-4xl md:text-5xl lg:text-6xl text-black leading-tight max-w-4xl font-['Instrument_Sans']">
-              We are a mixed-media production company based in São Paulo, Brazil - working in the intersection of design, film production & post-production.
+              {t('homepage.mainText')}
             </h1>
           </div>
           
@@ -587,7 +589,14 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
                       : 'text-black/70 hover:text-black hover:bg-black/5'
                   } ${isTransitioning ? 'opacity-50 pointer-events-none' : 'opacity-100'}`}
                 >
-                  {category === 'a.i.' ? 'A.I.' : category === 'music video' ? 'Music Video' : category}
+                  {t(`homepage.categories.${
+                    category === 'all' ? 'all' :
+                    category === 'commercial' ? 'commercial' :
+                    category === 'a.i.' ? 'ai' :
+                    category === 'beauty' ? 'beauty' :
+                    category === 'documentary' ? 'documentary' :
+                    category === 'music video' ? 'musicVideo' : 'all'
+                  }`)}
                 </Button>
               ))}
             </div>

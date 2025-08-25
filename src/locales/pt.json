@@ -1,0 +1,98 @@
+{
+  "common": {
+    "contact": "Contato",
+    "home": "Início",
+    "work": "Trabalhos",
+    "loading": "Carregando...",
+    "viewWork": "Veja Nosso Trabalho",
+    "nextProject": "Próximo Projeto",
+    "otherProjects": "Outros Projetos",
+    "giveUsABuzz": "Fale conosco"
+  },
+  "navigation": {
+    "logoAlt": "dietrich.tv studio"
+  },
+  "homepage": {
+    "mainText": "Somos uma produtora de mídia mista baseada em São Paulo, Brasil - trabalhando na interseção entre design, produção audiovisual e pós-produção.",
+    "categories": {
+      "all": "Todos",
+      "commercial": "Comercial",
+      "ai": "I.A.",
+      "beauty": "Beleza",
+      "documentary": "Documentário",
+      "musicVideo": "Videoclipe"
+    }
+  },
+  "contact": {
+    "mainHeading": "Dietrich TV é um estúdio de produção premiado que impulsiona a criatividade com I.A. 🇧🇷 Fale conosco.",
+    "whatWeDo": "O que fazemos",
+    "sections": {
+      "filmImage": {
+        "title": "FILME & IMAGEM",
+        "items": [
+          "Direção",
+          "Fotografia",
+          "Produção Audiovisual",
+          "Pós-Produção"
+        ]
+      },
+      "design": {
+        "title": "DESIGN",
+        "items": [
+          "Direção de Arte",
+          "Design Gráfico",
+          "Motion Graphics",
+          "VFX"
+        ]
+      },
+      "ai": {
+        "title": "I.A.",
+        "items": [
+          "Geração de Vídeo com I.A.",
+          "Machine Learning",
+          "Engenharia de Prompt",
+          "Integração de I.A."
+        ]
+      },
+      "strategy": {
+        "title": "ESTRATÉGIA",
+        "items": [
+          "Estratégia Criativa",
+          "Desenvolvimento de Marca",
+          "Planejamento de Campanha",
+          "Estratégia de Conteúdo"
+        ]
+      }
+    },
+    "trustedBy": "Confiado por",
+    "footer": {
+      "social": "Redes Sociais",
+      "instagram": "Instagram",
+      "behance": "Behance",
+      "linkedin": "LinkedIn",
+      "vimeo": "Vimeo",
+      "getInTouch": "Entre em contato",
+      "phone": "+55 11 99306 8428",
+      "email": "contact@dietrich.tv",
+      "studioName": "dietrich.tv studio"
+    }
+  },
+  "project": {
+    "videoLoading": "Carregando Vídeo...",
+    "noVideo": "Sem Vídeo",
+    "noVideoAvailable": "Nenhum vídeo disponível",
+    "projectDetails": "Detalhes do Projeto",
+    "client": "Cliente",
+    "type": "Tipo",
+    "credits": "Créditos",
+    "contact": "Contato",
+    "studioName": "dietrich.tv studio"
+  },
+  "meta": {
+    "title": "Dietrich TV Studio - Veja Nosso Trabalho",
+    "description": "Dietrich TV é um estúdio de produção premiado que impulsiona a criatividade com I.A. Baseado em São Paulo, Brasil.",
+    "keywords": "estúdio de produção, I.A., inteligência artificial, filme, vídeo, criativo, São Paulo, Brasil",
+    "ogDescription": "Dietrich TV é um estúdio de produção premiado que impulsiona a criatividade com I.A. 🇧🇷",
+    "imageAlt": "Dietrich TV Studio - Produção criativa com I.A."
+  }
+}
