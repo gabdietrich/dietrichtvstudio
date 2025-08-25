@@ -157,6 +157,14 @@ export const mockWorks = [
     category: "documentary",
     description: "Elsa Schiaparelli remembered through an animated short film. A dialogue between fashion, memory, and the cosmos.",
     client: "Biblioteca Mário de Andrade",
+    fullDescription: "Dietrich directed this documentary film about Elsa Schiaparelli built around personal memories of the fashion designer's granddaughter: the actress, supermodel and cultural icon Marisa Berenson. Narrated by Marisa herself, the animated short film showcased never before seen images of the Schiaparelli family, in a creative initiative specially made for Brazil's most important public library, Biblioteca Mário de Andrade, in the context of the centenary of André Breton's Surrealist Manifesto.",
+    projectType: "Animated Documentary",
+    credits: "Directed by Dietrich.tv Studio. Narrated by Marisa Berenson.",
+    vimeoId: "1112761795",
+    carouselImages: [
+      "/projects/elsa-schiaparelli-private-album/gallery/elsa-schiaparelli-private-album-gallery1.png",
+      "/projects/elsa-schiaparelli-private-album/gallery/elsa-schiaparelli-private-album-gallery2.png"
+    ],
     videos: [
       { 
         id: 10, 
