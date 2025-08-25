@@ -1,9 +1,9 @@
 export default function ClientsCarousel() {
-  // Create 13 placeholder client logos - will be replaced with real logos later
-  const clientLogos = Array.from({ length: 13 }, (_, i) => ({
+  // Real client logos from public/logos_clients/
+  const clientLogos = Array.from({ length: 11 }, (_, i) => ({
     id: i + 1,
     name: `Client ${i + 1}`,
-    placeholder: true
+    logoUrl: `/logos_clients/${String(i + 1).padStart(3, '0')}.png`
   }));
 
   // Duplicate the array to create seamless infinite scroll
@@ -23,12 +23,15 @@ export default function ClientsCarousel() {
             {duplicatedLogos.map((client, index) => (
               <div
                 key={`${client.id}-${index}`}
-                className="flex-shrink-0 w-[200px] h-[100px] bg-gray-100 border border-gray-200 flex items-center justify-center"
+                className="flex-shrink-0 w-[200px] h-[100px] flex items-center justify-center"
                 style={{ aspectRatio: '2/1' }}
               >
-                <div className="text-gray-400 text-sm font-['Instrument_Sans']">
-                  {client.name}
-                </div>
+                <img
+                  src={client.logoUrl}
+                  alt={client.name}
+                  className="max-w-full max-h-full object-contain"
+                  style={{ filter: 'none' }}
+                />
               </div>
             ))}
           </div>
