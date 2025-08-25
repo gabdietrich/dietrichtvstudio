@@ -196,6 +196,11 @@ const mockWorks = [
 
 // Component for rendering multiple videos when there are multiple vimeoIds
 function VimeoPlayer({ vimeoId, title }: { vimeoId: string; title: string }) {
+  // Safety check for vimeoId
+  if (!vimeoId) {
+    return <div className="text-center text-gray-500">No video available</div>;
+  }
+  
   const vimeoIds = vimeoId.split(',');
   
   return (

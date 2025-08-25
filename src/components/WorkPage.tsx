@@ -34,6 +34,15 @@ export const mockWorks = [
     category: ["beauty", "commercial", "a.i."],
     description: "Grand Soir, by Maison Francis Kurkdjian. A spec film crafted entirely with artificial intelligence. 100% AI-made",
     client: "Maison Francis Kurkdjian",
+    fullDescription: "Perfume is a bridge between moments, a place where past and future breathe together. We live in a time when creation expands beyond the hands, guided also by the intelligence we have imagined and built. Like perfume, this technology dissolves boundaries, uniting who we have been with who we are yet to become, turning the invisible into emotion. We crafted this A.I. spec film for Maison Francis Kurkdjian to celebrate the encounter where innovation and essence dance together.",
+    projectType: "Case Study",
+    credits: "Direction by Dietrich.tv Studio. 100% AI-made.",
+    vimeoId: "1108168421",
+    carouselImages: [
+      "/projects/grand-soir-maison-francis/gallery/grand-soir-maison-francis-gallery1.jpg",
+      "/projects/grand-soir-maison-francis/gallery/grand-soir-maison-francis-gallery2.jpg",
+      "/projects/grand-soir-maison-francis/gallery/grand-soir-maison-francis-gallery3.jpg"
+    ],
     videos: [
       { 
         id: 1, 
@@ -65,6 +74,15 @@ export const mockWorks = [
     category: "documentary",
     description: "Capturing the artist before and after the exhibition. Where brand and art meet through cinema.",
     client: "Le Bon Marché Rive Gauche",
+    fullDescription: "Filming an artist in their studio is very different from documenting an exhibition. It is stepping into the space where the work is born, where matter and gesture are still uncertainty, experiment, discovery. At DietrichTV, we had the privilege of following Ernesto Neto in his Rio de Janeiro studio, capturing the creative process that both preceded and followed his exhibition at Le Bon Marché in Paris. Our film doesn't simply show the finished artwork. It reveals the artist's breath, the intimacy of manual work, the transition from the silence of the studio to the monumentality of an installation in one of the world's most iconic spaces. For us, this project reinforces something essential: brands can truly connect with art not only by showcasing results, but by embracing processes. That's where authentic resonance is built, beyond the borders of advertising.",
+    projectType: "Case Study",
+    credits: "Directed by Dietrich.tv Studio. Filmed in Rio de Janeiro for Le Bon Marché Rive Gauche.",
+    vimeoId: "1030777862",
+    carouselImages: [
+      "/projects/ernesto-neto-le-bon-marche/gallery/ernesto-neto-le-bon-marche-gallery1.jpg",
+      "/projects/ernesto-neto-le-bon-marche/gallery/ernesto-neto-le-bon-marche-gallery2.jpg",
+      "/projects/ernesto-neto-le-bon-marche/gallery/ernesto-neto-le-bon-marche-gallery3.jpg"
+    ],
     videos: [
       { 
         id: 4, 
