@@ -148,10 +148,9 @@ const mockWorks = [
     credits: "Directed by Dietrich.tv Studio at O2 Filmes. Featuring Sabrina Sato.",
     vimeoId: "880317712",
     carouselImages: [
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23e5e7eb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 9 - Image 1%3C/text%3E%3C/svg%3E",
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23d1d5db'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 9 - Image 2%3C/text%3E%3C/svg%3E",
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f3f4f6'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 9 - Image 3%3C/text%3E%3C/svg%3E",
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f9fafb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 9 - Image 4%3C/text%3E%3C/svg%3E"
+      "/projects/tresemme-brilho-lamelar/gallery/tresemme-brilho-lamelar-gallery1.jpg",
+      "/projects/tresemme-brilho-lamelar/gallery/tresemme-brilho-lamelar-gallery2.jpg",
+      "/projects/tresemme-brilho-lamelar/gallery/tresemme-brilho-lamelar-gallery3.jpg"
     ]
   },
   {
@@ -181,8 +180,13 @@ const mockWorks = [
     credits: "Directed by Dietrich.tv Studio. Featuring Fernanda Montenegro and Fernanda Torres.",
     vimeoId: "524394640",
     carouselImages: [
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f9fafb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 11 - Image 1%3C/text%3E%3C/svg%3E",
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f3f4f6'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 11 - Image 2%3C/text%3E%3C/svg%3E"
+      "/projects/mothers-day-hering-fernandas/gallery/mothers-day-hering-fernandas-gallery1.jpg",
+      "/projects/mothers-day-hering-fernandas/gallery/mothers-day-hering-fernandas-gallery2.jpg",
+      "/projects/mothers-day-hering-fernandas/gallery/mothers-day-hering-fernandas-gallery3.jpg",
+      "/projects/mothers-day-hering-fernandas/gallery/mothers-day-hering-fernandas-gallery4.jpg",
+      "/projects/mothers-day-hering-fernandas/gallery/mothers-day-hering-fernandas-gallery5.jpg",
+      "/projects/mothers-day-hering-fernandas/gallery/mothers-day-hering-fernandas-gallery6.jpg",
+      "/projects/mothers-day-hering-fernandas/gallery/mothers-day-hering-fernandas-gallery7.jpg"
     ]
   }
 ];

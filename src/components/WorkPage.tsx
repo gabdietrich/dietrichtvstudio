@@ -252,17 +252,23 @@ const mockWorks = [
       { 
         id: 25, 
         thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 1"
+        title: "Scene 1",
+        videoUrl: "/projects/tresemme-brilho-lamelar/carousel/tresemme-brilho-lamelar-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/tresemme-brilho-lamelar/carousel/tresemme-brilho-lamelar-video1-mobile.mp4"
       },
       { 
         id: 26, 
         thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 2"
+        title: "Scene 2",
+        videoUrl: "/projects/tresemme-brilho-lamelar/carousel/tresemme-brilho-lamelar-video2-desktop.mp4",
+        mobileVideoUrl: "/projects/tresemme-brilho-lamelar/carousel/tresemme-brilho-lamelar-video2-mobile.mp4"
       },
       { 
         id: 27, 
         thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 3"
+        title: "Scene 3",
+        videoUrl: "/projects/tresemme-brilho-lamelar/carousel/tresemme-brilho-lamelar-video3-desktop.mp4",
+        mobileVideoUrl: "/projects/tresemme-brilho-lamelar/carousel/tresemme-brilho-lamelar-video3-mobile.mp4"
       }
     ]
   },
@@ -276,17 +282,23 @@ const mockWorks = [
       { 
         id: 28, 
         thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 1"
+        title: "Scene 1",
+        videoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video1-mobile.mp4"
       },
       { 
         id: 29, 
         thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 2"
+        title: "Scene 2",
+        videoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video2-desktop.mp4",
+        mobileVideoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video2-mobile.mp4"
       },
       { 
         id: 30, 
         thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3C/svg%3E", 
-        title: "Scene 3"
+        title: "Scene 3",
+        videoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video3-desktop.mp4",
+        mobileVideoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video3-mobile.mp4"
       }
     ]
   },
@@ -300,17 +312,23 @@ const mockWorks = [
       { 
         id: 31, 
         thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 1"
+        title: "Scene 1",
+        videoUrl: "/projects/mothers-day-hering-fernandas/carousel/mothers-day-hering-fernandas-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/mothers-day-hering-fernandas/carousel/mothers-day-hering-fernandas-video1-mobile.mp4"
       },
       { 
         id: 32, 
         thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 2"
+        title: "Scene 2",
+        videoUrl: "/projects/mothers-day-hering-fernandas/carousel/mothers-day-hering-fernandas-video2-desktop.mp4",
+        mobileVideoUrl: "/projects/mothers-day-hering-fernandas/carousel/mothers-day-hering-fernandas-video2-mobile.mp4"
       },
       { 
         id: 33, 
         thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 3"
+        title: "Scene 3",
+        videoUrl: "/projects/mothers-day-hering-fernandas/carousel/mothers-day-hering-fernandas-video3-desktop.mp4",
+        mobileVideoUrl: "/projects/mothers-day-hering-fernandas/carousel/mothers-day-hering-fernandas-video3-mobile.mp4"
       }
     ]
   }
