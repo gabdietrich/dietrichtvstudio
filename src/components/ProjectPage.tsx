@@ -23,7 +23,8 @@ const mockWorks = [
     fullDescription: "Perfume is a bridge between moments, a place where past and future breathe together. We live in a time when creation expands beyond the hands, guided also by the intelligence we have imagined and built. Like perfume, this technology dissolves boundaries, uniting who we have been with who we are yet to become, turning the invisible into emotion. We crafted this A.I. spec film for Maison Francis Kurkdjian to celebrate the encounter where innovation and essence dance together.",
     projectType: "Case Study",
     credits: "Direction by Dietrich.tv Studio. 100% AI-made.",
-    vimeoId: "1108168421"
+    vimeoId: "1108168421",
+    carouselImages: [grandSoirImage1, grandSoirImage2, grandSoirImage3]
   },
   {
     id: 2,
@@ -34,7 +35,13 @@ const mockWorks = [
     fullDescription: "Filming an artist in their studio is very different from documenting an exhibition. It is stepping into the space where the work is born, where matter and gesture are still uncertainty, experiment, discovery. At DietrichTV, we had the privilege of following Ernesto Neto in his Rio de Janeiro studio, capturing the creative process that both preceded and followed his exhibition at Le Bon Marché in Paris. Our film doesn't simply show the finished artwork. It reveals the artist's breath, the intimacy of manual work, the transition from the silence of the studio to the monumentality of an installation in one of the world's most iconic spaces. For us, this project reinforces something essential: brands can truly connect with art not only by showcasing results, but by embracing processes. That's where authentic resonance is built, beyond the borders of advertising.",
     projectType: "Case Study",
     credits: "Directed by Dietrich.tv Studio. Filmed in Rio de Janeiro for Le Bon Marché Rive Gauche.",
-    vimeoId: "1030777862"
+    vimeoId: "1030777862",
+    carouselImages: [
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23e5e7eb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 2 - Image 1%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23d1d5db'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 2 - Image 2%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f3f4f6'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 2 - Image 3%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23e5e7eb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 2 - Image 4%3C/text%3E%3C/svg%3E"
+    ]
   },
   {
     id: 3,
@@ -45,7 +52,12 @@ const mockWorks = [
     fullDescription: "With Manu Gavassi, Dietrich directed a trilogy of short films that blurred the lines between cinema, fashion, and performance. Each piece is both intimate and theatrical, exploring how image can construct and deconstruct persona. The films were conceived as a dialogue with Manu's own artistic universe: ironic yet delicate, pop yet deeply personal. Through bold visual language and precise storytelling, they move beyond conventional music video aesthetics, embracing a hybrid form that belongs as much to cinema as to contemporary culture. Together, the three shorts form a mosaic of identity, revealing how narrative and style can amplify an artist's voice across different platforms while remaining unmistakably authentic.",
     projectType: "Trilogy",
     credits: "Directed by Dietrich.tv Studio in collaboration with Manu Gavassi.",
-    vimeoId: "929593577,900776547,900237522"
+    vimeoId: "929593577,900776547,900237522",
+    carouselImages: [
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f9fafb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 3 - Image 1%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f3f4f6'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 3 - Image 2%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23e5e7eb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 3 - Image 3%3C/text%3E%3C/svg%3E"
+    ]
   },
   {
     id: 4,
@@ -56,7 +68,11 @@ const mockWorks = [
     fullDescription: "Dietrich directed this documentary film about Elsa Schiaparelli built around personal memories of the fashion designer's granddaughter: the actress, supermodel and cultural icon Marisa Berenson. Narrated by Marisa herself, the animated short film showcased never before seen images of the Schiaparelli family, in a creative initiative specially made for Brazil's most important public library, Biblioteca Mário de Andrade, in the context of the centenary of André Breton's Surrealist Manifesto.",
     projectType: "Animated Documentary",
     credits: "Directed by Dietrich.tv Studio. Narrated by Marisa Berenson.",
-    vimeoId: "1112761795"
+    vimeoId: "1112761795",
+    carouselImages: [
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23d1d5db'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 4 - Image 1%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23e5e7eb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 4 - Image 2%3C/text%3E%3C/svg%3E"
+    ]
   },
   {
     id: 5,
@@ -67,7 +83,14 @@ const mockWorks = [
     fullDescription: "For Democrata's launch film, we brought together two of Brazil's most iconic figures — Gisele Bündchen and Cauã Reymond — in a story that celebrates style, presence, and rhythm. The soundtrack, Jorge Ben Jor's Lá Vem Ela, sets the tone: timeless, magnetic, unmistakably Brazilian. Each frame captures a dialogue between elegance and energy, masculinity and femininity, intimacy and spectacle. The film was conceived as more than a commercial. It is a cultural encounter, weaving fashion and music into a narrative that places the brand in the heart of Brazil's creative heritage. Shot with cinematic precision, the piece amplifies Democrata's vision: sophistication with soul, classic with contemporary, craft with charisma.",
     projectType: "Launch Film",
     credits: "Directed by Dietrich.tv Studio. Featuring Gisele Bündchen and Cauã Reymond.",
-    vimeoId: "1006728704"
+    vimeoId: "1006728704",
+    carouselImages: [
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f9fafb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 5 - Image 1%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f3f4f6'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 5 - Image 2%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23e5e7eb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 5 - Image 3%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23d1d5db'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 5 - Image 4%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f9fafb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 5 - Image 5%3C/text%3E%3C/svg%3E"
+    ]
   },
   {
     id: 6,
@@ -78,7 +101,15 @@ const mockWorks = [
     fullDescription: "For Hering's Mother's Day campaign, we brought together Sasha Meneghel, Bruna Marquezine, Xuxa and Neide. More than a film, it became a portrait of affection across generations, weaving family bonds into the fabric of one of Brazil's most iconic brands. The narrative is intimate yet universal: mothers and daughters, friendship and legacy, the simple gestures that define love. Each scene was crafted to highlight authenticity, where fashion becomes secondary to emotion, and presence becomes more powerful than performance. In this project, cinema and brand storytelling converge to honor motherhood — not as a concept, but as lived experience.",
     projectType: "Campaign",
     credits: "Directed by Dietrich.tv Studio. Starring Sasha, Bruna Marquezine, Xuxa and Neide.",
-    vimeoId: "1112761195,1112760986"
+    vimeoId: "1112761195,1112760986",
+    carouselImages: [
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23e5e7eb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 6 - Image 1%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23d1d5db'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 6 - Image 2%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f3f4f6'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 6 - Image 3%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f9fafb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 6 - Image 4%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23e5e7eb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 6 - Image 5%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23d1d5db'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 6 - Image 6%3C/text%3E%3C/svg%3E"
+    ]
   },
   {
     id: 7,
@@ -89,7 +120,11 @@ const mockWorks = [
     fullDescription: "We were commissioned by Le Bon Marché to create Il Neige Rive Gauche, an animated film that transforms the Parisian winter into a poetic narrative. The project was conceived not as a campaign in the traditional sense, but as a dreamlike gesture: snow falling on the Rive Gauche, the city turning into a stage where imagination takes over reality. Animation became the language to capture the ephemeral, blending design and storytelling in a way that feels both timeless and unexpected. At the intersection of cinema, design, and brand identity, Il Neige Rive Gauche is more than a seasonal film. It is a sensorial invitation, a reminder that a brand can also be a curator of emotions.",
     projectType: "Animated Film",
     credits: "Directed by Dietrich.tv Studio. Commissioned by Le Bon Marché Rive Gauche.",
-    vimeoId: "190538952"
+    vimeoId: "190538952",
+    carouselImages: [
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f3f4f6'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 7 - Image 1%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23e5e7eb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 7 - Image 2%3C/text%3E%3C/svg%3E"
+    ]
   },
   {
     id: 8,
@@ -100,7 +135,12 @@ const mockWorks = [
     fullDescription: "For Natura's Desejo, Dietrich (with O2 Filmes) directed a film that explores the subtle tension between intimacy and expression. Desire is not shown directly — it is suggested through gestures, textures, and the rhythm of fragrance in motion. The narrative unfolds in layers: close-ups that evoke touch, frames that blur the line between skin and atmosphere, a sensorial approach where perfume becomes both memory and anticipation. Rather than illustrating the product, the film creates an emotional territory, where Natura's language of beauty resonates as something intimate, poetic, and deeply human.",
     projectType: "Campaign",
     credits: "Directed by Dietrich.tv Studio in collaboration with O2 Filmes.",
-    vimeoId: "680559680"
+    vimeoId: "680559680",
+    carouselImages: [
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23d1d5db'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 8 - Image 1%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f9fafb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 8 - Image 2%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f3f4f6'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 8 - Image 3%3C/text%3E%3C/svg%3E"
+    ]
   },
   {
     id: 9,
@@ -111,7 +151,13 @@ const mockWorks = [
     fullDescription: "For the launch of TRESemmé Brilho Lamelar, Dietrich directed (at O2 Filmes) a film that bridges fashion and technology. Shot in virtual production, the narrative moves between real and virtual spaces, where Sabrina Sato embodies the elegance and energy of the brand. The aesthetic is sharp and sophisticated: dark backdrops, sculpted lighting, and movements that highlight shine as performance. Each transition dives into hair as if it were a portal, leading us into new scenes with rhythm and precision.",
     projectType: "Launch Film",
     credits: "Directed by Dietrich.tv Studio at O2 Filmes. Featuring Sabrina Sato.",
-    vimeoId: "880317712"
+    vimeoId: "880317712",
+    carouselImages: [
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23e5e7eb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 9 - Image 1%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23d1d5db'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 9 - Image 2%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f3f4f6'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 9 - Image 3%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f9fafb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 9 - Image 4%3C/text%3E%3C/svg%3E"
+    ]
   },
   {
     id: 10,
@@ -122,7 +168,12 @@ const mockWorks = [
     fullDescription: "Directed by Dietrich and Manu Gavassi, Gracinha is a music film that transcends the boundaries of the music video format, merging pop sensibility with fashion aesthetics and cinematic storytelling. The project became a cultural milestone, reaching over 20 million views within 24 hours of release, and resonated as one of the most striking audiovisual works in the Brazilian market. Dietrich.tv Studio was responsible for the direction and execution, creating a layered visual journey that balances intimacy and spectacle — a portrait of Manu Gavassi's artistry elevated to a cinematic scale.",
     projectType: "Music Film",
     credits: "Directed by Dietrich.tv Studio with Manu Gavassi.",
-    vimeoId: "650425603"
+    vimeoId: "650425603",
+    carouselImages: [
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f3f4f6'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 10 - Image 1%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23e5e7eb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 10 - Image 2%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23d1d5db'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 10 - Image 3%3C/text%3E%3C/svg%3E"
+    ]
   },
   {
     id: 11,
@@ -133,7 +184,11 @@ const mockWorks = [
     fullDescription: "For Mother's Day, Hering brought together two of Brazil's most iconic actresses — Fernanda Torres and Fernanda Montenegro — in a touching film that celebrates maternal bonds and timeless connection. Directed by Dietrich, the piece combines intimacy and elegance, highlighting gestures and emotions with simplicity and truth, in line with Hering's essential identity. Dietrich.tv Studio led the direction and production, crafting a cinematic narrative where fashion, affection, and heritage intertwine in a tribute that is as universal as it is personal.",
     projectType: "Campaign",
     credits: "Directed by Dietrich.tv Studio. Featuring Fernanda Montenegro and Fernanda Torres.",
-    vimeoId: "524394640"
+    vimeoId: "524394640",
+    carouselImages: [
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f9fafb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 11 - Image 1%3C/text%3E%3C/svg%3E",
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f3f4f6'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 11 - Image 2%3C/text%3E%3C/svg%3E"
+    ]
   }
 ];
 
@@ -213,11 +268,11 @@ export default function ProjectPage({ projectId, onNavigate }: ProjectPageProps)
           </div>
         </div>
 
-        {/* Vertical Carousel for Grand Soir project */}
-        {currentProject.id === 1 && (
+        {/* Vertical Carousel for all projects */}
+        {currentProject.carouselImages && currentProject.carouselImages.length > 0 && (
           <div className="mb-20">
             <VerticalCarousel 
-              images={[grandSoirImage1, grandSoirImage2, grandSoirImage3]}
+              images={currentProject.carouselImages}
             />
           </div>
         )}

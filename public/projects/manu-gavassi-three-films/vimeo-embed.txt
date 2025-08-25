@@ -1,0 +1,16 @@
+MANU GAVASSI - THREE SHORT FILMS
+Vimeo Embed Codes:
+
+FILM 1 - "Sexo, poder e arte (Subtitled)":
+<iframe src="https://player.vimeo.com/video/929593577?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Sexo, poder e arte (Subtitled)"></iframe>
+
+FILM 2:
+<iframe src="https://player.vimeo.com/video/900776547?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Manu Gavassi Film 2"></iframe>
+
+FILM 3:
+<iframe src="https://player.vimeo.com/video/900237522?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Manu Gavassi Film 3"></iframe>
+
+Links: 
+- https://vimeo.com/929593577
+- https://vimeo.com/900776547
+- https://vimeo.com/900237522
