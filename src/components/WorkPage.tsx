@@ -563,7 +563,7 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
           {/* Main statement */}
           <div className="mb-12">
             <h1 className="text-4xl md:text-5xl lg:text-6xl text-black leading-tight max-w-4xl font-['Instrument_Sans']">
-              we are a mixed-media production company based in são paulo brazil - working in the intersection of design, film production & post-production.
+              We are a mixed-media production company based in são paulo brazil - working in the intersection of design, film production & post-production.
             </h1>
           </div>
           
