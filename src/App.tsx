@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navigation from './components/Navigation';
 import WorkPage from './components/WorkPage';
 import ContactPage from './components/ContactPage';
@@ -11,12 +11,78 @@ export default function App() {
   const [displayedProjectId, setDisplayedProjectId] = useState<number | null>(null);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
-  const handleNavigate = (page: string, projectId?: number) => {
+  // Parse URL and set initial state
+  useEffect(() => {
+    const parseURL = () => {
+      const path = window.location.pathname;
+      const searchParams = new URLSearchParams(window.location.search);
+      
+      if (path === '/contact') {
+        setCurrentPage('contact');
+        setDisplayedPage('contact');
+        setCurrentProjectId(null);
+        setDisplayedProjectId(null);
+      } else if (path === '/project') {
+        const projectId = searchParams.get('id');
+        if (projectId) {
+          setCurrentPage('project');
+          setDisplayedPage('project');
+          setCurrentProjectId(parseInt(projectId));
+          setDisplayedProjectId(parseInt(projectId));
+        } else {
+          // Invalid project URL, redirect to work
+          setCurrentPage('work');
+          setDisplayedPage('work');
+          setCurrentProjectId(null);
+          setDisplayedProjectId(null);
+        }
+      } else {
+        // Default to work page
+        setCurrentPage('work');
+        setDisplayedPage('work');
+        setCurrentProjectId(null);
+        setDisplayedProjectId(null);
+      }
+    };
+
+    // Parse initial URL
+    parseURL();
+
+    // Listen for browser back/forward events
+    const handlePopState = () => {
+      parseURL();
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, []);
+
+  const handleNavigate = (page: string, projectId?: number, replaceHistory = false) => {
     // Don't start a new transition if one is already in progress
     if (isTransitioning) return;
     
     // If navigating to the same page, no transition needed
     if (page === currentPage && (!projectId || projectId === currentProjectId)) return;
+    
+    // Create URL based on page and projectId
+    let url = '';
+    if (page === 'contact') {
+      url = '/contact';
+    } else if (page === 'project' && projectId) {
+      url = `/project?id=${projectId}`;
+    } else {
+      url = '/'; // Default to work page
+    }
+    
+    // Update browser history
+    if (replaceHistory) {
+      window.history.replaceState({ page, projectId }, '', url);
+    } else {
+      window.history.pushState({ page, projectId }, '', url);
+    }
     
     setIsTransitioning(true);
     setCurrentPage(page);
