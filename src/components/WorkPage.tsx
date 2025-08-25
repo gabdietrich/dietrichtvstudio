@@ -190,17 +190,23 @@ const mockWorks = [
       { 
         id: 19, 
         thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 1"
+        title: "Scene 1",
+        videoUrl: "/projects/il-neige-rive-gauche/carousel/il-neige-rive-gauche-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/il-neige-rive-gauche/carousel/il-neige-rive-gauche-video1-mobile.mp4"
       },
       { 
         id: 20, 
         thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 2"
+        title: "Scene 2",
+        videoUrl: "/projects/il-neige-rive-gauche/carousel/il-neige-rive-gauche-video2-desktop.mp4",
+        mobileVideoUrl: "/projects/il-neige-rive-gauche/carousel/il-neige-rive-gauche-video2-mobile.mp4"
       },
       { 
         id: 21, 
         thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 3"
+        title: "Scene 3",
+        videoUrl: "/projects/il-neige-rive-gauche/carousel/il-neige-rive-gauche-video3-desktop.mp4",
+        mobileVideoUrl: "/projects/il-neige-rive-gauche/carousel/il-neige-rive-gauche-video3-mobile.mp4"
       }
     ]
   },
@@ -214,17 +220,23 @@ const mockWorks = [
       { 
         id: 22, 
         thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 1"
+        title: "Scene 1",
+        videoUrl: "/projects/desejo-natura/carousel/desejo-natura-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/desejo-natura/carousel/desejo-natura-video1-mobile.mp4"
       },
       { 
         id: 23, 
         thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 2"
+        title: "Scene 2",
+        videoUrl: "/projects/desejo-natura/carousel/desejo-natura-video2-desktop.mp4",
+        mobileVideoUrl: "/projects/desejo-natura/carousel/desejo-natura-video2-mobile.mp4"
       },
       { 
         id: 24, 
         thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 3"
+        title: "Scene 3",
+        videoUrl: "/projects/desejo-natura/carousel/desejo-natura-video3-desktop.mp4",
+        mobileVideoUrl: "/projects/desejo-natura/carousel/desejo-natura-video3-mobile.mp4"
       }
     ]
   },
