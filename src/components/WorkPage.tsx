@@ -9,7 +9,7 @@ const mockWorks = [
   {
     id: 1,
     title: "Grand Soir, by Maison Francis Kurkdjian",
-    category: "beauty commercial",
+    category: ["beauty", "commercial", "a.i."],
     description: "Grand Soir, by Maison Francis Kurkdjian. A spec film crafted entirely with artificial intelligence. 100% AI-made",
     client: "Maison Francis Kurkdjian",
     videos: [
@@ -215,7 +215,7 @@ const mockWorks = [
   {
     id: 8,
     title: "Desejo",
-    category: "beauty commercial",
+    category: ["beauty", "commercial"],
     description: "A sensorial film where intimacy, fragrance, and memory intertwine.",
     client: "Natura",
     videos: [
@@ -245,7 +245,7 @@ const mockWorks = [
   {
     id: 9,
     title: "Brilho Lamelar",
-    category: "beauty commercial",
+    category: ["beauty", "commercial"],
     description: "Technology and beauty meet in a film where hair becomes light.",
     client: "TRESemmé",
     videos: [
