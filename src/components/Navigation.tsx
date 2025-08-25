@@ -41,11 +41,9 @@ export default function Navigation({ currentPage, onPageChange, isTransitioning 
             }`}
           >
             <img 
-              src="/src/assets/dietrich-logo.svg" 
+              src="/dietrich-logo.svg" 
               alt="dietrich.tv studio" 
-              width="927" 
-              height="31.5"
-              className="h-8"
+              className="h-8 w-auto"
             />
           </button>
           <div className="flex gap-8">
