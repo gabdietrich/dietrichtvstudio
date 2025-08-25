@@ -24,7 +24,11 @@ const mockWorks = [
     projectType: "Case Study",
     credits: "Direction by Dietrich.tv Studio. 100% AI-made.",
     vimeoId: "1108168421",
-    carouselImages: [grandSoirImage1, grandSoirImage2, grandSoirImage3]
+    carouselImages: [
+      "/projects/grand-soir-maison-francis/gallery/grand-soir-maison-francis-gallery1.jpg",
+      "/projects/grand-soir-maison-francis/gallery/grand-soir-maison-francis-gallery2.jpg",
+      "/projects/grand-soir-maison-francis/gallery/grand-soir-maison-francis-gallery3.jpg"
+    ]
   },
   {
     id: 2,
@@ -37,10 +41,9 @@ const mockWorks = [
     credits: "Directed by Dietrich.tv Studio. Filmed in Rio de Janeiro for Le Bon Marché Rive Gauche.",
     vimeoId: "1030777862",
     carouselImages: [
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23e5e7eb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 2 - Image 1%3C/text%3E%3C/svg%3E",
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23d1d5db'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 2 - Image 2%3C/text%3E%3C/svg%3E",
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f3f4f6'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 2 - Image 3%3C/text%3E%3C/svg%3E",
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23e5e7eb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 2 - Image 4%3C/text%3E%3C/svg%3E"
+      "/projects/ernesto-neto-le-bon-marche/gallery/ernesto-neto-le-bon-marche-gallery1.jpg",
+      "/projects/ernesto-neto-le-bon-marche/gallery/ernesto-neto-le-bon-marche-gallery2.jpg",
+      "/projects/ernesto-neto-le-bon-marche/gallery/ernesto-neto-le-bon-marche-gallery3.jpg"
     ]
   },
   {
@@ -73,8 +76,8 @@ const mockWorks = [
     credits: "Directed by Dietrich.tv Studio. Narrated by Marisa Berenson.",
     vimeoId: "1112761795",
     carouselImages: [
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23d1d5db'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 4 - Image 1%3C/text%3E%3C/svg%3E",
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23e5e7eb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 4 - Image 2%3C/text%3E%3C/svg%3E"
+      "/projects/elsa-schiaparelli-private-album/gallery/elsa-schiaparelli-private-album-gallery1.png",
+      "/projects/elsa-schiaparelli-private-album/gallery/elsa-schiaparelli-private-album-gallery2.png"
     ]
   },
   {
@@ -88,11 +91,9 @@ const mockWorks = [
     credits: "Directed by Dietrich.tv Studio. Featuring Gisele Bündchen and Cauã Reymond.",
     vimeoId: "1006728704",
     carouselImages: [
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f9fafb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 5 - Image 1%3C/text%3E%3C/svg%3E",
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f3f4f6'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 5 - Image 2%3C/text%3E%3C/svg%3E",
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23e5e7eb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 5 - Image 3%3C/text%3E%3C/svg%3E",
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23d1d5db'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 5 - Image 4%3C/text%3E%3C/svg%3E",
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f9fafb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 5 - Image 5%3C/text%3E%3C/svg%3E"
+      "/projects/democrata-gisele-caua/gallery/democrata-gisele-caua-gallery1.jpg",
+      "/projects/democrata-gisele-caua/gallery/democrata-gisele-caua-gallery2.jpg",
+      "/projects/democrata-gisele-caua/gallery/democrata-gisele-caua-gallery3.jpg"
     ]
   },
   {
