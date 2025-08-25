@@ -114,6 +114,18 @@ export const mockWorks = [
     category: "music video",
     description: "Three short films with Manu Gavassi, blending fashion, music, and cinema. A trilogy that explores image as performance and persona.",
     client: "Manu Gavassi",
+    fullDescription: "With Manu Gavassi, Dietrich directed a trilogy of short films that blurred the lines between cinema, fashion, and performance. Each piece is both intimate and theatrical, exploring how image can construct and deconstruct persona. The films were conceived as a dialogue with Manu's own artistic universe: ironic yet delicate, pop yet deeply personal. Through bold visual language and precise storytelling, they move beyond conventional music video aesthetics, embracing a hybrid form that belongs as much to cinema as to contemporary culture. Together, the three shorts form a mosaic of identity, revealing how narrative and style can amplify an artist's voice across different platforms while remaining unmistakably authentic.",
+    projectType: "Trilogy",
+    credits: "Directed by Dietrich.tv Studio in collaboration with Manu Gavassi.",
+    vimeoId: "929593577,900776547,900237522",
+    carouselImages: [
+      "/projects/manu-gavassi-three-films/gallery/manu-gavassi-three-films-gallery1.jpg",
+      "/projects/manu-gavassi-three-films/gallery/manu-gavassi-three-films-gallery2.jpg",
+      "/projects/manu-gavassi-three-films/gallery/manu-gavassi-three-films-gallery3.jpg",
+      "/projects/manu-gavassi-three-films/gallery/manu-gavassi-three-films-gallery4.jpg",
+      "/projects/manu-gavassi-three-films/gallery/manu-gavassi-three-films-gallery5.jpg",
+      "/projects/manu-gavassi-three-films/gallery/manu-gavassi-three-films-gallery6.jpg"
+    ],
     videos: [
       { 
         id: 7, 
@@ -234,6 +246,11 @@ export const mockWorks = [
     category: "commercial",
     description: "An animated winter tale for Le Bon Marché, where Paris becomes poetry.",
     client: "Le Bon Marché Rive Gauche",
+    fullDescription: "We were commissioned by Le Bon Marché to create Il Neige Rive Gauche, an animated film that transforms the Parisian winter into a poetic narrative. The project was conceived not as a campaign in the traditional sense, but as a dreamlike gesture: snow falling on the Rive Gauche, the city turning into a stage where imagination takes over reality. Animation became the language to capture the ephemeral, blending design and storytelling in a way that feels both timeless and unexpected. At the intersection of cinema, design, and brand identity, Il Neige Rive Gauche is more than a seasonal film. It is a sensorial invitation, a reminder that a brand can also be a curator of emotions.",
+    projectType: "Animated Film",
+    credits: "Directed by Dietrich.tv Studio. Commissioned by Le Bon Marché Rive Gauche.",
+    vimeoId: "190538952",
+    carouselImages: [],
     videos: [
       { 
         id: 19, 
