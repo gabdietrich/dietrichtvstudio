@@ -23,14 +23,18 @@ export default function ClientsCarousel() {
             {duplicatedLogos.map((client, index) => (
               <div
                 key={`${client.id}-${index}`}
-                className="flex-shrink-0 w-[200px] h-[100px] flex items-center justify-center"
+                className="flex-shrink-0 w-[200px] h-[100px] flex items-center justify-center p-2"
                 style={{ aspectRatio: '2/1' }}
               >
                 <img
                   src={client.logoUrl}
                   alt={client.name}
-                  className="max-w-full max-h-full object-contain"
-                  style={{ filter: 'none' }}
+                  className="w-full h-full object-contain"
+                  style={{ 
+                    filter: 'none',
+                    maxWidth: '100%',
+                    maxHeight: '100%'
+                  }}
                 />
               </div>
             ))}
