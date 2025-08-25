@@ -54,9 +54,12 @@ const mockWorks = [
     credits: "Directed by Dietrich.tv Studio in collaboration with Manu Gavassi.",
     vimeoId: "929593577,900776547,900237522",
     carouselImages: [
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f9fafb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 3 - Image 1%3C/text%3E%3C/svg%3E",
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f3f4f6'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 3 - Image 2%3C/text%3E%3C/svg%3E",
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23e5e7eb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 3 - Image 3%3C/text%3E%3C/svg%3E"
+      "/projects/manu-gavassi-three-films/gallery/manu-gavassi-three-films-gallery1.jpg",
+      "/projects/manu-gavassi-three-films/gallery/manu-gavassi-three-films-gallery2.jpg",
+      "/projects/manu-gavassi-three-films/gallery/manu-gavassi-three-films-gallery3.jpg",
+      "/projects/manu-gavassi-three-films/gallery/manu-gavassi-three-films-gallery4.jpg",
+      "/projects/manu-gavassi-three-films/gallery/manu-gavassi-three-films-gallery5.jpg",
+      "/projects/manu-gavassi-three-films/gallery/manu-gavassi-three-films-gallery6.jpg"
     ]
   },
   {
