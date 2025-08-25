@@ -405,7 +405,7 @@ export default function ProjectPage({ projectId, onNavigate }: ProjectPageProps)
 
         {/* Large logo */}
         <div className="text-center">
-          <div className="text-6xl md:text-8xl font-normal text-black font-['Instrument_Sans']">
+          <div className="text-6xl md:text-8xl text-black font-['Instrument_Sans'] font-semibold">
             dietrich.tv studio
           </div>
         </div>
