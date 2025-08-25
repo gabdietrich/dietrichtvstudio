@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Navigation from './components/Navigation';
-import WorkPage from './components/WorkPage';
+import WorkPage, { getProjectBySlug, getProjectById } from './components/WorkPage';
 import ContactPage from './components/ContactPage';
 import ProjectPage from './components/ProjectPage';
 
@@ -15,22 +15,24 @@ export default function App() {
   useEffect(() => {
     const parseURL = () => {
       const path = window.location.pathname;
-      const searchParams = new URLSearchParams(window.location.search);
       
       if (path === '/contact') {
         setCurrentPage('contact');
         setDisplayedPage('contact');
         setCurrentProjectId(null);
         setDisplayedProjectId(null);
-      } else if (path === '/project') {
-        const projectId = searchParams.get('id');
-        if (projectId) {
+      } else if (path.startsWith('/') && path !== '/') {
+        // Extract slug from path (remove leading slash)
+        const slug = path.slice(1);
+        const project = getProjectBySlug(slug);
+        
+        if (project) {
           setCurrentPage('project');
           setDisplayedPage('project');
-          setCurrentProjectId(parseInt(projectId));
-          setDisplayedProjectId(parseInt(projectId));
+          setCurrentProjectId(project.id);
+          setDisplayedProjectId(project.id);
         } else {
-          // Invalid project URL, redirect to work
+          // Invalid project slug, redirect to work
           setCurrentPage('work');
           setDisplayedPage('work');
           setCurrentProjectId(null);
@@ -72,7 +74,12 @@ export default function App() {
     if (page === 'contact') {
       url = '/contact';
     } else if (page === 'project' && projectId) {
-      url = `/project?id=${projectId}`;
+      const project = getProjectById(projectId);
+      if (project && project.slug) {
+        url = `/${project.slug}`;
+      } else {
+        url = '/'; // Fallback to work page if project not found
+      }
     } else {
       url = '/'; // Default to work page
     }

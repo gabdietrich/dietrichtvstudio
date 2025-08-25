@@ -4,11 +4,33 @@ import AutoScrollCarousel from './AutoScrollCarousel';
 
 const categories = ['all', 'commercial', 'a.i.', 'beauty', 'documentary', 'music video'];
 
+// Generate URL-friendly slug from title
+function generateSlug(title: string): string {
+  return title
+    .toLowerCase()
+    .replace(/['']/g, '') // Remove apostrophes
+    .replace(/[,]/g, '') // Remove commas
+    .replace(/[^\w\s-]/g, '') // Remove special characters except spaces and hyphens
+    .replace(/\s+/g, '-') // Replace spaces with hyphens
+    .replace(/-+/g, '-') // Replace multiple hyphens with single hyphen
+    .trim();
+}
+
+// Helper functions for slug-based navigation
+export function getProjectBySlug(slug: string) {
+  return mockWorks.find(work => work.slug === slug);
+}
+
+export function getProjectById(id: number) {
+  return mockWorks.find(work => work.id === id);
+}
+
 // Mock data with project content
-const mockWorks = [
+export const mockWorks = [
   {
     id: 1,
     title: "Grand Soir, by Maison Francis Kurkdjian",
+    slug: "grand-soir-by-maison-francis-kurkdjian",
     category: ["beauty", "commercial", "a.i."],
     description: "Grand Soir, by Maison Francis Kurkdjian. A spec film crafted entirely with artificial intelligence. 100% AI-made",
     client: "Maison Francis Kurkdjian",
@@ -39,6 +61,7 @@ const mockWorks = [
   {
     id: 2,
     title: "Ernesto Neto for Le Bon Marché Rive Gauche",
+    slug: "ernesto-neto-for-le-bon-marche-rive-gauche",
     category: "documentary",
     description: "Capturing the artist before and after the exhibition. Where brand and art meet through cinema.",
     client: "Le Bon Marché Rive Gauche",
@@ -69,6 +92,7 @@ const mockWorks = [
   {
     id: 3,
     title: "Three Short Films",
+    slug: "three-short-films",
     category: "music video",
     description: "Three short films with Manu Gavassi, blending fashion, music, and cinema. A trilogy that explores image as performance and persona.",
     client: "Manu Gavassi",
@@ -99,6 +123,7 @@ const mockWorks = [
   {
     id: 4,
     title: "Elsa Schiaparelli's Private Album",
+    slug: "elsa-schiaparellis-private-album",
     category: "documentary",
     description: "Elsa Schiaparelli remembered through an animated short film. A dialogue between fashion, memory, and the cosmos.",
     client: "Biblioteca Mário de Andrade",
@@ -129,6 +154,7 @@ const mockWorks = [
   {
     id: 5,
     title: "Gisele Bündchen and Cauã Raymond",
+    slug: "gisele-bundchen-and-caua-raymond",
     category: "commercial",
     description: "A cinematic launch set to Jorge Ben Jor's classic Lá Vem Ela.",
     client: "Democrata",
@@ -159,6 +185,7 @@ const mockWorks = [
   {
     id: 6,
     title: "Mother's Day '25",
+    slug: "mothers-day-25",
     category: "commercial",
     description: "Sasha, Bruna Marquezine, Xuxa and Neide — a celebration of generations and love.",
     client: "Hering",
@@ -185,6 +212,7 @@ const mockWorks = [
   {
     id: 7,
     title: "Il Neige Rive Gauche",
+    slug: "il-neige-rive-gauche",
     category: "commercial",
     description: "An animated winter tale for Le Bon Marché, where Paris becomes poetry.",
     client: "Le Bon Marché Rive Gauche",
@@ -215,6 +243,7 @@ const mockWorks = [
   {
     id: 8,
     title: "Desejo",
+    slug: "desejo",
     category: ["beauty", "commercial"],
     description: "A sensorial film where intimacy, fragrance, and memory intertwine.",
     client: "Natura",
@@ -245,6 +274,7 @@ const mockWorks = [
   {
     id: 9,
     title: "Brilho Lamelar",
+    slug: "brilho-lamelar",
     category: ["beauty", "commercial"],
     description: "Technology and beauty meet in a film where hair becomes light.",
     client: "TRESemmé",
@@ -275,6 +305,7 @@ const mockWorks = [
   {
     id: 10,
     title: "Gracinha",
+    slug: "gracinha",
     category: "music video",
     description: "A music film that blends pop, fantasy, and cinema. Directed by Dietrich with Manu Gavassi.",
     client: "Manu Gavassi",
@@ -305,6 +336,7 @@ const mockWorks = [
   {
     id: 11,
     title: "Mother's Day Fernandas",
+    slug: "mothers-day-fernandas",
     category: "commercial",
     description: "Fernanda Torres and Fernanda Montenegro star in an intimate film celebrating motherhood and timeless connection. Directed by Dietrich.",
     client: "Hering",

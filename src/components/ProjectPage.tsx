@@ -1,6 +1,7 @@
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { useState, useEffect } from 'react';
 import VerticalCarousel from './VerticalCarousel';
+import { mockWorks } from './WorkPage';
 
 // Import Grand Soir carousel images
 import grandSoirImage1 from 'figma:asset/2214a44d45eec979984d423ac6b7107cff7df73c.png';
@@ -12,7 +13,8 @@ interface ProjectPageProps {
   onNavigate: (page: string, projectId?: number) => void;
 }
 
-// Project data with complete information
+// Using mockWorks imported from WorkPage.tsx
+/*
 const mockWorks = [
   {
     id: 1,
@@ -190,6 +192,7 @@ const mockWorks = [
     ]
   }
 ];
+*/
 
 // Component for rendering multiple videos when there are multiple vimeoIds
 function VimeoPlayer({ vimeoId, title }: { vimeoId: string; title: string }) {
