@@ -106,14 +106,7 @@ const mockWorks = [
     projectType: "Campaign",
     credits: "Directed by Dietrich.tv Studio. Starring Sasha, Bruna Marquezine, Xuxa and Neide.",
     vimeoId: "1112761195,1112760986",
-    carouselImages: [
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23e5e7eb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 6 - Image 1%3C/text%3E%3C/svg%3E",
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23d1d5db'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 6 - Image 2%3C/text%3E%3C/svg%3E",
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f3f4f6'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 6 - Image 3%3C/text%3E%3C/svg%3E",
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23f9fafb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 6 - Image 4%3C/text%3E%3C/svg%3E",
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23e5e7eb'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 6 - Image 5%3C/text%3E%3C/svg%3E",
-      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600' viewBox='0 0 400 600'%3E%3Crect width='400' height='600' fill='%23d1d5db'/%3E%3Ctext x='200' y='300' text-anchor='middle' fill='%236b7280' font-size='14'%3EProject 6 - Image 6%3C/text%3E%3C/svg%3E"
-    ]
+    carouselImages: []
   },
   {
     id: 7,

@@ -166,16 +166,18 @@ const mockWorks = [
       { 
         id: 16, 
         thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 1"
+        title: "Scene 1",
+        videoUrl: "/projects/mothers-day-hering-1/carousel/mothers-day-hering-1-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/mothers-day-hering-1/carousel/mothers-day-hering-1-video1-mobile.mp4"
       },
       { 
         id: 17, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        thumbnail: "/projects/mothers-day-hering-1/carousel/mothers-day-hering-1-video2-desktop.jpg", 
         title: "Scene 2"
       },
       { 
         id: 18, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        thumbnail: "/projects/mothers-day-hering-1/carousel/mothers-day-hering-1-video3-desktop.jpg", 
         title: "Scene 3"
       }
     ]
