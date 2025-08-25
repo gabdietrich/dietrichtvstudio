@@ -70,17 +70,23 @@ const mockWorks = [
       { 
         id: 7, 
         thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Film 1"
+        title: "Film 1",
+        videoUrl: "/projects/manu-gavassi-three-films/carousel/manu-gavassi-three-films-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/manu-gavassi-three-films/carousel/manu-gavassi-three-films-video1-mobile.mp4"
       },
       { 
         id: 8, 
         thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Film 2"
+        title: "Film 2",
+        videoUrl: "/projects/manu-gavassi-three-films/carousel/manu-gavassi-three-films-video2-desktop.mp4",
+        mobileVideoUrl: "/projects/manu-gavassi-three-films/carousel/manu-gavassi-three-films-video2-mobile.mp4"
       },
       { 
         id: 9, 
         thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Film 3"
+        title: "Film 3",
+        videoUrl: "/projects/manu-gavassi-three-films/carousel/manu-gavassi-three-films-video3-desktop.mp4",
+        mobileVideoUrl: "/projects/manu-gavassi-three-films/carousel/manu-gavassi-three-films-video3-mobile.mp4"
       }
     ]
   },
