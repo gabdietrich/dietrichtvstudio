@@ -215,6 +215,32 @@ function VimeoPlayer({ vimeoId, title }: { vimeoId: string; title: string }) {
   );
 }
 
+// Function to get the featured video for each project in Other Projects section
+function getProjectFeaturedVideo(projectId: number): string | null {
+  const project = mockWorks.find(work => work.id === projectId);
+  if (!project || !project.videos || project.videos.length === 0) return null;
+  
+  // Map specific video choices for each project (varying to show different content)
+  const videoChoices: { [key: number]: number } = {
+    1: 2, // Grand Soir - video2
+    2: 2, // Ernesto Neto - video2 (as per your example)
+    3: 3, // Three Short Films - video3 (as per your example)
+    4: 3, // Elsa Schiaparelli - video3 (as per your example)
+    5: 1, // Gisele & Cauã - video1
+    6: 2, // Mother's Day '25 - video2
+    7: 1, // Il Neige - video1
+    8: 3, // Desejo - video3
+    9: 1, // Brilho Lamelar - video1
+    10: 2, // Gracinha - video2
+    11: 3  // Mother's Day Fernandas - video3
+  };
+  
+  const videoIndex = videoChoices[projectId] || 1;
+  const selectedVideo = project.videos[videoIndex - 1]; // Array is 0-indexed
+  
+  return selectedVideo?.videoUrl || project.videos[0]?.videoUrl || null;
+}
+
 export default function ProjectPage({ projectId, onNavigate }: ProjectPageProps) {
   const currentProject = mockWorks.find(work => work.id === projectId);
   
@@ -292,6 +318,8 @@ export default function ProjectPage({ projectId, onNavigate }: ProjectPageProps)
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {otherProjects.map((project) => {
+              const featuredVideo = getProjectFeaturedVideo(project.id);
+              
               return (
                 <div 
                   key={project.id}
@@ -299,10 +327,25 @@ export default function ProjectPage({ projectId, onNavigate }: ProjectPageProps)
                   onClick={() => onNavigate('project', project.id)}
                 >
                   <div className="relative aspect-square overflow-hidden bg-gray-200">
-                    {/* Placeholder for project thumbnail */}
-                    <div className="w-full h-full bg-gray-100 flex items-center justify-center group-hover:bg-gray-200 transition-colors duration-300">
-                      <span className="text-gray-400 text-sm">Project Image</span>
-                    </div>
+                    {featuredVideo ? (
+                      <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-full h-full object-cover"
+                      >
+                        <source src={featuredVideo} type="video/mp4" />
+                        {/* Fallback to placeholder if video fails */}
+                        <div className="w-full h-full bg-gray-100 flex items-center justify-center">
+                          <span className="text-gray-400 text-sm">Video Loading...</span>
+                        </div>
+                      </video>
+                    ) : (
+                      <div className="w-full h-full bg-gray-100 flex items-center justify-center">
+                        <span className="text-gray-400 text-sm">No Video</span>
+                      </div>
+                    )}
                     <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
                   <div className="mt-3">
