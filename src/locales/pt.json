@@ -196,6 +196,27 @@
     "clientName": "Cliente",
     "trustedBy": "Confiado por"
   },
+  "carousel": {
+    "project": "Projeto",
+    "seeProject": "Ver Projeto",
+    "description": "Descrição"
+  },
+  "footer": {
+    "tagline": "Transformamos ideias em imagens que ressoam através das culturas."
+  },
+  "ui": {
+    "backgroundVideo": "Vídeo de Fundo",
+    "background": "Fundo",
+    "errorLoadingImage": "Erro ao carregar imagem",
+    "logo": "Logo",
+    "arrowLeft": "Seta Esquerda",
+    "arrowRight": "Seta Direita",
+    "goToPreviousPage": "Ir para página anterior",
+    "goToNextPage": "Ir para próxima página",
+    "toggleSidebar": "Alternar Barra Lateral",
+    "commandPalette": "Paleta de Comandos",
+    "searchCommand": "Buscar por um comando para executar..."
+  },
   "meta": {
     "title": "Dietrich TV Studio - Veja Nosso Trabalho",
     "description": "Dietrich TV é um estúdio de produção premiado que impulsiona a criatividade com I.A. Baseado em São Paulo, Brasil.",

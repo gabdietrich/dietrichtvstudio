@@ -144,7 +144,7 @@ export default function AutoScrollCarousel({ work, speed = 10, onNavigate }: Aut
         <div className="flex justify-between items-start">
           {/* Left column - Project info */}
           <div className="space-y-1">
-            <div className="text-sm text-gray-500">Project</div>
+            <div className="text-sm text-gray-500">{t('carousel.project')}</div>
             <h2 className="text-2xl font-normal text-black font-['Instrument_Sans']">{work.title}</h2>
             {work.client && (
               <p className="text-gray-600 text-sm">{t('common.by')} {work.client}</p>
@@ -162,7 +162,7 @@ export default function AutoScrollCarousel({ work, speed = 10, onNavigate }: Aut
               onClick={() => onNavigate?.('project', work.id)}
               className="text-gray-700 hover:text-black text-sm transition-colors flex items-center gap-1"
             >
-              See Project 
+{t('carousel.seeProject')} 
               <span className="text-xs">→</span>
             </button>
           </div>

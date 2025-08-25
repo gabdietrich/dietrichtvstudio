@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import Navigation from './components/Navigation';
 import WorkPage, { getProjectBySlug, getProjectById } from './components/WorkPage';
 import ContactPage from './components/ContactPage';
@@ -6,6 +7,7 @@ import ProjectPage from './components/ProjectPage';
 import MetaUpdater from './components/MetaUpdater';
 
 export default function App() {
+  const { i18n } = useTranslation();
   const [currentPage, setCurrentPage] = useState('work');
   const [displayedPage, setDisplayedPage] = useState('work');
   const [currentProjectId, setCurrentProjectId] = useState<number | null>(null);
@@ -14,7 +16,7 @@ export default function App() {
 
   // Parse URL and set initial state
   useEffect(() => {
-    const parseURL = async () => {
+    const parseURL = () => {
       const path = window.location.pathname;
       
       // Extract locale from URL path (e.g., /pt/contact or /en/project/slug)
@@ -24,8 +26,6 @@ export default function App() {
       
       // Set language if locale is detected in URL
       if (locale && (locale === 'pt' || locale === 'en')) {
-        // Dynamically import i18next to avoid circular dependency
-        const { default: i18n } = await import('./i18n');
         if (i18n.language !== locale) {
           i18n.changeLanguage(locale);
           // Set cookie to remember preference

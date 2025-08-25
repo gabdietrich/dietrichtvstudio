@@ -62,13 +62,13 @@ export default function LandingPage({ onNavigate }: LandingPageProps) {
             }}
             frameBorder="0"
             allow="autoplay; fullscreen"
-            title="Background Video"
+            title={t('ui.backgroundVideo')}
           />
         ) : (
           /* Background Images */
           <img
             src={backgroundImages[currentBackgroundIndex]}
-            alt="Background"
+            alt={t('ui.background')}
             className="absolute inset-0 w-full h-full object-cover"
             style={{ objectPosition: 'center' }}
           />

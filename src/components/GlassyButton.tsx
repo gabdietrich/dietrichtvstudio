@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface GlassyButtonProps {
   onClick?: () => void;
@@ -9,6 +10,7 @@ interface GlassyButtonProps {
 }
 
 export default function GlassyButton({ onClick, children, size = 'md', logoSrc, logoAlt }: GlassyButtonProps) {
+  const { t } = useTranslation();
   const [isHovered, setIsHovered] = useState(false);
   const [isPressed, setIsPressed] = useState(false);
 
@@ -202,7 +204,7 @@ export default function GlassyButton({ onClick, children, size = 'md', logoSrc, 
               {logoSrc ? (
                 <img
                   src={logoSrc}
-                  alt={logoAlt || 'Logo'}
+                  alt={logoAlt || t('ui.logo')}
                   className={`${logoSizeClasses[size]} object-contain transition-all duration-300`}
                   style={{
                     filter: `

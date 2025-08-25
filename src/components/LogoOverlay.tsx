@@ -1,4 +1,5 @@
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import { useTranslation } from 'react-i18next';
 
 interface LogoOverlayProps {
   logoSrc: string;
@@ -11,12 +12,13 @@ interface LogoOverlayProps {
 
 export default function LogoOverlay({ 
   logoSrc, 
-  logoAlt = "Dietrich logo", 
+  logoAlt, 
   buttonSize = 'default',
   x,
   y,
   className = '' 
 }: LogoOverlayProps) {
+  const { t } = useTranslation();
   // Calculate logo size as 35% of the button's smaller dimension
   const logoSize = {
     default: 170 * 0.35, // 59.5px
@@ -35,7 +37,7 @@ export default function LogoOverlay({
     >
       <ImageWithFallback
         src={logoSrc}
-        alt={logoAlt}
+        alt={logoAlt || t('ui.logo')}
         className="w-full h-full object-contain"
         style={{
           filter: `

@@ -196,6 +196,27 @@
     "clientName": "Client",
     "trustedBy": "Trusted by"
   },
+  "carousel": {
+    "project": "Project",
+    "seeProject": "See Project",
+    "description": "Description"
+  },
+  "footer": {
+    "tagline": "We transform ideas into images that resonate across cultures."
+  },
+  "ui": {
+    "backgroundVideo": "Background Video",
+    "background": "Background",
+    "errorLoadingImage": "Error loading image",
+    "logo": "Logo",
+    "arrowLeft": "ArrowLeft",
+    "arrowRight": "ArrowRight",
+    "goToPreviousPage": "Go to previous page",
+    "goToNextPage": "Go to next page",
+    "toggleSidebar": "Toggle Sidebar",
+    "commandPalette": "Command Palette",
+    "searchCommand": "Search for a command to run..."
+  },
   "meta": {
     "title": "Dietrich TV Studio - See Our Work",
     "description": "Dietrich TV is an award-winning production studio pushing creativity with A.I. Based in São Paulo, Brazil.",

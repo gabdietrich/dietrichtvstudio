@@ -530,6 +530,32 @@ interface WorkPageProps {
   onNavigate?: (page: string, projectId?: number) => void;
 }
 
+// Helper function to get localized project data for WorkPage
+function getLocalizedProjectForWorkPage(project: any, t: any) {
+  const projectKey = {
+    1: 'grandSoir',
+    2: 'ernestoNeto', 
+    3: 'threeShortFilms',
+    4: 'elsaSchiaparelli',
+    5: 'giseleCaua',
+    6: 'mothersDay25',
+    7: 'ilNeige',
+    8: 'desejo',
+    9: 'brilhoLamelar',
+    10: 'gracinha',
+    11: 'mothersDayFernandas'
+  }[project.id];
+
+  if (!projectKey) return project;
+
+  return {
+    ...project,
+    title: t(`projects.${projectKey}.title`),
+    description: t(`projects.${projectKey}.description`),
+    client: t(`projects.${projectKey}.client`)
+  };
+}
+
 export default function WorkPage({ onNavigate }: WorkPageProps) {
   const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -550,9 +576,12 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
   };
 
   const getWorksByCategory = (category: string) => {
-    return category === 'all' 
+    const baseWorks = category === 'all' 
       ? mockWorks 
       : mockWorks.filter(work => work.category.includes(category));
+    
+    // Return localized projects
+    return baseWorks.map(work => getLocalizedProjectForWorkPage(work, t));
   };
 
   const filteredWorks = getWorksByCategory(displayedCategory);
@@ -628,7 +657,7 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
               {/* Left column - Statement */}
               <div>
                 <p className="text-black text-base">
-                  We transform ideas into images that resonate across cultures.
+{t('footer.tagline')}
                 </p>
               </div>
               
