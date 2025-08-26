@@ -310,12 +310,12 @@ export default function ProjectPage({ projectId, onNavigate }: ProjectPageProps)
           <div className="space-y-6">
             <div className="space-y-4">
               <div>
-                <div className="text-sm text-gray-500">Client</div>
+                <div className="text-sm text-gray-500">{t('project.client')}</div>
                 <div className="text-base text-black">{currentProject.client}</div>
               </div>
 
               <div>
-                <div className="text-sm text-gray-500">Category</div>
+                <div className="text-sm text-gray-500">{t('project.type')}</div>
                 <div className="text-base text-black">
                   {Array.isArray(currentProject.category) 
                     ? currentProject.category.join(', ') 
@@ -323,7 +323,7 @@ export default function ProjectPage({ projectId, onNavigate }: ProjectPageProps)
                 </div>
               </div>
               <div>
-                <div className="text-sm text-gray-500">Credits</div>
+                <div className="text-sm text-gray-500">{t('project.credits')}</div>
                 <div className="text-base text-black">{currentProject.credits}</div>
               </div>
             </div>
