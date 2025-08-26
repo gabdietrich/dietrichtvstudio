@@ -132,8 +132,8 @@ export default function AutoScrollCarousel({ work, speed = 10, onNavigate }: Aut
           <div className="space-y-1">
             <div className="text-sm text-gray-500">{t('common.project')}</div>
             <h2 className="text-2xl font-normal text-black font-['Instrument_Sans']">{work.title}</h2>
-            {work.client && (
-              <p className="text-gray-600 text-sm">{t('common.by')} {work.client}</p>
+            {(work.homeClient || work.client) && (
+              <p className="text-gray-600 text-sm">{t('common.by')} {work.homeClient || work.client}</p>
             )}
             <p className="text-gray-600 text-sm">{work.category}</p>
           </div>
