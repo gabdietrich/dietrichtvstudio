@@ -22,10 +22,6 @@ i18n
     fallbackLng: 'en',
     debug: false,
     
-    // Prevent raw key display
-    returnNull: false,
-    returnEmptyString: false,
-    
     detection: {
       order: ['path', 'cookie', 'localStorage', 'navigator', 'htmlTag'],
       lookupFromPathIndex: 0,
