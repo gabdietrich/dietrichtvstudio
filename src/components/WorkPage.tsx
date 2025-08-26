@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Button } from "./ui/button";
 import AutoScrollCarousel from './AutoScrollCarousel';
 
-const categories = ['all', 'commercial', 'a.i.', 'beauty', 'documentary', 'music video'];
+const categories = ['all', 'commercial', 'ai', 'beauty', 'documentary', 'musicVideo'];
 
 // Generate URL-friendly slug from title
 function generateSlug(title: string): string {
@@ -32,7 +32,7 @@ export const mockWorks = [
     id: 1,
     title: "Grand Soir, by Maison Francis Kurkdjian",
     slug: "grand-soir-by-maison-francis-kurkdjian",
-    category: ["beauty", "commercial", "a.i."],
+    category: ["beauty", "commercial", "ai"],
     description: "Grand Soir, by Maison Francis Kurkdjian. A spec film crafted entirely with artificial intelligence. 100% AI-made",
     client: "Maison Francis Kurkdjian",
     fullDescription: "Perfume is a bridge between moments, a place where past and future breathe together. We live in a time when creation expands beyond the hands, guided also by the intelligence we have imagined and built. Like perfume, this technology dissolves boundaries, uniting who we have been with who we are yet to become, turning the invisible into emotion. We crafted this A.I. spec film for Maison Francis Kurkdjian to celebrate the encounter where innovation and essence dance together.",
@@ -112,7 +112,7 @@ export const mockWorks = [
     id: 3,
     title: "Three Short Films",
     slug: "three-short-films",
-    category: "music video",
+    category: "musicVideo",
     description: "Three short films with Manu Gavassi, blending fashion, music, and cinema. A trilogy that explores image as performance and persona.",
     client: "Manu Gavassi",
     fullDescription: "With Manu Gavassi, Dietrich directed a trilogy of short films that blurred the lines between cinema, fashion, and performance. Each piece is both intimate and theatrical, exploring how image can construct and deconstruct persona. The films were conceived as a dialogue with Manu's own artistic universe: ironic yet delicate, pop yet deeply personal. Through bold visual language and precise storytelling, they move beyond conventional music video aesthetics, embracing a hybrid form that belongs as much to cinema as to contemporary culture. Together, the three shorts form a mosaic of identity, revealing how narrative and style can amplify an artist's voice across different platforms while remaining unmistakably authentic.",
@@ -383,7 +383,7 @@ export const mockWorks = [
     id: 10,
     title: "Gracinha",
     slug: "gracinha",
-    category: "music video",
+    category: "musicVideo",
     description: "A music film that blends pop, fantasy, and cinema. Directed by Dietrich with Manu Gavassi.",
     client: "Manu Gavassi",
     fullDescription: "Directed by Dietrich and Manu Gavassi, Gracinha is a music film that transcends the boundaries of the music video format, merging pop sensibility with fashion aesthetics and cinematic storytelling. The project became a cultural milestone, reaching over 20 million views within 24 hours of release, and resonated as one of the most striking audiovisual works in the Brazilian market. Dietrich.tv Studio was responsible for the direction and execution, creating a layered visual journey that balances intimacy and spectacle — a portrait of Manu Gavassi's artistry elevated to a cinematic scale.",
@@ -541,9 +541,9 @@ function getLocalizedProjectForWorkPage(project: any, t: any) {
     6: 'mothersDay25',
     7: 'ilNeige',
     8: 'desejo',
-    9: 'brilhoLamelar',
+    9: 'tresemmeBrilho',
     10: 'gracinha',
-    11: 'mothersDayFernandas'
+    11: 'heringFernandas'
   }[project.id];
 
   if (!projectKey) return project;
@@ -622,10 +622,10 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
                   {t(`homepage.categories.${
                     category === 'all' ? 'all' :
                     category === 'commercial' ? 'commercial' :
-                    category === 'a.i.' ? 'ai' :
+                    category === 'ai' ? 'ai' :
                     category === 'beauty' ? 'beauty' :
                     category === 'documentary' ? 'documentary' :
-                    category === 'music video' ? 'musicVideo' : 'all'
+                    category === 'musicVideo' ? 'musicVideo' : 'all'
                   }`)}
                 </Button>
               ))}
