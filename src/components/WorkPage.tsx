@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Button } from "./ui/button";
 import AutoScrollCarousel from './AutoScrollCarousel';
+import Footer from './Footer';
 
 const categories = ['all', 'commercial', 'ai', 'beauty', 'documentary', 'musicVideo'];
 
@@ -557,7 +558,7 @@ function getLocalizedProjectForWorkPage(project: any, t: any) {
 }
 
 export default function WorkPage({ onNavigate }: WorkPageProps) {
-  const { t, ready, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [displayedCategory, setDisplayedCategory] = useState('all');
@@ -649,123 +650,7 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
           ))}
         </div>
 
-        {/* Bottom section with statistics and contact */}
-        <div className="max-w-7xl mx-auto mt-20 px-[15px]">
-          {/* Statistics section */}
-          <div className="mb-20">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-              {/* Left column - Statement */}
-              <div>
-                <p className="text-black text-base">
-                  {ready ? t('footer.tagline') : (i18n.language === 'pt' ? 'Transformamos ideias em imagens que atravessam culturas.' : 'We transform ideas into images that resonate across cultures.')}
-                </p>
-              </div>
-              
-              {/* Right column - Statistics */}
-              <div className="space-y-12">
-                {/* 15+ */}
-                <div>
-                  <div className="text-8xl md:text-9xl text-black mb-2 font-['Instrument_Sans'] leading-none">
-                    {ready ? t('footer.stats.years.value') : '15+'}
-                  </div>
-                  <div className="text-black text-sm max-w-xs">
-                    {ready ? t('footer.stats.years.label') : (i18n.language === 'pt' ? 'Anos de experiência unindo cinema, design e tecnologia.' : 'Years of experience combining cinema, design and technology.')}
-                  </div>
-                </div>
-                
-                {/* 5 */}
-                <div className="border-t border-black pt-8">
-                  <div className="text-8xl md:text-9xl text-black mb-2 font-['Instrument_Sans'] leading-none">
-                    {ready ? t('footer.stats.continents.value') : '5'}
-                  </div>
-                  <div className="text-black text-sm max-w-xs">
-                    {ready ? t('footer.stats.continents.label') : (i18n.language === 'pt' ? 'Continentes onde nossos filmes foram exibidos ou produzidos.' : 'Continents where our films were exhibited or produced.')}
-                  </div>
-                </div>
-                
-                {/* 1 */}
-                <div className="border-t border-black pt-8">
-                  <div className="text-8xl md:text-9xl text-black mb-2 font-['Instrument_Sans'] leading-none">
-                    {ready ? t('footer.stats.pioneering.value') : '1'}
-                  </div>
-                  <div className="text-black text-sm max-w-xs">
-                    {ready ? t('footer.stats.pioneering.label') : (i18n.language === 'pt' ? 'Estúdio pioneiro no Brasil integrando I.A. como linguagem criativa.' : 'Pioneering studio in Brazil integrating A.I. as a creative language.')}
-                  </div>
-                </div>
-                
-                {/* About link */}
-                <div className="pt-8">
-                  <button 
-                    className="text-black text-sm hover:opacity-70 transition-opacity flex items-center gap-1"
-                    onClick={() => onNavigate?.('contact')}
-                  >
-                    {ready ? t('footer.aboutLink') : (i18n.language === 'pt' ? 'Sobre →' : 'About →')}
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          {/* Horizontal line */}
-          <div className="w-full h-px bg-black mb-8"></div>
-          
-          {/* Connect text */}
-          <div className="mb-8">
-            <p className="text-black text-base">
-              {ready ? t('footer.ctaLine') : (i18n.language === 'pt' ? 'Fale com a gente para criarmos seu próximo projeto.' : 'Connect with us to create your next project.')}
-            </p>
-          </div>
-          
-          {/* Horizontal line */}
-          <div className="w-full h-px bg-black mb-12"></div>
-          
-          {/* Contact information */}
-          <div className="mb-20">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-              {/* Office */}
-              <div>
-                <div className="text-xs text-black uppercase tracking-wide mb-4">
-                  {ready ? t('footer.columns.office') : (i18n.language === 'pt' ? 'ESCRITÓRIO' : 'OFFICE')}
-                </div>
-                <div className="space-y-1 text-sm text-black">
-                  <div>Rua Lira, 151 - Sala 12 - Vila Madalena</div>
-                  <div>São Paulo - Brazil</div>
-                  <div>05443-060</div>
-                </div>
-              </div>
-              
-              {/* Social */}
-              <div>
-                <div className="text-xs text-black uppercase tracking-wide mb-4">
-                  {ready ? t('footer.columns.social') : (i18n.language === 'pt' ? 'REDES' : 'SOCIAL')}
-                </div>
-                <div className="space-y-1 text-sm text-black">
-                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">Instagram</div>
-                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">Behance</div>
-                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">LinkedIn</div>
-                </div>
-              </div>
-              
-              {/* Contact */}
-              <div>
-                <div className="text-xs text-black uppercase tracking-wide mb-4">
-                  {ready ? t('footer.columns.contact') : (i18n.language === 'pt' ? 'CONTATO' : 'CONTACT')}
-                </div>
-                <div className="space-y-1 text-sm text-black">
-                  <div className="cursor-pointer hover:opacity-70 transition-opacity">+55 11 99306 8428</div>
-                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">contact@dietrich.tv</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          {/* Large logo */}
-          <div className="text-center">
-            <div className="text-5xl md:text-6xl lg:text-8xl text-black font-['Instrument_Sans']">
-              dietrich.tv studio
-            </div>
-          </div>
-        </div>
+        <Footer onNavigate={onNavigate} />
       </div>
     </div>
   );
