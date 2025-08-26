@@ -657,7 +657,7 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
               {/* Left column - Statement */}
               <div>
                 <p className="text-black text-base">
-{t('footer.tagline')}
+                  {t('footer.tagline', { defaultValue: '' })}
                 </p>
               </div>
               
@@ -665,25 +665,25 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
               <div className="space-y-12">
                 {/* 15+ */}
                 <div>
-                  <div className="text-8xl md:text-9xl text-black mb-2 font-['Instrument_Sans'] leading-none">{t('footer.stats.years.value')}</div>
+                  <div className="text-8xl md:text-9xl text-black mb-2 font-['Instrument_Sans'] leading-none">{t('footer.stats.years.value', { defaultValue: '15+' })}</div>
                   <div className="text-black text-sm max-w-xs">
-                    {t('footer.stats.years.label')}
+                    {t('footer.stats.years.label', { defaultValue: '' })}
                   </div>
                 </div>
                 
                 {/* 5 */}
                 <div className="border-t border-black pt-8">
-                  <div className="text-8xl md:text-9xl text-black mb-2 font-['Instrument_Sans'] leading-none">{t('footer.stats.continents.value')}</div>
+                  <div className="text-8xl md:text-9xl text-black mb-2 font-['Instrument_Sans'] leading-none">{t('footer.stats.continents.value', { defaultValue: '5' })}</div>
                   <div className="text-black text-sm max-w-xs">
-                    {t('footer.stats.continents.label')}
+                    {t('footer.stats.continents.label', { defaultValue: '' })}
                   </div>
                 </div>
                 
                 {/* 1 */}
                 <div className="border-t border-black pt-8">
-                  <div className="text-8xl md:text-9xl text-black mb-2 font-['Instrument_Sans'] leading-none">{t('footer.stats.pioneering.value')}</div>
+                  <div className="text-8xl md:text-9xl text-black mb-2 font-['Instrument_Sans'] leading-none">{t('footer.stats.pioneering.value', { defaultValue: '1' })}</div>
                   <div className="text-black text-sm max-w-xs">
-                    {t('footer.stats.pioneering.label')}
+                    {t('footer.stats.pioneering.label', { defaultValue: '' })}
                   </div>
                 </div>
                 
@@ -693,7 +693,7 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
                     className="text-black text-sm hover:opacity-70 transition-opacity flex items-center gap-1"
                     onClick={() => onNavigate?.('contact')}
                   >
-                    {t('footer.aboutLink')}
+                    {t('footer.aboutLink', { defaultValue: 'About →' })}
                   </button>
                 </div>
               </div>
@@ -706,7 +706,7 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
           {/* Connect text */}
           <div className="mb-8">
             <p className="text-black text-base">
-              {t('footer.ctaLine')}
+              {t('footer.ctaLine', { defaultValue: 'Connect with us to create your next project.' })}
             </p>
           </div>
           
@@ -718,7 +718,7 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               {/* Office */}
               <div>
-                <div className="text-xs text-black uppercase tracking-wide mb-4">{t('footer.columns.office')}</div>
+                <div className="text-xs text-black uppercase tracking-wide mb-4">{t('footer.columns.office', { defaultValue: 'OFFICE' })}</div>
                 <div className="space-y-1 text-sm text-black">
                   <div>Rua Lira, 151 - Sala 12 - Vila Madalena</div>
                   <div>São Paulo - Brazil</div>
@@ -728,20 +728,20 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
               
               {/* Social */}
               <div>
-                <div className="text-xs text-black uppercase tracking-wide mb-4">{t('footer.columns.social')}</div>
+                <div className="text-xs text-black uppercase tracking-wide mb-4">{t('footer.columns.social', { defaultValue: 'SOCIAL' })}</div>
                 <div className="space-y-1 text-sm text-black">
-                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">{t('footer.instagram')}</div>
-                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">{t('footer.behance')}</div>
-                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">{t('footer.linkedin')}</div>
+                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">{t('footer.instagram', { defaultValue: 'Instagram' })}</div>
+                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">{t('footer.behance', { defaultValue: 'Behance' })}</div>
+                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">{t('footer.linkedin', { defaultValue: 'LinkedIn' })}</div>
                 </div>
               </div>
               
               {/* Contact */}
               <div>
-                <div className="text-xs text-black uppercase tracking-wide mb-4">{t('footer.columns.contact')}</div>
+                <div className="text-xs text-black uppercase tracking-wide mb-4">{t('footer.columns.contact', { defaultValue: 'CONTACT' })}</div>
                 <div className="space-y-1 text-sm text-black">
-                  <div className="cursor-pointer hover:opacity-70 transition-opacity">{t('footer.phone')}</div>
-                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">{t('footer.email')}</div>
+                  <div className="cursor-pointer hover:opacity-70 transition-opacity">{t('footer.phone', { defaultValue: '+55 11 99306 8428' })}</div>
+                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">{t('footer.email', { defaultValue: 'contact@dietrich.tv' })}</div>
                 </div>
               </div>
             </div>
@@ -750,7 +750,7 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
           {/* Large logo */}
           <div className="text-center">
             <div className="text-5xl md:text-6xl lg:text-8xl text-black font-['Instrument_Sans']">
-              {t('footer.studioName')}
+              {t('footer.studioName', { defaultValue: 'dietrich.tv studio' })}
             </div>
           </div>
         </div>
