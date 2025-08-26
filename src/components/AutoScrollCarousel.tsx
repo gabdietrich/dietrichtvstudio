@@ -148,7 +148,7 @@ export default function AutoScrollCarousel({ work, speed = 10, onNavigate }: Aut
               onClick={() => onNavigate?.('project', work.id)}
               className="text-gray-700 hover:text-black text-sm transition-colors flex items-center gap-1"
             >
-{t('carousel.seeProject')} 
+              {t('common.seeProject')} 
               <span className="text-xs">→</span>
             </button>
           </div>
