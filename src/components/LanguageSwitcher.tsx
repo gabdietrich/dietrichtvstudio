@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { analytics } from '../utils/analytics';
 
 interface LanguageSwitcherProps {
   className?: string;
@@ -8,6 +9,9 @@ export default function LanguageSwitcher({ className = '' }: LanguageSwitcherPro
   const { i18n } = useTranslation();
 
   const changeLanguage = (lng: string) => {
+    // Track language switch
+    analytics.switchLanguage(lng, i18n.language);
+    
     // Change the language in i18next
     i18n.changeLanguage(lng);
     

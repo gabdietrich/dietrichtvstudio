@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { analytics } from '../utils/analytics';
 
 interface FooterProps {
   onNavigate?: (page: string) => void;
@@ -136,9 +137,33 @@ export default function Footer({ onNavigate }: FooterProps) {
                 {data.columns.social}
               </div>
               <div className="space-y-1 text-sm text-black">
-                <div className="cursor-pointer hover:opacity-70 transition-opacity underline">Instagram</div>
-                <div className="cursor-pointer hover:opacity-70 transition-opacity underline">Behance</div>
-                <div className="cursor-pointer hover:opacity-70 transition-opacity underline">LinkedIn</div>
+                <a 
+                  href="https://www.instagram.com/dietrich.tv/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block cursor-pointer hover:opacity-70 transition-opacity underline"
+                  onClick={() => analytics.clickSocialMedia('Instagram', 'Footer')}
+                >
+                  Instagram
+                </a>
+                <a 
+                  href="https://www.behance.net/dietrichtv" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block cursor-pointer hover:opacity-70 transition-opacity underline"
+                  onClick={() => analytics.clickSocialMedia('Behance', 'Footer')}
+                >
+                  Behance
+                </a>
+                <a 
+                  href="https://www.linkedin.com/company/108177359" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block cursor-pointer hover:opacity-70 transition-opacity underline"
+                  onClick={() => analytics.clickSocialMedia('LinkedIn', 'Footer')}
+                >
+                  LinkedIn
+                </a>
               </div>
             </div>
             

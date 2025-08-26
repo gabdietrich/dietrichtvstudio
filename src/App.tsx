@@ -5,6 +5,7 @@ import WorkPage, { getProjectBySlug, getProjectById } from './components/WorkPag
 import ContactPage from './components/ContactPage';
 import ProjectPage from './components/ProjectPage';
 import MetaUpdater from './components/MetaUpdater';
+import { initGA, trackPageView, analytics } from './utils/analytics';
 
 export default function App() {
   const { i18n } = useTranslation();
@@ -16,6 +17,9 @@ export default function App() {
 
   // Parse URL and set initial state
   useEffect(() => {
+    // Initialize Google Analytics
+    initGA();
+    
     const parseURL = () => {
       const path = window.location.pathname;
       
@@ -107,6 +111,9 @@ export default function App() {
     
     // If navigating to the same page, no transition needed
     if (page === currentPage && (!projectId || projectId === currentProjectId)) return;
+
+    // Track navigation event
+    analytics.navigateToPage(page, currentPage);
     
     // Get current locale for URL construction
     const currentLocale = getCurrentLocale();

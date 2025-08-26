@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Button } from "./ui/button";
 import AutoScrollCarousel from './AutoScrollCarousel';
 import Footer from './Footer';
+import { analytics } from '../utils/analytics';
 
 const categories = ['all', 'commercial', 'ai', 'beauty', 'documentary', 'musicVideo'];
 
@@ -565,6 +566,9 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
 
   const handleCategoryChange = (newCategory: string) => {
     if (newCategory === selectedCategory || isTransitioning) return;
+    
+    // Track filter usage
+    analytics.useFilter(newCategory);
     
     setIsTransitioning(true);
     

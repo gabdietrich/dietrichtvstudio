@@ -423,9 +423,30 @@ export default function ProjectPage({ projectId, onNavigate }: ProjectPageProps)
             <div>
               <div className="text-sm text-gray-500 uppercase tracking-wide mb-2">Social</div>
               <div className="space-y-1 text-sm text-black">
-                <div className="cursor-pointer hover:opacity-70 transition-opacity underline">Instagram</div>
-                <div className="cursor-pointer hover:opacity-70 transition-opacity underline">Behance</div>
-                <div className="cursor-pointer hover:opacity-70 transition-opacity underline">LinkedIn</div>
+                <a 
+                  href="https://www.instagram.com/dietrich.tv/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block cursor-pointer hover:opacity-70 transition-opacity underline"
+                >
+                  Instagram
+                </a>
+                <a 
+                  href="https://www.behance.net/dietrichtv" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block cursor-pointer hover:opacity-70 transition-opacity underline"
+                >
+                  Behance
+                </a>
+                <a 
+                  href="https://www.linkedin.com/company/108177359" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block cursor-pointer hover:opacity-70 transition-opacity underline"
+                >
+                  LinkedIn
+                </a>
               </div>
             </div>
             

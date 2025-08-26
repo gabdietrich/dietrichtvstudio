@@ -130,9 +130,30 @@ export default function ContactPage() {
               <div>
                 <div className="text-xs text-gray-500 uppercase tracking-wide mb-3">{t('contact.footer.social')}</div>
                 <div className="space-y-1 text-base text-black">
-                  <div className="cursor-pointer hover:text-gray-600 transition-colors">{t('contact.footer.instagram')}</div>
-                  <div className="cursor-pointer hover:text-gray-600 transition-colors">{t('contact.footer.behance')}</div>
-                  <div className="cursor-pointer hover:text-gray-600 transition-colors">{t('contact.footer.linkedin')}</div>
+                  <a 
+                    href="https://www.instagram.com/dietrich.tv/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block cursor-pointer hover:text-gray-600 transition-colors underline"
+                  >
+                    Instagram
+                  </a>
+                  <a 
+                    href="https://www.behance.net/dietrichtv" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block cursor-pointer hover:text-gray-600 transition-colors underline"
+                  >
+                    Behance
+                  </a>
+                  <a 
+                    href="https://www.linkedin.com/company/108177359" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block cursor-pointer hover:text-gray-600 transition-colors underline"
+                  >
+                    LinkedIn
+                  </a>
                 </div>
               </div>
               
