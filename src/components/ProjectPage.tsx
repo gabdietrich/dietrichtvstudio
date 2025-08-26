@@ -261,21 +261,21 @@ function getLocalizedProject(project: any, t: any) {
     6: 'mothersDay25',
     7: 'ilNeige',
     8: 'desejo',
-    9: 'brilhoLamelar',
+    9: 'tresemmeBrilho',
     10: 'gracinha',
-    11: 'mothersDayFernandas'
+    11: 'heringFernandas'
   }[project.id];
 
   if (!projectKey) return project;
 
   return {
     ...project,
-    title: t(`projects.${projectKey}.title`),
-    description: t(`projects.${projectKey}.description`),
-    fullDescription: t(`projects.${projectKey}.fullDescription`),
-    client: t(`projects.${projectKey}.client`),
-    projectType: t(`projects.${projectKey}.projectType`),
-    credits: t(`projects.${projectKey}.credits`)
+    title: t(`projects.${projectKey}.title`, { defaultValue: '' }),
+    description: t(`projects.${projectKey}.description`, { defaultValue: '' }),
+    fullDescription: t(`projects.${projectKey}.fullDescription`, { defaultValue: '' }),
+    client: t(`projects.${projectKey}.client`, { defaultValue: '' }),
+    projectType: t(`projects.${projectKey}.projectType`, { defaultValue: '' }),
+    credits: t(`projects.${projectKey}.credits`, { defaultValue: '' })
   };
 }
 
