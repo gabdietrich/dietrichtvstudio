@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import VideoCard from './VideoCard';
+import { renderFilters } from '../utils/filters';
 
 interface Video {
   id: number;
@@ -135,7 +136,9 @@ export default function AutoScrollCarousel({ work, speed = 10, onNavigate }: Aut
             {(work.homeClient || work.client) && (
               <p className="text-gray-600 text-sm">{t('common.by')} {work.homeClient || work.client}</p>
             )}
-            <p className="text-gray-600 text-sm">{work.category}</p>
+            <p className="text-gray-600 text-sm" style={{ whiteSpace: 'pre' }}>
+              {renderFilters(Array.isArray(work.category) ? work.category : [work.category], t)}
+            </p>
           </div>
           
           {/* Right column - Description and actions */}
