@@ -2,6 +2,7 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import VerticalCarousel from './VerticalCarousel';
+import VideoCard from './VideoCard';
 import { mockWorks } from './WorkPage';
 
 // Import Grand Soir carousel images
@@ -368,19 +369,20 @@ export default function ProjectPage({ projectId, onNavigate }: ProjectPageProps)
                 >
                   <div className="relative aspect-square overflow-hidden bg-gray-200">
                     {featuredVideo ? (
-                      <video
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        className="w-full h-full object-cover"
-                      >
-                        <source src={featuredVideo} type="video/mp4" />
-                        {/* Fallback to placeholder if video fails */}
-                        <div className="w-full h-full bg-gray-100 flex items-center justify-center">
-                          <span className="text-gray-400 text-sm">{t('project.videoLoading')}</span>
-                        </div>
-                      </video>
+                      <VideoCard
+                        poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E"
+                        sources={[{
+                          src: featuredVideo,
+                          type: "video/mp4"
+                        }]}
+                        className="w-full h-full"
+                        title={project.title}
+                        autoPlay={true}
+                        loop={true}
+                        muted={true}
+                        playsInline={true}
+                        onClick={() => onNavigate('project', project.id)}
+                      />
                     ) : (
                       <div className="w-full h-full bg-gray-100 flex items-center justify-center">
                         <span className="text-gray-400 text-sm">{t('project.noVideo')}</span>

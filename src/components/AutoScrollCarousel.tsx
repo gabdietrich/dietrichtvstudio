@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import VideoCard from './VideoCard';
 
 interface Video {
   id: number;
@@ -30,7 +31,6 @@ interface AutoScrollCarouselProps {
 export default function AutoScrollCarousel({ work, speed = 10, onNavigate }: AutoScrollCarouselProps) {
   const { t } = useTranslation();
   const scrollRef = useRef<HTMLDivElement>(null);
-  const [videosLoaded, setVideosLoaded] = useState<Set<string>>(new Set());
   const [isMobile, setIsMobile] = useState(false);
 
   // Detect mobile screen size
@@ -44,10 +44,6 @@ export default function AutoScrollCarousel({ work, speed = 10, onNavigate }: Aut
     
     return () => window.removeEventListener('resize', checkIsMobile);
   }, []);
-
-  const handleVideoLoad = (videoKey: string) => {
-    setVideosLoaded(prev => new Set(prev).add(videoKey));
-  };
 
   useEffect(() => {
     const scrollContainer = scrollRef.current;
@@ -90,7 +86,7 @@ export default function AutoScrollCarousel({ work, speed = 10, onNavigate }: Aut
         >
           {tripleVideos.map((video, index) => {
             const videoKey = `${video.id}-${index}`;
-            const isLoaded = videosLoaded.has(videoKey);
+            const isHero = index === 0; // First video is hero (LCP)
             
             return (
               <div 
@@ -100,36 +96,26 @@ export default function AutoScrollCarousel({ work, speed = 10, onNavigate }: Aut
                 {/* Square video container - non-interactive with sharp corners */}
                 <div className="relative aspect-square bg-gray-900 overflow-hidden">
                   {video.videoUrl || video.mobileVideoUrl ? (
-                    <video
-                      key={videoKey}
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      className="w-full h-full object-cover"
-                      onLoadedData={() => handleVideoLoad(videoKey)}
+                    <VideoCard
                       poster={video.thumbnail}
-                    >
-                      <source 
-                        src={isMobile && video.mobileVideoUrl ? video.mobileVideoUrl : video.videoUrl} 
-                        type="video/mp4" 
-                      />
-                      {/* Fallback to thumbnail if video fails */}
-                      <ImageWithFallback
-                        src={video.thumbnail}
-                        alt={video.title || work.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </video>
+                      sources={[{
+                        src: isMobile && video.mobileVideoUrl ? video.mobileVideoUrl : video.videoUrl,
+                        type: "video/mp4"
+                      }]}
+                      className="w-full h-full"
+                      title={video.title || work.title}
+                      isHero={isHero}
+                      autoPlay={true}
+                      loop={true}
+                      muted={true}
+                      playsInline={true}
+                    />
                   ) : (
-                    <div className={`transition-opacity duration-700 ease-out ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
-                      <ImageWithFallback
-                        src={video.thumbnail}
-                        alt={video.title || work.title}
-                        className="w-full h-full object-cover"
-                        onLoad={() => handleVideoLoad(videoKey)}
-                      />
-                    </div>
+                    <ImageWithFallback
+                      src={video.thumbnail}
+                      alt={video.title || work.title}
+                      className="w-full h-full object-cover"
+                    />
                   )}
                   <div className="absolute inset-0 bg-black/10" />
                 </div>
