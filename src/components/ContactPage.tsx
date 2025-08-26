@@ -3,7 +3,8 @@ import Footer from './Footer';
 import ClientsCarousel from './ClientsCarousel';
 
 export default function ContactPage() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isPortuguese = i18n.language === 'pt';
   return (
     <div className="min-h-screen bg-white text-black pt-20">
       <div className="max-w-7xl mx-auto px-[15px] py-12">
@@ -74,7 +75,7 @@ export default function ContactPage() {
             <div className="text-center md:text-left">
               <div className="text-5xl md:text-6xl text-black mb-4 font-['Instrument_Sans']">1M+</div>
               <div className="text-base text-black max-w-xs">
-                Users and visitors interacted with our websites
+                {isPortuguese ? 'Usuários e visitantes interagiram com nossos websites' : 'Users and visitors interacted with our websites'}
               </div>
             </div>
 
@@ -82,7 +83,7 @@ export default function ContactPage() {
             <div className="text-center md:text-left border-l-0 md:border-l border-gray-200 pl-0 md:pl-12">
               <div className="text-5xl md:text-6xl text-black mb-4 font-['Instrument_Sans']">36</div>
               <div className="text-base text-black max-w-xs">
-                Active campaigns for companies and brands
+                {isPortuguese ? 'Campanhas ativas para empresas e marcas' : 'Active campaigns for companies and brands'}
               </div>
             </div>
 
@@ -90,7 +91,7 @@ export default function ContactPage() {
             <div className="text-center md:text-left border-l-0 md:border-l border-gray-200 pl-0 md:pl-12">
               <div className="text-5xl md:text-6xl text-black mb-4 font-['Instrument_Sans']">25+</div>
               <div className="text-base text-black max-w-xs">
-                Different clients have sought our expertise
+                {isPortuguese ? 'Clientes diferentes buscaram nossa expertise' : 'Different clients have sought our expertise'}
               </div>
             </div>
           </div>
