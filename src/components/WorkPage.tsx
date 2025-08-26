@@ -552,8 +552,7 @@ function getLocalizedProjectForWorkPage(project: any, t: any) {
     ...project,
     title: t(`projects.${projectKey}.title`),
     description: t(`projects.${projectKey}.description`),
-    client: t(`projects.${projectKey}.client`),
-    homeClient: t(`projects.${projectKey}.homeClient`, { defaultValue: undefined })
+    client: t(`projects.${projectKey}.client`)
   };
 }
 
