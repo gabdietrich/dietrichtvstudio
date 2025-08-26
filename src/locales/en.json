@@ -4,20 +4,20 @@
     "home": "Home",
     "work": "Work",
     "loading": "Loading...",
-    "viewWork": "View Our Work",
-    "nextProject": "Next Project",
-    "otherProjects": "Other Projects",
+    "viewWork": "View our work",
+    "viewOurWork": "View our work →",
+    "nextProject": "Next project",
+    "otherProjects": "Other projects",
     "giveUsABuzz": "Give us a buzz",
     "projectNotFound": "Project not found",
-    "viewOurWork": "View Our Work →",
     "by": "by",
-    "ourWork": "Our Work"
+    "ourWork": "Our work"
   },
   "navigation": {
     "logoAlt": "dietrich.tv studio"
   },
   "homepage": {
-    "mainText": "We are a mixed-media production company based in São Paulo, Brazil - working in the intersection of design, film production & post-production.",
+    "mainText": "We are a mixed-media production company based in São Paulo, Brazil — working at the intersection of design, film production and post-production.",
     "categories": {
       "all": "All",
       "commercial": "Commercial",
@@ -28,24 +28,24 @@
     }
   },
   "contact": {
-    "mainHeading": "Dietrich TV is an award-winning production studio pushing creativity with A.I. 🇧🇷 Give us a buzz.",
+    "mainHeading": "Dietrich is an award-winning production studio expanding creativity with A.I. 🇧🇷 Give us a buzz.",
     "whatWeDo": "What we do",
-    "connectText": "Connect with us to explore your project's potential.",
+    "connectText": "Get in touch and let's explore your project's potential together.",
     "sections": {
       "filmImage": {
         "title": "FILM & IMAGE",
         "items": [
           "Commercials",
-          "Fashion Film",
+          "Fashion Films",
           "Art Projects",
           "16mm / Digital"
         ]
       },
       "aiInnovation": {
-        "title": "AI & INNOVATION",
+        "title": "A.I. & INNOVATION",
         "items": [
           "AI Cinema",
-          "Media Experiments",
+          "Visual Experiments",
           "Generative Tools",
           "New Mediums"
         ]
@@ -69,10 +69,10 @@
         ]
       }
     },
-    "trustedBy": "Trusted by",
+    "trustedBy": "Brands that trust us",
     "office": {
       "title": "OFFICE",
-      "address": "Rua Lira, 151 - Sala 12 - Vila Madalena",
+      "address": "Rua Lira, 151 - Room 12 - Vila Madalena",
       "city": "São Paulo - Brazil",
       "zip": "05443-060"
     },
@@ -89,139 +89,114 @@
     }
   },
   "project": {
-    "videoLoading": "Video Loading...",
-    "noVideo": "No Video",
+    "videoLoading": "Loading video...",
+    "noVideo": "No video",
     "noVideoAvailable": "No video available",
-    "projectDetails": "Project Details",
+    "projectDetails": "Project details",
     "client": "Client",
     "type": "Type",
     "credits": "Credits",
     "contact": "Contact",
     "studioName": "dietrich.tv studio",
     "projectNotFound": "Project not found",
-    "otherProjects": "Other Projects",
-    "nextProjectArrow": "Next Project →"
+    "otherProjects": "Other projects",
+    "nextProjectArrow": "Next project →"
   },
   "projects": {
     "grandSoir": {
       "title": "Grand Soir, by Maison Francis Kurkdjian",
-      "description": "Grand Soir, by Maison Francis Kurkdjian. A spec film crafted entirely with artificial intelligence. 100% AI-made",
-      "fullDescription": "Perfume is a bridge between moments, a place where past and future breathe together. We live in a time when creation expands beyond the hands, guided also by the intelligence we have imagined and built. Like perfume, this technology dissolves boundaries, uniting who we have been with who we are yet to become, turning the invisible into emotion. We crafted this A.I. spec film for Maison Francis Kurkdjian to celebrate the encounter where innovation and essence dance together.",
+      "description": "Grand Soir, by Maison Francis Kurkdjian. A spec film created entirely with artificial intelligence. 100% made in A.I.",
+      "fullDescription": "Perfume is a bridge between moments, a place where past and future breathe together. We live in a time when creation expands beyond the hands, guided by the intelligence we imagine and build. Like perfume, this technology dissolves boundaries, uniting who we were with who we will become, transforming the invisible into emotion. We created this spec film in A.I. for Maison Francis Kurkdjian as a celebration of the meeting between innovation and essence.",
       "client": "Maison Francis Kurkdjian",
       "projectType": "Case Study",
-      "credits": "Direction by Dietrich.tv Studio. 100% AI-made."
+      "credits": "Directed by Dietrich. 100% made in A.I."
     },
     "ernestoNeto": {
       "title": "Ernesto Neto for Le Bon Marché Rive Gauche",
       "description": "Capturing the artist before and after the exhibition. Where brand and art meet through cinema.",
-      "fullDescription": "Filming an artist in their studio is very different from documenting an exhibition. It is stepping into the space where the work is born, where matter and gesture are still uncertainty, experiment, discovery. At DietrichTV, we had the privilege of following Ernesto Neto in his Rio de Janeiro studio, capturing the creative process that both preceded and followed his exhibition at Le Bon Marché in Paris. Our film doesn't simply show the finished artwork. It reveals the artist's breath, the intimacy of manual work, the transition from the silence of the studio to the monumentality of an installation in one of the world's most iconic spaces. For us, this project reinforces something essential: brands can truly connect with art not only by showcasing results, but by embracing processes. That's where authentic resonance is built, beyond the borders of advertising.",
+      "fullDescription": "Filming an artist in the studio is very different from documenting an exhibition. It means entering the space where the work is born, where matter and gesture are still doubt, attempt, discovery. Dietrich followed Ernesto Neto in his studio in Rio de Janeiro, recording the creative process that both preceded and followed his exhibition at Le Bon Marché in Paris. The film doesn't just show the finished work. It reveals the artist's breath, the intimacy of manual labor, the transition between the silence of the studio and the monumentality of the installation in one of the world's most iconic spaces. This project reaffirms something essential: brands can connect with art not only by showing results, but by embracing process. That is where true resonance is built, beyond advertising.",
       "client": "Le Bon Marché Rive Gauche",
       "projectType": "Case Study",
-      "credits": "Directed by Dietrich.tv Studio. Filmed in Rio de Janeiro for Le Bon Marché Rive Gauche."
+      "credits": "Directed by Dietrich. Filmed in Rio de Janeiro for Le Bon Marché Rive Gauche."
     },
     "threeShortFilms": {
       "title": "Three Short Films",
-      "description": "Three short films with Manu Gavassi, blending fashion, music, and cinema. A trilogy that explores image as performance and persona.",
-      "fullDescription": "With Manu Gavassi, Dietrich directed a trilogy of short films that blurred the lines between cinema, fashion, and performance. Each piece is both intimate and theatrical, exploring how image can construct and deconstruct persona. The films were conceived as a dialogue with Manu's own artistic universe: ironic yet delicate, pop yet deeply personal. Through bold visual language and precise storytelling, they move beyond conventional music video aesthetics, embracing a hybrid form that belongs as much to cinema as to contemporary culture. Together, the three shorts form a mosaic of identity, revealing how narrative and style can amplify an artist's voice across different platforms while remaining unmistakably authentic.",
+      "description": "Three short films with Manu Gavassi, blending fashion, music and cinema. A trilogy exploring image as performance and persona.",
+      "fullDescription": "With Manu Gavassi, Dietrich directed a trilogy of short films that blur the boundaries between cinema, fashion and performance. Each film is both intimate and theatrical, exploring how image can construct and deconstruct persona. Conceived in dialogue with Manu's own artistic universe — ironic and delicate, pop yet deeply personal — the films go beyond conventional music video aesthetics, embracing a hybrid form that belongs as much to cinema as to contemporary culture. Together, the three shorts form a mosaic of identity, revealing how narrative and style can amplify an artist's voice across different platforms while remaining authentic.",
       "client": "Manu Gavassi",
       "projectType": "Trilogy",
-      "credits": "Directed by Dietrich.tv Studio in collaboration with Manu Gavassi."
+      "credits": "Directed by Dietrich in collaboration with Manu Gavassi."
     },
     "elsaSchiaparelli": {
       "title": "Elsa Schiaparelli's Private Album",
-      "description": "Elsa Schiaparelli remembered through an animated short film. A dialogue between fashion, memory, and the cosmos.",
-      "fullDescription": "Dietrich directed this documentary film about Elsa Schiaparelli built around personal memories of the fashion designer's granddaughter: the actress, supermodel and cultural icon Marisa Berenson. Narrated by Marisa herself, the animated short film showcased never before seen images of the Schiaparelli family, in a creative initiative specially made for Brazil's most important public library, Biblioteca Mário de Andrade, in the context of the centenary of André Breton's Surrealist Manifesto.",
+      "description": "Elsa Schiaparelli remembered through an animated short. A dialogue between fashion, memory and the cosmos.",
+      "fullDescription": "Dietrich directed this documentary about Elsa Schiaparelli, built around the personal memories of her granddaughter: actress, supermodel and cultural icon Marisa Berenson. Narrated by Marisa herself, the animated short revealed never-before-seen images of the Schiaparelli family, in a creative initiative made especially for Brazil's most important public library, Biblioteca Mário de Andrade, in the context of the centenary of André Breton's Surrealist Manifesto.",
       "client": "Biblioteca Mário de Andrade",
       "projectType": "Animated Documentary",
-      "credits": "Directed by Dietrich.tv Studio. Narrated by Marisa Berenson."
+      "credits": "Directed by Dietrich. Narrated by Marisa Berenson."
     },
     "giseleCaua": {
-      "title": "Gisele Bündchen and Cauã Raymond",
-      "description": "A cinematic launch set to Jorge Ben Jor's classic Lá Vem Ela.",
-      "fullDescription": "For Democrata's launch film, we brought together two of Brazil's most iconic figures — Gisele Bündchen and Cauã Reymond — in a story that celebrates style, presence, and rhythm. The soundtrack, Jorge Ben Jor's Lá Vem Ela, sets the tone: timeless, magnetic, unmistakably Brazilian. Each frame captures a dialogue between elegance and energy, masculinity and femininity, intimacy and spectacle. The film was conceived as more than a commercial. It is a cultural encounter, weaving fashion and music into a narrative that places the brand in the heart of Brazil's creative heritage. Shot with cinematic precision, the piece amplifies Democrata's vision: sophistication with soul, classic with contemporary, craft with charisma.",
+      "title": "Gisele Bündchen and Cauã Reymond",
+      "description": "A cinematic launch set to Jorge Ben Jor's classic *Lá Vem Ela*.",
+      "fullDescription": "Democrata's launch film brought together two of Brazil's most iconic figures — Gisele Bündchen and Cauã Reymond — in a narrative that celebrates style, presence and rhythm. The soundtrack, *Lá Vem Ela* by Jorge Ben Jor, sets the tone: timeless, magnetic, unmistakably Brazilian. Each scene captures the dialogue between elegance and energy, masculine and feminine, intimacy and spectacle. More than advertising, this film is a cultural encounter weaving fashion and music, positioning the brand at the heart of Brazil's creative imagination. Shot with cinematic precision, the work reflects Democrata's essence: simply sophisticated, well-crafted and made with care.",
       "client": "Democrata",
       "projectType": "Launch Film",
-      "credits": "Directed by Dietrich.tv Studio. Featuring Gisele Bündchen and Cauã Reymond."
+      "credits": "Directed by Dietrich. Featuring Gisele Bündchen and Cauã Reymond."
     },
     "mothersDay25": {
       "title": "Mother's Day '25",
-      "description": "Sasha, Bruna Marquezine, Xuxa and Neide — a celebration of generations and love.",
-      "fullDescription": "For Hering's Mother's Day campaign, we brought together Sasha Meneghel, Bruna Marquezine, Xuxa and Neide. More than a film, it became a portrait of affection across generations, weaving family bonds into the fabric of one of Brazil's most iconic brands. The narrative is intimate yet universal: mothers and daughters, friendship and legacy, the simple gestures that define love. Each scene was crafted to highlight authenticity, where fashion becomes secondary to emotion, and presence becomes more powerful than performance. In this project, cinema and brand storytelling converge to honor motherhood — not as a concept, but as lived experience.",
+      "description": "Sasha, Bruna Marquezine, Xuxa and Neide — a tribute to mothers and the stories that cross generations.",
+      "fullDescription": "In Hering's Mother's Day campaign, Sasha Meneghel, Bruna Marquezine, Xuxa and Neide star in a film that celebrates family bonds as part of the brand's identity. The intention was to create an affective portrait: mothers and daughters, friendship and legacy, the small everyday gestures that define love. The film highlights authenticity, with fashion serving as a backdrop for gesture and emotion. More than a campaign, it is a tribute to motherhood as a lived and shared experience.",
       "client": "Hering",
       "projectType": "Campaign",
-      "credits": "Directed by Dietrich.tv Studio. Starring Sasha, Bruna Marquezine, Xuxa and Neide."
+      "credits": "Directed by Dietrich. Featuring Sasha, Bruna Marquezine, Xuxa and Neide."
     },
     "ilNeige": {
       "title": "Il Neige Rive Gauche",
-      "description": "An animated winter tale for Le Bon Marché, where Paris becomes poetry.",
-      "fullDescription": "We were commissioned by Le Bon Marché to create Il Neige Rive Gauche, an animated film that transforms the Parisian winter into a poetic narrative. The project was conceived not as a campaign in the traditional sense, but as a dreamlike gesture: snow falling on the Rive Gauche, the city turning into a stage where imagination takes over reality. Animation became the language to capture the ephemeral, blending design and storytelling in a way that feels both timeless and unexpected. At the intersection of cinema, design, and brand identity, Il Neige Rive Gauche is more than a seasonal film. It is a sensorial invitation, a reminder that a brand can also be a curator of emotions.",
+      "description": "A playful animation for Le Bon Marché, where snowballs awaken winter in Paris.",
+      "fullDescription": "Le Bon Marché commissioned us to create *Il Neige Rive Gauche*, an animated film announcing the arrival of winter and the holiday season in Paris. In the narrative, mischievous snowballs tease a sleeping cloud until it wakes up. Only then does snow begin to fall over the Rive Gauche, turning the city into poetry. The aesthetic combines humor and delicacy, capturing the season's playful spirit in a visual language that blends design, storytelling and imagination. More than a seasonal piece, *Il Neige Rive Gauche* is a dreamlike gesture, reminding us that a brand can also be a guardian of emotion and enchantment.",
       "client": "Le Bon Marché Rive Gauche",
       "projectType": "Animated Film",
-      "credits": "Directed by Dietrich.tv Studio. Commissioned by Le Bon Marché Rive Gauche."
+      "credits": "Directed by Dietrich. Commissioned by Le Bon Marché Rive Gauche."
     },
     "desejo": {
       "title": "Desejo",
-      "description": "A sensorial film where intimacy, fragrance, and memory intertwine.",
-      "fullDescription": "For Natura's Desejo, Dietrich (with O2 Filmes) directed a film that explores the subtle tension between intimacy and expression. Desire is not shown directly — it is suggested through gestures, textures, and the rhythm of fragrance in motion. The narrative unfolds in layers: close-ups that evoke touch, frames that blur the line between skin and atmosphere, a sensorial approach where perfume becomes both memory and anticipation. Rather than illustrating the product, the film creates an emotional territory, where Natura's language of beauty resonates as something intimate, poetic, and deeply human.",
+      "description": "A sensorial film where intimacy, fragrance and memory intertwine.",
+      "fullDescription": "In *Desejo*, by Natura, Dietrich (with O2 Filmes) directed a film exploring the subtle tension between intimacy and expression. Desire is not shown directly — it is suggested through gestures, textures and the rhythm of fragrance in motion. The narrative unfolds in layers: close-ups evoking touch, frames that blur the line between skin and atmosphere, a sensorial approach where perfume becomes both memory and anticipation. Instead of illustrating the product, the film creates an emotional territory where Natura's language of beauty resonates as something intimate, poetic and deeply human.",
       "client": "Natura",
       "projectType": "Campaign",
-      "credits": "Directed by Dietrich.tv Studio in collaboration with O2 Filmes."
+      "credits": "Directed by Dietrich in collaboration with O2 Filmes."
     },
-    "brilhoLamelar": {
-      "title": "Brilho Lamelar",
-      "description": "Technology and beauty meet in a film where hair becomes light.",
-      "fullDescription": "For the launch of TRESemmé Brilho Lamelar, Dietrich directed (at O2 Filmes) a film that bridges fashion and technology. Shot in virtual production, the narrative moves between real and virtual spaces, where Sabrina Sato embodies the elegance and energy of the brand. The aesthetic is sharp and sophisticated: dark backdrops, sculpted lighting, and movements that highlight shine as performance. Each transition dives into hair as if it were a portal, leading us into new scenes with rhythm and precision.",
+    "tresemmeBrilho": {
+      "title": "TRESemmé – Brilho Lamelar",
+      "description": "A film where technology and fashion meet, and hair becomes light.",
+      "fullDescription": "For the launch of TRESemmé Brilho Lamelar, Dietrich directed a film that connects the world of fashion with technological innovation. Shot in Virtual Production, the project blends real and digital environments, with Sabrina Sato as the protagonist. The aesthetic is sharp and sophisticated: dark backgrounds, sculptural lighting, camera movements that highlight shine as performance. Transitions dive into strands of hair, which become portals to new scenes. The result is a film that translates TRESemmé's place at the intersection of beauty and technology, reaffirming the use of digital tools not just as resources, but as creative language.",
       "client": "TRESemmé",
-      "projectType": "Launch Film",
-      "credits": "Directed by Dietrich.tv Studio at O2 Filmes. Featuring Sabrina Sato."
+      "projectType": "Campaign",
+      "credits": "Directed by Dietrich. Featuring Sabrina Sato."
     },
     "gracinha": {
       "title": "Gracinha",
-      "description": "A music film that blends pop, fantasy, and cinema. Directed by Dietrich with Manu Gavassi.",
-      "fullDescription": "Directed by Dietrich and Manu Gavassi, Gracinha is a music film that transcends the boundaries of the music video format, merging pop sensibility with fashion aesthetics and cinematic storytelling. The project became a cultural milestone, reaching over 20 million views within 24 hours of release, and resonated as one of the most striking audiovisual works in the Brazilian market. Dietrich.tv Studio was responsible for the direction and execution, creating a layered visual journey that balances intimacy and spectacle — a portrait of Manu Gavassi's artistry elevated to a cinematic scale.",
-      "client": "Manu Gavassi",
-      "projectType": "Music Film",
-      "credits": "Directed by Dietrich.tv Studio with Manu Gavassi."
+      "description": "A visual album for Disney+, co-directed with Manu Gavassi. A pop, poetic and layered journey.",
+      "fullDescription": "Released exclusively on Disney+ Brazil, *Gracinha* is a 41-minute visual album conceived and written by Manu Gavassi, co-directed by her and Dietrich. Inspired by the tracks of her fourth studio album, the project blends performance, narrative and cinematic aesthetics. Shot on 16mm and Alexa Mini, it is an experimental and pop portrait of Manu's persona — between dance, humor and questions of identity. Featuring João Côrtes, Paulo Miklos, Ícaro Silva, Fábio Porchat, Titi Ewbank and others, the film explores themes of self-discovery, liberation and reinvention, using references that range from choreography to adolescent memories. *Gracinha* is also about leaving a character behind and being reborn — with courage, poeticity and authenticity.",
+      "client": "Disney+ Brazil",
+      "projectType": "Visual Album",
+      "credits": "Directed by Dietrich (co-direction with Manu Gavassi)."
     },
-    "mothersDayFernandas": {
-      "title": "Mother's Day Fernandas",
-      "description": "Fernanda Torres and Fernanda Montenegro star in an intimate film celebrating motherhood and timeless connection. Directed by Dietrich.",
-      "fullDescription": "For Mother's Day, Hering brought together two of Brazil's most iconic actresses — Fernanda Torres and Fernanda Montenegro — in a touching film that celebrates maternal bonds and timeless connection. Directed by Dietrich, the piece combines intimacy and elegance, highlighting gestures and emotions with simplicity and truth, in line with Hering's essential identity. Dietrich.tv Studio led the direction and production, crafting a cinematic narrative where fashion, affection, and heritage intertwine in a tribute that is as universal as it is personal.",
+    "heringFernandas": {
+      "title": "Hering Mother's Day",
+      "description": "Fernanda Montenegro and Fernanda Torres in an intimate portrait for Mother's Day.",
+      "fullDescription": "For Mother's Day, Hering invited Fernanda Montenegro and Fernanda Torres to star in a film that is both tribute and encounter. Mother and daughter, two of Brazil's greatest actresses, share the screen in a narrative that values simple gestures, everyday conversations and the complicity built over a lifetime. The campaign does not just celebrate the date, but the bond between generations — a link translated into memory, presence and affection. Instead of emphasizing fashion or trend, the film highlights what remains: intimacy, care and the truth of a relationship that withstands time.",
       "client": "Hering",
       "projectType": "Campaign",
-      "credits": "Directed by Dietrich.tv Studio. Featuring Fernanda Montenegro and Fernanda Torres."
+      "credits": "Directed by Dietrich. Featuring Fernanda Montenegro and Fernanda Torres."
     }
   },
-  "clients": {
-    "clientName": "Client",
-    "trustedBy": "Trusted by"
-  },
-  "carousel": {
-    "project": "Project",
-    "seeProject": "See Project",
-    "description": "Description"
-  },
-  "footer": {
-    "tagline": "We transform ideas into images that resonate across cultures."
-  },
-  "ui": {
-    "backgroundVideo": "Background Video",
-    "background": "Background",
-    "errorLoadingImage": "Error loading image",
-    "logo": "Logo",
-    "arrowLeft": "ArrowLeft",
-    "arrowRight": "ArrowRight",
-    "goToPreviousPage": "Go to previous page",
-    "goToNextPage": "Go to next page",
-    "toggleSidebar": "Toggle Sidebar",
-    "commandPalette": "Command Palette",
-    "searchCommand": "Search for a command to run..."
-  },
   "meta": {
-    "title": "Dietrich TV Studio - See Our Work",
-    "description": "Dietrich TV is an award-winning production studio pushing creativity with A.I. Based in São Paulo, Brazil.",
-    "keywords": "production studio, A.I., artificial intelligence, film, video, creative, São Paulo, Brazil",
-    "ogDescription": "Dietrich TV is an award-winning production studio pushing creativity with A.I. 🇧🇷",
-    "imageAlt": "Dietrich TV Studio - Creative production with A.I."
+    "title": "Dietrich.tv Studio – Explore our work",
+    "description": "Dietrich is an award-winning production studio combining cinema, design and artificial intelligence to create images with cultural impact. Based in São Paulo, Brazil.",
+    "keywords": "production studio, A.I., artificial intelligence, cinema, film, video, design, creative, São Paulo, Brazil",
+    "ogDescription": "Dietrich is an award-winning production studio combining cinema, design and artificial intelligence to create images with cultural impact. 🇧🇷",
+    "imageAlt": "Dietrich.tv Studio – Creative production with A.I."
   }
 }
