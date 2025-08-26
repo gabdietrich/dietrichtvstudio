@@ -730,9 +730,9 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
               <div>
                 <div className="text-xs text-black uppercase tracking-wide mb-4">{t('footer.columns.social', { defaultValue: 'SOCIAL' })}</div>
                 <div className="space-y-1 text-sm text-black">
-                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">{t('footer.instagram', { defaultValue: 'Instagram' })}</div>
-                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">{t('footer.behance', { defaultValue: 'Behance' })}</div>
-                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">{t('footer.linkedin', { defaultValue: 'LinkedIn' })}</div>
+                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">Instagram</div>
+                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">Behance</div>
+                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">LinkedIn</div>
                 </div>
               </div>
               
@@ -740,8 +740,8 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
               <div>
                 <div className="text-xs text-black uppercase tracking-wide mb-4">{t('footer.columns.contact', { defaultValue: 'CONTACT' })}</div>
                 <div className="space-y-1 text-sm text-black">
-                  <div className="cursor-pointer hover:opacity-70 transition-opacity">{t('footer.phone', { defaultValue: '+55 11 99306 8428' })}</div>
-                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">{t('footer.email', { defaultValue: 'contact@dietrich.tv' })}</div>
+                  <div className="cursor-pointer hover:opacity-70 transition-opacity">+55 11 99306 8428</div>
+                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">contact@dietrich.tv</div>
                 </div>
               </div>
             </div>
@@ -750,7 +750,7 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
           {/* Large logo */}
           <div className="text-center">
             <div className="text-5xl md:text-6xl lg:text-8xl text-black font-['Instrument_Sans']">
-              {t('footer.studioName', { defaultValue: 'dietrich.tv studio' })}
+              dietrich.tv studio
             </div>
           </div>
         </div>

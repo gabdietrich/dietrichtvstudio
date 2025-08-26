@@ -91,16 +91,7 @@
         "office": "ESCRITÓRIO",
         "social": "REDES",
         "contact": "CONTATO"
-      },
-      "social": "Redes",
-      "instagram": "Instagram",
-      "behance": "Behance",
-      "linkedin": "LinkedIn",
-      "vimeo": "Vimeo",
-      "getInTouch": "Entre em contato",
-      "phone": "+55 11 99306 8428",
-      "email": "contact@dietrich.tv",
-      "studioName": "dietrich.tv studio"
+      }
     }
   },
   "project": {
