@@ -79,6 +79,19 @@
       "zip": "05443-060"
     },
     "footer": {
+      "tagline": "Transformamos ideias em imagens que atravessam culturas.",
+      "stats": {
+        "years": { "value": "15+", "label": "Anos de experiência unindo cinema, design e tecnologia." },
+        "continents": { "value": "5", "label": "Continentes onde nossos filmes foram exibidos ou produzidos." },
+        "pioneering": { "value": "1", "label": "Estúdio pioneiro no Brasil integrando I.A. como linguagem criativa." }
+      },
+      "aboutLink": "Sobre →",
+      "ctaLine": "Fale com a gente para criarmos seu próximo projeto.",
+      "columns": {
+        "office": "ESCRITÓRIO",
+        "social": "REDES",
+        "contact": "CONTATO"
+      },
       "social": "Redes",
       "instagram": "Instagram",
       "behance": "Behance",

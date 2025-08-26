@@ -665,25 +665,25 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
               <div className="space-y-12">
                 {/* 15+ */}
                 <div>
-                  <div className="text-8xl md:text-9xl text-black mb-2 font-['Instrument_Sans'] leading-none">15+</div>
+                  <div className="text-8xl md:text-9xl text-black mb-2 font-['Instrument_Sans'] leading-none">{t('footer.stats.years.value')}</div>
                   <div className="text-black text-sm max-w-xs">
-                    Years of experience combining cinema, design and technology.
+                    {t('footer.stats.years.label')}
                   </div>
                 </div>
                 
                 {/* 5 */}
                 <div className="border-t border-black pt-8">
-                  <div className="text-8xl md:text-9xl text-black mb-2 font-['Instrument_Sans'] leading-none">5</div>
+                  <div className="text-8xl md:text-9xl text-black mb-2 font-['Instrument_Sans'] leading-none">{t('footer.stats.continents.value')}</div>
                   <div className="text-black text-sm max-w-xs">
-                    Continents where our films were exhibited or produced.
+                    {t('footer.stats.continents.label')}
                   </div>
                 </div>
                 
                 {/* 1 */}
                 <div className="border-t border-black pt-8">
-                  <div className="text-8xl md:text-9xl text-black mb-2 font-['Instrument_Sans'] leading-none">1</div>
+                  <div className="text-8xl md:text-9xl text-black mb-2 font-['Instrument_Sans'] leading-none">{t('footer.stats.pioneering.value')}</div>
                   <div className="text-black text-sm max-w-xs">
-                    Pioneering studio in Brazil integrating AI as a creative language.
+                    {t('footer.stats.pioneering.label')}
                   </div>
                 </div>
                 
@@ -693,8 +693,7 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
                     className="text-black text-sm hover:opacity-70 transition-opacity flex items-center gap-1"
                     onClick={() => onNavigate?.('contact')}
                   >
-                    About
-                    <span className="text-xs">→</span>
+                    {t('footer.aboutLink')}
                   </button>
                 </div>
               </div>
@@ -707,7 +706,7 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
           {/* Connect text */}
           <div className="mb-8">
             <p className="text-black text-base">
-              Connect with us to create your next project.
+              {t('footer.ctaLine')}
             </p>
           </div>
           
@@ -719,7 +718,7 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               {/* Office */}
               <div>
-                <div className="text-xs text-black uppercase tracking-wide mb-4">OFFICE</div>
+                <div className="text-xs text-black uppercase tracking-wide mb-4">{t('footer.columns.office')}</div>
                 <div className="space-y-1 text-sm text-black">
                   <div>Rua Lira, 151 - Sala 12 - Vila Madalena</div>
                   <div>São Paulo - Brazil</div>
@@ -729,20 +728,20 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
               
               {/* Social */}
               <div>
-                <div className="text-xs text-black uppercase tracking-wide mb-4">SOCIAL</div>
+                <div className="text-xs text-black uppercase tracking-wide mb-4">{t('footer.columns.social')}</div>
                 <div className="space-y-1 text-sm text-black">
-                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">Instagram</div>
-                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">Behance</div>
-                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">LinkedIn</div>
+                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">{t('footer.instagram')}</div>
+                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">{t('footer.behance')}</div>
+                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">{t('footer.linkedin')}</div>
                 </div>
               </div>
               
               {/* Contact */}
               <div>
-                <div className="text-xs text-black uppercase tracking-wide mb-4">CONTACT</div>
+                <div className="text-xs text-black uppercase tracking-wide mb-4">{t('footer.columns.contact')}</div>
                 <div className="space-y-1 text-sm text-black">
-                  <div className="cursor-pointer hover:opacity-70 transition-opacity">+55 11 99306 8428</div>
-                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">contact@dietrich.tv</div>
+                  <div className="cursor-pointer hover:opacity-70 transition-opacity">{t('footer.phone')}</div>
+                  <div className="cursor-pointer hover:opacity-70 transition-opacity underline">{t('footer.email')}</div>
                 </div>
               </div>
             </div>
@@ -751,7 +750,7 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
           {/* Large logo */}
           <div className="text-center">
             <div className="text-5xl md:text-6xl lg:text-8xl text-black font-['Instrument_Sans']">
-              dietrich.tv studio
+              {t('footer.studioName')}
             </div>
           </div>
         </div>

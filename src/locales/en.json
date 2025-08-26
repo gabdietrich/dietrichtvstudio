@@ -79,6 +79,19 @@
       "zip": "05443-060"
     },
     "footer": {
+      "tagline": "We transform ideas into images that resonate across cultures.",
+      "stats": {
+        "years": { "value": "15+", "label": "Years of experience combining cinema, design and technology." },
+        "continents": { "value": "5", "label": "Continents where our films were exhibited or produced." },
+        "pioneering": { "value": "1", "label": "Pioneering studio in Brazil integrating A.I. as a creative language." }
+      },
+      "aboutLink": "About →",
+      "ctaLine": "Connect with us to create your next project.",
+      "columns": {
+        "office": "OFFICE",
+        "social": "SOCIAL",
+        "contact": "CONTACT"
+      },
       "social": "Social",
       "instagram": "Instagram",
       "behance": "Behance",

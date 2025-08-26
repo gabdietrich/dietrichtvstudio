@@ -149,7 +149,7 @@ export default function ContactPage() {
         {/* Large logo */}
         <div className="text-center pt-12">
           <div className="text-5xl md:text-6xl lg:text-8xl text-black font-['Instrument_Sans'] font-semibold">
-{t('contact.footer.studioName')}
+{t('footer.studioName')}
           </div>
         </div>
       </div>
