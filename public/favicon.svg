@@ -1,11 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background circle -->
-  <circle cx="16" cy="16" r="16" fill="#000000"/>
-  
-  <!-- Letter 'd' -->
-  <path d="M8 8v16h4c3.314 0 6-2.686 6-6s-2.686-6-6-6H8zm2 2h2c2.21 0 4 1.79 4 4s-1.79 4-4 4h-2V10z" fill="#FFFFFF"/>
-  
-  <!-- Letter 's' -->
-  <path d="M20 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2h-1v2h1c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2" stroke="#FFFFFF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect width="32" height="32" fill="#000000"/>
+  <circle cx="16" cy="16" r="13" fill="none" stroke="#ffffff" stroke-width="2"/>
 </svg>

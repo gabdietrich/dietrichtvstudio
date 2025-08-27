@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Block admin and development files
+Disallow: /admin/
+Disallow: /.netlify/
+Disallow: /build/
+Disallow: /src/
+
+# Allow important assets
+Allow: /projects/
+Allow: /logos_clients/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.svg$
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.mp4$
+
+# Sitemap location
+Sitemap: https://www.dietrich.tv/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1

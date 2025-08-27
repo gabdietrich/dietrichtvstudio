@@ -1,20 +1,40 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
-export default function MetaUpdater() {
+interface MetaUpdaterProps {
+  page?: 'work' | 'contact' | 'project';
+  projectData?: {
+    title: string;
+    description: string;
+  };
+}
+
+export default function MetaUpdater({ page = 'work', projectData }: MetaUpdaterProps) {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
     // Update document language
     document.documentElement.lang = i18n.language;
 
+    // Get title and description based on page type
+    let title = t('meta.title');
+    let description = t('meta.description');
+    
+    if (page === 'contact') {
+      title = t('meta.contact.title');
+      description = t('meta.contact.description');
+    } else if (page === 'project' && projectData) {
+      title = `${projectData.title} | Dietrich.tv Studio`;
+      description = `${projectData.description} Watch this award-winning project by Dietrich.tv Studio, a production company specializing in A.I.-powered filmmaking from São Paulo, Brazil.`;
+    }
+
     // Update document title
-    document.title = t('meta.title');
+    document.title = title;
 
     // Update meta description
     const descriptionMeta = document.querySelector('meta[name="description"]');
     if (descriptionMeta) {
-      descriptionMeta.setAttribute('content', t('meta.description'));
+      descriptionMeta.setAttribute('content', description);
     }
 
     // Update meta keywords
@@ -26,13 +46,13 @@ export default function MetaUpdater() {
     // Update Open Graph title
     const ogTitleMeta = document.querySelector('meta[property="og:title"]');
     if (ogTitleMeta) {
-      ogTitleMeta.setAttribute('content', t('meta.title'));
+      ogTitleMeta.setAttribute('content', title);
     }
 
     // Update Open Graph description
     const ogDescriptionMeta = document.querySelector('meta[property="og:description"]');
     if (ogDescriptionMeta) {
-      ogDescriptionMeta.setAttribute('content', t('meta.ogDescription'));
+      ogDescriptionMeta.setAttribute('content', page === 'project' && projectData ? description : t('meta.ogDescription'));
     }
 
     // Update Open Graph locale
@@ -45,13 +65,13 @@ export default function MetaUpdater() {
     // Update Twitter title
     const twitterTitleMeta = document.querySelector('meta[name="twitter:title"]');
     if (twitterTitleMeta) {
-      twitterTitleMeta.setAttribute('content', t('meta.title'));
+      twitterTitleMeta.setAttribute('content', title);
     }
 
     // Update Twitter description
     const twitterDescriptionMeta = document.querySelector('meta[name="twitter:description"]');
     if (twitterDescriptionMeta) {
-      twitterDescriptionMeta.setAttribute('content', t('meta.ogDescription'));
+      twitterDescriptionMeta.setAttribute('content', page === 'project' && projectData ? description : t('meta.ogDescription'));
     }
 
     // Update image alt text
@@ -63,7 +83,7 @@ export default function MetaUpdater() {
     // Update/add hreflang tags for SEO
     updateHreflangTags();
 
-  }, [t, i18n.language]);
+  }, [t, i18n.language, page, projectData]);
 
   const updateHreflangTags = () => {
     // Remove existing hreflang tags

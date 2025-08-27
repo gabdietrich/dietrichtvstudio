@@ -5,6 +5,7 @@ import WorkPage, { getProjectBySlug, getProjectById } from './components/WorkPag
 import ContactPage from './components/ContactPage';
 import ProjectPage from './components/ProjectPage';
 import MetaUpdater from './components/MetaUpdater';
+import StructuredData from './components/StructuredData';
 import { initGA, trackPageView, analytics } from './utils/analytics';
 
 export default function App() {
@@ -181,9 +182,40 @@ export default function App() {
     }
   };
 
+  const getCurrentProjectData = () => {
+    if (currentPage === 'project' && currentProjectId) {
+      const project = getProjectById(currentProjectId);
+      return project ? {
+        title: project.title,
+        description: project.description
+      } : undefined;
+    }
+    return undefined;
+  };
+
   return (
     <div className="min-h-screen bg-black relative">
-      <MetaUpdater />
+      <MetaUpdater 
+        page={currentPage as 'work' | 'contact' | 'project'} 
+        projectData={getCurrentProjectData()}
+      />
+      <StructuredData type="organization" />
+      <StructuredData type="website" />
+      {currentPage === 'project' && currentProjectId && (() => {
+        const project = getProjectById(currentProjectId);
+        return project ? (
+          <StructuredData 
+            type="project" 
+            data={{
+              projectTitle: project.title,
+              projectDescription: project.description,
+              projectClient: project.client,
+              projectType: project.category,
+              projectSlug: project.slug
+            }}
+          />
+        ) : null;
+      })()}
       <Navigation 
         currentPage={currentPage} 
         onPageChange={handleNavigate} 

@@ -199,10 +199,14 @@
     }
   },
   "meta": {
-    "title": "Dietrich.tv Studio – Explore our work",
-    "description": "Dietrich is an award-winning production studio combining cinema, design and artificial intelligence to create images with cultural impact. Based in São Paulo, Brazil.",
-    "keywords": "production studio, A.I., artificial intelligence, cinema, film, video, design, creative, São Paulo, Brazil",
-    "ogDescription": "Dietrich is an award-winning production studio combining cinema, design and artificial intelligence to create images with cultural impact. 🇧🇷",
-    "imageAlt": "Dietrich.tv Studio – Creative production with A.I."
+    "title": "Dietrich.tv Studio – Award-winning A.I. Creative Production",
+    "description": "Discover groundbreaking films by Dietrich.tv Studio: Award-winning production company pushing creative boundaries with artificial intelligence. Work with global brands like Disney+, Natura, Hering. Based in São Paulo, Brazil.",
+    "keywords": "production studio, A.I., artificial intelligence, cinema, film, video, design, creative, São Paulo, Brazil, commercial, music video, documentary, fashion films, Disney, Natura, Hering, Maison Francis Kurkdjian",
+    "ogDescription": "Award-winning production studio pushing creative boundaries with A.I. 🇧🇷 See our work with Disney+, Natura, Hering & more.",
+    "imageAlt": "Dietrich.tv Studio – Creative production with A.I.",
+    "contact": {
+      "title": "Contact Dietrich.tv Studio – Let's Create Together",
+      "description": "Ready to create something extraordinary? Contact Dietrich.tv Studio - award-winning production company specializing in A.I.-powered filmmaking. Based in São Paulo, Brazil. Get in touch today!"
+    }
   }
 }

@@ -199,10 +199,14 @@
     }
   },
   "meta": {
-    "title": "Dietrich.tv Studio – Conheça nossos trabalhos",
-    "description": "Dietrich é um estúdio de produção premiado que une cinema, design e inteligência artificial para criar imagens com impacto cultural. Com sede em São Paulo, Brasil.",
-    "keywords": "estúdio de produção, I.A., inteligência artificial, cinema, filme, vídeo, design, criativo, São Paulo, Brasil",
-    "ogDescription": "Dietrich é um estúdio de produção premiado que une cinema, design e inteligência artificial para criar imagens com impacto cultural. 🇧🇷",
-    "imageAlt": "Dietrich.tv Studio – Produção criativa com I.A."
+    "title": "Dietrich.tv Studio – Produção Criativa Premiada com I.A.",
+    "description": "Descubra filmes inovadores do Dietrich.tv Studio: Estúdio de produção premiado expandindo criatividade com inteligência artificial. Trabalhos para Disney+, Natura, Hering. Sediado em São Paulo, Brasil.",
+    "keywords": "estúdio de produção, I.A., inteligência artificial, cinema, filme, vídeo, design, criativo, São Paulo, Brasil, comercial, videoclipe, documentário, fashion films, Disney, Natura, Hering, Maison Francis Kurkdjian",
+    "ogDescription": "Estúdio de produção premiado expandindo criatividade com I.A. 🇧🇷 Veja nossos trabalhos para Disney+, Natura, Hering e mais.",
+    "imageAlt": "Dietrich.tv Studio – Produção criativa com I.A.",
+    "contact": {
+      "title": "Contato Dietrich.tv Studio – Vamos Criar Juntos",
+      "description": "Pronto para criar algo extraordinário? Entre em contato com Dietrich.tv Studio - estúdio de produção premiado especializado em filmmaking com I.A. Sediado em São Paulo, Brasil. Fale conosco hoje!"
+    }
   }
 }
