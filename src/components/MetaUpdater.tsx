@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 interface MetaUpdaterProps {
-  page?: 'work' | 'contact' | 'project';
+  page?: 'work' | 'contact' | 'fornecedores' | 'project';
   projectData?: {
     title: string;
     description: string;
@@ -23,6 +23,9 @@ export default function MetaUpdater({ page = 'work', projectData }: MetaUpdaterP
     if (page === 'contact') {
       title = t('meta.contact.title');
       description = t('meta.contact.description');
+    } else if (page === 'fornecedores') {
+      title = 'Fornecedores | Dietrich.tv Studio';
+      description = 'Cadastre-se como fornecedor e faça parte da nossa rede de parceiros. Dietrich.tv Studio - produtora especializada em filmmaking com I.A. de São Paulo, Brasil.';
     } else if (page === 'project' && projectData) {
       title = `${projectData.title} | Dietrich.tv Studio`;
       description = `${projectData.description} Watch this award-winning project by Dietrich.tv Studio, a production company specializing in A.I.-powered filmmaking from São Paulo, Brazil.`;

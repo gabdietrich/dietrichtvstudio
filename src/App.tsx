@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import Navigation from './components/Navigation';
 import WorkPage, { getProjectBySlug, getProjectById } from './components/WorkPage';
 import ContactPage from './components/ContactPage';
+import FornecedoresPage from './components/FornecedoresPage';
 import ProjectPage from './components/ProjectPage';
 import MetaUpdater from './components/MetaUpdater';
 import StructuredData from './components/StructuredData';
@@ -44,6 +45,11 @@ export default function App() {
       if (basePath === '/contact') {
         setCurrentPage('contact');
         setDisplayedPage('contact');
+        setCurrentProjectId(null);
+        setDisplayedProjectId(null);
+      } else if (basePath === '/fornecedores') {
+        setCurrentPage('fornecedores');
+        setDisplayedPage('fornecedores');
         setCurrentProjectId(null);
         setDisplayedProjectId(null);
       } else if (basePath !== '/' && basePath !== '') {
@@ -123,6 +129,8 @@ export default function App() {
     let url = '';
     if (page === 'contact') {
       url = `/${currentLocale}/contact`;
+    } else if (page === 'fornecedores') {
+      url = `/${currentLocale}/fornecedores`;
     } else if (page === 'project' && projectId) {
       const project = getProjectById(projectId);
       if (project && project.slug) {
@@ -171,6 +179,8 @@ export default function App() {
         return <WorkPage onNavigate={handleNavigate} />;
       case 'contact':
         return <ContactPage />;
+      case 'fornecedores':
+        return <FornecedoresPage />;
       case 'project':
         return displayedProjectId ? (
           <ProjectPage projectId={displayedProjectId} onNavigate={handleNavigate} />
@@ -196,7 +206,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-black relative">
       <MetaUpdater 
-        page={currentPage as 'work' | 'contact' | 'project'} 
+        page={currentPage as 'work' | 'contact' | 'fornecedores' | 'project'} 
         projectData={getCurrentProjectData()}
       />
       <StructuredData type="organization" />
