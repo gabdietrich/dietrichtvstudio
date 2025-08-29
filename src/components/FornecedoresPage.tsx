@@ -14,7 +14,7 @@ export default function FornecedoresPage() {
               Fornecedores
             </h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Complete o formulário abaixo para se cadastrar como fornecedor e fazer parte da nossa rede de parceiros.
+              Complete com atenção o formulário com as informações do trabalho executado.
             </p>
           </div>
 
