@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
-  <!-- Fundo preto -->
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="192" height="192" fill="#000000"/>
-  <!-- Círculo branco -->
-  <circle cx="96" cy="96" r="76" fill="none" stroke="#ffffff" stroke-width="12"/>
+  <circle cx="96" cy="96" r="72" stroke="#FFFFFF" stroke-width="12" fill="none"/>
 </svg>
