@@ -91,38 +91,6 @@ export default function ContactPage() {
         {/* Separator line */}
         <div className="border-t border-gray-200 mb-16"></div>
 
-        {/* Statistics section */}
-        <div className="mb-20">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {/* 1M+ */}
-            <div className="text-center md:text-left">
-              <div className="text-5xl md:text-6xl text-black mb-4 font-['Instrument_Sans']">1M+</div>
-              <div className="text-base text-black max-w-xs">
-                {isPortuguese ? 'Usuários e visitantes interagiram com nossos websites' : 'Users and visitors interacted with our websites'}
-              </div>
-            </div>
-
-            {/* 36 */}
-            <div className="text-center md:text-left border-l-0 md:border-l border-gray-200 pl-0 md:pl-12">
-              <div className="text-5xl md:text-6xl text-black mb-4 font-['Instrument_Sans']">36</div>
-              <div className="text-base text-black max-w-xs">
-                {isPortuguese ? 'Campanhas ativas para empresas e marcas' : 'Active campaigns for companies and brands'}
-              </div>
-            </div>
-
-            {/* 25+ */}
-            <div className="text-center md:text-left border-l-0 md:border-l border-gray-200 pl-0 md:pl-12">
-              <div className="text-5xl md:text-6xl text-black mb-4 font-['Instrument_Sans']">25+</div>
-              <div className="text-base text-black max-w-xs">
-                {isPortuguese ? 'Clientes diferentes buscaram nossa expertise' : 'Different clients have sought our expertise'}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Separator line */}
-        <div className="border-t border-gray-200 mb-16"></div>
-
         {/* Clients Carousel - Trusted by section */}
         <ClientsCarousel />
 
