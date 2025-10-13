@@ -18,7 +18,7 @@ export default function ClientsCarousel() {
       {/* Trusted by title */}
       <div className="mb-8">
         <h3 className="text-lg text-black font-['Instrument_Sans'] text-[31px]">
-          {isPortuguese ? 'Confiança de' : 'Trusted by'}
+          {isPortuguese ? 'Nossos clientes' : 'Trusted by'}
         </h3>
       </div>
       
