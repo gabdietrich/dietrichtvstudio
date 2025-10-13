@@ -30,26 +30,29 @@
     }
   },
   "contact": {
-    "mainHeading": "Dietrich is an award-winning production studio expanding creativity with A.I. 🇧🇷 Give us a buzz.",
+    "mainHeading": "Nice to meet you :)",
+    "description": {
+      "paragraph1": "Dietrich.tv Studio has a solid trajectory in lifestyle commercials, beauty, and films with special effects. With an approach that merges design, cinema, and technology, the studio has collaborated with partner brands such as Nike, Natura, Tresemmé, Hering, among others. Its international work includes projects for the LVMH group in Paris and Shanghai, as well as contributions to ArtBasel's Meet the Artists series and the launch film for Ernesto Neto's exhibition at Le Bon Marché in Paris.",
+      "paragraph2": "Our portfolio also expands into the musical and artistic fields, with music videos for artists such as Criolo, Duda Beat, Jão, and Thiago Pethit, including the award-winning Etérea video at the Music Video Festival (m-v-f-). More recently, the studio has deepened its presence in the documentary and cultural fields, with the film Elsa Schiaparelli's Private Album and collaborations on French projects such as the exhibition Les Oiseaux at the Jardin d'Acclimatation in Paris. In every project, Dietrich.tv Studio reaffirms its commitment to creating images with strong aesthetic and cultural impact."
+    },
     "whatWeDo": "What we do",
-    "connectText": "Get in touch and let's explore your project's potential together.",
     "sections": {
       "filmImage": {
         "title": "FILM & IMAGE",
         "items": [
           "Commercials",
-          "Fashion Films",
+          "Documentaries",
           "Art Projects",
-          "16mm / Digital"
+          "Music Videos"
         ]
       },
       "aiInnovation": {
-        "title": "A.I. & INNOVATION",
+        "title": "INNOVATION",
         "items": [
-          "AI Cinema",
-          "Visual Experiments",
+          "Use of new technologies",
+          "Creative post-production",
           "Generative Tools",
-          "New Mediums"
+          "Multiple formats"
         ]
       },
       "designResearch": {
@@ -91,7 +94,11 @@
         "office": "OFFICE",
         "social": "SOCIAL",
         "contact": "CONTACT"
-      }
+      },
+      "social": "SOCIAL",
+      "getInTouch": "GET IN TOUCH",
+      "email": "contact@dietrich.tv",
+      "phone": "+55 11 98805-9492"
     }
   },
   "project": {

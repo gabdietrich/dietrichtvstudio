@@ -30,26 +30,29 @@
     }
   },
   "contact": {
-    "mainHeading": "Dietrich é um estúdio de produção premiado que expande a criatividade com I.A. 🇧🇷 Fale com a gente.",
+    "mainHeading": "Prazer em conhecer :)",
+    "description": {
+      "paragraph1": "A Dietrich.tv Studio tem sólida trajetória em comerciais de lifestyle, beleza e filmes com efeitos especiais. Com uma abordagem que une design, cinema e tecnologia, o estúdio já colaborou com marcas parceiras como Nike, Natura, Tresemmé, Hering e outras. A atuação internacional inclui projetos para o grupo LVMH em Paris e Xangai, além de ter trabalhado para a série \"Meet the Artists\", da ArtBasel, e do filme de lançamento da exposição de Ernesto Neto no Le Bon Marché, em Paris.",
+      "paragraph2": "Nosso portfólio se expande também para o universo musical e artístico, com videoclipes para nomes como Criolo, Duda Beat, Jão e Thiago Pethit, premiados no Music Video Festival (m-v-f-) com o clipe Etérea, de Criolo. Mais recentemente, o estúdio tem aprofundado sua presença no campo documental e cultural, com o filme \"Elsa Schiaparelli's Private Album\" e colaborações em projetos franceses, como a exposição Les Oiseaux no Jardin d'Acclimatation, em Paris. Em cada projeto, a Dietrich.tv Studio reafirma seu compromisso com a criação de imagens de forte impacto estético e cultural."
+    },
     "whatWeDo": "O que fazemos",
-    "connectText": "Entre em contato para explorarmos juntos o potencial do seu projeto.",
     "sections": {
       "filmImage": {
         "title": "FILME & IMAGEM",
         "items": [
           "Comerciais",
-          "Fashion Films",
-          "Projetos Artísticos",
-          "16mm / Digital"
+          "Documentários",
+          "Projetos de Arte",
+          "Videoclipes"
         ]
       },
       "aiInnovation": {
-        "title": "I.A. & INOVAÇÃO",
+        "title": "INOVAÇÃO",
         "items": [
-          "Cinema com I.A.",
-          "Experimentos Visuais",
+          "Uso de novas tecnologias",
+          "Pós-produção criativa",
           "Ferramentas Generativas",
-          "Novos Meios"
+          "Suportes múltiplos"
         ]
       },
       "designResearch": {
@@ -91,7 +94,11 @@
         "office": "ESCRITÓRIO",
         "social": "REDES",
         "contact": "CONTATO"
-      }
+      },
+      "social": "REDES",
+      "getInTouch": "CONTATO",
+      "email": "contact@dietrich.tv",
+      "phone": "+55 11 98805-9492"
     }
   },
   "project": {

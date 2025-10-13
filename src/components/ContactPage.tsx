@@ -8,11 +8,34 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white text-black pt-20">
       <div className="max-w-7xl mx-auto px-[15px] py-12">
-        {/* Main heading */}
+        {/* Main heading and description with image */}
         <div className="mb-20">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl text-black leading-tight max-w-4xl font-['Instrument_Sans']">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl text-black leading-tight max-w-4xl font-['Instrument_Sans'] mb-12">
             {t('contact.mainHeading')}
           </h2>
+          
+          {/* Two column layout: Text left, Image right */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Left column - Description paragraphs */}
+            <div className="space-y-6">
+              <p className="text-lg text-black leading-relaxed font-['Instrument_Sans']">
+                {t('contact.description.paragraph1')}
+              </p>
+              <p className="text-lg text-black leading-relaxed font-['Instrument_Sans']">
+                {t('contact.description.paragraph2')}
+              </p>
+            </div>
+            
+            {/* Right column - Image */}
+            <div className="relative">
+              <img 
+                src="/contact-office-new.jpg" 
+                alt="Dietrich.tv Studio office"
+                className="w-full h-auto rounded-lg shadow-lg object-cover"
+                style={{ aspectRatio: '4/5' }}
+              />
+            </div>
+          </div>
         </div>
 
         {/* Separator line */}
@@ -105,12 +128,6 @@ export default function ContactPage() {
 
         {/* Contact section */}
         <div className="mb-20">
-          <div className="mb-12">
-            <p className="text-lg text-black">
-{t('contact.connectText')}
-            </p>
-          </div>
-          
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Office info */}
             <div className="space-y-6">
@@ -161,8 +178,8 @@ export default function ContactPage() {
               <div>
                 <div className="text-xs text-gray-500 uppercase tracking-wide mb-3">{t('contact.footer.getInTouch')}</div>
                 <div className="space-y-1 text-base text-black">
-                  <div className="cursor-pointer hover:text-gray-600 transition-colors">{t('contact.footer.phone')}</div>
                   <div className="cursor-pointer hover:text-gray-600 transition-colors">{t('contact.footer.email')}</div>
+                  <div className="cursor-pointer hover:text-gray-600 transition-colors">{t('contact.footer.phone')}</div>
                 </div>
               </div>
             </div>
@@ -171,7 +188,7 @@ export default function ContactPage() {
 
         {/* Large logo */}
         <div className="text-center pt-12">
-          <div className="text-5xl md:text-6xl lg:text-8xl text-black font-['Instrument_Sans'] font-semibold">
+          <div className="text-5xl md:text-6xl lg:text-8xl text-black font-['Instrument_Sans'] font-normal">
             dietrich.tv studio
           </div>
         </div>
