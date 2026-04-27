@@ -31,46 +31,7 @@ export function getProjectById(id: number) {
 
 // Mock data with project content
 export const mockWorks = [
-  {
-    id: 1,
-    title: "Grand Soir, by Maison Francis Kurkdjian",
-    slug: "grand-soir-by-maison-francis-kurkdjian",
-    category: ["researchAI", "brands"],
-    description: "Grand Soir, by Maison Francis Kurkdjian. A spec film crafted entirely with artificial intelligence. 100% AI-made",
-    client: "Maison Francis Kurkdjian",
-    fullDescription: "Perfume is a bridge between moments, a place where past and future breathe together. We live in a time when creation expands beyond the hands, guided also by the intelligence we have imagined and built. Like perfume, this technology dissolves boundaries, uniting who we have been with who we are yet to become, turning the invisible into emotion. We crafted this A.I. spec film for Maison Francis Kurkdjian to celebrate the encounter where innovation and essence dance together.",
-    projectType: "Case Study",
-    credits: "Direction by Dietrich.tv Studio. 100% AI-made.",
-    vimeoId: "1108168421",
-    carouselImages: [
-      "/projects/grand-soir-maison-francis/gallery/grand-soir-maison-francis-gallery1.jpg",
-      "/projects/grand-soir-maison-francis/gallery/grand-soir-maison-francis-gallery2.jpg",
-      "/projects/grand-soir-maison-francis/gallery/grand-soir-maison-francis-gallery3.jpg"
-    ],
-    videos: [
-      { 
-        id: 1, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 1",
-        videoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video1-desktop.mp4",
-        mobileVideoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video1-mobile.mp4"
-      },
-      { 
-        id: 2, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 2",
-        videoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video2-desktop.mp4",
-        mobileVideoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video2-mobile.mp4"
-      },
-      { 
-        id: 3, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 3",
-        videoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video3-desktop.mp4",
-        mobileVideoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video3-mobile.mp4"
-      }
-    ]
-  },
+  // 1. Abertura cultural forte
   {
     id: 2,
     title: "Ernesto Neto for Le Bon Marché Rive Gauche",
@@ -111,6 +72,125 @@ export const mockWorks = [
       }
     ]
   },
+  // 2. Ângulo cultural / animado
+  {
+    id: 4,
+    title: "Elsa Schiaparelli's Private Album",
+    slug: "elsa-schiaparellis-private-album",
+    category: ["artistsCulture"],
+    description: "Elsa Schiaparelli remembered through an animated short film. A dialogue between fashion, memory, and the cosmos.",
+    client: "Biblioteca Mário de Andrade",
+    fullDescription: "Dietrich directed this documentary film about Elsa Schiaparelli built around personal memories of the fashion designer's granddaughter: the actress, supermodel and cultural icon Marisa Berenson. Narrated by Marisa herself, the animated short film showcased never before seen images of the Schiaparelli family, in a creative initiative specially made for Brazil's most important public library, Biblioteca Mário de Andrade, in the context of the centenary of André Breton's Surrealist Manifesto.",
+    projectType: "Animated Documentary",
+    credits: "Directed by Dietrich.tv Studio. Narrated by Marisa Berenson.",
+    vimeoId: "1112761795",
+    carouselImages: [
+      "/projects/elsa-schiaparelli-private-album/gallery/elsa-schiaparelli-private-album-gallery1.png",
+      "/projects/elsa-schiaparelli-private-album/gallery/elsa-schiaparelli-private-album-gallery2.png"
+    ],
+    videos: [
+      { 
+        id: 10, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        title: "Scene 1",
+        videoUrl: "/projects/elsa-schiaparelli-private-album/carousel/elsa-schiaparelli-private-album-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/elsa-schiaparelli-private-album/carousel/elsa-schiaparelli-private-album-video1-mobile.mp4"
+      },
+      { 
+        id: 11, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        title: "Scene 2",
+        videoUrl: "/projects/elsa-schiaparelli-private-album/carousel/elsa-schiaparelli-private-album-video2-desktop.mp4",
+        mobileVideoUrl: "/projects/elsa-schiaparelli-private-album/carousel/elsa-schiaparelli-private-album-video2-mobile.mp4"
+      },
+      { 
+        id: 12, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        title: "Scene 3",
+        videoUrl: "/projects/elsa-schiaparelli-private-album/carousel/elsa-schiaparelli-private-album-video3-desktop.mp4",
+        mobileVideoUrl: "/projects/elsa-schiaparelli-private-album/carousel/elsa-schiaparelli-private-album-video3-mobile.mp4"
+      }
+    ]
+  },
+  // 3. Pico de luxo internacional — Le Bon Marché
+  {
+    id: 7,
+    title: "Il Neige Rive Gauche",
+    slug: "il-neige-rive-gauche",
+    category: ["brands", "artistsCulture"],
+    description: "An animated winter tale for Le Bon Marché, where Paris becomes poetry.",
+    client: "Le Bon Marché Rive Gauche",
+    fullDescription: "We were commissioned by Le Bon Marché to create Il Neige Rive Gauche, an animated film that transforms the Parisian winter into a poetic narrative. The project was conceived not as a campaign in the traditional sense, but as a dreamlike gesture: snow falling on the Rive Gauche, the city turning into a stage where imagination takes over reality. Animation became the language to capture the ephemeral, blending design and storytelling in a way that feels both timeless and unexpected. At the intersection of cinema, design, and brand identity, Il Neige Rive Gauche is more than a seasonal film. It is a sensorial invitation, a reminder that a brand can also be a curator of emotions.",
+    projectType: "Animated Film",
+    credits: "Directed by Dietrich.tv Studio. Commissioned by Le Bon Marché Rive Gauche.",
+    vimeoId: "190538952",
+    carouselImages: [],
+    videos: [
+      { 
+        id: 19, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        title: "Scene 1",
+        videoUrl: "/projects/il-neige-rive-gauche/carousel/il-neige-rive-gauche-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/il-neige-rive-gauche/carousel/il-neige-rive-gauche-video1-mobile.mp4"
+      },
+      { 
+        id: 20, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        title: "Scene 2",
+        videoUrl: "/projects/il-neige-rive-gauche/carousel/il-neige-rive-gauche-video2-desktop.mp4",
+        mobileVideoUrl: "/projects/il-neige-rive-gauche/carousel/il-neige-rive-gauche-video2-mobile.mp4"
+      },
+      { 
+        id: 21, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        title: "Scene 3",
+        videoUrl: "/projects/il-neige-rive-gauche/carousel/il-neige-rive-gauche-video3-desktop.mp4",
+        mobileVideoUrl: "/projects/il-neige-rive-gauche/carousel/il-neige-rive-gauche-video3-mobile.mp4"
+      }
+    ]
+  },
+  // 4. Música / persona autoral — Gracinha (20M views)
+  {
+    id: 10,
+    title: "Gracinha",
+    slug: "gracinha",
+    category: ["music", "artistsCulture"],
+    description: "A music film that blends pop, fantasy, and cinema. Directed by Dietrich with Manu Gavassi.",
+    client: "Manu Gavassi",
+    fullDescription: "Directed by Dietrich and Manu Gavassi, Gracinha is a music film that transcends the boundaries of the music video format, merging pop sensibility with fashion aesthetics and cinematic storytelling. The project became a cultural milestone, reaching over 20 million views within 24 hours of release, and resonated as one of the most striking audiovisual works in the Brazilian market. Dietrich.tv Studio was responsible for the direction and execution, creating a layered visual journey that balances intimacy and spectacle — a portrait of Manu Gavassi's artistry elevated to a cinematic scale.",
+    projectType: "Music Film",
+    credits: "Directed by Dietrich.tv Studio with Manu Gavassi.",
+    vimeoId: "650425603",
+    carouselImages: [
+      "/projects/gracinha-disney/gallery/gracinha-disney-gallery1.jpg",
+      "/projects/gracinha-disney/gallery/gracinha-disney-gallery2.jpg",
+      "/projects/gracinha-disney/gallery/gracinha-disney-gallery3.jpg"
+    ],
+    videos: [
+      { 
+        id: 28, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        title: "Scene 1",
+        videoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video1-mobile.mp4"
+      },
+      { 
+        id: 29, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        title: "Scene 2",
+        videoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video2-desktop.mp4",
+        mobileVideoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video2-mobile.mp4"
+      },
+      { 
+        id: 30, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3C/svg%3E", 
+        title: "Scene 3",
+        videoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video3-desktop.mp4",
+        mobileVideoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video3-mobile.mp4"
+      }
+    ]
+  },
+  // 5. Música + arte — Three Short Films
   {
     id: 3,
     title: "Three Short Films",
@@ -154,153 +234,7 @@ export const mockWorks = [
       }
     ]
   },
-  {
-    id: 4,
-    title: "Elsa Schiaparelli's Private Album",
-    slug: "elsa-schiaparellis-private-album",
-    category: ["artistsCulture"],
-    description: "Elsa Schiaparelli remembered through an animated short film. A dialogue between fashion, memory, and the cosmos.",
-    client: "Biblioteca Mário de Andrade",
-    fullDescription: "Dietrich directed this documentary film about Elsa Schiaparelli built around personal memories of the fashion designer's granddaughter: the actress, supermodel and cultural icon Marisa Berenson. Narrated by Marisa herself, the animated short film showcased never before seen images of the Schiaparelli family, in a creative initiative specially made for Brazil's most important public library, Biblioteca Mário de Andrade, in the context of the centenary of André Breton's Surrealist Manifesto.",
-    projectType: "Animated Documentary",
-    credits: "Directed by Dietrich.tv Studio. Narrated by Marisa Berenson.",
-    vimeoId: "1112761795",
-    carouselImages: [
-      "/projects/elsa-schiaparelli-private-album/gallery/elsa-schiaparelli-private-album-gallery1.png",
-      "/projects/elsa-schiaparelli-private-album/gallery/elsa-schiaparelli-private-album-gallery2.png"
-    ],
-    videos: [
-      { 
-        id: 10, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 1",
-        videoUrl: "/projects/elsa-schiaparelli-private-album/carousel/elsa-schiaparelli-private-album-video1-desktop.mp4",
-        mobileVideoUrl: "/projects/elsa-schiaparelli-private-album/carousel/elsa-schiaparelli-private-album-video1-mobile.mp4"
-      },
-      { 
-        id: 11, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 2",
-        videoUrl: "/projects/elsa-schiaparelli-private-album/carousel/elsa-schiaparelli-private-album-video2-desktop.mp4",
-        mobileVideoUrl: "/projects/elsa-schiaparelli-private-album/carousel/elsa-schiaparelli-private-album-video2-mobile.mp4"
-      },
-      { 
-        id: 12, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 3",
-        videoUrl: "/projects/elsa-schiaparelli-private-album/carousel/elsa-schiaparelli-private-album-video3-desktop.mp4",
-        mobileVideoUrl: "/projects/elsa-schiaparelli-private-album/carousel/elsa-schiaparelli-private-album-video3-mobile.mp4"
-      }
-    ]
-  },
-  {
-    id: 5,
-    title: "Gisele Bündchen and Cauã Raymond",
-    slug: "gisele-bundchen-and-caua-raymond",
-    category: ["brands"],
-    description: "A cinematic launch set to Jorge Ben Jor's classic Lá Vem Ela.",
-    client: "Democrata",
-    fullDescription: "For Democrata's launch film, we brought together two of Brazil's most iconic figures — Gisele Bündchen and Cauã Reymond — in a story that celebrates style, presence, and rhythm. The soundtrack, Jorge Ben Jor's Lá Vem Ela, sets the tone: timeless, magnetic, unmistakably Brazilian. Each frame captures a dialogue between elegance and energy, masculinity and femininity, intimacy and spectacle. The film was conceived as more than a commercial. It is a cultural encounter, weaving fashion and music into a narrative that places the brand in the heart of Brazil's creative heritage. Shot with cinematic precision, the piece amplifies Democrata's vision: sophistication with soul, classic with contemporary, craft with charisma.",
-    projectType: "Launch Film",
-    credits: "Directed by Dietrich.tv Studio. Featuring Gisele Bündchen and Cauã Reymond.",
-    vimeoId: "1006728704",
-    carouselImages: [
-      "/projects/democrata-gisele-caua/gallery/democrata-gisele-caua-gallery1.jpg",
-      "/projects/democrata-gisele-caua/gallery/democrata-gisele-caua-gallery2.jpg",
-      "/projects/democrata-gisele-caua/gallery/democrata-gisele-caua-gallery3.jpg"
-    ],
-    videos: [
-      { 
-        id: 13, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 1",
-        videoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video1-desktop.mp4",
-        mobileVideoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video1-mobile.mp4"
-      },
-      { 
-        id: 14, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 2",
-        videoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video2-desktop.mp4",
-        mobileVideoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video2-mobile.mp4"
-      },
-      { 
-        id: 15, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 3",
-        videoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video3-desktop.mp4",
-        mobileVideoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video3-mobile.mp4"
-      }
-    ]
-  },
-  {
-    id: 6,
-    title: "Mother's Day '25",
-    slug: "mothers-day-25",
-    category: ["brands"],
-    description: "Sasha, Bruna Marquezine, Xuxa and Neide — a celebration of generations and love.",
-    client: "Hering",
-    fullDescription: "For Hering's Mother's Day campaign, we brought together Sasha Meneghel, Bruna Marquezine, Xuxa and Neide. More than a film, it became a portrait of affection across generations, weaving family bonds into the fabric of one of Brazil's most iconic brands. The narrative is intimate yet universal: mothers and daughters, friendship and legacy, the simple gestures that define love. Each scene was crafted to highlight authenticity, where fashion becomes secondary to emotion, and presence becomes more powerful than performance. In this project, cinema and brand storytelling converge to honor motherhood — not as a concept, but as lived experience.",
-    projectType: "Campaign",
-    credits: "Directed by Dietrich.tv Studio. Starring Sasha, Bruna Marquezine, Xuxa and Neide.",
-    vimeoId: "1112761195,1112760986",
-    carouselImages: [],
-    videos: [
-      { 
-        id: 16, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 1",
-        videoUrl: "/projects/mothers-day-hering-1/carousel/mothers-day-hering-1-video1-desktop.mp4",
-        mobileVideoUrl: "/projects/mothers-day-hering-1/carousel/mothers-day-hering-1-video1-mobile.mp4"
-      },
-      { 
-        id: 17, 
-        thumbnail: "/projects/mothers-day-hering-1/carousel/mothers-day-hering-1-video2-desktop.jpg", 
-        title: "Scene 2"
-      },
-      { 
-        id: 18, 
-        thumbnail: "/projects/mothers-day-hering-1/carousel/mothers-day-hering-1-video3-desktop.jpg", 
-        title: "Scene 3"
-      }
-    ]
-  },
-  {
-    id: 7,
-    title: "Il Neige Rive Gauche",
-    slug: "il-neige-rive-gauche",
-    category: ["brands", "artistsCulture"],
-    description: "An animated winter tale for Le Bon Marché, where Paris becomes poetry.",
-    client: "Le Bon Marché Rive Gauche",
-    fullDescription: "We were commissioned by Le Bon Marché to create Il Neige Rive Gauche, an animated film that transforms the Parisian winter into a poetic narrative. The project was conceived not as a campaign in the traditional sense, but as a dreamlike gesture: snow falling on the Rive Gauche, the city turning into a stage where imagination takes over reality. Animation became the language to capture the ephemeral, blending design and storytelling in a way that feels both timeless and unexpected. At the intersection of cinema, design, and brand identity, Il Neige Rive Gauche is more than a seasonal film. It is a sensorial invitation, a reminder that a brand can also be a curator of emotions.",
-    projectType: "Animated Film",
-    credits: "Directed by Dietrich.tv Studio. Commissioned by Le Bon Marché Rive Gauche.",
-    vimeoId: "190538952",
-    carouselImages: [],
-    videos: [
-      { 
-        id: 19, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 1",
-        videoUrl: "/projects/il-neige-rive-gauche/carousel/il-neige-rive-gauche-video1-desktop.mp4",
-        mobileVideoUrl: "/projects/il-neige-rive-gauche/carousel/il-neige-rive-gauche-video1-mobile.mp4"
-      },
-      { 
-        id: 20, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 2",
-        videoUrl: "/projects/il-neige-rive-gauche/carousel/il-neige-rive-gauche-video2-desktop.mp4",
-        mobileVideoUrl: "/projects/il-neige-rive-gauche/carousel/il-neige-rive-gauche-video2-mobile.mp4"
-      },
-      { 
-        id: 21, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 3",
-        videoUrl: "/projects/il-neige-rive-gauche/carousel/il-neige-rive-gauche-video3-desktop.mp4",
-        mobileVideoUrl: "/projects/il-neige-rive-gauche/carousel/il-neige-rive-gauche-video3-mobile.mp4"
-      }
-    ]
-  },
+  // 6. Marca brasileira premium — Natura
   {
     id: 8,
     title: "Desejo",
@@ -342,86 +276,7 @@ export const mockWorks = [
       }
     ]
   },
-  {
-    id: 9,
-    title: "Brilho Lamelar",
-    slug: "brilho-lamelar",
-    category: ["brands"],
-    description: "Technology and beauty meet in a film where hair becomes light.",
-    client: "TRESemmé",
-    fullDescription: "For the launch of TRESemmé Brilho Lamelar, Dietrich directed (at O2 Filmes) a film that bridges fashion and technology. Shot in virtual production, the narrative moves between real and virtual spaces, where Sabrina Sato embodies the elegance and energy of the brand. The aesthetic is sharp and sophisticated: dark backdrops, sculpted lighting, and movements that highlight shine as performance. Each transition dives into hair as if it were a portal, leading us into new scenes with rhythm and precision.",
-    projectType: "Launch Film",
-    credits: "Directed by Dietrich.tv Studio at O2 Filmes. Featuring Sabrina Sato.",
-    vimeoId: "880317712",
-    carouselImages: [
-      "/projects/tresemme-brilho-lamelar/gallery/tresemme-brilho-lamelar-gallery1.jpg",
-      "/projects/tresemme-brilho-lamelar/gallery/tresemme-brilho-lamelar-gallery2.jpg",
-      "/projects/tresemme-brilho-lamelar/gallery/tresemme-brilho-lamelar-gallery3.jpg"
-    ],
-    videos: [
-      { 
-        id: 25, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 1",
-        videoUrl: "/projects/tresemme-brilho-lamelar/carousel/tresemme-brilho-lamelar-video1-desktop.mp4",
-        mobileVideoUrl: "/projects/tresemme-brilho-lamelar/carousel/tresemme-brilho-lamelar-video1-mobile.mp4"
-      },
-      { 
-        id: 26, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 2",
-        videoUrl: "/projects/tresemme-brilho-lamelar/carousel/tresemme-brilho-lamelar-video2-desktop.mp4",
-        mobileVideoUrl: "/projects/tresemme-brilho-lamelar/carousel/tresemme-brilho-lamelar-video2-mobile.mp4"
-      },
-      { 
-        id: 27, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 3",
-        videoUrl: "/projects/tresemme-brilho-lamelar/carousel/tresemme-brilho-lamelar-video3-desktop.mp4",
-        mobileVideoUrl: "/projects/tresemme-brilho-lamelar/carousel/tresemme-brilho-lamelar-video3-mobile.mp4"
-      }
-    ]
-  },
-  {
-    id: 10,
-    title: "Gracinha",
-    slug: "gracinha",
-    category: ["music", "artistsCulture"],
-    description: "A music film that blends pop, fantasy, and cinema. Directed by Dietrich with Manu Gavassi.",
-    client: "Manu Gavassi",
-    fullDescription: "Directed by Dietrich and Manu Gavassi, Gracinha is a music film that transcends the boundaries of the music video format, merging pop sensibility with fashion aesthetics and cinematic storytelling. The project became a cultural milestone, reaching over 20 million views within 24 hours of release, and resonated as one of the most striking audiovisual works in the Brazilian market. Dietrich.tv Studio was responsible for the direction and execution, creating a layered visual journey that balances intimacy and spectacle — a portrait of Manu Gavassi's artistry elevated to a cinematic scale.",
-    projectType: "Music Film",
-    credits: "Directed by Dietrich.tv Studio with Manu Gavassi.",
-    vimeoId: "650425603",
-    carouselImages: [
-      "/projects/gracinha-disney/gallery/gracinha-disney-gallery1.jpg",
-      "/projects/gracinha-disney/gallery/gracinha-disney-gallery2.jpg",
-      "/projects/gracinha-disney/gallery/gracinha-disney-gallery3.jpg"
-    ],
-    videos: [
-      { 
-        id: 28, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 1",
-        videoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video1-desktop.mp4",
-        mobileVideoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video1-mobile.mp4"
-      },
-      { 
-        id: 29, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
-        title: "Scene 2",
-        videoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video2-desktop.mp4",
-        mobileVideoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video2-mobile.mp4"
-      },
-      { 
-        id: 30, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3C/svg%3E", 
-        title: "Scene 3",
-        videoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video3-desktop.mp4",
-        mobileVideoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video3-mobile.mp4"
-      }
-    ]
-  },
+  // 7. Marca premium — Hering Fernandas
   {
     id: 11,
     title: "Mother's Day Fernandas",
@@ -463,6 +318,162 @@ export const mockWorks = [
         title: "Scene 3",
         videoUrl: "/projects/mothers-day-hering-fernandas/carousel/mothers-day-hering-fernandas-video3-desktop.mp4",
         mobileVideoUrl: "/projects/mothers-day-hering-fernandas/carousel/mothers-day-hering-fernandas-video3-mobile.mp4"
+      }
+    ]
+  },
+  // 8. Ícones brasileiros — Democrata
+  {
+    id: 5,
+    title: "Gisele Bündchen and Cauã Raymond",
+    slug: "gisele-bundchen-and-caua-raymond",
+    category: ["brands"],
+    description: "A cinematic launch set to Jorge Ben Jor's classic Lá Vem Ela.",
+    client: "Democrata",
+    fullDescription: "For Democrata's launch film, we brought together two of Brazil's most iconic figures — Gisele Bündchen and Cauã Reymond — in a story that celebrates style, presence, and rhythm. The soundtrack, Jorge Ben Jor's Lá Vem Ela, sets the tone: timeless, magnetic, unmistakably Brazilian. Each frame captures a dialogue between elegance and energy, masculinity and femininity, intimacy and spectacle. The film was conceived as more than a commercial. It is a cultural encounter, weaving fashion and music into a narrative that places the brand in the heart of Brazil's creative heritage. Shot with cinematic precision, the piece amplifies Democrata's vision: sophistication with soul, classic with contemporary, craft with charisma.",
+    projectType: "Launch Film",
+    credits: "Directed by Dietrich.tv Studio. Featuring Gisele Bündchen and Cauã Reymond.",
+    vimeoId: "1006728704",
+    carouselImages: [
+      "/projects/democrata-gisele-caua/gallery/democrata-gisele-caua-gallery1.jpg",
+      "/projects/democrata-gisele-caua/gallery/democrata-gisele-caua-gallery2.jpg",
+      "/projects/democrata-gisele-caua/gallery/democrata-gisele-caua-gallery3.jpg"
+    ],
+    videos: [
+      { 
+        id: 13, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        title: "Scene 1",
+        videoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video1-mobile.mp4"
+      },
+      { 
+        id: 14, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        title: "Scene 2",
+        videoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video2-desktop.mp4",
+        mobileVideoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video2-mobile.mp4"
+      },
+      { 
+        id: 15, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        title: "Scene 3",
+        videoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video3-desktop.mp4",
+        mobileVideoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video3-mobile.mp4"
+      }
+    ]
+  },
+  // 9. Campanha de marca — Hering '25
+  {
+    id: 6,
+    title: "Mother's Day '25",
+    slug: "mothers-day-25",
+    category: ["brands"],
+    description: "Sasha, Bruna Marquezine, Xuxa and Neide — a celebration of generations and love.",
+    client: "Hering",
+    fullDescription: "For Hering's Mother's Day campaign, we brought together Sasha Meneghel, Bruna Marquezine, Xuxa and Neide. More than a film, it became a portrait of affection across generations, weaving family bonds into the fabric of one of Brazil's most iconic brands. The narrative is intimate yet universal: mothers and daughters, friendship and legacy, the simple gestures that define love. Each scene was crafted to highlight authenticity, where fashion becomes secondary to emotion, and presence becomes more powerful than performance. In this project, cinema and brand storytelling converge to honor motherhood — not as a concept, but as lived experience.",
+    projectType: "Campaign",
+    credits: "Directed by Dietrich.tv Studio. Starring Sasha, Bruna Marquezine, Xuxa and Neide.",
+    vimeoId: "1112761195,1112760986",
+    carouselImages: [],
+    videos: [
+      { 
+        id: 16, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        title: "Scene 1",
+        videoUrl: "/projects/mothers-day-hering-1/carousel/mothers-day-hering-1-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/mothers-day-hering-1/carousel/mothers-day-hering-1-video1-mobile.mp4"
+      },
+      { 
+        id: 17, 
+        thumbnail: "/projects/mothers-day-hering-1/carousel/mothers-day-hering-1-video2-desktop.jpg", 
+        title: "Scene 2"
+      },
+      { 
+        id: 18, 
+        thumbnail: "/projects/mothers-day-hering-1/carousel/mothers-day-hering-1-video3-desktop.jpg", 
+        title: "Scene 3"
+      }
+    ]
+  },
+  // 10. Virtual production — TRESemmé
+  {
+    id: 9,
+    title: "Brilho Lamelar",
+    slug: "brilho-lamelar",
+    category: ["brands"],
+    description: "Technology and beauty meet in a film where hair becomes light.",
+    client: "TRESemmé",
+    fullDescription: "For the launch of TRESemmé Brilho Lamelar, Dietrich directed (at O2 Filmes) a film that bridges fashion and technology. Shot in virtual production, the narrative moves between real and virtual spaces, where Sabrina Sato embodies the elegance and energy of the brand. The aesthetic is sharp and sophisticated: dark backdrops, sculpted lighting, and movements that highlight shine as performance. Each transition dives into hair as if it were a portal, leading us into new scenes with rhythm and precision.",
+    projectType: "Launch Film",
+    credits: "Directed by Dietrich.tv Studio at O2 Filmes. Featuring Sabrina Sato.",
+    vimeoId: "880317712",
+    carouselImages: [
+      "/projects/tresemme-brilho-lamelar/gallery/tresemme-brilho-lamelar-gallery1.jpg",
+      "/projects/tresemme-brilho-lamelar/gallery/tresemme-brilho-lamelar-gallery2.jpg",
+      "/projects/tresemme-brilho-lamelar/gallery/tresemme-brilho-lamelar-gallery3.jpg"
+    ],
+    videos: [
+      { 
+        id: 25, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        title: "Scene 1",
+        videoUrl: "/projects/tresemme-brilho-lamelar/carousel/tresemme-brilho-lamelar-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/tresemme-brilho-lamelar/carousel/tresemme-brilho-lamelar-video1-mobile.mp4"
+      },
+      { 
+        id: 26, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        title: "Scene 2",
+        videoUrl: "/projects/tresemme-brilho-lamelar/carousel/tresemme-brilho-lamelar-video2-desktop.mp4",
+        mobileVideoUrl: "/projects/tresemme-brilho-lamelar/carousel/tresemme-brilho-lamelar-video2-mobile.mp4"
+      },
+      { 
+        id: 27, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        title: "Scene 3",
+        videoUrl: "/projects/tresemme-brilho-lamelar/carousel/tresemme-brilho-lamelar-video3-desktop.mp4",
+        mobileVideoUrl: "/projects/tresemme-brilho-lamelar/carousel/tresemme-brilho-lamelar-video3-mobile.mp4"
+      }
+    ]
+  },
+  // 11. Fechamento — IA criativa (Grand Soir)
+  {
+    id: 1,
+    title: "Grand Soir, by Maison Francis Kurkdjian",
+    slug: "grand-soir-by-maison-francis-kurkdjian",
+    category: ["researchAI", "brands"],
+    description: "Grand Soir, by Maison Francis Kurkdjian. A spec film crafted entirely with artificial intelligence. 100% AI-made",
+    client: "Maison Francis Kurkdjian",
+    fullDescription: "Perfume is a bridge between moments, a place where past and future breathe together. We live in a time when creation expands beyond the hands, guided also by the intelligence we have imagined and built. Like perfume, this technology dissolves boundaries, uniting who we have been with who we are yet to become, turning the invisible into emotion. We crafted this A.I. spec film for Maison Francis Kurkdjian to celebrate the encounter where innovation and essence dance together.",
+    projectType: "Case Study",
+    credits: "Direction by Dietrich.tv Studio. 100% AI-made.",
+    vimeoId: "1108168421",
+    carouselImages: [
+      "/projects/grand-soir-maison-francis/gallery/grand-soir-maison-francis-gallery1.jpg",
+      "/projects/grand-soir-maison-francis/gallery/grand-soir-maison-francis-gallery2.jpg",
+      "/projects/grand-soir-maison-francis/gallery/grand-soir-maison-francis-gallery3.jpg"
+    ],
+    videos: [
+      { 
+        id: 1, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        title: "Scene 1",
+        videoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video1-mobile.mp4"
+      },
+      { 
+        id: 2, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        title: "Scene 2",
+        videoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video2-desktop.mp4",
+        mobileVideoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video2-mobile.mp4"
+      },
+      { 
+        id: 3, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        title: "Scene 3",
+        videoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video3-desktop.mp4",
+        mobileVideoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video3-mobile.mp4"
       }
     ]
   }
