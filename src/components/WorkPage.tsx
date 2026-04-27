@@ -602,7 +602,7 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
         <div className="max-w-7xl mx-auto px-[15px] mb-16">
           {/* Main statement */}
           <div className="mb-12">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl text-black leading-tight max-w-4xl font-['Instrument_Sans']">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl text-black leading-tight max-w-4xl font-['Instrument_Sans']">
               {t('homepage.mainText')}
             </h1>
           </div>
