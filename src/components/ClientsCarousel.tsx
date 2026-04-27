@@ -1,8 +1,4 @@
-import { useTranslation } from 'react-i18next';
-
 export default function ClientsCarousel() {
-  const { t, i18n } = useTranslation();
-  const isPortuguese = i18n.language === 'pt';
   // Real client logos from public/logos_clients/
   const clientLogos = Array.from({ length: 11 }, (_, i) => ({
     id: i + 1,
@@ -18,7 +14,7 @@ export default function ClientsCarousel() {
       {/* Trusted by title */}
       <div className="mb-8">
         <h3 className="text-lg text-black font-['Instrument_Sans'] text-[31px]">
-          {isPortuguese ? 'Nossos clientes' : 'Trusted by'}
+          Trusted by
         </h3>
       </div>
       

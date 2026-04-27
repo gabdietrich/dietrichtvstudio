@@ -36,9 +36,9 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
           "url": baseUrl,
           "logo": `${baseUrl}/logo_dietrich_BLACK.svg`,
           "image": `${baseUrl}/og-image.jpg`,
-          "description": currentLocale === 'pt' 
-            ? "Dietrich é um estúdio de produção premiado que une cinema, design e inteligência artificial para criar imagens com impacto cultural."
-            : "Dietrich is an award-winning production studio combining cinema, design and artificial intelligence to create images with cultural impact.",
+          "description": currentLocale === 'pt'
+            ? "Dietrich.tv - Studio de direção e pós criativa. Cinema, cultura e marca."
+            : "Dietrich.tv — Directing and creative post-production studio. Cinema, culture, and brand.",
           "foundingDate": "2009",
           "founders": {
             "@type": "Person",
@@ -88,8 +88,8 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
           "name": "Dietrich TV Studio",
           "url": baseUrl,
           "description": currentLocale === 'pt'
-            ? "Dietrich é um estúdio de produção premiado que une cinema, design e inteligência artificial para criar imagens com impacto cultural."
-            : "Dietrich is an award-winning production studio combining cinema, design and artificial intelligence to create images with cultural impact.",
+            ? "Dietrich.tv - Studio de direção e pós criativa. Cinema, cultura e marca."
+            : "Dietrich.tv — Directing and creative post-production studio. Cinema, culture, and brand.",
           "inLanguage": [
             {
               "@type": "Language",

@@ -19,14 +19,13 @@
     "logoAlt": "dietrich.tv studio"
   },
   "homepage": {
-    "mainText": "Somos uma produtora multimídia com sede em São Paulo, atuando na interseção entre design, produção e pós-produção de filmes.",
+    "mainText": "Dietrich.tv é um estúdio de direção-autor baseado em São Paulo, com 15 anos de trajetória entre cinema publicitário, projetos de arte e colaborações culturais. Trabalhamos com marcas como Le Bon Marché, Art Basel, Netflix, Natura e Hering, e com artistas como Ernesto Neto, Manu Gavassi e Criolo. Nossa especialidade é a passagem do conceito à imagem — direção, pós-produção criativa, IA generativa.",
     "categories": {
       "all": "Todos",
-      "commercial": "Comercial",
-      "ai": "I.A.",
-      "beauty": "Beleza",
-      "documentary": "Documentário",
-      "musicVideo": "Videoclipe"
+      "brands": "Marcas",
+      "artistsCulture": "Artistas & Cultura",
+      "music": "Música",
+      "researchAI": "Pesquisa & IA"
     }
   },
   "contact": {
@@ -35,42 +34,35 @@
       "paragraph1": "A Dietrich.tv Studio tem sólida trajetória em comerciais de lifestyle, beleza e filmes com efeitos especiais. Com uma abordagem que une design, cinema e tecnologia, o estúdio já colaborou com marcas parceiras como Nike, Natura, Tresemmé, Hering e outras. A atuação internacional inclui projetos para o grupo LVMH em Paris e Xangai, além de ter trabalhado para a série \"Meet the Artists\", da ArtBasel, e do filme de lançamento da exposição de Ernesto Neto no Le Bon Marché, em Paris.",
       "paragraph2": "Nosso portfólio se expande também para o universo musical e artístico, com videoclipes para nomes como Criolo, Duda Beat, Jão e Thiago Pethit, premiados no Music Video Festival (m-v-f-) com o clipe Etérea, de Criolo. Mais recentemente, o estúdio tem aprofundado sua presença no campo documental e cultural, com o filme \"Elsa Schiaparelli's Private Album\" e colaborações em projetos franceses, como a exposição Les Oiseaux no Jardin d'Acclimatation, em Paris. Em cada projeto, a Dietrich.tv Studio reafirma seu compromisso com a criação de imagens de forte impacto estético e cultural."
     },
-    "whatWeDo": "O que fazemos",
+    "whatWeDo": "O Que Fazemos",
     "sections": {
-      "filmImage": {
-        "title": "FILME & IMAGEM",
+      "direction": {
+        "title": "Direção",
         "items": [
           "Comerciais",
-          "Documentários",
-          "Projetos de Arte",
-          "Videoclipes"
+          "Filmes para Marcas",
+          "Videoclipes",
+          "Projetos Culturais",
+          "Documentário"
         ]
       },
-      "aiInnovation": {
-        "title": "INOVAÇÃO",
+      "postProduction": {
+        "title": "Pós-Produção Criativa",
         "items": [
-          "Uso de novas tecnologias",
-          "Pós-produção criativa",
-          "Ferramentas Generativas",
-          "Suportes múltiplos"
+          "Direção Criativa de Finalização",
+          "Color",
+          "Conform",
+          "Supervisão de VFX",
+          "IA Generativa"
         ]
       },
-      "designResearch": {
-        "title": "DESIGN & PESQUISA",
+      "creativeDevelopment": {
+        "title": "Desenvolvimento Criativo",
         "items": [
+          "Conceito",
+          "Pesquisa Visual",
           "Direção de Arte",
-          "Cenografia",
-          "Pesquisa Criativa",
-          "Desenvolvimento de Conceitos"
-        ]
-      },
-      "strategy": {
-        "title": "ESTRATÉGIA",
-        "items": [
-          "Estratégia de Marca",
-          "Direção Criativa",
-          "Desenvolvimento de Campanhas",
-          "Visão de Futuro"
+          "Suporte a Outros Diretores e Produtoras"
         ]
       }
     },
@@ -82,7 +74,7 @@
       "zip": "05443-060"
     },
     "footer": {
-      "tagline": "Transformamos ideias em imagens que atravessam culturas.",
+      "tagline": "Dietrich.tv - Studio de direção e pós criativa. Cinema, cultura e marca.",
       "stats": {
         "years": { "value": "15+", "label": "Anos de experiência unindo cinema, design e tecnologia." },
         "continents": { "value": "5", "label": "Continentes onde nossos filmes foram exibidos ou produzidos." },
@@ -206,14 +198,14 @@
     }
   },
   "meta": {
-    "title": "Dietrich.tv Studio – Produção Criativa Premiada com I.A.",
-    "description": "Descubra filmes inovadores do Dietrich.tv Studio: Estúdio de produção premiado expandindo criatividade com inteligência artificial. Trabalhos para Disney+, Natura, Hering. Sediado em São Paulo, Brasil.",
-    "keywords": "estúdio de produção, I.A., inteligência artificial, cinema, filme, vídeo, design, criativo, São Paulo, Brasil, comercial, videoclipe, documentário, fashion films, Disney, Natura, Hering, Maison Francis Kurkdjian",
-    "ogDescription": "Estúdio de produção premiado expandindo criatividade com I.A. 🇧🇷 Veja nossos trabalhos para Disney+, Natura, Hering e mais.",
-    "imageAlt": "Dietrich.tv Studio – Produção criativa com I.A.",
+    "title": "Dietrich.tv - Studio de direção e pós criativa. Cinema, cultura e marca.",
+    "description": "Dietrich.tv - Studio de direção e pós criativa. Cinema, cultura e marca.",
+    "keywords": "Dietrich.tv, estúdio, direção, pós-produção criativa, cinema, cultura, marca, São Paulo, Brasil, comercial, videoclipe, documentário, filmes para marcas",
+    "ogDescription": "Dietrich.tv - Studio de direção e pós criativa. Cinema, cultura e marca.",
+    "imageAlt": "Dietrich.tv - Studio de direção e pós criativa. Cinema, cultura e marca.",
     "contact": {
       "title": "Nice to Meet You",
-      "description": "Pronto para criar algo extraordinário? Entre em contato com Dietrich.tv Studio - estúdio de produção premiado especializado em filmmaking com I.A. Sediado em São Paulo, Brasil. Fale conosco hoje!"
+      "description": "Dietrich.tv - Studio de direção e pós criativa. Cinema, cultura e marca. Sediado em São Paulo, Brasil. Fale conosco."
     }
   }
 }

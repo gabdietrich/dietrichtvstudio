@@ -3,9 +3,10 @@ import { useTranslation } from 'react-i18next';
 import { Button } from "./ui/button";
 import AutoScrollCarousel from './AutoScrollCarousel';
 import Footer from './Footer';
+import ClientsCarousel from './ClientsCarousel';
 import { analytics } from '../utils/analytics';
 
-const categories = ['all', 'commercial', 'ai', 'beauty', 'documentary', 'musicVideo'];
+const categories = ['all', 'brands', 'artistsCulture', 'music', 'researchAI'];
 
 // Generate URL-friendly slug from title
 function generateSlug(title: string): string {
@@ -34,7 +35,7 @@ export const mockWorks = [
     id: 1,
     title: "Grand Soir, by Maison Francis Kurkdjian",
     slug: "grand-soir-by-maison-francis-kurkdjian",
-    category: ["beauty", "commercial", "ai"],
+    category: ["researchAI", "brands"],
     description: "Grand Soir, by Maison Francis Kurkdjian. A spec film crafted entirely with artificial intelligence. 100% AI-made",
     client: "Maison Francis Kurkdjian",
     fullDescription: "Perfume is a bridge between moments, a place where past and future breathe together. We live in a time when creation expands beyond the hands, guided also by the intelligence we have imagined and built. Like perfume, this technology dissolves boundaries, uniting who we have been with who we are yet to become, turning the invisible into emotion. We crafted this A.I. spec film for Maison Francis Kurkdjian to celebrate the encounter where innovation and essence dance together.",
@@ -74,7 +75,7 @@ export const mockWorks = [
     id: 2,
     title: "Ernesto Neto for Le Bon Marché Rive Gauche",
     slug: "ernesto-neto-for-le-bon-marche-rive-gauche",
-    category: "documentary",
+    category: ["artistsCulture"],
     description: "Capturing the artist before and after the exhibition. Where brand and art meet through cinema.",
     client: "Le Bon Marché Rive Gauche",
     fullDescription: "Filming an artist in their studio is very different from documenting an exhibition. It is stepping into the space where the work is born, where matter and gesture are still uncertainty, experiment, discovery. At DietrichTV, we had the privilege of following Ernesto Neto in his Rio de Janeiro studio, capturing the creative process that both preceded and followed his exhibition at Le Bon Marché in Paris. Our film doesn't simply show the finished artwork. It reveals the artist's breath, the intimacy of manual work, the transition from the silence of the studio to the monumentality of an installation in one of the world's most iconic spaces. For us, this project reinforces something essential: brands can truly connect with art not only by showcasing results, but by embracing processes. That's where authentic resonance is built, beyond the borders of advertising.",
@@ -114,7 +115,7 @@ export const mockWorks = [
     id: 3,
     title: "Three Short Films",
     slug: "three-short-films",
-    category: "musicVideo",
+    category: ["music", "artistsCulture"],
     description: "Three short films with Manu Gavassi, blending fashion, music, and cinema. A trilogy that explores image as performance and persona.",
     client: "Manu Gavassi",
     fullDescription: "With Manu Gavassi, Dietrich directed a trilogy of short films that blurred the lines between cinema, fashion, and performance. Each piece is both intimate and theatrical, exploring how image can construct and deconstruct persona. The films were conceived as a dialogue with Manu's own artistic universe: ironic yet delicate, pop yet deeply personal. Through bold visual language and precise storytelling, they move beyond conventional music video aesthetics, embracing a hybrid form that belongs as much to cinema as to contemporary culture. Together, the three shorts form a mosaic of identity, revealing how narrative and style can amplify an artist's voice across different platforms while remaining unmistakably authentic.",
@@ -157,7 +158,7 @@ export const mockWorks = [
     id: 4,
     title: "Elsa Schiaparelli's Private Album",
     slug: "elsa-schiaparellis-private-album",
-    category: "documentary",
+    category: ["artistsCulture"],
     description: "Elsa Schiaparelli remembered through an animated short film. A dialogue between fashion, memory, and the cosmos.",
     client: "Biblioteca Mário de Andrade",
     fullDescription: "Dietrich directed this documentary film about Elsa Schiaparelli built around personal memories of the fashion designer's granddaughter: the actress, supermodel and cultural icon Marisa Berenson. Narrated by Marisa herself, the animated short film showcased never before seen images of the Schiaparelli family, in a creative initiative specially made for Brazil's most important public library, Biblioteca Mário de Andrade, in the context of the centenary of André Breton's Surrealist Manifesto.",
@@ -196,7 +197,7 @@ export const mockWorks = [
     id: 5,
     title: "Gisele Bündchen and Cauã Raymond",
     slug: "gisele-bundchen-and-caua-raymond",
-    category: "commercial",
+    category: ["brands"],
     description: "A cinematic launch set to Jorge Ben Jor's classic Lá Vem Ela.",
     client: "Democrata",
     fullDescription: "For Democrata's launch film, we brought together two of Brazil's most iconic figures — Gisele Bündchen and Cauã Reymond — in a story that celebrates style, presence, and rhythm. The soundtrack, Jorge Ben Jor's Lá Vem Ela, sets the tone: timeless, magnetic, unmistakably Brazilian. Each frame captures a dialogue between elegance and energy, masculinity and femininity, intimacy and spectacle. The film was conceived as more than a commercial. It is a cultural encounter, weaving fashion and music into a narrative that places the brand in the heart of Brazil's creative heritage. Shot with cinematic precision, the piece amplifies Democrata's vision: sophistication with soul, classic with contemporary, craft with charisma.",
@@ -236,7 +237,7 @@ export const mockWorks = [
     id: 6,
     title: "Mother's Day '25",
     slug: "mothers-day-25",
-    category: "commercial",
+    category: ["brands"],
     description: "Sasha, Bruna Marquezine, Xuxa and Neide — a celebration of generations and love.",
     client: "Hering",
     fullDescription: "For Hering's Mother's Day campaign, we brought together Sasha Meneghel, Bruna Marquezine, Xuxa and Neide. More than a film, it became a portrait of affection across generations, weaving family bonds into the fabric of one of Brazil's most iconic brands. The narrative is intimate yet universal: mothers and daughters, friendship and legacy, the simple gestures that define love. Each scene was crafted to highlight authenticity, where fashion becomes secondary to emotion, and presence becomes more powerful than performance. In this project, cinema and brand storytelling converge to honor motherhood — not as a concept, but as lived experience.",
@@ -268,7 +269,7 @@ export const mockWorks = [
     id: 7,
     title: "Il Neige Rive Gauche",
     slug: "il-neige-rive-gauche",
-    category: "commercial",
+    category: ["brands", "artistsCulture"],
     description: "An animated winter tale for Le Bon Marché, where Paris becomes poetry.",
     client: "Le Bon Marché Rive Gauche",
     fullDescription: "We were commissioned by Le Bon Marché to create Il Neige Rive Gauche, an animated film that transforms the Parisian winter into a poetic narrative. The project was conceived not as a campaign in the traditional sense, but as a dreamlike gesture: snow falling on the Rive Gauche, the city turning into a stage where imagination takes over reality. Animation became the language to capture the ephemeral, blending design and storytelling in a way that feels both timeless and unexpected. At the intersection of cinema, design, and brand identity, Il Neige Rive Gauche is more than a seasonal film. It is a sensorial invitation, a reminder that a brand can also be a curator of emotions.",
@@ -304,7 +305,7 @@ export const mockWorks = [
     id: 8,
     title: "Desejo",
     slug: "desejo",
-    category: ["beauty", "commercial"],
+    category: ["brands"],
     description: "A sensorial film where intimacy, fragrance, and memory intertwine.",
     client: "Natura",
     fullDescription: "For Natura's Desejo, Dietrich (with O2 Filmes) directed a film that explores the subtle tension between intimacy and expression. Desire is not shown directly — it is suggested through gestures, textures, and the rhythm of fragrance in motion. The narrative unfolds in layers: close-ups that evoke touch, frames that blur the line between skin and atmosphere, a sensorial approach where perfume becomes both memory and anticipation. Rather than illustrating the product, the film creates an emotional territory, where Natura's language of beauty resonates as something intimate, poetic, and deeply human.",
@@ -345,7 +346,7 @@ export const mockWorks = [
     id: 9,
     title: "Brilho Lamelar",
     slug: "brilho-lamelar",
-    category: ["beauty", "commercial"],
+    category: ["brands"],
     description: "Technology and beauty meet in a film where hair becomes light.",
     client: "TRESemmé",
     fullDescription: "For the launch of TRESemmé Brilho Lamelar, Dietrich directed (at O2 Filmes) a film that bridges fashion and technology. Shot in virtual production, the narrative moves between real and virtual spaces, where Sabrina Sato embodies the elegance and energy of the brand. The aesthetic is sharp and sophisticated: dark backdrops, sculpted lighting, and movements that highlight shine as performance. Each transition dives into hair as if it were a portal, leading us into new scenes with rhythm and precision.",
@@ -385,7 +386,7 @@ export const mockWorks = [
     id: 10,
     title: "Gracinha",
     slug: "gracinha",
-    category: "musicVideo",
+    category: ["music", "artistsCulture"],
     description: "A music film that blends pop, fantasy, and cinema. Directed by Dietrich with Manu Gavassi.",
     client: "Manu Gavassi",
     fullDescription: "Directed by Dietrich and Manu Gavassi, Gracinha is a music film that transcends the boundaries of the music video format, merging pop sensibility with fashion aesthetics and cinematic storytelling. The project became a cultural milestone, reaching over 20 million views within 24 hours of release, and resonated as one of the most striking audiovisual works in the Brazilian market. Dietrich.tv Studio was responsible for the direction and execution, creating a layered visual journey that balances intimacy and spectacle — a portrait of Manu Gavassi's artistry elevated to a cinematic scale.",
@@ -425,7 +426,7 @@ export const mockWorks = [
     id: 11,
     title: "Mother's Day Fernandas",
     slug: "mothers-day-fernandas",
-    category: "commercial",
+    category: ["brands"],
     description: "Fernanda Torres and Fernanda Montenegro star in an intimate film celebrating motherhood and timeless connection. Directed by Dietrich.",
     client: "Hering",
     fullDescription: "For Mother's Day, Hering brought together two of Brazil's most iconic actresses — Fernanda Torres and Fernanda Montenegro — in a touching film that celebrates maternal bonds and timeless connection. Directed by Dietrich, the piece combines intimacy and elegance, highlighting gestures and emotions with simplicity and truth, in line with Hering's essential identity. Dietrich.tv Studio led the direction and production, crafting a cinematic narrative where fashion, affection, and heritage intertwine in a tribute that is as universal as it is personal.",
@@ -581,11 +582,14 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
   };
 
   const getWorksByCategory = (category: string) => {
-    const baseWorks = category === 'all' 
-      ? mockWorks 
-      : mockWorks.filter(work => work.category.includes(category));
-    
-    // Return localized projects
+    const baseWorks = category === 'all'
+      ? mockWorks
+      : mockWorks.filter(work =>
+          Array.isArray(work.category)
+            ? work.category.includes(category)
+            : work.category === category
+        );
+
     return baseWorks.map(work => getLocalizedProjectForWorkPage(work, t));
   };
 
@@ -623,14 +627,7 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
                       : 'text-black/70 hover:text-black hover:bg-black/5'
                   } ${isTransitioning ? 'opacity-50 pointer-events-none' : 'opacity-100'}`}
                 >
-                  {t(`homepage.categories.${
-                    category === 'all' ? 'all' :
-                    category === 'commercial' ? 'commercial' :
-                    category === 'ai' ? 'ai' :
-                    category === 'beauty' ? 'beauty' :
-                    category === 'documentary' ? 'documentary' :
-                    category === 'musicVideo' ? 'musicVideo' : 'all'
-                  }`)}
+                  {t(`homepage.categories.${category}`)}
                 </Button>
               ))}
             </div>
@@ -652,6 +649,10 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
               delay={isTransitioning ? 0 : index * 200} // Faster staggering during transitions, none during category change
             />
           ))}
+        </div>
+
+        <div className="max-w-7xl mx-auto px-[15px] mt-20">
+          <ClientsCarousel />
         </div>
 
         <Footer onNavigate={onNavigate} />

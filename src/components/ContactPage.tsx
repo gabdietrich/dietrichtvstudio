@@ -2,9 +2,10 @@ import { useTranslation } from 'react-i18next';
 import Footer from './Footer';
 import ClientsCarousel from './ClientsCarousel';
 
+const contactSectionKeys = ['direction', 'postProduction', 'creativeDevelopment'] as const;
+
 export default function ContactPage() {
-  const { t, i18n } = useTranslation();
-  const isPortuguese = i18n.language === 'pt';
+  const { t } = useTranslation();
   return (
     <div className="min-h-screen bg-white text-black pt-20">
       <div className="max-w-7xl mx-auto px-[15px] py-12">
@@ -45,46 +46,17 @@ export default function ContactPage() {
         <div className="mb-20">
           <h3 className="text-3xl md:text-4xl text-black mb-12 font-['Instrument_Sans']">{t('contact.whatWeDo')}</h3>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-            {/* FILM & IMAGE */}
-            <div className="space-y-6">
-              <div className="text-xs text-gray-500 uppercase tracking-wide">{t('contact.sections.filmImage.title')}</div>
-              <div className="space-y-3">
-                {(t('contact.sections.filmImage.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
-                  <div key={index} className="text-base text-black">{item}</div>
-                ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            {contactSectionKeys.map((sectionKey) => (
+              <div key={sectionKey} className="space-y-6">
+                <div className="text-xs text-gray-500 tracking-wide">{t(`contact.sections.${sectionKey}.title`)}</div>
+                <div className="space-y-3">
+                  {(t(`contact.sections.${sectionKey}.items`, { returnObjects: true }) as string[]).map((item: string, index: number) => (
+                    <div key={index} className="text-base text-black">{item}</div>
+                  ))}
+                </div>
               </div>
-            </div>
-
-            {/* AI & INNOVATION */}
-            <div className="space-y-6">
-              <div className="text-xs text-gray-500 uppercase tracking-wide">{t('contact.sections.aiInnovation.title')}</div>
-              <div className="space-y-3">
-                {(t('contact.sections.aiInnovation.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
-                  <div key={index} className="text-base text-black">{item}</div>
-                ))}
-              </div>
-            </div>
-
-            {/* DESIGN & RESEARCH */}
-            <div className="space-y-6">
-              <div className="text-xs text-gray-500 uppercase tracking-wide">{t('contact.sections.designResearch.title')}</div>
-              <div className="space-y-3">
-                {(t('contact.sections.designResearch.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
-                  <div key={index} className="text-base text-black">{item}</div>
-                ))}
-              </div>
-            </div>
-
-            {/* STRATEGY */}
-            <div className="space-y-6">
-              <div className="text-xs text-gray-500 uppercase tracking-wide">{t('contact.sections.strategy.title')}</div>
-              <div className="space-y-3">
-                {(t('contact.sections.strategy.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
-                  <div key={index} className="text-base text-black">{item}</div>
-                ))}
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
