@@ -92,9 +92,12 @@ export default function AutoScrollCarousel({ work, speed = 10, onNavigate }: Aut
             return (
               <div 
                 key={videoKey}
-                className="flex-shrink-0 w-[384px] md:w-[480px]"
+                className="flex-shrink-0 w-[384px] md:w-[480px] cursor-pointer group"
+                onClick={() => onNavigate?.('project', work.id)}
+                role="button"
+                aria-label={work.title}
               >
-                {/* Square video container - non-interactive with sharp corners */}
+                {/* Square video container */}
                 <div className="relative aspect-square bg-gray-900 overflow-hidden">
                   {video.videoUrl || video.mobileVideoUrl ? (
                     <VideoCard
@@ -118,7 +121,7 @@ export default function AutoScrollCarousel({ work, speed = 10, onNavigate }: Aut
                       className="w-full h-full object-cover"
                     />
                   )}
-                  <div className="absolute inset-0 bg-black/10" />
+                  <div className="absolute inset-0 bg-black/10 group-hover:bg-black/25 transition-colors duration-300" />
                 </div>
               </div>
             );
