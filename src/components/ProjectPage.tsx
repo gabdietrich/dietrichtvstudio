@@ -290,8 +290,36 @@ export default function ProjectPage({ projectId, onNavigate }: ProjectPageProps)
   
   const currentProject = getLocalizedProject(baseProject, t);
 
-  // Get other projects (exclude current project) and take first 3  
-  const otherProjects = mockWorks.filter(work => work.id !== projectId).slice(0, 3).map(project => getLocalizedProject(project, t));
+  const fallbackCategory: Record<string, string> = {
+    brands: 'artistsCulture',
+    artistsCulture: 'music',
+    music: 'artistsCulture',
+    researchAI: 'brands',
+  };
+
+  const currentCategories: string[] = Array.isArray(baseProject.category)
+    ? baseProject.category
+    : [baseProject.category];
+
+  const primaryCategory = currentCategories[0];
+
+  const sameCategory = mockWorks.filter(
+    work => work.id !== projectId &&
+      (Array.isArray(work.category) ? work.category : [work.category]).some(c => currentCategories.includes(c))
+  );
+
+  const otherProjects = (() => {
+    if (sameCategory.length >= 3) return sameCategory.slice(0, 3);
+    const fallback = fallbackCategory[primaryCategory];
+    const fillFrom = fallback
+      ? mockWorks.filter(
+          work => work.id !== projectId &&
+            !sameCategory.includes(work) &&
+            (Array.isArray(work.category) ? work.category : [work.category]).includes(fallback)
+        )
+      : [];
+    return [...sameCategory, ...fillFrom].slice(0, 3);
+  })().map(project => getLocalizedProject(project, t));
 
   return (
     <div className="min-h-screen bg-white text-black pt-20">
