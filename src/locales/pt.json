@@ -19,7 +19,7 @@
     "logoAlt": "dietrich.tv studio"
   },
   "homepage": {
-    "mainText": "Dietrich.tv é um estúdio de direção-autor baseado em São Paulo, com 15 anos de trajetória entre cinema publicitário, projetos de arte e colaborações culturais. Trabalhamos com marcas como Le Bon Marché, Art Basel, Netflix, Natura e Hering, e com artistas como Ernesto Neto, Manu Gavassi e Criolo. Nossa especialidade é a passagem do conceito à imagem — direção, pós-produção criativa, IA generativa.",
+    "mainText": "Dietrich.tv é um estúdio de direção autoral baseado em São Paulo, com 15 anos de trajetória entre cinema publicitário, projetos de arte e colaborações culturais. Trabalhamos com marcas como Le Bon Marché, Art Basel, Netflix, Natura e Hering, e com artistas como Ernesto Neto, Manu Gavassi e Criolo. Nossa especialidade é a passagem do conceito à imagem, com direção, pós-produção criativa e IA generativa.",
     "categories": {
       "all": "Todos",
       "brands": "Marcas",
@@ -163,6 +163,14 @@
       "client": "Le Bon Marché Rive Gauche",
       "projectType": "Filme Animado",
       "credits": "Direção: Dietrich. Comissionado pelo Le Bon Marché Rive Gauche."
+    },
+    "azulFidelidade": {
+      "title": "Diamond Unique",
+      "description": "Um filme para o programa Azul Fidelidade, celebrando o tier Diamond Unique com elegância cinematográfica.",
+      "fullDescription": "Para o tier Diamond Unique do Azul Fidelidade, Dietrich dirigiu um filme que traduz o patamar máximo da experiência de fidelidade em um gesto cinematográfico. A linguagem visual transita entre aspiração e intimidade — evocando o universo das viagens de alto padrão e o significado emocional de pertencer. Em vez de catalogar benefícios, o filme captura a sensação de ser reconhecido no nível mais alto: refinado, tranquilo e seguro. Por meio de enquadramentos precisos, estética elevada e ritmo medido, o filme posiciona o Azul Fidelidade Diamond Unique não apenas como uma categoria, mas como uma forma distinta de experimentar o voo.",
+      "client": "Azul Fidelidade",
+      "projectType": "Campanha",
+      "credits": "Direção: Dietrich.tv Studio."
     },
     "desejo": {
       "title": "Desejo",

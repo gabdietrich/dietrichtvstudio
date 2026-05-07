@@ -263,7 +263,8 @@ function getLocalizedProject(project: any, t: any) {
     8: 'desejo',
     9: 'tresemmeBrilho',
     10: 'gracinha',
-    11: 'heringFernandas'
+    11: 'heringFernandas',
+    12: 'azulFidelidade'
   }[project.id];
 
   if (!projectKey) return project;

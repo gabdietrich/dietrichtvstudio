@@ -8,6 +8,26 @@ import { analytics } from '../utils/analytics';
 
 const categories = ['all', 'brands', 'artistsCulture', 'music', 'researchAI'];
 
+const SERIF_NAMES = [
+  'Le Bon Marché', 'Art Basel', 'Netflix', 'Natura', 'Hering',
+  'Ernesto Neto', 'Manu Gavassi', 'Criolo',
+];
+
+const UNDERLINE_TERMS = ['cinema publicitário, projetos de arte e colaborações culturais', 'advertising film, art projects, and cultural collaborations', 'passagem do conceito à imagem', 'passage from concept to image'];
+
+function renderMainText(text: string) {
+  const allTerms = [...SERIF_NAMES, ...UNDERLINE_TERMS];
+  const pattern = new RegExp(`(${allTerms.map(n => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'g');
+  const parts = text.split(pattern);
+  return parts.map((part, i) => {
+    if (SERIF_NAMES.includes(part))
+      return <em key={i} style={{ fontFamily: "'Poltawski Nowy', serif", fontStyle: 'italic', fontWeight: 400, fontSize: '1.05em' }}>{part}</em>;
+    if (UNDERLINE_TERMS.includes(part))
+      return <span key={i} style={{ textDecoration: 'underline', textUnderlineOffset: '4px' }}>{part}</span>;
+    return part;
+  });
+}
+
 // Generate URL-friendly slug from title
 function generateSlug(title: string): string {
   return title
@@ -234,7 +254,65 @@ export const mockWorks = [
       }
     ]
   },
-  // 6. Marca brasileira premium — Natura
+  // 6. Marca aérea — Azul Fidelidade
+  {
+    id: 12,
+    title: "Diamond Unique",
+    slug: "azul-fidelidade-diamond-unique",
+    category: ["brands"],
+    description: "A loyalty program film for Azul Fidelidade, celebrating the Diamond Unique tier with cinematic elegance.",
+    client: "Azul Fidelidade",
+    fullDescription: "For Azul Fidelidade's Diamond Unique tier, Dietrich directed a film that translates the pinnacle of the program's loyalty experience into a cinematic gesture. The visual language moves between aspiration and intimacy — drawing from the world of luxury travel and the emotional meaning of belonging. Rather than cataloguing benefits, the film captures the feeling of being recognized at the highest level: refined, calm, and certain. Through precise framing, elevated aesthetics and a measured rhythm, it positions Azul Fidelidade Diamond Unique not merely as a category, but as a distinct way of experiencing flight.",
+    projectType: "Campaign",
+    credits: "Directed by Dietrich.tv Studio.",
+    vimeoId: "1190216209",
+    carouselImages: [
+      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery1.jpg",
+      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery2.jpg",
+      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery3.jpg",
+      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery4.jpg",
+      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery5.jpg",
+      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery6.jpg"
+    ],
+    videos: [
+      {
+        id: 34,
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E",
+        title: "Scene 1",
+        videoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video1-mobile.mp4"
+      },
+      {
+        id: 35,
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E",
+        title: "Scene 2",
+        videoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video2-desktop.mp4",
+        mobileVideoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video2-mobile.mp4"
+      },
+      {
+        id: 36,
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E",
+        title: "Scene 3",
+        videoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video3-desktop.mp4",
+        mobileVideoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video3-mobile.mp4"
+      },
+      {
+        id: 37,
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E",
+        title: "Scene 4",
+        videoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video4-desktop.mp4",
+        mobileVideoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video4-mobile.mp4"
+      },
+      {
+        id: 38,
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E",
+        title: "Scene 5",
+        videoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video5-desktop.mp4",
+        mobileVideoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video5-mobile.mp4"
+      }
+    ]
+  },
+  // 7. Marca brasileira premium — Natura
   {
     id: 8,
     title: "Desejo",
@@ -557,7 +635,8 @@ function getLocalizedProjectForWorkPage(project: any, t: any) {
     8: 'desejo',
     9: 'tresemmeBrilho',
     10: 'gracinha',
-    11: 'heringFernandas'
+    11: 'heringFernandas',
+    12: 'azulFidelidade'
   }[project.id];
 
   if (!projectKey) return project;
@@ -613,8 +692,8 @@ export default function WorkPage({ onNavigate }: WorkPageProps) {
         <div className="max-w-7xl mx-auto px-[15px] mb-16">
           {/* Main statement */}
           <div className="mb-12">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl text-black leading-tight max-w-4xl font-['Instrument_Sans']">
-              {t('homepage.mainText')}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl text-black leading-tight max-w-4xl" style={{ fontFamily: "'Geist', sans-serif", fontWeight: 300 }}>
+              {renderMainText(t('homepage.mainText'))}
             </h1>
           </div>
           
