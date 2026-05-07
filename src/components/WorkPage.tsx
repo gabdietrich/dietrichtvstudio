@@ -269,7 +269,9 @@ export const mockWorks = [
     carouselImages: [
       "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery1.jpg",
       "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery5.jpg",
-      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery6.jpg"
+      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery6.jpg",
+      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery7.jpg",
+      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery8.jpg"
     ],
     videos: [
       {
