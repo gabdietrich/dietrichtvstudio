@@ -4,6 +4,35 @@ import ClientsCarousel from './ClientsCarousel';
 
 const contactSectionKeys = ['direction', 'postProduction', 'creativeDevelopment'] as const;
 
+const CONTACT_BOLD_NAMES = [
+  'Nike', 'Natura', 'Tresemmé', 'Hering', 'LVMH', 'ArtBasel', 'Le Bon Marché',
+  'Ernesto Neto', 'Criolo', 'Duda Beat', 'Jão', 'Thiago Pethit',
+  "Elsa Schiaparelli's Private Album", 'Les Oiseaux',
+];
+
+const CONTACT_UNDERLINE_TERMS = [
+  'comerciais de lifestyle, beleza e filmes com efeitos especiais',
+  'lifestyle commercials, beauty, and films with special effects',
+  'criação de imagens de forte impacto estético e cultural',
+  'creating images with strong aesthetic and cultural impact',
+];
+
+function renderContactText(text: string) {
+  const allTerms = [...CONTACT_BOLD_NAMES, ...CONTACT_UNDERLINE_TERMS];
+  const pattern = new RegExp(
+    `(${allTerms.map(n => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`,
+    'g'
+  );
+  const parts = text.split(pattern);
+  return parts.map((part, i) => {
+    if (CONTACT_BOLD_NAMES.includes(part))
+      return <strong key={i} style={{ fontWeight: 600 }}>{part}</strong>;
+    if (CONTACT_UNDERLINE_TERMS.includes(part))
+      return <span key={i} style={{ textDecoration: 'underline', textUnderlineOffset: '4px' }}>{part}</span>;
+    return part;
+  });
+}
+
 export default function ContactPage() {
   const { t } = useTranslation();
   return (
@@ -11,7 +40,7 @@ export default function ContactPage() {
       <div className="max-w-7xl mx-auto px-[15px] py-12">
         {/* Main heading and description with image */}
         <div className="mb-20">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl text-black leading-tight max-w-4xl font-['Instrument_Sans'] mb-12">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl text-black leading-tight max-w-4xl mb-12" style={{ fontFamily: "'Geist', sans-serif", fontWeight: 300 }}>
             {t('contact.mainHeading')}
           </h2>
           
@@ -20,10 +49,10 @@ export default function ContactPage() {
             {/* Left column - Description paragraphs */}
             <div className="space-y-6">
               <p className="text-lg text-black leading-relaxed font-['Instrument_Sans']">
-                {t('contact.description.paragraph1')}
+                {renderContactText(t('contact.description.paragraph1'))}
               </p>
               <p className="text-lg text-black leading-relaxed font-['Instrument_Sans']">
-                {t('contact.description.paragraph2')}
+                {renderContactText(t('contact.description.paragraph2'))}
               </p>
             </div>
             
@@ -96,12 +125,12 @@ export default function ContactPage() {
                     Instagram
                   </a>
                   <a 
-                    href="https://www.behance.net/dietrichtv" 
+                    href="https://vimeo.com/dietrichtv" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="block cursor-pointer hover:text-gray-600 transition-colors underline"
                   >
-                    Behance
+                    Vimeo
                   </a>
                   <a 
                     href="https://www.linkedin.com/company/108177359" 

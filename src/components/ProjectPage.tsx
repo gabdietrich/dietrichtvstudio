@@ -299,7 +299,7 @@ export default function ProjectPage({ projectId, onNavigate }: ProjectPageProps)
         {/* Project type and title */}
         <div className="mb-8 space-y-4">
           <div className="text-sm text-gray-500 uppercase tracking-wide">{currentProject.projectType}</div>
-          <h1 className="text-4xl md:text-5xl text-black leading-tight font-['Instrument_Sans']">
+          <h1 className="text-4xl md:text-5xl text-black leading-tight" style={{ fontFamily: "'Geist', sans-serif", fontWeight: 300 }}>
             {currentProject.title}
           </h1>
         </div>
@@ -432,12 +432,12 @@ export default function ProjectPage({ projectId, onNavigate }: ProjectPageProps)
                   Instagram
                 </a>
                 <a 
-                  href="https://www.behance.net/dietrichtv" 
+                  href="https://vimeo.com/dietrichtv" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block cursor-pointer hover:opacity-70 transition-opacity underline"
                 >
-                  Behance
+                  Vimeo
                 </a>
                 <a 
                   href="https://www.linkedin.com/company/108177359" 
@@ -463,7 +463,7 @@ export default function ProjectPage({ projectId, onNavigate }: ProjectPageProps)
 
         {/* Large logo */}
         <div className="text-center">
-          <div className="text-6xl md:text-8xl text-black font-['Instrument_Sans'] font-semibold">
+          <div className="text-6xl md:text-8xl lg:text-9xl text-black font-['Area_Normal_SemiBold'] mb-12">
             dietrich.tv studio
           </div>
         </div>

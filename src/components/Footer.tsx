@@ -76,13 +76,13 @@ export default function Footer({ onNavigate }: FooterProps) {
                   Instagram
                 </a>
                 <a 
-                  href="https://www.behance.net/dietrichtv" 
+                  href="https://vimeo.com/dietrichtv" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block cursor-pointer hover:opacity-70 transition-opacity underline"
-                  onClick={() => analytics.clickSocialMedia('Behance', 'Footer')}
+                  onClick={() => analytics.clickSocialMedia('Vimeo', 'Footer')}
                 >
-                  Behance
+                  Vimeo
                 </a>
                 <a 
                   href="https://www.linkedin.com/company/108177359" 
