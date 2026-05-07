@@ -166,11 +166,11 @@
     },
     "azulFidelidade": {
       "title": "Diamond Unique",
-      "description": "Um filme para o programa Azul Fidelidade, celebrando o tier Diamond Unique com elegância cinematográfica.",
-      "fullDescription": "Para o tier Diamond Unique do Azul Fidelidade, Dietrich dirigiu um filme que traduz o patamar máximo da experiência de fidelidade em um gesto cinematográfico. A linguagem visual transita entre aspiração e intimidade — evocando o universo das viagens de alto padrão e o significado emocional de pertencer. Em vez de catalogar benefícios, o filme captura a sensação de ser reconhecido no nível mais alto: refinado, tranquilo e seguro. Por meio de enquadramentos precisos, estética elevada e ritmo medido, o filme posiciona o Azul Fidelidade Diamond Unique não apenas como uma categoria, mas como uma forma distinta de experimentar o voo.",
+      "description": "Filme para a Azul Fidelidade, campanha Diamond Unique. A história acompanha um homem que sai de uma reunião, atravessa a cidade e chega em casa.",
+      "fullDescription": "Filme para a Azul Fidelidade, campanha Diamond Unique. A história acompanha um homem que sai de uma reunião, atravessa a cidade e chega em casa.\n\nFilmado inteiramente em virtual production com painel de LED. O desafio era calibrar a tecnologia pra ela servir a história sem aparecer. Acho que funcionou.",
       "client": "Azul Fidelidade",
       "projectType": "Campanha",
-      "credits": "Direção: Dietrich.tv Studio."
+      "credits": "Dirigido por Gabriel Dietrich."
     },
     "desejo": {
       "title": "Desejo",

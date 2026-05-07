@@ -268,9 +268,6 @@ export const mockWorks = [
     vimeoId: "1190216209",
     carouselImages: [
       "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery1.jpg",
-      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery2.jpg",
-      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery3.jpg",
-      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery4.jpg",
       "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery5.jpg",
       "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery6.jpg"
     ],
