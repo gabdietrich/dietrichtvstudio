@@ -619,6 +619,8 @@ function ProjectWrapper({ work, speed, onNavigate, delay }: {
 
 interface WorkPageProps {
   onNavigate?: (page: string, projectId?: number) => void;
+  initialCategory?: string;
+  onCategoryChange?: (category: string) => void;
 }
 
 // Helper function to get localized project data for WorkPage
@@ -648,18 +650,29 @@ function getLocalizedProjectForWorkPage(project: any, t: any) {
   };
 }
 
-export default function WorkPage({ onNavigate }: WorkPageProps) {
+export default function WorkPage({ onNavigate, initialCategory = 'all', onCategoryChange }: WorkPageProps) {
   const { t } = useTranslation();
-  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedCategory, setSelectedCategory] = useState(initialCategory);
   const [isTransitioning, setIsTransitioning] = useState(false);
-  const [displayedCategory, setDisplayedCategory] = useState('all');
+  const [displayedCategory, setDisplayedCategory] = useState(initialCategory);
+
+  // Sync internal state when parent updates the category (e.g. browser back/forward)
+  useEffect(() => {
+    if (initialCategory !== selectedCategory) {
+      setSelectedCategory(initialCategory);
+      setDisplayedCategory(initialCategory);
+    }
+  }, [initialCategory]);
 
   const handleCategoryChange = (newCategory: string) => {
     if (newCategory === selectedCategory || isTransitioning) return;
     
     // Track filter usage
     analytics.useFilter(newCategory);
-    
+
+    // Notify parent so URL can be updated
+    onCategoryChange?.(newCategory);
+
     setIsTransitioning(true);
     
     // After fade-out completes, change the category and fade back in
