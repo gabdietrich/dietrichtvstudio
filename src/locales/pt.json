@@ -16,7 +16,7 @@
     "project": "Projeto"
   },
   "navigation": {
-    "logoAlt": "dietrich.tv studio"
+    "logoAlt": "Dietrich.tv Studio"
   },
   "homepage": {
     "mainText": "Dietrich.tv Studio é um estúdio de São Paulo que atua em cinema, publicidade, moda e arte. O estúdio opera num modelo de director-led post-production: direção e finalização criativa como parte do mesmo processo.",
@@ -77,9 +77,18 @@
     "footer": {
       "tagline": "Dietrich.tv - Studio de direção e pós criativa. Cinema, cultura e marca.",
       "stats": {
-        "years": { "value": "15+", "label": "Anos de experiência unindo cinema, design e tecnologia." },
-        "continents": { "value": "5", "label": "Continentes onde nossos filmes foram exibidos ou produzidos." },
-        "pioneering": { "value": "1", "label": "Estúdio pioneiro no Brasil integrando I.A. como linguagem criativa." }
+        "years": {
+          "value": "15+",
+          "label": "Anos de experiência unindo cinema, design e tecnologia."
+        },
+        "continents": {
+          "value": "5",
+          "label": "Continentes onde nossos filmes foram exibidos ou produzidos."
+        },
+        "pioneering": {
+          "value": "1",
+          "label": "Estúdio pioneiro no Brasil integrando I.A. como linguagem criativa."
+        }
       },
       "aboutLink": "Sobre →",
       "ctaLine": "Fale com a gente para criarmos seu próximo projeto.",
@@ -103,7 +112,7 @@
     "type": "Tipo",
     "credits": "Créditos",
     "contact": "Contato",
-    "studioName": "dietrich.tv studio",
+    "studioName": "Dietrich.tv Studio",
     "projectNotFound": "Projeto não encontrado",
     "otherProjects": "Outros projetos",
     "nextProjectArrow": "Próximo projeto →"
@@ -115,7 +124,7 @@
       "fullDescription": "Perfume é uma ponte entre momentos, um lugar onde passado e futuro respiram juntos. Vivemos em uma época em que a criação se expande além das mãos, guiada também pela inteligência que imaginamos e construímos. Como o perfume, essa tecnologia dissolve fronteiras, unindo quem fomos com quem ainda seremos, transformando o invisível em emoção. Criamos este filme de Spec em I.A. para a Maison Francis Kurkdjian como uma celebração do encontro entre inovação e essência.",
       "client": "Maison Francis Kurkdjian",
       "projectType": "Estudo de Caso",
-      "credits": "Direção: Dietrich. 100% feito em I.A."
+      "credits": "Dirigido por Gabriel Dietrich. 100% feito em I.A."
     },
     "ernestoNeto": {
       "title": "Ernesto Neto para Le Bon Marché Rive Gauche",
@@ -123,7 +132,7 @@
       "fullDescription": "Filmar um artista em seu ateliê é muito diferente de documentar uma exposição. É entrar no espaço onde a obra nasce, onde matéria e gesto ainda são dúvida, tentativa, descoberta. Dietrich acompanhou Ernesto Neto em seu ateliê no Rio de Janeiro, registrando o processo criativo que antecedeu e sucedeu sua exposição no Le Bon Marché em Paris. O filme não mostra apenas a obra pronta. Ele revela a respiração do artista, a intimidade do trabalho manual, a transição entre o silêncio do estúdio e a monumentalidade da montagem em um dos espaços mais icônicos do mundo. Para nós, esse projeto reafirma algo essencial: marcas podem se conectar com a arte não apenas exibindo resultados, mas abraçando processos. É aí que se constrói uma ressonância verdadeira, para além da publicidade.",
       "client": "Le Bon Marché Rive Gauche",
       "projectType": "Estudo de Caso",
-      "credits": "Direção: Dietrich. Filmado no Rio de Janeiro para o Le Bon Marché Rive Gauche."
+      "credits": "Dirigido por Gabriel Dietrich. Filmado no Rio de Janeiro para o Le Bon Marché Rive Gauche."
     },
     "threeShortFilms": {
       "title": "Three Short Films",
@@ -131,7 +140,7 @@
       "fullDescription": "Com Manu Gavassi, Dietrich dirigiu uma trilogia de curtas que borram as fronteiras entre cinema, moda e performance. Cada filme é ao mesmo tempo íntimo e teatral, explorando como a imagem pode construir e desconstruir a persona. Concebidos em diálogo com o universo artístico de Manu — irônico e delicado, pop e profundamente pessoal — os filmes ultrapassam a estética convencional de videoclipes, assumindo uma forma híbrida que pertence tanto ao cinema quanto à cultura contemporânea. Juntos, os três curtas compõem um mosaico de identidade, revelando como narrativa e estilo podem amplificar a voz de uma artista em diferentes plataformas sem perder autenticidade.",
       "client": "Manu Gavassi",
       "projectType": "Trilogia",
-      "credits": "Direção: Dietrich em colaboração com Manu Gavassi."
+      "credits": "Dirigido por Gabriel Dietrich (co-direção com Manu Gavassi)."
     },
     "elsaSchiaparelli": {
       "title": "Private Album de Elsa Schiaparelli",
@@ -139,7 +148,7 @@
       "fullDescription": "Dietrich dirigiu este documentário sobre Elsa Schiaparelli, construído a partir das memórias pessoais de sua neta: a atriz, supermodelo e ícone cultural Marisa Berenson. Narrado pela própria Marisa, o curta animado revelou imagens inéditas da família Schiaparelli, em uma iniciativa criativa realizada especialmente para a Biblioteca Mário de Andrade, no contexto do centenário do Manifesto Surrealista de André Breton.",
       "client": "Biblioteca Mário de Andrade",
       "projectType": "Documentário Animado",
-      "credits": "Direção: Dietrich. Narração: Marisa Berenson. Roteiro e Idealização: Antonia Petta."
+      "credits": "Dirigido por Gabriel Dietrich. Narração: Marisa Berenson. Roteiro e Idealização: Antonia Petta."
     },
     "giseleCaua": {
       "title": "Gisele Bündchen e Cauã Reymond",
@@ -147,7 +156,7 @@
       "fullDescription": "O filme de lançamento da Democrata trouxe duas das figuras mais icônicas do Brasil — Gisele Bündchen e Cauã Reymond — em uma narrativa que celebra estilo, presença e ritmo. A trilha sonora, Lá Vem Ela de Jorge Ben Jor, define o tom: atemporal, magnética, inconfundivelmente brasileira. Cada cena captura o diálogo entre elegância e energia, masculino e feminino, intimidade e espetáculo. Mais do que publicidade, este filme é um encontro cultural que entrelaça moda e música, posicionando a marca no coração do imaginário brasileiro. Filmado com precisão cinematográfica, o trabalho reflete a essência da Democrata: simplesmente sofisticado, bem acabado e feito com cuidado.",
       "client": "Democrata",
       "projectType": "Filme de Lançamento",
-      "credits": "Direção: Dietrich. Com Gisele Bündchen e Cauã Reymond."
+      "credits": "Dirigido por Gabriel Dietrich. Com Gisele Bündchen e Cauã Reymond."
     },
     "mothersDay25": {
       "title": "Dia das Mães '25",
@@ -155,7 +164,7 @@
       "fullDescription": "Na campanha de Dia das Mães da Hering, Sasha Meneghel, Bruna Marquezine, Xuxa e Neide protagonizam um filme que celebra vínculos familiares como parte essencial da identidade da marca. A proposta foi criar um retrato afetivo: mães e filhas, amizade e legado, as pequenas cenas do cotidiano que definem o amor. O filme valoriza a autenticidade, com a moda funcionando como pano de fundo para o gesto e a emoção. Mais do que campanha, é uma homenagem à maternidade como experiência vivida e compartilhada.",
       "client": "Hering",
       "projectType": "Campanha",
-      "credits": "Direção: Dietrich. Com Sasha, Bruna Marquezine, Xuxa e Neide."
+      "credits": "Dirigido por Gabriel Dietrich. Com Sasha, Bruna Marquezine, Xuxa e Neide."
     },
     "ilNeige": {
       "title": "Il Neige Rive Gauche",
@@ -163,7 +172,7 @@
       "fullDescription": "O Le Bon Marché nos comissionou para criar *Il Neige Rive Gauche*, um filme animado que anuncia a chegada do inverno e das festas de fim de ano em Paris. Na narrativa, pequenas bolas de neve travessas provocam uma nuvem adormecida até despertá-la. Só então a neve começa a cair sobre a Rive Gauche, transformando a cidade em poesia. A estética combina humor e delicadeza, capturando o espírito lúdico da estação em uma linguagem visual que mistura design, storytelling e imaginação. Mais que uma peça sazonal, *Il Neige Rive Gauche* é um gesto onírico que lembra como uma marca pode também ser guardiã de emoções e encantamento.",
       "client": "Le Bon Marché Rive Gauche",
       "projectType": "Filme Animado",
-      "credits": "Direção: Dietrich. Comissionado pelo Le Bon Marché Rive Gauche."
+      "credits": "Dirigido por Gabriel Dietrich. Comissionado pelo Le Bon Marché Rive Gauche."
     },
     "azulFidelidade": {
       "title": "Diamond Unique",
@@ -179,7 +188,7 @@
       "fullDescription": "Em *Desejo*, da Natura, Dietrich dirigiu (com a O2 Filmes) um filme que explora a tensão sutil entre intimidade e expressão. O desejo não é mostrado de forma direta — ele é sugerido por meio de gestos, texturas e pelo ritmo da fragrância em movimento. A narrativa se desdobra em camadas: closes que evocam o toque, enquadramentos que borram a linha entre pele e atmosfera, uma abordagem sensorial em que o perfume se torna memória e também antecipação. Em vez de ilustrar o produto, o filme cria um território emocional, no qual a linguagem de beleza da Natura ressoa como algo íntimo, poético e profundamente humano.",
       "client": "Natura",
       "projectType": "Campanha",
-      "credits": "Direção: Dietrich em colaboração com O2 Filmes."
+      "credits": "Dirigido por Gabriel Dietrich em colaboração com O2 Filmes."
     },
     "tresemmeBrilho": {
       "title": "Brilho Lamelar",
@@ -187,7 +196,7 @@
       "fullDescription": "Para o lançamento do TRESemmé Brilho Lamelar, Dietrich dirigiu um filme que conecta o universo da moda à inovação tecnológica. Filmado em Virtual Production, o projeto mistura cenários reais e digitais, com Sabrina Sato como protagonista. A estética é precisa e sofisticada: fundos escuros, iluminação escultural, movimentos de câmera que destacam o brilho como performance. As transições mergulham nos fios de cabelo, que se tornam portais para novas cenas. O resultado traduz o lugar da TRESemmé na interseção entre beleza e tecnologia, e reafirma o uso de ferramentas digitais não apenas como recurso, mas como linguagem criativa.",
       "client": "TRESemmé",
       "projectType": "Campanha",
-      "credits": "Direção: Dietrich. Com Sabrina Sato."
+      "credits": "Dirigido por Gabriel Dietrich em colaboração com O2 Filmes. Com Sabrina Sato."
     },
     "gracinha": {
       "title": "Gracinha",
@@ -195,7 +204,7 @@
       "fullDescription": "Lançado exclusivamente no Disney+ Brasil, *Gracinha* é um álbum visual de 41 minutos idealizado e roteirizado por Manu Gavassi, co-dirigido por ela e Dietrich. Inspirado nas faixas de seu quarto álbum de estúdio, o projeto mistura performance, narrativa e estética cinematográfica. Filmado em 16 mm e Alexa Mini, é um retrato experimental e pop da persona de Manu — entre dança, humor e questionamento de identidade. Com participações de João Côrtes, Paulo Miklos, Ícaro Silva, Fábio Porchat, Titi Ewbank e outros, o filme explora temas de autoconhecimento, libertação e reinvenção, com referências que vão de coreografia a memórias de adolescência. *Gracinha* também é sobre deixar uma personagem para trás e renascer — com coragem, poeticidade e autenticidade.",
       "client": "Disney+ Brasil",
       "projectType": "Álbum Visual",
-      "credits": "Direção: Dietrich (co-direção com Manu Gavassi)."
+      "credits": "Dirigido por Gabriel Dietrich (co-direção com Manu Gavassi)."
     },
     "heringFernandas": {
       "title": "Dia Das Mães Fernandas",
@@ -203,7 +212,7 @@
       "fullDescription": "No Dia das Mães, a Hering convidou Fernanda Montenegro e Fernanda Torres para estrelarem um filme que é, ao mesmo tempo, homenagem e encontro. Mãe e filha, duas das maiores atrizes do Brasil, dividem a cena em uma narrativa que valoriza gestos simples, conversas cotidianas e a cumplicidade construída ao longo de uma vida. A campanha não celebra apenas a data, mas o vínculo entre gerações — um elo que se traduz em memória, presença e afeto. Em vez de enfatizar moda ou tendência, o filme destaca aquilo que permanece: a intimidade, o cuidado e a verdade de uma relação que atravessa o tempo.",
       "client": "Hering",
       "projectType": "Campanha",
-      "credits": "Direção: Dietrich. Com Fernanda Montenegro e Fernanda Torres."
+      "credits": "Dirigido por Gabriel Dietrich. Com Fernanda Montenegro e Fernanda Torres."
     },
     "skolBeatsRoad": {
       "title": "A Estrada",
@@ -211,7 +220,15 @@
       "fullDescription": "Um filme sobre uma pessoa queer que atravessa uma estrada sem pedir licença pra existir. No começo ela caminha sozinha, cercada de rejeição, e aos poucos vai juntando aliados onde menos se esperava: a patricinha, o skatista, a mãe. O grupo que se forma acaba mais forte do que tudo que tentou barrá-la.\n\nRespeito is ON.",
       "client": "Skol Beats",
       "projectType": "Campanha",
-      "credits": "Direção: Dietrich.tv Studio. Cliente: Skol Beats."
+      "credits": "Dirigido por Gabriel Dietrich. Cliente: Skol Beats."
+    },
+    "yanbalGenactive": {
+      "title": "Yanbal Genactive",
+      "description": "Yanbal é a maior marca peruana de cosméticos, e Genactive é o topo da linha.",
+      "fullDescription": "Yanbal é a maior marca peruana de cosméticos, e Genactive é o topo da linha dos seus produtos.\n\nO desafio neste filme foi transitar entre o natural e o microscópico, entre as imagens filmadas da deslumbrante modelo Natália Costa, e uma sequência de demo em 3D no nível celular.\n\nUm líquido que se comporta contra a gravidade: essa é a imagem. Dirigir a câmera dentro do 3D com o time da Lobo do mesmo jeito que dirijo a câmera no set foi a parte que me deixou mais animado no projeto todo.",
+      "client": "Yanbal",
+      "projectType": "Campanha",
+      "credits": "Dirigido por Gabriel Dietrich. Modelo: Natalia Costa. Direção de Fotografia: Wantán. Assistente de Direção: Danna Ben Haim. Produção Executiva: Susana Espinoza. Pós-produção: Lobo.cx."
     },
     "naturaHomem": {
       "title": "Natura Homem - Identidad",
@@ -219,18 +236,18 @@
       "fullDescription": "O que significa ser homem hoje no Brasil é uma pergunta em aberto. Um assunto igualmente importante e delicado, e a publicidade nem sempre se dispõe a colocar esse espelho na frente dos homens. Quando a Galeria e a 404 trouxeram esse roteiro, o que vi foi a chance de provocar um debate: mostrar uma versão de um homem brasileiro com a masculinidade bem resolvida, e esse homem só poderia ser o baiano Lázaro Ramos. Esse cara atravessa seu dia interagindo com quem aparece pelo caminho, sem esforço. É essa naturalidade, essa malemolência, que me parece a expressão mais verdadeira do homem brasileiro. Um homem que deveria ser livre, confortável na própria roupa, sem preconceitos e sem necessidade de validação externa para sentir-se sendo quem é.\n\nA jornada termina numa roda de samba, que é a expressão artística brasileira indiscutível. Ali, ele é recebido como a celebridade que é. Mas o gesto final pra mim sempre foi o mais importante do filme: ele reconhece no meio da roda um outro homem como ele (um sambista da velha guarda, que traz sua própria história e sua jornada), e é esse homem que lhe dá um abraço e um beijo.\n\nE esse beijo é o filme. Uma metáfora explícita no afeto entre dois homens, em curtos 30 segundos.\n\nFico muito grato pelo convite, pois sei o tamanho do que se pode dizer quando uma marca do alcance de Natura decide falar disso.",
       "client": "Natura",
       "projectType": "Campanha",
-      "credits": "Direção: Gabriel Dietrich. Agência: 404. Com Lázaro Ramos."
+      "credits": "Dirigido por Gabriel Dietrich. Agência: 404. Com Lázaro Ramos."
     }
   },
   "meta": {
-    "title": "Dietrich.tv - Studio de direção e pós criativa. Cinema, cultura e marca.",
-    "description": "Dietrich.tv - Studio de direção e pós criativa. Cinema, cultura e marca.",
-    "keywords": "Dietrich.tv, estúdio, direção, pós-produção criativa, cinema, cultura, marca, São Paulo, Brasil, comercial, videoclipe, documentário, filmes para marcas",
-    "ogDescription": "Dietrich.tv - Studio de direção e pós criativa. Cinema, cultura e marca.",
-    "imageAlt": "Dietrich.tv - Studio de direção e pós criativa. Cinema, cultura e marca.",
+    "title": "Dietrich.tv Studio · Director-led post-production",
+    "description": "Dietrich.tv Studio é um estúdio de São Paulo que atua em cinema, publicidade, moda e arte, num modelo de director-led post-production.",
+    "keywords": "Dietrich.tv Studio, estúdio, direção, pós-produção criativa, cinema, cultura, marca, São Paulo, Brasil, comercial, videoclipe, documentário, filmes para marcas",
+    "ogDescription": "Dietrich.tv Studio é um estúdio de São Paulo que atua em cinema, publicidade, moda e arte, num modelo de director-led post-production.",
+    "imageAlt": "Dietrich.tv Studio é um estúdio de São Paulo que atua em cinema, publicidade, moda e arte, num modelo de director-led post-production.",
     "contact": {
       "title": "Nice to Meet You",
-      "description": "Dietrich.tv - Studio de direção e pós criativa. Cinema, cultura e marca. Sediado em São Paulo, Brasil. Fale conosco."
+      "description": "Dietrich.tv Studio é um estúdio de São Paulo que atua em cinema, publicidade, moda e arte, num modelo de director-led post-production. Fale conosco."
     }
   }
 }

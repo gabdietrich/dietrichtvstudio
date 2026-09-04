@@ -242,7 +242,8 @@ function getProjectFeaturedVideo(projectId: number): string | null {
     9: 1, // Brilho Lamelar - video1
     10: 2, // Gracinha - video2
     11: 3, // Mother's Day Fernandas - video3
-    14: 1  // Natura Homem - video1
+    14: 1, // Natura Homem - video1
+    15: 3  // Yanbal Genactive - cellular 3D
   };
   
   const videoIndex = videoChoices[projectId] || 1;
@@ -267,7 +268,8 @@ function getLocalizedProject(project: any, t: any) {
     11: 'heringFernandas',
     12: 'azulFidelidade',
     13: 'skolBeatsRoad',
-    14: 'naturaHomem'
+    14: 'naturaHomem',
+    15: 'yanbalGenactive'
   }[project.id];
 
   if (!projectKey) return project;

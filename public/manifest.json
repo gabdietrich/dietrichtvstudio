@@ -1,7 +1,7 @@
 {
-  "name": "Dietrich TV Studio",
-  "short_name": "Dietrich TV",
-  "description": "Dietrich.tv — Directing and creative post-production studio. Cinema, culture, and brand.",
+  "name": "Dietrich.tv Studio",
+  "short_name": "Dietrich.tv Studio",
+  "description": "Dietrich.tv Studio is a São Paulo–based practice working across film, advertising, fashion, and art, on a director-led post-production model.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",

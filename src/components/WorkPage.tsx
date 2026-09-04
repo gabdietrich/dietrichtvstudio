@@ -56,7 +56,68 @@ export function getProjectById(id: number) {
 
 // Mock data with project content
 export const mockWorks = [
-  // 0. Lançamento mais recente — Natura Homem (Lázaro Ramos)
+  // 0. Lançamento mais recente — Yanbal Genactive
+  {
+    id: 15,
+    title: "Yanbal Genactive",
+    slug: "yanbal-genactive",
+    category: ["brands"],
+    description: "Yanbal is Peru's largest cosmetics brand, and Genactive is the top of its line.",
+    client: "Yanbal",
+    fullDescription: "Yanbal is Peru's largest cosmetics brand, and Genactive is the top of its line.\n\nThe challenge in this film was to move between the natural and the microscopic — between the footage of the stunning model Natália Costa, and a 3D demo sequence at the cellular level.\n\nA liquid that behaves against gravity: that is the image. Directing the camera inside the 3D with the Lobo team the same way I direct the camera on set was the part that excited me most about the whole project.",
+    projectType: "Campaign",
+    credits: "Directed by Gabriel Dietrich. Model: Natalia Costa. Director of Photography: Wantán. Assistant Director: Danna Ben Haim. Executive Production: Susana Espinoza. Post-production: Lobo.cx.",
+    vimeoId: "1221175940",
+    scrollSpeed: 20,
+    carouselImages: [
+      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery1.jpg",
+      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery2.jpg",
+      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery3.jpg",
+      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery4.jpg",
+      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery5.jpg",
+      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery6.jpg",
+      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery7.jpg",
+      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery8.jpg"
+    ],
+    videos: [
+      {
+        id: 48,
+        thumbnail: "/projects/yanbal-genactive/carousel/yanbal-genactive-video1-poster.jpg",
+        title: "Scene 1",
+        videoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video1-mobile.mp4"
+      },
+      {
+        id: 49,
+        thumbnail: "/projects/yanbal-genactive/carousel/yanbal-genactive-video2-poster.jpg",
+        title: "Scene 2",
+        videoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video2-desktop.mp4",
+        mobileVideoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video2-mobile.mp4"
+      },
+      {
+        id: 50,
+        thumbnail: "/projects/yanbal-genactive/carousel/yanbal-genactive-video3-poster.jpg",
+        title: "Scene 3",
+        videoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video3-desktop.mp4",
+        mobileVideoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video3-mobile.mp4"
+      },
+      {
+        id: 51,
+        thumbnail: "/projects/yanbal-genactive/carousel/yanbal-genactive-video4-poster.jpg",
+        title: "Scene 4",
+        videoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video4-desktop.mp4",
+        mobileVideoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video4-mobile.mp4"
+      },
+      {
+        id: 52,
+        thumbnail: "/projects/yanbal-genactive/carousel/yanbal-genactive-video5-poster.jpg",
+        title: "Scene 5",
+        videoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video5-desktop.mp4",
+        mobileVideoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video5-mobile.mp4"
+      }
+    ]
+  },
+  // 1. Natura Homem (Lázaro Ramos)
   {
     id: 14,
     title: "Natura Homem - Identidad",
@@ -120,7 +181,7 @@ export const mockWorks = [
     client: "Le Bon Marché Rive Gauche",
     fullDescription: "Filming an artist in their studio is very different from documenting an exhibition. It is stepping into the space where the work is born, where matter and gesture are still uncertainty, experiment, discovery. At DietrichTV, we had the privilege of following Ernesto Neto in his Rio de Janeiro studio, capturing the creative process that both preceded and followed his exhibition at Le Bon Marché in Paris. Our film doesn't simply show the finished artwork. It reveals the artist's breath, the intimacy of manual work, the transition from the silence of the studio to the monumentality of an installation in one of the world's most iconic spaces. For us, this project reinforces something essential: brands can truly connect with art not only by showcasing results, but by embracing processes. That's where authentic resonance is built, beyond the borders of advertising.",
     projectType: "Case Study",
-    credits: "Directed by Dietrich.tv Studio. Filmed in Rio de Janeiro for Le Bon Marché Rive Gauche.",
+    credits: "Directed by Gabriel Dietrich. Filmed in Rio de Janeiro for Le Bon Marché Rive Gauche.",
     vimeoId: "1030777862",
     carouselImages: [
       "/projects/ernesto-neto-le-bon-marche/gallery/ernesto-neto-le-bon-marche-gallery1.jpg",
@@ -161,7 +222,7 @@ export const mockWorks = [
     client: "Biblioteca Mário de Andrade",
     fullDescription: "Dietrich directed this documentary film about Elsa Schiaparelli built around personal memories of the fashion designer's granddaughter: the actress, supermodel and cultural icon Marisa Berenson. Narrated by Marisa herself, the animated short film showcased never before seen images of the Schiaparelli family, in a creative initiative specially made for Brazil's most important public library, Biblioteca Mário de Andrade, in the context of the centenary of André Breton's Surrealist Manifesto.",
     projectType: "Animated Documentary",
-    credits: "Directed by Dietrich.tv Studio. Narrated by Marisa Berenson. Script and Concept: Antonia Petta.",
+    credits: "Directed by Gabriel Dietrich. Narrated by Marisa Berenson. Script and Concept: Antonia Petta.",
     vimeoId: "1112761795",
     carouselImages: [
       "/projects/elsa-schiaparelli-private-album/gallery/elsa-schiaparelli-private-album-gallery1.png",
@@ -201,7 +262,7 @@ export const mockWorks = [
     client: "Le Bon Marché Rive Gauche",
     fullDescription: "We were commissioned by Le Bon Marché to create Il Neige Rive Gauche, an animated film that transforms the Parisian winter into a poetic narrative. The project was conceived not as a campaign in the traditional sense, but as a dreamlike gesture: snow falling on the Rive Gauche, the city turning into a stage where imagination takes over reality. Animation became the language to capture the ephemeral, blending design and storytelling in a way that feels both timeless and unexpected. At the intersection of cinema, design, and brand identity, Il Neige Rive Gauche is more than a seasonal film. It is a sensorial invitation, a reminder that a brand can also be a curator of emotions.",
     projectType: "Animated Film",
-    credits: "Directed by Dietrich.tv Studio. Commissioned by Le Bon Marché Rive Gauche.",
+    credits: "Directed by Gabriel Dietrich. Commissioned by Le Bon Marché Rive Gauche.",
     vimeoId: "190538952",
     carouselImages: [],
     videos: [
@@ -234,11 +295,11 @@ export const mockWorks = [
     title: "Gracinha",
     slug: "gracinha",
     category: ["music", "artistsCulture"],
-    description: "A music film that blends pop, fantasy, and cinema. Directed by Dietrich with Manu Gavassi.",
+    description: "A music film that blends pop, fantasy, and cinema. Directed by Gabriel Dietrich with Manu Gavassi.",
     client: "Manu Gavassi",
-    fullDescription: "Directed by Dietrich and Manu Gavassi, Gracinha is a music film that transcends the boundaries of the music video format, merging pop sensibility with fashion aesthetics and cinematic storytelling. The project became a cultural milestone, reaching over 20 million views within 24 hours of release, and resonated as one of the most striking audiovisual works in the Brazilian market. Dietrich.tv Studio was responsible for the direction and execution, creating a layered visual journey that balances intimacy and spectacle — a portrait of Manu Gavassi's artistry elevated to a cinematic scale.",
+    fullDescription: "Directed by Gabriel Dietrich and Manu Gavassi, Gracinha is a music film that transcends the boundaries of the music video format, merging pop sensibility with fashion aesthetics and cinematic storytelling. The project became a cultural milestone, reaching over 20 million views within 24 hours of release, and resonated as one of the most striking audiovisual works in the Brazilian market. Dietrich.tv Studio was responsible for the direction and execution, creating a layered visual journey that balances intimacy and spectacle — a portrait of Manu Gavassi's artistry elevated to a cinematic scale.",
     projectType: "Music Film",
-    credits: "Directed by Dietrich.tv Studio with Manu Gavassi.",
+    credits: "Directed by Gabriel Dietrich (co-direction with Manu Gavassi).",
     vimeoId: "650425603",
     carouselImages: [
       "/projects/gracinha-disney/gallery/gracinha-disney-gallery1.jpg",
@@ -279,7 +340,7 @@ export const mockWorks = [
     client: "Manu Gavassi",
     fullDescription: "With Manu Gavassi, Dietrich directed a trilogy of short films that blurred the lines between cinema, fashion, and performance. Each piece is both intimate and theatrical, exploring how image can construct and deconstruct persona. The films were conceived as a dialogue with Manu's own artistic universe: ironic yet delicate, pop yet deeply personal. Through bold visual language and precise storytelling, they move beyond conventional music video aesthetics, embracing a hybrid form that belongs as much to cinema as to contemporary culture. Together, the three shorts form a mosaic of identity, revealing how narrative and style can amplify an artist's voice across different platforms while remaining unmistakably authentic.",
     projectType: "Trilogy",
-    credits: "Directed by Dietrich.tv Studio in collaboration with Manu Gavassi.",
+    credits: "Directed by Gabriel Dietrich (co-direction with Manu Gavassi).",
     vimeoId: "929593577,900776547,900237522",
     carouselImages: [
       "/projects/manu-gavassi-three-films/gallery/manu-gavassi-three-films-gallery1.jpg",
@@ -323,7 +384,7 @@ export const mockWorks = [
     client: "Azul Fidelidade",
     fullDescription: "For Azul Fidelidade's Diamond Unique tier, Dietrich directed a film that translates the pinnacle of the program's loyalty experience into a cinematic gesture. The visual language moves between aspiration and intimacy — drawing from the world of luxury travel and the emotional meaning of belonging. Rather than cataloguing benefits, the film captures the feeling of being recognized at the highest level: refined, calm, and certain. Through precise framing, elevated aesthetics and a measured rhythm, it positions Azul Fidelidade Diamond Unique not merely as a category, but as a distinct way of experiencing flight.",
     projectType: "Campaign",
-    credits: "Directed by Dietrich.tv Studio.",
+    credits: "Directed by Gabriel Dietrich.",
     vimeoId: "1190216209",
     carouselImages: [
       "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery1.jpg",
@@ -380,7 +441,7 @@ export const mockWorks = [
     client: "Natura",
     fullDescription: "For Natura's Desejo, Dietrich (with O2 Filmes) directed a film that explores the subtle tension between intimacy and expression. Desire is not shown directly — it is suggested through gestures, textures, and the rhythm of fragrance in motion. The narrative unfolds in layers: close-ups that evoke touch, frames that blur the line between skin and atmosphere, a sensorial approach where perfume becomes both memory and anticipation. Rather than illustrating the product, the film creates an emotional territory, where Natura's language of beauty resonates as something intimate, poetic, and deeply human.",
     projectType: "Campaign",
-    credits: "Directed by Dietrich.tv Studio in collaboration with O2 Filmes.",
+    credits: "Directed by Gabriel Dietrich in collaboration with O2 Filmes.",
     vimeoId: "680559680",
     carouselImages: [
       "/projects/desejo-natura/gallery/desejo-natura-gallery1.jpg",
@@ -418,11 +479,11 @@ export const mockWorks = [
     title: "Mother's Day Fernandas",
     slug: "mothers-day-fernandas",
     category: ["brands"],
-    description: "Fernanda Torres and Fernanda Montenegro star in an intimate film celebrating motherhood and timeless connection. Directed by Dietrich.",
+    description: "Fernanda Torres and Fernanda Montenegro star in an intimate film celebrating motherhood and timeless connection. Directed by Gabriel Dietrich.",
     client: "Hering",
-    fullDescription: "For Mother's Day, Hering brought together two of Brazil's most iconic actresses — Fernanda Torres and Fernanda Montenegro — in a touching film that celebrates maternal bonds and timeless connection. Directed by Dietrich, the piece combines intimacy and elegance, highlighting gestures and emotions with simplicity and truth, in line with Hering's essential identity. Dietrich.tv Studio led the direction and production, crafting a cinematic narrative where fashion, affection, and heritage intertwine in a tribute that is as universal as it is personal.",
+    fullDescription: "For Mother's Day, Hering brought together two of Brazil's most iconic actresses — Fernanda Torres and Fernanda Montenegro — in a touching film that celebrates maternal bonds and timeless connection. Directed by Gabriel Dietrich, the piece combines intimacy and elegance, highlighting gestures and emotions with simplicity and truth, in line with Hering's essential identity. Dietrich.tv Studio led the direction and production, crafting a cinematic narrative where fashion, affection, and heritage intertwine in a tribute that is as universal as it is personal.",
     projectType: "Campaign",
-    credits: "Directed by Dietrich.tv Studio. Featuring Fernanda Montenegro and Fernanda Torres.",
+    credits: "Directed by Gabriel Dietrich. Featuring Fernanda Montenegro and Fernanda Torres.",
     vimeoId: "524394640",
     carouselImages: [
       "/projects/mothers-day-hering-fernandas/gallery/mothers-day-hering-fernandas-gallery1.jpg",
@@ -467,7 +528,7 @@ export const mockWorks = [
     client: "Democrata",
     fullDescription: "For Democrata's launch film, we brought together two of Brazil's most iconic figures — Gisele Bündchen and Cauã Reymond — in a story that celebrates style, presence, and rhythm. The soundtrack, Jorge Ben Jor's Lá Vem Ela, sets the tone: timeless, magnetic, unmistakably Brazilian. Each frame captures a dialogue between elegance and energy, masculinity and femininity, intimacy and spectacle. The film was conceived as more than a commercial. It is a cultural encounter, weaving fashion and music into a narrative that places the brand in the heart of Brazil's creative heritage. Shot with cinematic precision, the piece amplifies Democrata's vision: sophistication with soul, classic with contemporary, craft with charisma.",
     projectType: "Launch Film",
-    credits: "Directed by Dietrich.tv Studio. Featuring Gisele Bündchen and Cauã Reymond.",
+    credits: "Directed by Gabriel Dietrich. Featuring Gisele Bündchen and Cauã Reymond.",
     vimeoId: "1006728704",
     carouselImages: [
       "/projects/democrata-gisele-caua/gallery/democrata-gisele-caua-gallery1.jpg",
@@ -508,7 +569,7 @@ export const mockWorks = [
     client: "Hering",
     fullDescription: "For Hering's Mother's Day campaign, we brought together Sasha Meneghel, Bruna Marquezine, Xuxa and Neide. More than a film, it became a portrait of affection across generations, weaving family bonds into the fabric of one of Brazil's most iconic brands. The narrative is intimate yet universal: mothers and daughters, friendship and legacy, the simple gestures that define love. Each scene was crafted to highlight authenticity, where fashion becomes secondary to emotion, and presence becomes more powerful than performance. In this project, cinema and brand storytelling converge to honor motherhood — not as a concept, but as lived experience.",
     projectType: "Campaign",
-    credits: "Directed by Dietrich.tv Studio. Starring Sasha, Bruna Marquezine, Xuxa and Neide.",
+    credits: "Directed by Gabriel Dietrich. Starring Sasha, Bruna Marquezine, Xuxa and Neide.",
     vimeoId: "1112761195,1112760986",
     carouselImages: [
       "/projects/mothers-day-hering-1/gallery/mothers-day-hering-1-gallery1.jpg",
@@ -547,7 +608,7 @@ export const mockWorks = [
     client: "TRESemmé",
     fullDescription: "For the launch of TRESemmé Brilho Lamelar, Dietrich directed (at O2 Filmes) a film that bridges fashion and technology. Shot in virtual production, the narrative moves between real and virtual spaces, where Sabrina Sato embodies the elegance and energy of the brand. The aesthetic is sharp and sophisticated: dark backdrops, sculpted lighting, and movements that highlight shine as performance. Each transition dives into hair as if it were a portal, leading us into new scenes with rhythm and precision.",
     projectType: "Launch Film",
-    credits: "Directed by Dietrich.tv Studio at O2 Filmes. Featuring Sabrina Sato.",
+    credits: "Directed by Gabriel Dietrich in collaboration with O2 Filmes. Featuring Sabrina Sato.",
     vimeoId: "880317712",
     carouselImages: [
       "/projects/tresemme-brilho-lamelar/gallery/tresemme-brilho-lamelar-gallery1.jpg",
@@ -588,7 +649,7 @@ export const mockWorks = [
     client: "Skol Beats",
     fullDescription: "A film about a queer person who crosses a road without asking permission to exist. They start walking alone, surrounded by rejection, and gradually gather allies from the most unexpected places: the popular girl, the skater, the mother. The group that forms ends up stronger than everything that tried to stop them.\n\nRespeito is ON.",
     projectType: "Campaign",
-    credits: "Directed by Dietrich.tv Studio. Client: Skol Beats.",
+    credits: "Directed by Gabriel Dietrich. Client: Skol Beats.",
     vimeoId: "187712315",
     scrollSpeed: 25,
     carouselImages: [
@@ -647,7 +708,7 @@ export const mockWorks = [
     client: "Maison Francis Kurkdjian",
     fullDescription: "Perfume is a bridge between moments, a place where past and future breathe together. We live in a time when creation expands beyond the hands, guided also by the intelligence we have imagined and built. Like perfume, this technology dissolves boundaries, uniting who we have been with who we are yet to become, turning the invisible into emotion. We crafted this A.I. spec film for Maison Francis Kurkdjian to celebrate the encounter where innovation and essence dance together.",
     projectType: "Case Study",
-    credits: "Direction by Dietrich.tv Studio. 100% AI-made.",
+    credits: "Directed by Gabriel Dietrich. 100% AI-made.",
     vimeoId: "1108168421",
     carouselImages: [
       "/projects/grand-soir-maison-francis/gallery/grand-soir-maison-francis-gallery1.jpg",
@@ -763,7 +824,8 @@ function getLocalizedProjectForWorkPage(project: any, t: any) {
     11: 'heringFernandas',
     12: 'azulFidelidade',
     13: 'skolBeatsRoad',
-    14: 'naturaHomem'
+    14: 'naturaHomem',
+    15: 'yanbalGenactive'
   }[project.id];
 
   if (!projectKey) return project;

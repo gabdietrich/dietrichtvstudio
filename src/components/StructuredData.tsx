@@ -21,7 +21,7 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
     const existingScripts = document.querySelectorAll('script[type="application/ld+json"]');
     existingScripts.forEach(script => script.remove());
 
-    const baseUrl = 'https://www.dietrich.tv';
+    const baseUrl = 'https://dietrich.tv';
     const currentLocale = i18n.language;
     
     let structuredData: any = {};
@@ -31,14 +31,14 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
         structuredData = {
           "@context": "https://schema.org",
           "@type": "Organization",
-          "name": "Dietrich TV Studio",
-          "alternateName": "Dietrich.tv",
+          "name": "Dietrich.tv Studio",
+          "alternateName": "Dietrich.tv Studio",
           "url": baseUrl,
           "logo": `${baseUrl}/logo_dietrich_BLACK.svg`,
           "image": `${baseUrl}/og-image.jpg`,
           "description": currentLocale === 'pt'
-            ? "Dietrich.tv - Studio de direção e pós criativa. Cinema, cultura e marca."
-            : "Dietrich.tv — Directing and creative post-production studio. Cinema, culture, and brand.",
+            ? "Dietrich.tv Studio é um estúdio de São Paulo que atua em cinema, publicidade, moda e arte, num modelo de director-led post-production."
+            : "Dietrich.tv Studio is a São Paulo–based practice working across film, advertising, fashion, and art, on a director-led post-production model.",
           "foundingDate": "2009",
           "founders": {
             "@type": "Person",
@@ -85,11 +85,11 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
         structuredData = {
           "@context": "https://schema.org",
           "@type": "WebSite",
-          "name": "Dietrich TV Studio",
+          "name": "Dietrich.tv Studio",
           "url": baseUrl,
           "description": currentLocale === 'pt'
-            ? "Dietrich.tv - Studio de direção e pós criativa. Cinema, cultura e marca."
-            : "Dietrich.tv — Directing and creative post-production studio. Cinema, culture, and brand.",
+            ? "Dietrich.tv Studio é um estúdio de São Paulo que atua em cinema, publicidade, moda e arte, num modelo de director-led post-production."
+            : "Dietrich.tv Studio is a São Paulo–based practice working across film, advertising, fashion, and art, on a director-led post-production model.",
           "inLanguage": [
             {
               "@type": "Language",
@@ -119,12 +119,12 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
             "description": data.projectDescription || "",
             "producer": {
               "@type": "Organization",
-              "name": "Dietrich TV Studio",
+              "name": "Dietrich.tv Studio",
               "url": baseUrl
             },
             "creator": {
               "@type": "Organization", 
-              "name": "Dietrich TV Studio",
+              "name": "Dietrich.tv Studio",
               "url": baseUrl
             },
             "director": {
@@ -133,7 +133,7 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
             },
             "productionCompany": {
               "@type": "Organization",
-              "name": "Dietrich TV Studio",
+              "name": "Dietrich.tv Studio",
               "url": baseUrl
             },
             "client": data.projectClient || "",

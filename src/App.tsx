@@ -59,7 +59,16 @@ export default function App() {
       // Extract locale from URL path (e.g., /pt/contact or /en/project/slug)
       const localeMatch = path.match(/^\/(pt|en)(\/.*)?$/);
       const locale = localeMatch?.[1];
-      const remainingPath = localeMatch?.[2] || '/';
+      let remainingPath = localeMatch?.[2] || '/';
+
+      // Collapse duplicated locale prefixes (/en/en, /pt/pt) left by older redirects
+      if (locale && remainingPath.replace(/\/$/, '') === `/${locale}`) {
+        const canonicalPath = `/${locale}/`;
+        if (path !== canonicalPath) {
+          window.history.replaceState({}, '', canonicalPath);
+        }
+        remainingPath = '/';
+      }
       
       // Set language if locale is detected in URL
       if (locale && (locale === 'pt' || locale === 'en')) {

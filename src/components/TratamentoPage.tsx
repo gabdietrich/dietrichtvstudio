@@ -29,7 +29,7 @@ export default function TratamentoPage({ tratamento }: TratamentoPageProps) {
   // Injeta robots noindex/nofollow e ajusta título sem expor o cliente publicamente.
   useEffect(() => {
     const previousTitle = document.title;
-    document.title = 'Tratamento · Dietrich.tv';
+    document.title = 'Tratamento · Dietrich.tv Studio';
 
     const robotsMeta = document.createElement('meta');
     robotsMeta.name = 'robots';

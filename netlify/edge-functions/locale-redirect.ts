@@ -1,11 +1,11 @@
-const BASE_URL = 'https://www.dietrich.tv';
+const BASE_URL = 'https://dietrich.tv';
 const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.jpg`;
 
 // Project data for OG tags — keep in sync with WorkPage.tsx mockWorks
 const PROJECTS: Record<string, { title: string; description: string; ogImage: string }> = {
   'gracinha': {
     title: 'Gracinha',
-    description: 'A music film that blends pop, fantasy, and cinema. Directed by Dietrich with Manu Gavassi.',
+    description: 'A music film that blends pop, fantasy, and cinema. Directed by Gabriel Dietrich with Manu Gavassi.',
     ogImage: `${BASE_URL}/projects/gracinha-disney/gallery/gracinha-disney-gallery1.jpg`,
   },
   'ernesto-neto-for-le-bon-marche-rive-gauche': {
@@ -73,6 +73,11 @@ const PROJECTS: Record<string, { title: string; description: string; ogImage: st
     description: 'A portrait of Brazilian masculinity with Lázaro Ramos, culminating in a gesture of affection between two men at a samba circle.',
     ogImage: `${BASE_URL}/projects/natura-homem/gallery/natura-homem-gallery1.jpg`,
   },
+  'yanbal-genactive': {
+    title: 'Yanbal Genactive',
+    description: "Yanbal is Peru's largest cosmetics brand, and Genactive is the top of its line.",
+    ogImage: `${BASE_URL}/projects/yanbal-genactive/gallery/yanbal-genactive-gallery1.jpg`,
+  },
 };
 
 // Social media and link-preview bots
@@ -82,11 +87,40 @@ function isBot(ua: string): boolean {
   return BOT_UA.test(ua);
 }
 
+function firstPathSegment(pathname: string): string | undefined {
+  return pathname.split('/').filter(Boolean)[0];
+}
+
+function isLocalePrefixed(pathname: string): boolean {
+  const first = firstPathSegment(pathname);
+  return first === 'en' || first === 'pt';
+}
+
+function isLocaleHome(pathname: string): boolean {
+  const segs = pathname.split('/').filter(Boolean);
+  return segs.length === 1 && (segs[0] === 'en' || segs[0] === 'pt');
+}
+
+const HOME_META = {
+  en: {
+    title: 'Dietrich.tv Studio · Director-led post-production',
+    description: 'Dietrich.tv Studio is a São Paulo–based practice working across film, advertising, fashion, and art, on a director-led post-production model.',
+    locale: 'en_US',
+  },
+  pt: {
+    title: 'Dietrich.tv Studio · Director-led post-production',
+    description: 'Dietrich.tv Studio é um estúdio de São Paulo que atua em cinema, publicidade, moda e arte, num modelo de director-led post-production.',
+    locale: 'pt_BR',
+  },
+} as const;
+
 function extractSlug(pathname: string): string | null {
   // Strip optional locale prefix: /en/slug or /pt/slug -> slug
   const normalized = pathname.replace(/^\/(en|pt)\//, '/');
   const match = normalized.match(/^\/([^/]+)\/?$/);
-  return match ? match[1] : null;
+  const slug = match ? match[1] : null;
+  if (slug === 'en' || slug === 'pt' || slug === 'contact' || slug === 'fornecedores') return null;
+  return slug;
 }
 
 function escapeHtml(str: string): string {
@@ -95,6 +129,44 @@ function escapeHtml(str: string): string {
     .replace(/"/g, '&quot;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;');
+}
+
+function injectPageMeta(html: string, opts: {
+  title: string;
+  description: string;
+  pageUrl: string;
+  ogImage?: string;
+  locale?: string;
+  htmlLang?: string;
+}): string {
+  const title = escapeHtml(opts.title);
+  const description = escapeHtml(opts.description);
+  const pageUrl = opts.pageUrl;
+  const ogImage = opts.ogImage;
+  let out = html
+    .replace(/(<title>)[^<]*(<\/title>)/, `$1${title}$2`)
+    .replace(/(<meta\s+name="description"\s+content=")[^"]*(")/g, `$1${description}$2`)
+    .replace(/(<meta\s+property="og:title"\s+content=")[^"]*(")/g, `$1${title}$2`)
+    .replace(/(<meta\s+property="og:description"\s+content=")[^"]*(")/g, `$1${description}$2`)
+    .replace(/(<meta\s+property="og:url"\s+content=")[^"]*(")/g, `$1${pageUrl}$2`)
+    .replace(/(<meta\s+property="og:image:alt"\s+content=")[^"]*(")/g, `$1${description}$2`)
+    .replace(/(<meta\s+name="twitter:title"\s+content=")[^"]*(")/g, `$1${title}$2`)
+    .replace(/(<meta\s+name="twitter:description"\s+content=")[^"]*(")/g, `$1${description}$2`)
+    .replace(/(<meta\s+name="twitter:url"\s+content=")[^"]*(")/g, `$1${pageUrl}$2`)
+    .replace(/(<link\s+rel="canonical"\s+href=")[^"]*(")/g, `$1${pageUrl}$2`);
+
+  if (ogImage) {
+    out = out
+      .replace(/(<meta\s+property="og:image"\s+content=")[^"]*(")/g, `$1${ogImage}$2`)
+      .replace(/(<meta\s+name="twitter:image"\s+content=")[^"]*(")/g, `$1${ogImage}$2`);
+  }
+  if (opts.locale) {
+    out = out.replace(/(<meta\s+property="og:locale"\s+content=")[^"]*(")/g, `$1${opts.locale}$2`);
+  }
+  if (opts.htmlLang) {
+    out = out.replace(/(<html\s+lang=")[^"]*(")/, `$1${opts.htmlLang}$2`);
+  }
+  return out;
 }
 
 export default async (request: Request, context: any) => {
@@ -113,33 +185,42 @@ export default async (request: Request, context: any) => {
 
     const userAgent = request.headers.get('user-agent') || '';
 
-    // For social bots: inject project-specific OG tags if it's a project URL
+    // For social bots: inject locale home or project-specific OG tags
     if (isBot(userAgent)) {
+      if (isLocaleHome(pathname)) {
+        const lang = firstPathSegment(pathname) as 'en' | 'pt';
+        const meta = HOME_META[lang];
+        const pageUrl = `${BASE_URL}/${lang}/`;
+        const baseRes = await fetch(`${BASE_URL}/index.html`);
+        let html = await baseRes.text();
+        html = injectPageMeta(html, {
+          title: meta.title,
+          description: meta.description,
+          pageUrl,
+          locale: meta.locale,
+          htmlLang: lang,
+        });
+        return new Response(html, {
+          headers: {
+            'Content-Type': 'text/html; charset=utf-8',
+            'Cache-Control': 'public, max-age=3600',
+          },
+        });
+      }
+
       const slug = extractSlug(pathname);
       const project = slug ? PROJECTS[slug] : null;
 
       if (project) {
-        const title = escapeHtml(`Dietrich.tv Studio — ${project.title}`);
-        const description = escapeHtml(project.description);
-        const ogImage = project.ogImage;
-        const pageUrl = `${BASE_URL}${pathname}`;
-
-        // Fetch the base HTML and inject project-specific OG tags
+        const pageUrl = `${BASE_URL}${pathname.startsWith('/en') || pathname.startsWith('/pt') ? pathname : `/en/${slug}`}`;
         const baseRes = await fetch(`${BASE_URL}/index.html`);
         let html = await baseRes.text();
-
-        html = html
-          .replace(/(<title>)[^<]*(<\/title>)/, `$1${title}$2`)
-          .replace(/(<meta\s+name="description"\s+content=")[^"]*(")/g, `$1${description}$2`)
-          .replace(/(<meta\s+property="og:title"\s+content=")[^"]*(")/g, `$1${title}$2`)
-          .replace(/(<meta\s+property="og:description"\s+content=")[^"]*(")/g, `$1${description}$2`)
-          .replace(/(<meta\s+property="og:image"\s+content=")[^"]*(")/g, `$1${ogImage}$2`)
-          .replace(/(<meta\s+property="og:url"\s+content=")[^"]*(")/g, `$1${pageUrl}$2`)
-          .replace(/(<meta\s+property="og:image:alt"\s+content=")[^"]*(")/g, `$1${title}$2`)
-          .replace(/(<meta\s+name="twitter:title"\s+content=")[^"]*(")/g, `$1${title}$2`)
-          .replace(/(<meta\s+name="twitter:description"\s+content=")[^"]*(")/g, `$1${description}$2`)
-          .replace(/(<meta\s+name="twitter:image"\s+content=")[^"]*(")/g, `$1${ogImage}$2`)
-          .replace(/(<meta\s+name="twitter:url"\s+content=")[^"]*(")/g, `$1${pageUrl}$2`);
+        html = injectPageMeta(html, {
+          title: `Dietrich.tv Studio · ${project.title}`,
+          description: project.description,
+          pageUrl,
+          ogImage: project.ogImage,
+        });
 
         return new Response(html, {
           headers: {
@@ -157,8 +238,7 @@ export default async (request: Request, context: any) => {
 
     // Skip if already has locale prefix or is a tratamento hotpage
     if (
-      pathname.startsWith('/pt/') ||
-      pathname.startsWith('/en/') ||
+      isLocalePrefixed(pathname) ||
       pathname.startsWith('/videos/') ||
       pathname.startsWith('/projects/') ||
       pathname.startsWith('/logos_clients/') ||
