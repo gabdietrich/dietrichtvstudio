@@ -19,7 +19,7 @@
     "logoAlt": "dietrich.tv studio"
   },
   "homepage": {
-    "mainText": "Dietrich.tv is an auteur direction studio based in São Paulo, with 15 years of work across advertising film, art projects, and cultural collaborations. We work with brands such as Le Bon Marché, Art Basel, Netflix, Natura, and Hering, and with artists including Ernesto Neto, Manu Gavassi, and Criolo. Our specialty is the passage from concept to image, with direction, creative post-production, and generative AI.",
+    "mainText": "Dietrich.tv Studio is a São Paulo–based practice working across film, advertising, fashion, and art. The studio operates on a director-led post-production model: direction and creative finishing as a single craft.",
     "categories": {
       "all": "All",
       "brands": "Brands",
@@ -29,10 +29,11 @@
     }
   },
   "contact": {
-    "mainHeading": "Nice to meet you :)",
+    "mainHeading": "Nice to meet you",
     "description": {
-      "paragraph1": "Dietrich.tv Studio has its trajectory consolidated in lifestyle commercials, beauty, and films with special effects. With an approach that merges design, cinema, and technology, the studio has collaborated with partner brands such as Nike, Natura, Tresemmé, Hering, among others. Its international work includes projects for the LVMH group in Paris and Shanghai, as well as contributions to ArtBasel's Meet the Artists series and the launch film for Ernesto Neto's exhibition at Le Bon Marché in Paris.",
-      "paragraph2": "Our portfolio also expands into the musical and artistic fields, with music videos for artists such as Criolo, Duda Beat, Jão, and Thiago Pethit, including the award-winning Etérea video at the Music Video Festival (m-v-f-). More recently, the studio has deepened its presence in the documentary and cultural fields, with the film Elsa Schiaparelli's Private Album and collaborations on French projects such as the exhibition Les Oiseaux at the Jardin d'Acclimatation in Paris. In every project, Dietrich.tv Studio reaffirms its commitment to creating images with strong aesthetic and cultural impact."
+      "paragraph1": "Dietrich.tv Studio is based in São Paulo, working across film, advertising, fashion, and art. The studio's track record spans lifestyle and beauty campaigns, VFX-driven films, and music videos, with directing credits for Nike, Natura, Tresemmé, Hering, and LVMH (Paris and Shanghai), as well as work for Art Basel's Meet the Artists series. Dietrich.tv Studio directed the launch film for Ernesto Neto's exhibition at Le Bon Marché, Paris, and Elsa Schiaparelli's Private Album, an animated documentary on the designer's life and work.",
+      "paragraph2": "The studio's music video work includes Manu Gavassi, Duda Beat, Jão, Thiago Pethit, and Criolo, among them Etérea, awarded at the Music Video Festival (m-v-f-).",
+      "paragraph3": "Dietrich.tv Studio operates on a director-led post-production model: direction and creative finishing in the same hands. AI enters this workflow as a creative tool, expanding the territory of the image by stitching live action, 3D, and generative processes into one language."
     },
     "whatWeDo": "What We Do",
     "sections": {
@@ -203,6 +204,22 @@
       "client": "Hering",
       "projectType": "Campaign",
       "credits": "Directed by Dietrich. Featuring Fernanda Montenegro and Fernanda Torres."
+    },
+    "skolBeatsRoad": {
+      "title": "The Road",
+      "description": "A queer person crosses a road without asking permission to exist. Respeito is ON.",
+      "fullDescription": "A film about a queer person who crosses a road without asking permission to exist. They start walking alone, surrounded by rejection, and gradually gather allies from the most unexpected places: the popular girl, the skater, the mother. The group that forms ends up stronger than everything that tried to stop them.\n\nRespeito is ON.",
+      "client": "Skol Beats",
+      "projectType": "Campaign",
+      "credits": "Directed by Dietrich.tv Studio. Client: Skol Beats."
+    },
+    "naturaHomem": {
+      "title": "Natura Homem - Identidad",
+      "description": "A portrait of Brazilian masculinity, with Lázaro Ramos.",
+      "fullDescription": "What it means to be a man in Brazil today is an open question. It's an equally important and delicate subject, and advertising isn't always willing to hold that mirror up to men. When Galeria and 404 brought me this script, what I saw was a chance to spark a debate: to show a version of the Brazilian man at peace with his masculinity, and that man could only be Bahia's own Lázaro Ramos. He moves through his day interacting with everyone who crosses his path, effortlessly. It's that naturalness, that 'malemolência' (a laid-back Brazilian swagger), that feels to me like the truest expression of the Brazilian man. A man who should be free, comfortable in his own clothes, without prejudice and without any need for external validation to feel like who he is.\n\nThe journey ends at a roda de samba (samba circle), the undisputed Brazilian art form. There, he is welcomed as the celebrity he is. But the final gesture, to me, was always the most important of the film: in the middle of the circle he recognizes another man like him (an old-guard sambista, who carries his own story and his own journey), and it is this man who gives him an embrace and a kiss.\n\nAnd that kiss is the film. An explicit metaphor for affection between two men, in a brief 30 seconds.\n\nI'm very grateful for the invitation, because I know how much can be said when a brand with Natura's reach decides to speak about this.",
+      "client": "Natura",
+      "projectType": "Campaign",
+      "credits": "Directed by Gabriel Dietrich. Agency: 404. Featuring Lázaro Ramos."
     }
   },
   "meta": {

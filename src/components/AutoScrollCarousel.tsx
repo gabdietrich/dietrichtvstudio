@@ -98,7 +98,7 @@ export default function AutoScrollCarousel({ work, speed = 10, onNavigate }: Aut
                 aria-label={work.title}
               >
                 {/* Square video container */}
-                <div className="relative aspect-square bg-gray-900 overflow-hidden">
+                <div className="relative aspect-square bg-gray-100 overflow-hidden">
                   {video.videoUrl || video.mobileVideoUrl ? (
                     <VideoCard
                       poster={video.thumbnail}

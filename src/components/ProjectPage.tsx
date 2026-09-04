@@ -241,7 +241,8 @@ function getProjectFeaturedVideo(projectId: number): string | null {
     8: 3, // Desejo - video3
     9: 1, // Brilho Lamelar - video1
     10: 2, // Gracinha - video2
-    11: 3  // Mother's Day Fernandas - video3
+    11: 3, // Mother's Day Fernandas - video3
+    14: 1  // Natura Homem - video1
   };
   
   const videoIndex = videoChoices[projectId] || 1;
@@ -264,7 +265,9 @@ function getLocalizedProject(project: any, t: any) {
     9: 'tresemmeBrilho',
     10: 'gracinha',
     11: 'heringFernandas',
-    12: 'azulFidelidade'
+    12: 'azulFidelidade',
+    13: 'skolBeatsRoad',
+    14: 'naturaHomem'
   }[project.id];
 
   if (!projectKey) return project;
@@ -290,35 +293,41 @@ export default function ProjectPage({ projectId, onNavigate }: ProjectPageProps)
   
   const currentProject = getLocalizedProject(baseProject, t);
 
-  const fallbackCategory: Record<string, string> = {
-    brands: 'artistsCulture',
-    artistsCulture: 'music',
-    music: 'artistsCulture',
-    researchAI: 'brands',
-  };
+  // Category cycle used to fill the "Other projects" section: when the current
+  // category runs out of material, move to the next most-related one.
+  // Brands → Artists & Culture → Music → Research & AI → Brands → ...
+  const categoryCycle = ['brands', 'artistsCulture', 'music', 'researchAI'];
+
+  const hasCategory = (work: any, category: string) =>
+    (Array.isArray(work.category) ? work.category : [work.category]).includes(category);
+
+  // Use the Vimeo ID as a chronological proxy for "date added" (most recent first)
+  const recencyValue = (work: any) => parseInt(String(work.vimeoId || '0').split(',')[0]) || 0;
 
   const currentCategories: string[] = Array.isArray(baseProject.category)
     ? baseProject.category
     : [baseProject.category];
-
   const primaryCategory = currentCategories[0];
-
-  const sameCategory = mockWorks.filter(
-    work => work.id !== projectId &&
-      (Array.isArray(work.category) ? work.category : [work.category]).some(c => currentCategories.includes(c))
-  );
+  const startIndex = Math.max(0, categoryCycle.indexOf(primaryCategory));
 
   const otherProjects = (() => {
-    if (sameCategory.length >= 3) return sameCategory.slice(0, 3);
-    const fallback = fallbackCategory[primaryCategory];
-    const fillFrom = fallback
-      ? mockWorks.filter(
-          work => work.id !== projectId &&
-            !sameCategory.includes(work) &&
-            (Array.isArray(work.category) ? work.category : [work.category]).includes(fallback)
-        )
-      : [];
-    return [...sameCategory, ...fillFrom].slice(0, 3);
+    const selected: typeof mockWorks = [];
+    const seenIds = new Set<number>([projectId]);
+
+    for (let step = 0; step < categoryCycle.length && selected.length < 3; step++) {
+      const category = categoryCycle[(startIndex + step) % categoryCycle.length];
+      const inCategory = mockWorks
+        .filter(work => !seenIds.has(work.id) && hasCategory(work, category))
+        .sort((a, b) => recencyValue(b) - recencyValue(a));
+
+      for (const work of inCategory) {
+        if (selected.length >= 3) break;
+        selected.push(work);
+        seenIds.add(work.id);
+      }
+    }
+
+    return selected;
   })().map(project => getLocalizedProject(project, t));
 
   return (

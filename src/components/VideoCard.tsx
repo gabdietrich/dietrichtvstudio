@@ -69,18 +69,17 @@ export default function VideoCard({
     >
       {shouldShowVideo ? (
         <>
-          {/* Poster background for immediate display */}
+          {/* Poster kept painted BEHIND the video (absolute, always visible) so
+              the native loop's brief 1-frame gap reveals the light poster
+              instead of a dark flash ("clapperboard" effect on bright clips).
+              The video is also absolutely positioned so it paints on top. */}
           <img
             src={poster}
             alt={title}
             className="absolute inset-0 w-full h-full object-cover"
-            style={{
-              opacity: hasError || !videoLoaded ? 1 : 0,
-              transition: 'opacity 0.3s ease-out'
-            }}
           />
           
-          {/* Video that fades in on canPlay */}
+          {/* Video that fades in on canPlay (stacked above the poster) */}
           {!hasError && (
             <video
               ref={videoRef}
@@ -90,7 +89,7 @@ export default function VideoCard({
               playsInline={playsInline}
               preload={isHero ? "auto" : "metadata"}
               poster={poster}
-              className="w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover"
               onCanPlay={handleCanPlay}
               onLoadedData={handleLoadedData}
               onError={handleError}

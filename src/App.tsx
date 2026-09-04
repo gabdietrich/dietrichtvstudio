@@ -5,10 +5,12 @@ import WorkPage, { getProjectBySlug, getProjectById } from './components/WorkPag
 import ContactPage from './components/ContactPage';
 import FornecedoresPage from './components/FornecedoresPage';
 import ProjectPage from './components/ProjectPage';
+import TratamentoPage from './components/TratamentoPage';
 import MetaUpdater from './components/MetaUpdater';
 import StructuredData from './components/StructuredData';
 import { initGA, trackPageView, analytics } from './utils/analytics';
 import { slugToCategory, categoryToSlug, isAnyFilterSlug, Locale, CategoryKey } from './utils/categoryUrls';
+import { getTratamentoBySlug, type Tratamento } from './data/tratamentos';
 
 export default function App() {
   const { i18n } = useTranslation();
@@ -18,6 +20,7 @@ export default function App() {
   const [displayedProjectId, setDisplayedProjectId] = useState<number | null>(null);
   const [currentCategory, setCurrentCategory] = useState<CategoryKey>('all');
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [currentTratamento, setCurrentTratamento] = useState<Tratamento | null>(null);
 
   // Parse URL and set initial state
   useEffect(() => {
@@ -26,7 +29,33 @@ export default function App() {
     
     const parseURL = () => {
       const path = window.location.pathname;
-      
+
+      // Hotpages privadas de tratamento: /tratamentos/<slug-com-token>
+      // Aceita também URLs com prefixo de idioma (/pt/tratamentos/... ou
+      // /en/tratamentos/...) caso o edge function de locale-redirect ou um
+      // cache antigo do navegador tenha injetado o prefixo. Normaliza para a
+      // URL "limpa" via replaceState.
+      const tratamentoMatch = path.match(/^\/(?:pt\/|en\/)?tratamentos\/([^/]+)\/?$/);
+      if (tratamentoMatch) {
+        const tratamento = getTratamentoBySlug(tratamentoMatch[1]);
+        if (tratamento) {
+          const canonicalPath = `/tratamentos/${tratamentoMatch[1]}`;
+          if (window.location.pathname !== canonicalPath) {
+            window.history.replaceState({}, '', canonicalPath);
+          }
+          setCurrentPage('tratamento');
+          setDisplayedPage('tratamento');
+          setCurrentTratamento(tratamento);
+          setCurrentProjectId(null);
+          setDisplayedProjectId(null);
+          setCurrentCategory('all');
+          return;
+        }
+      }
+
+      // Sai da rota de tratamento ao navegar para qualquer outra.
+      setCurrentTratamento(null);
+
       // Extract locale from URL path (e.g., /pt/contact or /en/project/slug)
       const localeMatch = path.match(/^\/(pt|en)(\/.*)?$/);
       const locale = localeMatch?.[1];
@@ -280,6 +309,16 @@ export default function App() {
             onCategoryChange={handleCategoryChange}
           />
         );
+      case 'tratamento':
+        return currentTratamento ? (
+          <TratamentoPage tratamento={currentTratamento} />
+        ) : (
+          <WorkPage
+            onNavigate={handleNavigate}
+            initialCategory={currentCategory}
+            onCategoryChange={handleCategoryChange}
+          />
+        );
       default:
         return (
           <WorkPage
@@ -302,49 +341,57 @@ export default function App() {
     return undefined;
   };
 
+  const isTratamentoRoute = currentPage === 'tratamento';
+
   return (
     <div className="min-h-screen bg-black relative">
-      <MetaUpdater 
-        page={currentPage as 'work' | 'contact' | 'fornecedores' | 'project'} 
-        projectData={getCurrentProjectData()}
-      />
-      <StructuredData type="organization" />
-      <StructuredData type="website" />
-      {currentPage === 'project' && currentProjectId && (() => {
-        const project = getProjectById(currentProjectId);
-        return project ? (
-          <StructuredData 
-            type="project" 
-            data={{
-              projectTitle: project.title,
-              projectDescription: project.description,
-              projectClient: project.client,
-              projectType: project.category,
-              projectSlug: project.slug
-            }}
+      {!isTratamentoRoute && (
+        <>
+          <MetaUpdater
+            page={currentPage as 'work' | 'contact' | 'fornecedores' | 'project'}
+            projectData={getCurrentProjectData()}
           />
-        ) : null;
-      })()}
-      <Navigation 
-        currentPage={currentPage} 
-        onPageChange={handleNavigate} 
+          <StructuredData type="organization" />
+          <StructuredData type="website" />
+          {currentPage === 'project' && currentProjectId && (() => {
+            const project = getProjectById(currentProjectId);
+            return project ? (
+              <StructuredData
+                type="project"
+                data={{
+                  projectTitle: project.title,
+                  projectDescription: project.description,
+                  projectClient: project.client,
+                  projectType: project.category,
+                  projectSlug: project.slug
+                }}
+              />
+            ) : null;
+          })()}
+        </>
+      )}
+      <Navigation
+        currentPage={currentPage}
+        onPageChange={handleNavigate}
         onLanguageChange={handleLanguageChange}
         isTransitioning={isTransitioning}
       />
-      <div 
+      <div
         className={`transition-opacity duration-300 ease-out ${
           isTransitioning ? 'opacity-0' : 'opacity-100'
         }`}
       >
         {renderPage()}
       </div>
-      
-      {/* White fade overlay */}
-      <div 
-        className={`fixed inset-0 bg-white pointer-events-none z-40 transition-opacity duration-300 ease-out ${
-          isTransitioning ? 'opacity-100' : 'opacity-0'
-        }`}
-      />
+
+      {/* White fade overlay — desativado nas hotpages dark para não furar o preto */}
+      {!isTratamentoRoute && (
+        <div
+          className={`fixed inset-0 bg-white pointer-events-none z-40 transition-opacity duration-300 ease-out ${
+            isTransitioning ? 'opacity-100' : 'opacity-0'
+          }`}
+        />
+      )}
     </div>
   );
 }

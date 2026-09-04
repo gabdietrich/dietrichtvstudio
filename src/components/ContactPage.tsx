@@ -5,20 +5,35 @@ import ClientsCarousel from './ClientsCarousel';
 const contactSectionKeys = ['direction', 'postProduction', 'creativeDevelopment'] as const;
 
 const CONTACT_BOLD_NAMES = [
-  'Nike', 'Natura', 'Tresemmé', 'Hering', 'LVMH', 'ArtBasel', 'Le Bon Marché',
-  'Ernesto Neto', 'Criolo', 'Duda Beat', 'Jão', 'Thiago Pethit',
-  "Elsa Schiaparelli's Private Album", 'Les Oiseaux',
+  "Elsa Schiaparelli's Private Album",
+  'Meet the Artists',
+  'Manu Gavassi',
+  'Thiago Pethit',
+  'Le Bon Marché',
+  'Ernesto Neto',
+  'Art Basel',
+  'Duda Beat',
+  'Tresemmé',
+  'Hering',
+  'Natura',
+  'Criolo',
+  'Etérea',
+  'LVMH',
+  'Nike',
+  'Jão',
 ];
 
+const CONTACT_ITALIC_TERMS = ['director-led post-production'];
+
 const CONTACT_UNDERLINE_TERMS = [
-  'comerciais de lifestyle, beleza e filmes com efeitos especiais',
-  'lifestyle commercials, beauty, and films with special effects',
-  'criação de imagens de forte impacto estético e cultural',
-  'creating images with strong aesthetic and cultural impact',
+  'film, advertising, fashion, and art',
+  'cinema, publicidade, moda e arte',
+  'direction and creative finishing in the same hands',
+  'direção e finalização criativa feitas pela mesma mão',
 ];
 
 function renderContactText(text: string) {
-  const allTerms = [...CONTACT_BOLD_NAMES, ...CONTACT_UNDERLINE_TERMS];
+  const allTerms = [...CONTACT_BOLD_NAMES, ...CONTACT_ITALIC_TERMS, ...CONTACT_UNDERLINE_TERMS];
   const pattern = new RegExp(
     `(${allTerms.map(n => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`,
     'g'
@@ -27,6 +42,8 @@ function renderContactText(text: string) {
   return parts.map((part, i) => {
     if (CONTACT_BOLD_NAMES.includes(part))
       return <strong key={i} style={{ fontWeight: 600 }}>{part}</strong>;
+    if (CONTACT_ITALIC_TERMS.includes(part))
+      return <em key={i} style={{ fontFamily: "'Poltawski Nowy', serif", fontStyle: 'italic', fontWeight: 400, fontSize: '1.05em' }}>{part}</em>;
     if (CONTACT_UNDERLINE_TERMS.includes(part))
       return <span key={i} style={{ textDecoration: 'underline', textUnderlineOffset: '4px' }}>{part}</span>;
     return part;
@@ -48,12 +65,11 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Left column - Description paragraphs */}
             <div className="space-y-6">
-              <p className="text-lg text-black leading-relaxed font-['Instrument_Sans']">
-                {renderContactText(t('contact.description.paragraph1'))}
-              </p>
-              <p className="text-lg text-black leading-relaxed font-['Instrument_Sans']">
-                {renderContactText(t('contact.description.paragraph2'))}
-              </p>
+              {(['paragraph1', 'paragraph2', 'paragraph3'] as const).map((key) => (
+                <p key={key} className="text-lg text-black leading-relaxed font-['Instrument_Sans']">
+                  {renderContactText(t(`contact.description.${key}`))}
+                </p>
+              ))}
             </div>
             
             {/* Right column - Image */}

@@ -19,7 +19,7 @@
     "logoAlt": "dietrich.tv studio"
   },
   "homepage": {
-    "mainText": "Dietrich.tv é um estúdio de direção autoral baseado em São Paulo, com 15 anos de trajetória entre cinema publicitário, projetos de arte e colaborações culturais. Trabalhamos com marcas como Le Bon Marché, Art Basel, Netflix, Natura e Hering, e com artistas como Ernesto Neto, Manu Gavassi e Criolo. Nossa especialidade é a passagem do conceito à imagem, com direção, pós-produção criativa e IA generativa.",
+    "mainText": "Dietrich.tv Studio é um estúdio de São Paulo que atua em cinema, publicidade, moda e arte. O estúdio opera num modelo de director-led post-production: direção e finalização criativa como parte do mesmo processo.",
     "categories": {
       "all": "Todos",
       "brands": "Marcas",
@@ -29,10 +29,11 @@
     }
   },
   "contact": {
-    "mainHeading": "Prazer em conhecer :)",
+    "mainHeading": "Prazer em conhecer",
     "description": {
-      "paragraph1": "O Dietrich.tv Studio tem sua trajetória consolidada em comerciais de lifestyle, beleza e filmes com efeitos especiais. Com uma abordagem que une design, cinema e tecnologia, o estúdio já colaborou com marcas parceiras como Nike, Natura, Tresemmé, Hering e outras. A atuação internacional inclui projetos para o grupo LVMH em Paris e Xangai, além de ter trabalhado para a série \"Meet the Artists\", da ArtBasel, e do filme de lançamento da exposição de Ernesto Neto no Le Bon Marché, em Paris.",
-      "paragraph2": "Nosso portfólio se expande também para o universo musical e artístico, com videoclipes para nomes como Criolo, Duda Beat, Jão e Thiago Pethit, premiados no Music Video Festival (m-v-f-) com o clipe Etérea, de Criolo. Mais recentemente, o estúdio tem aprofundado sua presença no campo documental e cultural, com o filme \"Elsa Schiaparelli's Private Album\" e colaborações em projetos franceses, como a exposição Les Oiseaux no Jardin d'Acclimatation, em Paris. Em cada projeto, a Dietrich.tv Studio reafirma seu compromisso com a criação de imagens de forte impacto estético e cultural."
+      "paragraph1": "Dietrich.tv Studio fica em São Paulo e atua em cinema, publicidade, moda e arte. O histórico do estúdio reúne campanhas de lifestyle e beleza, filmes com VFX e videoclipes, com créditos de direção para Nike, Natura, Tresemmé, Hering e LVMH (Paris e Xangai), além de trabalhos para a série Meet the Artists, da Art Basel. Dietrich.tv Studio dirigiu o filme de lançamento da exposição de Ernesto Neto no Le Bon Marché, em Paris, e o documentário em animação Elsa Schiaparelli's Private Album, sobre a trajetória da estilista.",
+      "paragraph2": "Em videoclipe, o estúdio trabalhou com Manu Gavassi, Duda Beat, Jão, Thiago Pethit e Criolo, incluindo Etérea, premiado no Music Video Festival (m-v-f-).",
+      "paragraph3": "Dietrich.tv Studio opera num modelo de director-led post-production: direção e finalização criativa feitas pela mesma mão. A IA entra nesse fluxo como ferramenta criativa, ampliando o território da imagem ao costurar live action, 3D e processos generativos numa só linguagem."
     },
     "whatWeDo": "O Que Fazemos",
     "sections": {
@@ -203,6 +204,22 @@
       "client": "Hering",
       "projectType": "Campanha",
       "credits": "Direção: Dietrich. Com Fernanda Montenegro e Fernanda Torres."
+    },
+    "skolBeatsRoad": {
+      "title": "A Estrada",
+      "description": "Uma pessoa queer atravessa uma estrada sem pedir licença pra existir. Respeito is ON.",
+      "fullDescription": "Um filme sobre uma pessoa queer que atravessa uma estrada sem pedir licença pra existir. No começo ela caminha sozinha, cercada de rejeição, e aos poucos vai juntando aliados onde menos se esperava: a patricinha, o skatista, a mãe. O grupo que se forma acaba mais forte do que tudo que tentou barrá-la.\n\nRespeito is ON.",
+      "client": "Skol Beats",
+      "projectType": "Campanha",
+      "credits": "Direção: Dietrich.tv Studio. Cliente: Skol Beats."
+    },
+    "naturaHomem": {
+      "title": "Natura Homem - Identidad",
+      "description": "Um retrato da masculinidade brasileira, com Lázaro Ramos.",
+      "fullDescription": "O que significa ser homem hoje no Brasil é uma pergunta em aberto. Um assunto igualmente importante e delicado, e a publicidade nem sempre se dispõe a colocar esse espelho na frente dos homens. Quando a Galeria e a 404 trouxeram esse roteiro, o que vi foi a chance de provocar um debate: mostrar uma versão de um homem brasileiro com a masculinidade bem resolvida, e esse homem só poderia ser o baiano Lázaro Ramos. Esse cara atravessa seu dia interagindo com quem aparece pelo caminho, sem esforço. É essa naturalidade, essa malemolência, que me parece a expressão mais verdadeira do homem brasileiro. Um homem que deveria ser livre, confortável na própria roupa, sem preconceitos e sem necessidade de validação externa para sentir-se sendo quem é.\n\nA jornada termina numa roda de samba, que é a expressão artística brasileira indiscutível. Ali, ele é recebido como a celebridade que é. Mas o gesto final pra mim sempre foi o mais importante do filme: ele reconhece no meio da roda um outro homem como ele (um sambista da velha guarda, que traz sua própria história e sua jornada), e é esse homem que lhe dá um abraço e um beijo.\n\nE esse beijo é o filme. Uma metáfora explícita no afeto entre dois homens, em curtos 30 segundos.\n\nFico muito grato pelo convite, pois sei o tamanho do que se pode dizer quando uma marca do alcance de Natura decide falar disso.",
+      "client": "Natura",
+      "projectType": "Campanha",
+      "credits": "Direção: Gabriel Dietrich. Agência: 404. Com Lázaro Ramos."
     }
   },
   "meta": {

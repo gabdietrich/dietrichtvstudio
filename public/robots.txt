@@ -7,6 +7,9 @@ Disallow: /.netlify/
 Disallow: /build/
 Disallow: /src/
 
+# Hotpages privadas (apresentações de tratamento para clientes)
+Disallow: /tratamentos/
+
 # Allow important assets
 Allow: /projects/
 Allow: /logos_clients/

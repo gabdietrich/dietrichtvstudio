@@ -5,10 +5,11 @@ import LanguageSwitcher from './LanguageSwitcher';
 interface NavigationProps {
   currentPage: string;
   onPageChange: (page: string) => void;
+  onLanguageChange?: (lng: string) => void;
   isTransitioning?: boolean;
 }
 
-export default function Navigation({ currentPage, onPageChange, isTransitioning = false }: NavigationProps) {
+export default function Navigation({ currentPage, onPageChange, onLanguageChange, isTransitioning = false }: NavigationProps) {
   const { t } = useTranslation();
   
   const pages = [
@@ -51,7 +52,7 @@ export default function Navigation({ currentPage, onPageChange, isTransitioning 
             />
           </button>
           <div className="flex items-center gap-8">
-            <LanguageSwitcher />
+            <LanguageSwitcher onLanguageChange={onLanguageChange} />
             {pages.map((page) => (
               <Button
                 key={page.id}

@@ -9,11 +9,16 @@ import { analytics } from '../utils/analytics';
 const categories = ['all', 'brands', 'artistsCulture', 'music', 'researchAI'];
 
 const SERIF_NAMES = [
-  'Le Bon Marché', 'Art Basel', 'Netflix', 'Natura', 'Hering',
-  'Ernesto Neto', 'Manu Gavassi', 'Criolo',
+  'Dietrich.tv Studio',
+  'director-led post-production',
 ];
 
-const UNDERLINE_TERMS = ['cinema publicitário, projetos de arte e colaborações culturais', 'advertising film, art projects, and cultural collaborations', 'passagem do conceito à imagem', 'passage from concept to image'];
+const UNDERLINE_TERMS = [
+  'film, advertising, fashion, and art',
+  'cinema, publicidade, moda e arte',
+  'direction and creative finishing as a single craft',
+  'direção e finalização criativa como parte do mesmo processo',
+];
 
 function renderMainText(text: string) {
   const allTerms = [...SERIF_NAMES, ...UNDERLINE_TERMS];
@@ -51,6 +56,60 @@ export function getProjectById(id: number) {
 
 // Mock data with project content
 export const mockWorks = [
+  // 0. Lançamento mais recente — Natura Homem (Lázaro Ramos)
+  {
+    id: 14,
+    title: "Natura Homem - Identidad",
+    slug: "natura-homem",
+    category: ["brands"],
+    description: "A portrait of Brazilian masculinity, with Lázaro Ramos.",
+    client: "Natura",
+    fullDescription: "What it means to be a man in Brazil today is an open question. It's an equally important and delicate subject, and advertising isn't always willing to hold that mirror up to men. When Galeria and 404 brought me this script, what I saw was a chance to spark a debate: to show a version of the Brazilian man at peace with his masculinity, and that man could only be Bahia's own Lázaro Ramos. He moves through his day interacting with everyone who crosses his path, effortlessly. It's that naturalness, that 'malemolência' (a laid-back Brazilian swagger), that feels to me like the truest expression of the Brazilian man. A man who should be free, comfortable in his own clothes, without prejudice and without any need for external validation to feel like who he is.\n\nThe journey ends at a roda de samba (samba circle), the undisputed Brazilian art form. There, he is welcomed as the celebrity he is. But the final gesture, to me, was always the most important of the film: in the middle of the circle he recognizes another man like him (an old-guard sambista, who carries his own story and his own journey), and it is this man who gives him an embrace and a kiss.\n\nAnd that kiss is the film. An explicit metaphor for affection between two men, in a brief 30 seconds.\n\nI'm very grateful for the invitation, because I know how much can be said when a brand with Natura's reach decides to speak about this.",
+    projectType: "Campaign",
+    credits: "Directed by Gabriel Dietrich. Agency: 404. Featuring Lázaro Ramos.",
+    vimeoId: "1220202909",
+    scrollSpeed: 20,
+    carouselImages: [
+      "/projects/natura-homem/gallery/natura-homem-gallery1.jpg",
+      "/projects/natura-homem/gallery/natura-homem-gallery2.jpg",
+      "/projects/natura-homem/gallery/natura-homem-gallery3.jpg",
+      "/projects/natura-homem/gallery/natura-homem-gallery4.jpg",
+      "/projects/natura-homem/gallery/natura-homem-gallery5.jpg",
+      "/projects/natura-homem/gallery/natura-homem-gallery6.jpg",
+      "/projects/natura-homem/gallery/natura-homem-gallery7.jpg",
+      "/projects/natura-homem/gallery/natura-homem-gallery8.jpg"
+    ],
+    videos: [
+      {
+        id: 44,
+        thumbnail: "/projects/natura-homem/carousel/natura-homem-video1-poster.jpg",
+        title: "Scene 1",
+        videoUrl: "/projects/natura-homem/carousel/natura-homem-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/natura-homem/carousel/natura-homem-video1-mobile.mp4"
+      },
+      {
+        id: 45,
+        thumbnail: "/projects/natura-homem/carousel/natura-homem-video2-poster.jpg",
+        title: "Scene 2",
+        videoUrl: "/projects/natura-homem/carousel/natura-homem-video2-desktop.mp4",
+        mobileVideoUrl: "/projects/natura-homem/carousel/natura-homem-video2-mobile.mp4"
+      },
+      {
+        id: 46,
+        thumbnail: "/projects/natura-homem/carousel/natura-homem-video3-poster.jpg",
+        title: "Scene 3",
+        videoUrl: "/projects/natura-homem/carousel/natura-homem-video3-desktop.mp4",
+        mobileVideoUrl: "/projects/natura-homem/carousel/natura-homem-video3-mobile.mp4"
+      },
+      {
+        id: 47,
+        thumbnail: "/projects/natura-homem/carousel/natura-homem-video4-poster.jpg",
+        title: "Scene 4",
+        videoUrl: "/projects/natura-homem/carousel/natura-homem-video4-desktop.mp4",
+        mobileVideoUrl: "/projects/natura-homem/carousel/natura-homem-video4-mobile.mp4"
+      }
+    ]
+  },
   // 1. Abertura cultural forte
   {
     id: 2,
@@ -451,7 +510,13 @@ export const mockWorks = [
     projectType: "Campaign",
     credits: "Directed by Dietrich.tv Studio. Starring Sasha, Bruna Marquezine, Xuxa and Neide.",
     vimeoId: "1112761195,1112760986",
-    carouselImages: [],
+    carouselImages: [
+      "/projects/mothers-day-hering-1/gallery/mothers-day-hering-1-gallery1.jpg",
+      "/projects/mothers-day-hering-1/gallery/mothers-day-hering-1-gallery2.jpg",
+      "/projects/mothers-day-hering-1/gallery/mothers-day-hering-1-gallery3.jpg",
+      "/projects/mothers-day-hering-1/gallery/mothers-day-hering-1-gallery4.jpg",
+      "/projects/mothers-day-hering-1/gallery/mothers-day-hering-1-gallery5.jpg"
+    ],
     videos: [
       { 
         id: 16, 
@@ -513,7 +578,66 @@ export const mockWorks = [
       }
     ]
   },
-  // 11. Fechamento — IA criativa (Grand Soir)
+  // 12. Skol Beats — Road
+  {
+    id: 13,
+    title: "Road",
+    slug: "road",
+    category: ["brands", "music"],
+    description: "A queer person crosses a road without asking permission to exist. Respeito is ON.",
+    client: "Skol Beats",
+    fullDescription: "A film about a queer person who crosses a road without asking permission to exist. They start walking alone, surrounded by rejection, and gradually gather allies from the most unexpected places: the popular girl, the skater, the mother. The group that forms ends up stronger than everything that tried to stop them.\n\nRespeito is ON.",
+    projectType: "Campaign",
+    credits: "Directed by Dietrich.tv Studio. Client: Skol Beats.",
+    vimeoId: "187712315",
+    scrollSpeed: 25,
+    carouselImages: [
+      "/projects/road/gallery/road-gallery1.png",
+      "/projects/road/gallery/road-gallery2.png",
+      "/projects/road/gallery/road-gallery3.png",
+      "/projects/road/gallery/road-gallery4.png",
+      "/projects/road/gallery/road-gallery5.png",
+      "/projects/road/gallery/road-gallery6.png"
+    ],
+    videos: [
+      {
+        id: 39,
+        thumbnail: "/projects/road/carousel/road-carousel1.jpg",
+        title: "Road — Scene 1",
+        videoUrl: "/projects/road/carousel/road-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/road/carousel/road-video1-desktop.mp4"
+      },
+      {
+        id: 40,
+        thumbnail: "/projects/road/carousel/road-carousel2.jpg",
+        title: "Road — Scene 2",
+        videoUrl: "/projects/road/carousel/road-video2-desktop.mp4",
+        mobileVideoUrl: "/projects/road/carousel/road-video2-desktop.mp4"
+      },
+      {
+        id: 41,
+        thumbnail: "/projects/road/carousel/road-carousel3.jpg",
+        title: "Road — Scene 3",
+        videoUrl: "/projects/road/carousel/road-video3-desktop.mp4",
+        mobileVideoUrl: "/projects/road/carousel/road-video3-desktop.mp4"
+      },
+      {
+        id: 42,
+        thumbnail: "/projects/road/carousel/road-carousel1.jpg",
+        title: "Road — Scene 4",
+        videoUrl: "/projects/road/carousel/road-video4-desktop.mp4",
+        mobileVideoUrl: "/projects/road/carousel/road-video4-desktop.mp4"
+      },
+      {
+        id: 43,
+        thumbnail: "/projects/road/carousel/road-carousel2.jpg",
+        title: "Road — Scene 5",
+        videoUrl: "/projects/road/carousel/road-video5-desktop.mp4",
+        mobileVideoUrl: "/projects/road/carousel/road-video5-desktop.mp4"
+      }
+    ]
+  },
+  // 13. Fechamento — IA criativa (Grand Soir)
   {
     id: 1,
     title: "Grand Soir, by Maison Francis Kurkdjian",
@@ -637,7 +761,9 @@ function getLocalizedProjectForWorkPage(project: any, t: any) {
     9: 'tresemmeBrilho',
     10: 'gracinha',
     11: 'heringFernandas',
-    12: 'azulFidelidade'
+    12: 'azulFidelidade',
+    13: 'skolBeatsRoad',
+    14: 'naturaHomem'
   }[project.id];
 
   if (!projectKey) return project;
@@ -684,15 +810,24 @@ export default function WorkPage({ onNavigate, initialCategory = 'all', onCatego
   };
 
   const getWorksByCategory = (category: string) => {
-    const baseWorks = category === 'all'
-      ? mockWorks
-      : mockWorks.filter(work =>
-          Array.isArray(work.category)
-            ? work.category.includes(category)
-            : work.category === category
-        );
+    if (category === 'all') {
+      return mockWorks.map(work => getLocalizedProjectForWorkPage(work, t));
+    }
 
-    return baseWorks.map(work => getLocalizedProjectForWorkPage(work, t));
+    const filtered = mockWorks.filter(work =>
+      Array.isArray(work.category)
+        ? work.category.includes(category)
+        : work.category === category
+    );
+
+    // Sort by most recent first using the Vimeo ID as a chronological proxy
+    const sorted = [...filtered].sort((a, b) => {
+      const aId = parseInt(a.vimeoId.split(',')[0]);
+      const bId = parseInt(b.vimeoId.split(',')[0]);
+      return bId - aId;
+    });
+
+    return sorted.map(work => getLocalizedProjectForWorkPage(work, t));
   };
 
   const filteredWorks = getWorksByCategory(displayedCategory);
@@ -746,7 +881,7 @@ export default function WorkPage({ onNavigate, initialCategory = 'all', onCatego
             <ProjectWrapper
               key={`${displayedCategory}-${work.id}`} // Include category in key to force re-render
               work={work}
-              speed={15 + (index * 3)} // Slower speeds for visual interest
+              speed={work.scrollSpeed ?? 15 + (index * 3)} // Slower speeds for visual interest; scrollSpeed overrides formula
               onNavigate={onNavigate}
               delay={isTransitioning ? 0 : index * 200} // Faster staggering during transitions, none during category change
             />
