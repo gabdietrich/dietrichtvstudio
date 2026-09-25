@@ -56,121 +56,6 @@ export function getProjectById(id: number) {
 
 // Mock data with project content
 export const mockWorks = [
-  // 0. Lançamento mais recente — Yanbal Genactive
-  {
-    id: 15,
-    title: "Yanbal Genactive",
-    slug: "yanbal-genactive",
-    category: ["brands"],
-    description: "Yanbal is Peru's largest cosmetics brand, and Genactive is the top of its line.",
-    client: "Yanbal",
-    fullDescription: "Yanbal is Peru's largest cosmetics brand, and Genactive is the top of its line.\n\nThe challenge in this film was to move between the natural and the microscopic — between the footage of the stunning model Natália Costa, and a 3D demo sequence at the cellular level.\n\nA liquid that behaves against gravity: that is the image. Directing the camera inside the 3D with the Lobo team the same way I direct the camera on set was the part that excited me most about the whole project.",
-    projectType: "Campaign",
-    credits: "Directed by Gabriel Dietrich. Model: Natalia Costa. Director of Photography: Wantán. Assistant Director: Danna Ben Haim. Executive Production: Susana Espinoza. Post-production: Lobo.cx.",
-    vimeoId: "1221175940",
-    scrollSpeed: 20,
-    carouselImages: [
-      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery1.jpg",
-      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery2.jpg",
-      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery3.jpg",
-      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery4.jpg",
-      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery5.jpg",
-      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery6.jpg",
-      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery7.jpg",
-      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery8.jpg"
-    ],
-    videos: [
-      {
-        id: 48,
-        thumbnail: "/projects/yanbal-genactive/carousel/yanbal-genactive-video1-poster.jpg",
-        title: "Scene 1",
-        videoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video1-desktop.mp4",
-        mobileVideoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video1-mobile.mp4"
-      },
-      {
-        id: 49,
-        thumbnail: "/projects/yanbal-genactive/carousel/yanbal-genactive-video2-poster.jpg",
-        title: "Scene 2",
-        videoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video2-desktop.mp4",
-        mobileVideoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video2-mobile.mp4"
-      },
-      {
-        id: 50,
-        thumbnail: "/projects/yanbal-genactive/carousel/yanbal-genactive-video3-poster.jpg",
-        title: "Scene 3",
-        videoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video3-desktop.mp4",
-        mobileVideoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video3-mobile.mp4"
-      },
-      {
-        id: 51,
-        thumbnail: "/projects/yanbal-genactive/carousel/yanbal-genactive-video4-poster.jpg",
-        title: "Scene 4",
-        videoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video4-desktop.mp4",
-        mobileVideoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video4-mobile.mp4"
-      },
-      {
-        id: 52,
-        thumbnail: "/projects/yanbal-genactive/carousel/yanbal-genactive-video5-poster.jpg",
-        title: "Scene 5",
-        videoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video5-desktop.mp4",
-        mobileVideoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video5-mobile.mp4"
-      }
-    ]
-  },
-  // 1. Natura Homem (Lázaro Ramos)
-  {
-    id: 14,
-    title: "Natura Homem - Identidad",
-    slug: "natura-homem",
-    category: ["brands"],
-    description: "A portrait of Brazilian masculinity, with Lázaro Ramos.",
-    client: "Natura",
-    fullDescription: "What it means to be a man in Brazil today is an open question. It's an equally important and delicate subject, and advertising isn't always willing to hold that mirror up to men. When Galeria and 404 brought me this script, what I saw was a chance to spark a debate: to show a version of the Brazilian man at peace with his masculinity, and that man could only be Bahia's own Lázaro Ramos. He moves through his day interacting with everyone who crosses his path, effortlessly. It's that naturalness, that 'malemolência' (a laid-back Brazilian swagger), that feels to me like the truest expression of the Brazilian man. A man who should be free, comfortable in his own clothes, without prejudice and without any need for external validation to feel like who he is.\n\nThe journey ends at a roda de samba (samba circle), the undisputed Brazilian art form. There, he is welcomed as the celebrity he is. But the final gesture, to me, was always the most important of the film: in the middle of the circle he recognizes another man like him (an old-guard sambista, who carries his own story and his own journey), and it is this man who gives him an embrace and a kiss.\n\nAnd that kiss is the film. An explicit metaphor for affection between two men, in a brief 30 seconds.\n\nI'm very grateful for the invitation, because I know how much can be said when a brand with Natura's reach decides to speak about this.",
-    projectType: "Campaign",
-    credits: "Directed by Gabriel Dietrich. Agency: 404. Featuring Lázaro Ramos.",
-    vimeoId: "1220202909",
-    scrollSpeed: 20,
-    carouselImages: [
-      "/projects/natura-homem/gallery/natura-homem-gallery1.jpg",
-      "/projects/natura-homem/gallery/natura-homem-gallery2.jpg",
-      "/projects/natura-homem/gallery/natura-homem-gallery3.jpg",
-      "/projects/natura-homem/gallery/natura-homem-gallery4.jpg",
-      "/projects/natura-homem/gallery/natura-homem-gallery5.jpg",
-      "/projects/natura-homem/gallery/natura-homem-gallery6.jpg",
-      "/projects/natura-homem/gallery/natura-homem-gallery7.jpg",
-      "/projects/natura-homem/gallery/natura-homem-gallery8.jpg"
-    ],
-    videos: [
-      {
-        id: 44,
-        thumbnail: "/projects/natura-homem/carousel/natura-homem-video1-poster.jpg",
-        title: "Scene 1",
-        videoUrl: "/projects/natura-homem/carousel/natura-homem-video1-desktop.mp4",
-        mobileVideoUrl: "/projects/natura-homem/carousel/natura-homem-video1-mobile.mp4"
-      },
-      {
-        id: 45,
-        thumbnail: "/projects/natura-homem/carousel/natura-homem-video2-poster.jpg",
-        title: "Scene 2",
-        videoUrl: "/projects/natura-homem/carousel/natura-homem-video2-desktop.mp4",
-        mobileVideoUrl: "/projects/natura-homem/carousel/natura-homem-video2-mobile.mp4"
-      },
-      {
-        id: 46,
-        thumbnail: "/projects/natura-homem/carousel/natura-homem-video3-poster.jpg",
-        title: "Scene 3",
-        videoUrl: "/projects/natura-homem/carousel/natura-homem-video3-desktop.mp4",
-        mobileVideoUrl: "/projects/natura-homem/carousel/natura-homem-video3-mobile.mp4"
-      },
-      {
-        id: 47,
-        thumbnail: "/projects/natura-homem/carousel/natura-homem-video4-poster.jpg",
-        title: "Scene 4",
-        videoUrl: "/projects/natura-homem/carousel/natura-homem-video4-desktop.mp4",
-        mobileVideoUrl: "/projects/natura-homem/carousel/natura-homem-video4-mobile.mp4"
-      }
-    ]
-  },
   // 1. Abertura cultural forte
   {
     id: 2,
@@ -209,6 +94,47 @@ export const mockWorks = [
         title: "Scene 3",
         videoUrl: "/projects/ernesto-neto-le-bon-marche/carousel/ernesto-neto-le-bon-marche-video3-desktop.mp4",
         mobileVideoUrl: "/projects/ernesto-neto-le-bon-marche/carousel/ernesto-neto-le-bon-marche-video3-mobile.mp4"
+      }
+    ]
+  },
+  // 4. Música / persona autoral — Gracinha (20M views)
+  {
+    id: 10,
+    title: "Gracinha",
+    slug: "gracinha",
+    category: ["music", "artistsCulture"],
+    description: "A music film that blends pop, fantasy, and cinema. Directed by Gabriel Dietrich with Manu Gavassi.",
+    client: "Manu Gavassi",
+    fullDescription: "Directed by Gabriel Dietrich and Manu Gavassi, Gracinha is a music film that transcends the boundaries of the music video format, merging pop sensibility with fashion aesthetics and cinematic storytelling. The project became a cultural milestone, reaching over 20 million views within 24 hours of release, and resonated as one of the most striking audiovisual works in the Brazilian market. Dietrich.tv Studio was responsible for the direction and execution, creating a layered visual journey that balances intimacy and spectacle — a portrait of Manu Gavassi's artistry elevated to a cinematic scale.",
+    projectType: "Music Film",
+    credits: "Directed by Gabriel Dietrich (co-direction with Manu Gavassi).",
+    vimeoId: "650425603",
+    carouselImages: [
+      "/projects/gracinha-disney/gallery/gracinha-disney-gallery1.jpg",
+      "/projects/gracinha-disney/gallery/gracinha-disney-gallery2.jpg",
+      "/projects/gracinha-disney/gallery/gracinha-disney-gallery3.jpg"
+    ],
+    videos: [
+      { 
+        id: 28, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        title: "Scene 1",
+        videoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video1-mobile.mp4"
+      },
+      { 
+        id: 29, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        title: "Scene 2",
+        videoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video2-desktop.mp4",
+        mobileVideoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video2-mobile.mp4"
+      },
+      { 
+        id: 30, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3C/svg%3E", 
+        title: "Scene 3",
+        videoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video3-desktop.mp4",
+        mobileVideoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video3-mobile.mp4"
       }
     ]
   },
@@ -289,44 +215,57 @@ export const mockWorks = [
       }
     ]
   },
-  // 4. Música / persona autoral — Gracinha (20M views)
+  // 1. Natura Homem (Lázaro Ramos)
   {
-    id: 10,
-    title: "Gracinha",
-    slug: "gracinha",
-    category: ["music", "artistsCulture"],
-    description: "A music film that blends pop, fantasy, and cinema. Directed by Gabriel Dietrich with Manu Gavassi.",
-    client: "Manu Gavassi",
-    fullDescription: "Directed by Gabriel Dietrich and Manu Gavassi, Gracinha is a music film that transcends the boundaries of the music video format, merging pop sensibility with fashion aesthetics and cinematic storytelling. The project became a cultural milestone, reaching over 20 million views within 24 hours of release, and resonated as one of the most striking audiovisual works in the Brazilian market. Dietrich.tv Studio was responsible for the direction and execution, creating a layered visual journey that balances intimacy and spectacle — a portrait of Manu Gavassi's artistry elevated to a cinematic scale.",
-    projectType: "Music Film",
-    credits: "Directed by Gabriel Dietrich (co-direction with Manu Gavassi).",
-    vimeoId: "650425603",
+    id: 14,
+    title: "Natura Homem - Identidad",
+    slug: "natura-homem",
+    category: ["brands"],
+    description: "A portrait of Brazilian masculinity, with Lázaro Ramos.",
+    client: "Natura",
+    fullDescription: "What it means to be a man in Brazil today is an open question. It's an equally important and delicate subject, and advertising isn't always willing to hold that mirror up to men. When Galeria and 404 brought me this script, what I saw was a chance to spark a debate: to show a version of the Brazilian man at peace with his masculinity, and that man could only be Bahia's own Lázaro Ramos. He moves through his day interacting with everyone who crosses his path, effortlessly. It's that naturalness, that 'malemolência' (a laid-back Brazilian swagger), that feels to me like the truest expression of the Brazilian man. A man who should be free, comfortable in his own clothes, without prejudice and without any need for external validation to feel like who he is.\n\nThe journey ends at a roda de samba (samba circle), the undisputed Brazilian art form. There, he is welcomed as the celebrity he is. But the final gesture, to me, was always the most important of the film: in the middle of the circle he recognizes another man like him (an old-guard sambista, who carries his own story and his own journey), and it is this man who gives him an embrace and a kiss.\n\nAnd that kiss is the film. An explicit metaphor for affection between two men, in a brief 30 seconds.\n\nI'm very grateful for the invitation, because I know how much can be said when a brand with Natura's reach decides to speak about this.",
+    projectType: "Campaign",
+    credits: "Directed by Gabriel Dietrich. Agency: 404. Featuring Lázaro Ramos.",
+    vimeoId: "1220202909",
+    scrollSpeed: 20,
     carouselImages: [
-      "/projects/gracinha-disney/gallery/gracinha-disney-gallery1.jpg",
-      "/projects/gracinha-disney/gallery/gracinha-disney-gallery2.jpg",
-      "/projects/gracinha-disney/gallery/gracinha-disney-gallery3.jpg"
+      "/projects/natura-homem/gallery/natura-homem-gallery1.jpg",
+      "/projects/natura-homem/gallery/natura-homem-gallery2.jpg",
+      "/projects/natura-homem/gallery/natura-homem-gallery3.jpg",
+      "/projects/natura-homem/gallery/natura-homem-gallery4.jpg",
+      "/projects/natura-homem/gallery/natura-homem-gallery5.jpg",
+      "/projects/natura-homem/gallery/natura-homem-gallery6.jpg",
+      "/projects/natura-homem/gallery/natura-homem-gallery7.jpg",
+      "/projects/natura-homem/gallery/natura-homem-gallery8.jpg"
     ],
     videos: [
-      { 
-        id: 28, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+      {
+        id: 44,
+        thumbnail: "/projects/natura-homem/carousel/natura-homem-video1-poster.jpg",
         title: "Scene 1",
-        videoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video1-desktop.mp4",
-        mobileVideoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video1-mobile.mp4"
+        videoUrl: "/projects/natura-homem/carousel/natura-homem-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/natura-homem/carousel/natura-homem-video1-mobile.mp4"
       },
-      { 
-        id: 29, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+      {
+        id: 45,
+        thumbnail: "/projects/natura-homem/carousel/natura-homem-video2-poster.jpg",
         title: "Scene 2",
-        videoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video2-desktop.mp4",
-        mobileVideoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video2-mobile.mp4"
+        videoUrl: "/projects/natura-homem/carousel/natura-homem-video2-desktop.mp4",
+        mobileVideoUrl: "/projects/natura-homem/carousel/natura-homem-video2-mobile.mp4"
       },
-      { 
-        id: 30, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3C/svg%3E", 
+      {
+        id: 46,
+        thumbnail: "/projects/natura-homem/carousel/natura-homem-video3-poster.jpg",
         title: "Scene 3",
-        videoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video3-desktop.mp4",
-        mobileVideoUrl: "/projects/gracinha-disney/carousel/gracinha-disney-video3-mobile.mp4"
+        videoUrl: "/projects/natura-homem/carousel/natura-homem-video3-desktop.mp4",
+        mobileVideoUrl: "/projects/natura-homem/carousel/natura-homem-video3-mobile.mp4"
+      },
+      {
+        id: 47,
+        thumbnail: "/projects/natura-homem/carousel/natura-homem-video4-poster.jpg",
+        title: "Scene 4",
+        videoUrl: "/projects/natura-homem/carousel/natura-homem-video4-desktop.mp4",
+        mobileVideoUrl: "/projects/natura-homem/carousel/natura-homem-video4-mobile.mp4"
       }
     ]
   },
@@ -336,7 +275,7 @@ export const mockWorks = [
     title: "Three Short Films",
     slug: "three-short-films",
     category: ["music", "artistsCulture"],
-    description: "Three short films with Manu Gavassi, blending fashion, music, and cinema. A trilogy that explores image as performance and persona.",
+    description: "Three short films directed by Gabriel Dietrich with Manu Gavassi, blending fashion, music, and cinema. A trilogy that explores image as performance and persona.",
     client: "Manu Gavassi",
     fullDescription: "With Manu Gavassi, Dietrich directed a trilogy of short films that blurred the lines between cinema, fashion, and performance. Each piece is both intimate and theatrical, exploring how image can construct and deconstruct persona. The films were conceived as a dialogue with Manu's own artistic universe: ironic yet delicate, pop yet deeply personal. Through bold visual language and precise storytelling, they move beyond conventional music video aesthetics, embracing a hybrid form that belongs as much to cinema as to contemporary culture. Together, the three shorts form a mosaic of identity, revealing how narrative and style can amplify an artist's voice across different platforms while remaining unmistakably authentic.",
     projectType: "Trilogy",
@@ -374,60 +313,44 @@ export const mockWorks = [
       }
     ]
   },
-  // 6. Marca aérea — Azul Fidelidade
+  // 8. Ícones brasileiros — Democrata
   {
-    id: 12,
-    title: "Diamond Unique",
-    slug: "azul-fidelidade-diamond-unique",
+    id: 5,
+    title: "Gisele Bündchen and Cauã Raymond",
+    slug: "gisele-bundchen-and-caua-raymond",
     category: ["brands"],
-    description: "A loyalty program film for Azul Fidelidade, celebrating the Diamond Unique tier with cinematic elegance.",
-    client: "Azul Fidelidade",
-    fullDescription: "For Azul Fidelidade's Diamond Unique tier, Dietrich directed a film that translates the pinnacle of the program's loyalty experience into a cinematic gesture. The visual language moves between aspiration and intimacy — drawing from the world of luxury travel and the emotional meaning of belonging. Rather than cataloguing benefits, the film captures the feeling of being recognized at the highest level: refined, calm, and certain. Through precise framing, elevated aesthetics and a measured rhythm, it positions Azul Fidelidade Diamond Unique not merely as a category, but as a distinct way of experiencing flight.",
-    projectType: "Campaign",
-    credits: "Directed by Gabriel Dietrich.",
-    vimeoId: "1190216209",
+    description: "A cinematic launch set to Jorge Ben Jor's classic Lá Vem Ela.",
+    client: "Democrata",
+    fullDescription: "For Democrata's launch film, we brought together two of Brazil's most iconic figures — Gisele Bündchen and Cauã Reymond — in a story that celebrates style, presence, and rhythm. The soundtrack, Jorge Ben Jor's Lá Vem Ela, sets the tone: timeless, magnetic, unmistakably Brazilian. Each frame captures a dialogue between elegance and energy, masculinity and femininity, intimacy and spectacle. The film was conceived as more than a commercial. It is a cultural encounter, weaving fashion and music into a narrative that places the brand in the heart of Brazil's creative heritage. Shot with cinematic precision, the piece amplifies Democrata's vision: sophistication with soul, classic with contemporary, craft with charisma.",
+    projectType: "Launch Film",
+    credits: "Directed by Gabriel Dietrich. Featuring Gisele Bündchen and Cauã Reymond.",
+    vimeoId: "1006728704",
     carouselImages: [
-      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery1.jpg",
-      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery5.jpg",
-      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery6.jpg",
-      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery7.jpg",
-      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery8.jpg"
+      "/projects/democrata-gisele-caua/gallery/democrata-gisele-caua-gallery1.jpg",
+      "/projects/democrata-gisele-caua/gallery/democrata-gisele-caua-gallery2.jpg",
+      "/projects/democrata-gisele-caua/gallery/democrata-gisele-caua-gallery3.jpg"
     ],
     videos: [
-      {
-        id: 34,
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E",
+      { 
+        id: 13, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
         title: "Scene 1",
-        videoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video1-desktop.mp4",
-        mobileVideoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video1-mobile.mp4"
+        videoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video1-mobile.mp4"
       },
-      {
-        id: 35,
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E",
+      { 
+        id: 14, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
         title: "Scene 2",
-        videoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video2-desktop.mp4",
-        mobileVideoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video2-mobile.mp4"
+        videoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video2-desktop.mp4",
+        mobileVideoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video2-mobile.mp4"
       },
-      {
-        id: 36,
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E",
+      { 
+        id: 15, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
         title: "Scene 3",
-        videoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video3-desktop.mp4",
-        mobileVideoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video3-mobile.mp4"
-      },
-      {
-        id: 37,
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E",
-        title: "Scene 4",
-        videoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video4-desktop.mp4",
-        mobileVideoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video4-mobile.mp4"
-      },
-      {
-        id: 38,
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E",
-        title: "Scene 5",
-        videoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video5-desktop.mp4",
-        mobileVideoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video5-mobile.mp4"
+        videoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video3-desktop.mp4",
+        mobileVideoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video3-mobile.mp4"
       }
     ]
   },
@@ -518,83 +441,101 @@ export const mockWorks = [
       }
     ]
   },
-  // 8. Ícones brasileiros — Democrata
+  // 13. Fechamento — IA criativa (Grand Soir)
   {
-    id: 5,
-    title: "Gisele Bündchen and Cauã Raymond",
-    slug: "gisele-bundchen-and-caua-raymond",
-    category: ["brands"],
-    description: "A cinematic launch set to Jorge Ben Jor's classic Lá Vem Ela.",
-    client: "Democrata",
-    fullDescription: "For Democrata's launch film, we brought together two of Brazil's most iconic figures — Gisele Bündchen and Cauã Reymond — in a story that celebrates style, presence, and rhythm. The soundtrack, Jorge Ben Jor's Lá Vem Ela, sets the tone: timeless, magnetic, unmistakably Brazilian. Each frame captures a dialogue between elegance and energy, masculinity and femininity, intimacy and spectacle. The film was conceived as more than a commercial. It is a cultural encounter, weaving fashion and music into a narrative that places the brand in the heart of Brazil's creative heritage. Shot with cinematic precision, the piece amplifies Democrata's vision: sophistication with soul, classic with contemporary, craft with charisma.",
-    projectType: "Launch Film",
-    credits: "Directed by Gabriel Dietrich. Featuring Gisele Bündchen and Cauã Reymond.",
-    vimeoId: "1006728704",
+    id: 1,
+    title: "Grand Soir, by Maison Francis Kurkdjian",
+    slug: "grand-soir-by-maison-francis-kurkdjian",
+    category: ["researchAI", "brands"],
+    description: "Grand Soir, by Maison Francis Kurkdjian. A spec film crafted entirely with artificial intelligence. 100% AI-made",
+    client: "Maison Francis Kurkdjian",
+    fullDescription: "Perfume is a bridge between moments, a place where past and future breathe together. We live in a time when creation expands beyond the hands, guided also by the intelligence we have imagined and built. Like perfume, this technology dissolves boundaries, uniting who we have been with who we are yet to become, turning the invisible into emotion. We crafted this A.I. spec film for Maison Francis Kurkdjian to celebrate the encounter where innovation and essence dance together.",
+    projectType: "Case Study",
+    credits: "Directed by Gabriel Dietrich. 100% AI-made.",
+    vimeoId: "1108168421",
     carouselImages: [
-      "/projects/democrata-gisele-caua/gallery/democrata-gisele-caua-gallery1.jpg",
-      "/projects/democrata-gisele-caua/gallery/democrata-gisele-caua-gallery2.jpg",
-      "/projects/democrata-gisele-caua/gallery/democrata-gisele-caua-gallery3.jpg"
+      "/projects/grand-soir-maison-francis/gallery/grand-soir-maison-francis-gallery1.jpg",
+      "/projects/grand-soir-maison-francis/gallery/grand-soir-maison-francis-gallery2.jpg",
+      "/projects/grand-soir-maison-francis/gallery/grand-soir-maison-francis-gallery3.jpg"
     ],
     videos: [
       { 
-        id: 13, 
+        id: 1, 
         thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
         title: "Scene 1",
-        videoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video1-desktop.mp4",
-        mobileVideoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video1-mobile.mp4"
+        videoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video1-mobile.mp4"
       },
       { 
-        id: 14, 
+        id: 2, 
         thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
         title: "Scene 2",
-        videoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video2-desktop.mp4",
-        mobileVideoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video2-mobile.mp4"
+        videoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video2-desktop.mp4",
+        mobileVideoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video2-mobile.mp4"
       },
       { 
-        id: 15, 
+        id: 3, 
         thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
         title: "Scene 3",
-        videoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video3-desktop.mp4",
-        mobileVideoUrl: "/projects/democrata-gisele-caua/carousel/democrata-gisele-caua-video3-mobile.mp4"
+        videoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video3-desktop.mp4",
+        mobileVideoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video3-mobile.mp4"
       }
     ]
   },
-  // 9. Campanha de marca — Hering '25
+  // 6. Marca aérea — Azul Fidelidade
   {
-    id: 6,
-    title: "Mother's Day '25",
-    slug: "mothers-day-25",
+    id: 12,
+    title: "Diamond Unique",
+    slug: "azul-fidelidade-diamond-unique",
     category: ["brands"],
-    description: "Sasha, Bruna Marquezine, Xuxa and Neide — a celebration of generations and love.",
-    client: "Hering",
-    fullDescription: "For Hering's Mother's Day campaign, we brought together Sasha Meneghel, Bruna Marquezine, Xuxa and Neide. More than a film, it became a portrait of affection across generations, weaving family bonds into the fabric of one of Brazil's most iconic brands. The narrative is intimate yet universal: mothers and daughters, friendship and legacy, the simple gestures that define love. Each scene was crafted to highlight authenticity, where fashion becomes secondary to emotion, and presence becomes more powerful than performance. In this project, cinema and brand storytelling converge to honor motherhood — not as a concept, but as lived experience.",
+    description: "A loyalty program film for Azul Fidelidade, celebrating the Diamond Unique tier with cinematic elegance.",
+    client: "Azul Fidelidade",
+    fullDescription: "For Azul Fidelidade's Diamond Unique tier, Dietrich directed a film that translates the pinnacle of the program's loyalty experience into a cinematic gesture. The visual language moves between aspiration and intimacy — drawing from the world of luxury travel and the emotional meaning of belonging. Rather than cataloguing benefits, the film captures the feeling of being recognized at the highest level: refined, calm, and certain. Through precise framing, elevated aesthetics and a measured rhythm, it positions Azul Fidelidade Diamond Unique not merely as a category, but as a distinct way of experiencing flight.",
     projectType: "Campaign",
-    credits: "Directed by Gabriel Dietrich. Starring Sasha, Bruna Marquezine, Xuxa and Neide.",
-    vimeoId: "1112761195,1112760986",
+    credits: "Directed by Gabriel Dietrich.",
+    vimeoId: "1190216209",
     carouselImages: [
-      "/projects/mothers-day-hering-1/gallery/mothers-day-hering-1-gallery1.jpg",
-      "/projects/mothers-day-hering-1/gallery/mothers-day-hering-1-gallery2.jpg",
-      "/projects/mothers-day-hering-1/gallery/mothers-day-hering-1-gallery3.jpg",
-      "/projects/mothers-day-hering-1/gallery/mothers-day-hering-1-gallery4.jpg",
-      "/projects/mothers-day-hering-1/gallery/mothers-day-hering-1-gallery5.jpg"
+      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery1.jpg",
+      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery5.jpg",
+      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery6.jpg",
+      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery7.jpg",
+      "/projects/azul-fidelidade-diamond-unique/gallery/azul-fidelidade-diamond-unique-gallery8.jpg"
     ],
     videos: [
-      { 
-        id: 16, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+      {
+        id: 34,
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E",
         title: "Scene 1",
-        videoUrl: "/projects/mothers-day-hering-1/carousel/mothers-day-hering-1-video1-desktop.mp4",
-        mobileVideoUrl: "/projects/mothers-day-hering-1/carousel/mothers-day-hering-1-video1-mobile.mp4"
+        videoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video1-mobile.mp4"
       },
-      { 
-        id: 17, 
-        thumbnail: "/projects/mothers-day-hering-1/carousel/mothers-day-hering-1-video2-desktop.jpg", 
-        title: "Scene 2"
+      {
+        id: 35,
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E",
+        title: "Scene 2",
+        videoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video2-desktop.mp4",
+        mobileVideoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video2-mobile.mp4"
       },
-      { 
-        id: 18, 
-        thumbnail: "/projects/mothers-day-hering-1/carousel/mothers-day-hering-1-video3-desktop.jpg", 
-        title: "Scene 3"
+      {
+        id: 36,
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E",
+        title: "Scene 3",
+        videoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video3-desktop.mp4",
+        mobileVideoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video3-mobile.mp4"
+      },
+      {
+        id: 37,
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E",
+        title: "Scene 4",
+        videoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video4-desktop.mp4",
+        mobileVideoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video4-mobile.mp4"
+      },
+      {
+        id: 38,
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E",
+        title: "Scene 5",
+        videoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video5-desktop.mp4",
+        mobileVideoUrl: "/projects/azul-fidelidade-diamond-unique/carousel/azul-fidelidade-diamond-unique-video5-mobile.mp4"
       }
     ]
   },
@@ -636,6 +577,45 @@ export const mockWorks = [
         title: "Scene 3",
         videoUrl: "/projects/tresemme-brilho-lamelar/carousel/tresemme-brilho-lamelar-video3-desktop.mp4",
         mobileVideoUrl: "/projects/tresemme-brilho-lamelar/carousel/tresemme-brilho-lamelar-video3-mobile.mp4"
+      }
+    ]
+  },
+  // 9. Campanha de marca — Hering '25
+  {
+    id: 6,
+    title: "Mother's Day '25",
+    slug: "mothers-day-25",
+    category: ["brands"],
+    description: "Sasha, Bruna Marquezine, Xuxa and Neide — a celebration of generations and love.",
+    client: "Hering",
+    fullDescription: "For Hering's Mother's Day campaign, we brought together Sasha Meneghel, Bruna Marquezine, Xuxa and Neide. More than a film, it became a portrait of affection across generations, weaving family bonds into the fabric of one of Brazil's most iconic brands. The narrative is intimate yet universal: mothers and daughters, friendship and legacy, the simple gestures that define love. Each scene was crafted to highlight authenticity, where fashion becomes secondary to emotion, and presence becomes more powerful than performance. In this project, cinema and brand storytelling converge to honor motherhood — not as a concept, but as lived experience.",
+    projectType: "Campaign",
+    credits: "Directed by Gabriel Dietrich. Starring Sasha, Bruna Marquezine, Xuxa and Neide.",
+    vimeoId: "1112761195,1112760986",
+    carouselImages: [
+      "/projects/mothers-day-hering-1/gallery/mothers-day-hering-1-gallery1.jpg",
+      "/projects/mothers-day-hering-1/gallery/mothers-day-hering-1-gallery2.jpg",
+      "/projects/mothers-day-hering-1/gallery/mothers-day-hering-1-gallery3.jpg",
+      "/projects/mothers-day-hering-1/gallery/mothers-day-hering-1-gallery4.jpg",
+      "/projects/mothers-day-hering-1/gallery/mothers-day-hering-1-gallery5.jpg"
+    ],
+    videos: [
+      { 
+        id: 16, 
+        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+        title: "Scene 1",
+        videoUrl: "/projects/mothers-day-hering-1/carousel/mothers-day-hering-1-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/mothers-day-hering-1/carousel/mothers-day-hering-1-video1-mobile.mp4"
+      },
+      { 
+        id: 17, 
+        thumbnail: "/projects/mothers-day-hering-1/carousel/mothers-day-hering-1-video2-desktop.jpg", 
+        title: "Scene 2"
+      },
+      { 
+        id: 18, 
+        thumbnail: "/projects/mothers-day-hering-1/carousel/mothers-day-hering-1-video3-desktop.jpg", 
+        title: "Scene 3"
       }
     ]
   },
@@ -698,47 +678,67 @@ export const mockWorks = [
       }
     ]
   },
-  // 13. Fechamento — IA criativa (Grand Soir)
+  // 0. Lançamento mais recente — Yanbal Genactive
   {
-    id: 1,
-    title: "Grand Soir, by Maison Francis Kurkdjian",
-    slug: "grand-soir-by-maison-francis-kurkdjian",
-    category: ["researchAI", "brands"],
-    description: "Grand Soir, by Maison Francis Kurkdjian. A spec film crafted entirely with artificial intelligence. 100% AI-made",
-    client: "Maison Francis Kurkdjian",
-    fullDescription: "Perfume is a bridge between moments, a place where past and future breathe together. We live in a time when creation expands beyond the hands, guided also by the intelligence we have imagined and built. Like perfume, this technology dissolves boundaries, uniting who we have been with who we are yet to become, turning the invisible into emotion. We crafted this A.I. spec film for Maison Francis Kurkdjian to celebrate the encounter where innovation and essence dance together.",
-    projectType: "Case Study",
-    credits: "Directed by Gabriel Dietrich. 100% AI-made.",
-    vimeoId: "1108168421",
+    id: 15,
+    title: "Yanbal Genactive",
+    slug: "yanbal-genactive",
+    category: ["brands"],
+    description: "Yanbal is Peru's largest cosmetics brand, and Genactive is the top of its line.",
+    client: "Yanbal",
+    fullDescription: "Yanbal is Peru's largest cosmetics brand, and Genactive is the top of its line.\n\nThe challenge in this film was to move between the natural and the microscopic — between the footage of the stunning model Natália Costa, and a 3D demo sequence at the cellular level.\n\nA liquid that behaves against gravity: that is the image. Directing the camera inside the 3D with the Lobo team the same way I direct the camera on set was the part that excited me most about the whole project.",
+    projectType: "Campaign",
+    credits: "Directed by Gabriel Dietrich. Model: Natalia Costa. Director of Photography: Wantán. Assistant Director: Danna Ben Haim. Executive Production: Susana Espinoza. Post-production: Lobo.cx.",
+    vimeoId: "1221175940",
+    scrollSpeed: 20,
     carouselImages: [
-      "/projects/grand-soir-maison-francis/gallery/grand-soir-maison-francis-gallery1.jpg",
-      "/projects/grand-soir-maison-francis/gallery/grand-soir-maison-francis-gallery2.jpg",
-      "/projects/grand-soir-maison-francis/gallery/grand-soir-maison-francis-gallery3.jpg"
+      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery1.jpg",
+      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery2.jpg",
+      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery3.jpg",
+      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery4.jpg",
+      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery5.jpg",
+      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery6.jpg",
+      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery7.jpg",
+      "/projects/yanbal-genactive/gallery/yanbal-genactive-gallery8.jpg"
     ],
     videos: [
-      { 
-        id: 1, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+      {
+        id: 48,
+        thumbnail: "/projects/yanbal-genactive/carousel/yanbal-genactive-video1-poster.jpg",
         title: "Scene 1",
-        videoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video1-desktop.mp4",
-        mobileVideoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video1-mobile.mp4"
+        videoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video1-desktop.mp4",
+        mobileVideoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video1-mobile.mp4"
       },
-      { 
-        id: 2, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+      {
+        id: 49,
+        thumbnail: "/projects/yanbal-genactive/carousel/yanbal-genactive-video2-poster.jpg",
         title: "Scene 2",
-        videoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video2-desktop.mp4",
-        mobileVideoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video2-mobile.mp4"
+        videoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video2-desktop.mp4",
+        mobileVideoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video2-mobile.mp4"
       },
-      { 
-        id: 3, 
-        thumbnail: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='480' viewBox='0 0 480 480'%3E%3Crect width='480' height='480' fill='%23f3f4f6'/%3E%3C/svg%3E", 
+      {
+        id: 50,
+        thumbnail: "/projects/yanbal-genactive/carousel/yanbal-genactive-video3-poster.jpg",
         title: "Scene 3",
-        videoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video3-desktop.mp4",
-        mobileVideoUrl: "/projects/grand-soir-maison-francis/carousel/grand-soir-maison-francis-video3-mobile.mp4"
+        videoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video3-desktop.mp4",
+        mobileVideoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video3-mobile.mp4"
+      },
+      {
+        id: 51,
+        thumbnail: "/projects/yanbal-genactive/carousel/yanbal-genactive-video4-poster.jpg",
+        title: "Scene 4",
+        videoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video4-desktop.mp4",
+        mobileVideoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video4-mobile.mp4"
+      },
+      {
+        id: 52,
+        thumbnail: "/projects/yanbal-genactive/carousel/yanbal-genactive-video5-poster.jpg",
+        title: "Scene 5",
+        videoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video5-desktop.mp4",
+        mobileVideoUrl: "/projects/yanbal-genactive/carousel/yanbal-genactive-video5-mobile.mp4"
       }
     ]
-  }
+  },
 ];
 
 
@@ -882,14 +882,7 @@ export default function WorkPage({ onNavigate, initialCategory = 'all', onCatego
         : work.category === category
     );
 
-    // Sort by most recent first using the Vimeo ID as a chronological proxy
-    const sorted = [...filtered].sort((a, b) => {
-      const aId = parseInt(a.vimeoId.split(',')[0]);
-      const bId = parseInt(b.vimeoId.split(',')[0]);
-      return bId - aId;
-    });
-
-    return sorted.map(work => getLocalizedProjectForWorkPage(work, t));
+    return filtered.map(work => getLocalizedProjectForWorkPage(work, t));
   };
 
   const filteredWorks = getWorksByCategory(displayedCategory);

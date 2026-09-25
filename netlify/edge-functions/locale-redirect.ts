@@ -25,7 +25,7 @@ const PROJECTS: Record<string, { title: string; description: string; ogImage: st
   },
   'three-short-films': {
     title: 'Three Short Films',
-    description: 'Three short films with Manu Gavassi, blending fashion, music, and cinema.',
+    description: 'Three short films directed by Gabriel Dietrich with Manu Gavassi, blending fashion, music, and cinema.',
     ogImage: `${BASE_URL}/projects/manu-gavassi-three-films/gallery/manu-gavassi-three-films-gallery1.jpg`,
   },
   'azul-fidelidade-diamond-unique': {
@@ -103,13 +103,15 @@ function isLocaleHome(pathname: string): boolean {
 
 const HOME_META = {
   en: {
-    title: 'Dietrich.tv Studio · Director-led post-production',
-    description: 'Dietrich.tv Studio is a São Paulo–based practice working across film, advertising, fashion, and art, on a director-led post-production model.',
+    title: 'Dietrich.tv Studio · Gabriel Dietrich, director',
+    description: 'Dietrich.tv Studio, São Paulo. Films directed by Gabriel Dietrich for LVMH, Nike, Natura, Art Basel and Le Bon Marché. Advertising, fashion, art.',
+    keywords: 'Dietrich.tv Studio, Gabriel Dietrich, film director, studio, direction, director-led post-production, creative post-production, cinema, culture, brand, São Paulo, Brazil, commercial, music video, documentary, brand films',
     locale: 'en_US',
   },
   pt: {
-    title: 'Dietrich.tv Studio · Director-led post-production',
-    description: 'Dietrich.tv Studio é um estúdio de São Paulo que atua em cinema, publicidade, moda e arte, num modelo de director-led post-production.',
+    title: 'Dietrich.tv Studio · Gabriel Dietrich, director',
+    description: 'Dietrich.tv Studio, São Paulo. Filmes dirigidos por Gabriel Dietrich para LVMH, Nike, Natura, Art Basel e Le Bon Marché. Publicidade, moda, arte.',
+    keywords: 'Dietrich.tv Studio, Gabriel Dietrich, film director, estúdio, direção, director-led post-production, creative post-production, pós-produção criativa, cinema, cultura, marca, São Paulo, Brasil, comercial, videoclipe, documentário, filmes para marcas',
     locale: 'pt_BR',
   },
 } as const;
@@ -138,6 +140,7 @@ function injectPageMeta(html: string, opts: {
   ogImage?: string;
   locale?: string;
   htmlLang?: string;
+  keywords?: string;
 }): string {
   const title = escapeHtml(opts.title);
   const description = escapeHtml(opts.description);
@@ -154,6 +157,10 @@ function injectPageMeta(html: string, opts: {
     .replace(/(<meta\s+name="twitter:description"\s+content=")[^"]*(")/g, `$1${description}$2`)
     .replace(/(<meta\s+name="twitter:url"\s+content=")[^"]*(")/g, `$1${pageUrl}$2`)
     .replace(/(<link\s+rel="canonical"\s+href=")[^"]*(")/g, `$1${pageUrl}$2`);
+
+  if (opts.keywords) {
+    out = out.replace(/(<meta\s+name="keywords"\s+content=")[^"]*(")/g, `$1${escapeHtml(opts.keywords)}$2`);
+  }
 
   if (ogImage) {
     out = out
@@ -196,6 +203,7 @@ export default async (request: Request, context: any) => {
         html = injectPageMeta(html, {
           title: meta.title,
           description: meta.description,
+          keywords: meta.keywords,
           pageUrl,
           locale: meta.locale,
           htmlLang: lang,

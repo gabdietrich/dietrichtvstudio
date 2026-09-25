@@ -11,7 +11,7 @@ export default function Footer({ onNavigate }: FooterProps) {
 
   const footerData = {
     en: {
-      tagline: "Dietrich.tv — Directing and creative post-production studio. Cinema, culture, and brand.",
+      tagline: "Dietrich.tv Studio — Directing and creative post-production studio. Cinema, culture, and brand.",
       aboutLink: "About →",
       columns: {
         office: "OFFICE",
@@ -20,7 +20,7 @@ export default function Footer({ onNavigate }: FooterProps) {
       }
     },
     pt: {
-      tagline: "Dietrich.tv - Studio de direção e pós criativa. Cinema, cultura e marca.",
+      tagline: "Dietrich.tv Studio - Studio de direção e pós criativa. Cinema, cultura e marca.",
       aboutLink: "Sobre →",
       columns: {
         office: "ESCRITÓRIO",
@@ -112,7 +112,7 @@ export default function Footer({ onNavigate }: FooterProps) {
         {/* Large logo */}
         <div className="text-center">
           <div className="text-6xl md:text-8xl lg:text-9xl text-black font-['Area_Normal_SemiBold'] mb-12">
-            dietrich.tv studio
+            Dietrich.tv Studio
           </div>
         </div>
       </div>

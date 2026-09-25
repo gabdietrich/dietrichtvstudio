@@ -17,9 +17,8 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
   const { i18n } = useTranslation();
 
   useEffect(() => {
-    // Remove existing structured data
-    const existingScripts = document.querySelectorAll('script[type="application/ld+json"]');
-    existingScripts.forEach(script => script.remove());
+    const existing = document.querySelector(`script[data-sd="${type}"]`);
+    if (existing) existing.remove();
 
     const baseUrl = 'https://dietrich.tv';
     const currentLocale = i18n.language;
@@ -40,6 +39,11 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
             ? "Dietrich.tv Studio é um estúdio de São Paulo que atua em cinema, publicidade, moda e arte, num modelo de director-led post-production."
             : "Dietrich.tv Studio is a São Paulo–based practice working across film, advertising, fashion, and art, on a director-led post-production model.",
           "foundingDate": "2009",
+          "founder": {
+            "@type": "Person",
+            "name": "Gabriel Dietrich",
+            "jobTitle": "Director"
+          },
           "founders": {
             "@type": "Person",
             "name": "Gabriel Dietrich"
@@ -175,6 +179,7 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
     if (Object.keys(structuredData).length > 0) {
       const script = document.createElement('script');
       script.type = 'application/ld+json';
+      script.setAttribute('data-sd', type);
       script.textContent = JSON.stringify(structuredData);
       document.head.appendChild(script);
     }

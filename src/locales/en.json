@@ -11,7 +11,7 @@
     "giveUsABuzz": "Give us a buzz",
     "projectNotFound": "Project not found",
     "by": "by",
-    "ourWork": "Our work",
+    "ourWork": "Work",
     "seeProject": "See Project",
     "project": "Project"
   },
@@ -19,7 +19,7 @@
     "logoAlt": "Dietrich.tv Studio"
   },
   "homepage": {
-    "mainText": "Dietrich.tv Studio is a São Paulo–based practice working across film, advertising, fashion, and art. The studio operates on a director-led post-production model: direction and creative finishing as a single craft.",
+    "mainText": "Dietrich.tv Studio is a São Paulo film studio directed by Gabriel Dietrich. Films for LVMH, Le Bon Marché, Nike, Natura, Art Basel. Cinema, culture and brand.",
     "categories": {
       "all": "All",
       "brands": "Brands",
@@ -75,7 +75,7 @@
       "zip": "05443-060"
     },
     "footer": {
-      "tagline": "Dietrich.tv — Directing and creative post-production studio. Cinema, culture, and brand.",
+      "tagline": "Dietrich.tv Studio — Directing and creative post-production studio. Cinema, culture, and brand.",
       "stats": {
         "years": {
           "value": "15+",
@@ -136,7 +136,7 @@
     },
     "threeShortFilms": {
       "title": "Three Short Films",
-      "description": "Three short films with Manu Gavassi, blending fashion, music and cinema. A trilogy exploring image as performance and persona.",
+      "description": "Three short films directed by Gabriel Dietrich with Manu Gavassi, blending fashion, music and cinema. A trilogy exploring image as performance and persona.",
       "fullDescription": "With Manu Gavassi, Dietrich directed a trilogy of short films that blur the boundaries between cinema, fashion and performance. Each film is both intimate and theatrical, exploring how image can construct and deconstruct persona. Conceived in dialogue with Manu's own artistic universe — ironic and delicate, pop yet deeply personal — the films go beyond conventional music video aesthetics, embracing a hybrid form that belongs as much to cinema as to contemporary culture. Together, the three shorts form a mosaic of identity, revealing how narrative and style can amplify an artist's voice across different platforms while remaining authentic.",
       "client": "Manu Gavassi",
       "projectType": "Trilogy",
@@ -200,7 +200,7 @@
     },
     "gracinha": {
       "title": "Gracinha",
-      "description": "A visual album for Disney+, co-directed with Manu Gavassi. A pop, poetic and layered journey.",
+      "description": "A visual album for Disney+, co-directed by Gabriel Dietrich and Manu Gavassi. A pop, poetic and layered journey.",
       "fullDescription": "Released exclusively on Disney+ Brazil, *Gracinha* is a 41-minute visual album conceived and written by Manu Gavassi, co-directed by her and Dietrich. Inspired by the tracks of her fourth studio album, the project blends performance, narrative and cinematic aesthetics. Shot on 16mm and Alexa Mini, it is an experimental and pop portrait of Manu's persona — between dance, humor and questions of identity. Featuring João Côrtes, Paulo Miklos, Ícaro Silva, Fábio Porchat, Titi Ewbank and others, the film explores themes of self-discovery, liberation and reinvention, using references that range from choreography to adolescent memories. *Gracinha* is also about leaving a character behind and being reborn — with courage, poeticity and authenticity.",
       "client": "Disney+ Brazil",
       "projectType": "Visual Album",
@@ -240,11 +240,11 @@
     }
   },
   "meta": {
-    "title": "Dietrich.tv Studio · Director-led post-production",
-    "description": "Dietrich.tv Studio is a São Paulo–based practice working across film, advertising, fashion, and art, on a director-led post-production model.",
-    "keywords": "Dietrich.tv Studio, studio, direction, creative post-production, cinema, culture, brand, São Paulo, Brazil, commercial, music video, documentary, brand films",
-    "ogDescription": "Dietrich.tv Studio is a São Paulo–based practice working across film, advertising, fashion, and art, on a director-led post-production model.",
-    "imageAlt": "Dietrich.tv Studio is a São Paulo–based practice working across film, advertising, fashion, and art, on a director-led post-production model.",
+    "title": "Dietrich.tv Studio · Gabriel Dietrich, director",
+    "description": "Dietrich.tv Studio, São Paulo. Films directed by Gabriel Dietrich for LVMH, Nike, Natura, Art Basel and Le Bon Marché. Advertising, fashion, art.",
+    "keywords": "Dietrich.tv Studio, Gabriel Dietrich, film director, studio, direction, director-led post-production, creative post-production, cinema, culture, brand, São Paulo, Brazil, commercial, music video, documentary, brand films",
+    "ogDescription": "Dietrich.tv Studio, São Paulo. Films directed by Gabriel Dietrich for LVMH, Nike, Natura, Art Basel and Le Bon Marché. Advertising, fashion, art.",
+    "imageAlt": "Dietrich.tv Studio, São Paulo. Films directed by Gabriel Dietrich for LVMH, Nike, Natura, Art Basel and Le Bon Marché. Advertising, fashion, art.",
     "contact": {
       "title": "Nice to Meet You",
       "description": "Dietrich.tv Studio is a São Paulo–based practice working across film, advertising, fashion, and art, on a director-led post-production model. Get in touch."

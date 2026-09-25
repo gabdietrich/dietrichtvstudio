@@ -504,7 +504,7 @@ export default function ProjectPage({ projectId, onNavigate }: ProjectPageProps)
         {/* Large logo */}
         <div className="text-center">
           <div className="text-6xl md:text-8xl lg:text-9xl text-black font-['Area_Normal_SemiBold'] mb-12">
-            dietrich.tv studio
+            Dietrich.tv Studio
           </div>
         </div>
       </div>
